@@ -156,12 +156,50 @@ JavaCard applet for speaking NDEF. Implementation of the NDEF Nfc-Forum specific
 
 ### Bitcoin wallets
 #### (needs further inspection)
+- [SecureBitcoinWalletJavaCardApplet](https://github.com/acidg/SecureBitcoinWalletJavaCardApplet) _[**needs inspection** : last commit 2015]_ <br>
+This project is the JavaCard applet for the Secure Bitcoin Wallet App.
+- [Ledger Bitcoin Hardware Wallet ](https://github.com/LedgerHQ/ledger-javacard) _[**needs inspection** : last commit 2016]_ <br>
+This applet is an implementation of the Ledger Wallet Hardware Wallet specification emulating an NFC Forum Type 4 tag to display the second factor, with specific extensions. 
+- [SatoChip Bitcoin applet](https://github.com/Toporin/SatoChipApplet) _[**needs inspection** : last commit 2015]_ <br>
+SatoChip stands for Secure Anonymous Trustless and Open Chip. It is a javacard applet that can be used as a secure hardware wallet running for example on a Yubikey Neo. The SatoChip has full BIP32 supports but due to technical limitations on current javacards, hardened keys (i.e. child keys using indices 2^31 through 2^32-1) are derived much faster than normal keys.
+- [Bitcoin wallet](https://github.com/JavaCardOS/BitcoinWallet) _[**needs inspection** : last commit 2016]_ <br>
+BitcoinWallet is a Bitcoin Hardware Wallet implementation. It is based on the project Ledger Wallet and can be run on JavaCard platform with JCRE version 3.0.x above.
 
 ### Emulation of some proprietary cards
 #### (needs further inspection)
+- [DESFire applet](https://github.com/robsbeat1/Java-Card-Project) _[**needs inspection** : last commit 2013]_ <br>
+reimplementation of DESFire card - master's thesis proof of concept
+- [JavaCard DESFire emulation](https://github.com/SakaZulu/java-card-desfire-emulation) _[**needs inspection** : last commit 2011]_ <br>
+Emulation of DESFire card
+- [MobileEDEPV3](https://github.com/FourTree/EDEPApplet-hengbao/tree/master/MobileEDEPV3) _[**needs inspection** : last commit 2016]_ <br>
+JC emulation of some Chinese card?
+- [TAG 4 emulation](https://github.com/Tordensky/Tag4) _[**needs inspection** : last commit 2013]_ <br>
+This is an implementation of a TAG 4 for emulation
 
 ### Unsorted applications
 #### (needs further inspection)
+- [SmartMeterIQ](https://github.com/adityasawhney/SmartMeterIQ) _[**needs inspection** : last commit 2013]_ <br>
+The main concern with Smart Meters is the granularity of the data which enables physical and behavioral analysis of the consumer in terms of the brand and make of devices installed and their house hold activities (like when do they wake up, when they are not at home). We propose using Java Card platform as it is a natural fit and is designed to be tamper-proof and secure. In addition, we explore using advanced cryptography techniques such as Zero Knowledge Proof of Knowledge (using Pedersen Commitments) to enable the Utility Supplier to trust the data it is getting from the central device.
+- [STKApplet](https://github.com/aliasnash/z-first-applet) _[**needs inspection** : last commit 2017]_ <br>
+SIM Toolkit Applet
+- [javacard-petrol-rationing](https://github.com/alegen/javacard-petrol-rationing) _[**needs inspection** : last commit 2014]_ <br>
+Applet for security of Petrol rationing, including design documents, Radboud University, Hardware Security course, JavaCard project
+- [LiteID-SimApp](https://github.com/LiteID/LiteID-SimApp) _[**just started** : last commit 2017]_ <br>
+A Sim Application client for LiteID, just started, unfinished 
+- [LicenseCardApp](https://github.com/FourTree/LicenseCardApp) _[**needs inspection** : last commit 2017]_ <br>
+applet handling license usage counters and relevant stuff (no documentation)
+- [Prototype firmware for the Trusted Execution Module (TEM)](https://github.com/csail/tem_fw) _[**needs inspection** : last commit 2009]_ <br>
+Prototype firmware for the Trusted Execution Module (TEM). The firmware is a JavaCard applet, and it can turn any capable JavaCard into a TEM.
+- [Secure-Storage-and-Erasure](https://github.com/SecurityResearcher/SSE) _[**needs inspection** : last commit 2014]_ <br>
+This is an open source prototype of Secure Storage and Erasure (SSE) System, including both the JavaCard and host programs. 
+- [Mobile-ID USAT applet](https://sourceforge.net/projects/mobile-id-usat-applethealt) _[**needs inspection** : last commit 2017]_ <br>
+The Remarc Mobile-ID USAT applet this is a JavaCard applet with USIM Application Toolkit menu support. 
+Basic functions of the Remarc Mobile-ID SAT applet: Authentication function; Signing function; Changing PIN1/PIN2;  Changing PUK; Unblock PIN1/PIN2; View information - in a USAT menu is present a menu item with information of PIN usage
+- [E-Voting applet](https://github.com/EVIVoting/EVIV) _[**needs inspection** : last commit 2016]_ <br>
+EVIV is a highly sound End-to-end Verifiable Internet Voting system, which offers full voter’s mobility and preserves the voter’s privacy from the vote casting PC even if the voter votes from a public PC, such as a PC at a cybercafe ́ or at a public library.
+- [UPSC framework](https://github.com/paromix/upsc) _[**needs inspection** : last commit 2017]_ <br>
+Identity and the security of data transmission is very critical for the success of these e-services. SIM cards might take an important role as a security service provider. They have been used for so many years to preserve the security keys(Ki) and algorithms (A3A8) for authenticating and encrypting the data. Within this project, the international consortium will try to implement a software framework on both the mobile terminal and SIM card that expose the required security functions to popular e-services like Mobile commerce, Financial transactions, Data Encryption, Secure Cloud Storage and Mobile Identity.
+
 
 ## Library code (code which is expected to be used as part of other code)
 
