@@ -16,6 +16,8 @@ You are encouraged to contribute - please read the [contribution guidelines]() f
 > - **status**: subjective state of project: *mature* (well developed), *aspiring* (promising, but not yet mature), *playground* (initial stages, just playing/learning), *needs inspection* (not analysed yet)
 > - **activity**: *active* (at last one commit during the last year), *last commit* (date of last commit for less active / inactive projects)
 
+_________________________________________________
+
 ## Applets (standalone applications)
 ### Electronic passports and citizen ID
  
@@ -308,4 +310,35 @@ A open source java card virtual machine implementation. And also some part of th
 
 ## Learning (various school projects, simple hello world applets....)
 
+- [AppletPlayground](https://github.com/martinpaljak/AppletPlayground) _[**mature** : last commit 2017]_ <br>
+AppletPlayground is an educational repository for getting to know JavaCard development by learning from existing open source software. It includes various open source applets from the internet, bundled into ready to use package. Everything you need to edit, compile and load the applets to real JavaCard-s or test with an emulator.
+
+#### (needs further inspection)
+- [JavaCard Demo](https://github.com/leowenyang/JCDemo) _[**needs inspection** : last commit 2015]_ <br>
+Examples of various JavaCard functionalities (as separate applets)
+- [MultiCard](https://github.com/Dragonexodus/MultiCard) _[**needs inspection** : last commit 2016]_ <br>
+An school of applied science smartcard project. This project contains offCard and onCard components with various aspects of javacard development.
+- [Hotel Buddy](https://github.com/prayzzz/smartcard) _[**needs inspection** : last commit 2015]_ <br>
+Various JavaCard projects created for a lecture-series. Some PKI.           
+- [Simple calculator on JavaCard](https://github.com/steff7/javacard-calculator) _[**needs inspection** : last commit 2013]_ <br>
+- [Simple AES encrypt/decrypt](https://github.com/pauksk/nrf6310-pca10007) _[**needs inspection** : last commit 2017]_ <br>
+- [Maze solver on JavaCard](https://github.com/henryhoo/javacard_maze) _[**needs inspection** : last commit 2015]_ <br>
+A small experiment on memory about java card using jcopv2.2.1           
+- [TraninCard applet](https://github.com/TBoonX/sc_traincard) _[**needs inspection** : last commit 2014]_ <br>
+SmartCard - Traincard, No Pain No Gain Project at HTWk Leipzig. 
+- [Client applet for CDAX Crypto](https://github.com/marlonbaeten/cdax-crypto-cpp/tree/f3329fcdf348b6a3ddc95b993dbc97b806aea335/applet) _[**needs inspection** : last commit 2014]_ <br>
+The applet with implementation of basic cryptographic functions offered by JavaCard API
+- [CryptedBankCard](https://github.com/Herve-M/UQAM-EMB7015) _[**needs inspection** : last commit 2015]_ <br>
+The school project with goal to develop a secure banking card.
+- [Smartcard-Offline-Lock](https://github.com/GeorgesAlkhouri/Smartcard-Offline-Lock) _[**needs inspection** : last commit 2015]_ <br>
+Electronic door locks are commonly used at hotels, exhibitions or public facilities. An offline-operational solution for an electronic lock is required. This is a study project, so please don't expect to much comfort (single DES key used).
+- [Learning applets repository](https://github.com/gracebear/JavaCard) _[**needs inspection** : last commit 2015]_ <br>
+This repository will provide you with javacard applet for absolutely beginners\ javacard development tools\ javacard open source applets. 
+
 ## Unsorted
+
+#### (needs further inspection)
+- [Corba](https://github.com/lbarbisan/corba) _[**needs inspection** : last commit 2015]_ <br>
+old project, CryptoFlex uploader?
+- [unifei-smart-cards](https://github.com/tiagorg/unifei-smart-cards) _[**needs inspection** : last commit 2014]_ <br>
+Material developed in UNIFEI-MG research about Smart Cards          
