@@ -75,7 +75,34 @@ CoolKey Applet with the idea of making it a fresh JavaCard 2.2.2 applet meant to
 A local smartphone module acting as an OpenID Connect Server proxy and delivers trusted tokens to installed native applications. The TIM improves the user experience with single sign on, security and privacy enhancement. The Trusted Identity Module project is a set of four projects: an Android service (tim_service), a JAVA Card Service (TimCardlet), a modified OpenID Connect Server (phpOpTim) and a basic Android TIM-Client app enabling to test the TIM services (HelloTim). The OIDC-TIM server is based on an open source implementation of OpenID Connect in PHP by Nomura Research Institute, Ltd. Seems to be extensive and well documented. 
 
 ### Payments and loyalty
+- [OpenEMV](https://sourceforge.net/projects/javacard-openemv-applet (https://github.com/JavaCardOS/OpenEMV)) _[**mature** : last commit 2016]_ <br>
+The OpenEMV is a Java Card implementation of the EMV standard. This applet is a very basic EMV applet supporting only SDA and plaintext offline PIN.It does not offer personalisation support - everything is hard-coded.
+seems like mature project
+
 #### (needs further inspection)
+- [EMV-TOOLS](https://github.com/gabessolo/EMV-TOOLS) _[**needs inspection** : active]_ <br>
+Collection of source code for many EMV-related projects: SimpleEMVApplet, java-card-openEMV, card-spy, emvdemoBook, emv-bertlv...
+- [Simple Wallet](https://github.com/fitpay/javacard-simple-wallet) _[**needs inspection** : last commit 2015]_ <br>
+This is a simple wallet simply maintains a running account balance allowing you to credit, debit, or review the current balance of the wallet. This is simply for pure demonstration on various wearable technologies where a javacard secure element is available.
+- [E-Purse](https://github.com/aredev/hw-epurse) _[**needs inspection** : active]_ <br>
+just started, unifinished (04/2017)
+- [AppSecure](https://github.com/deepakprabhakara/appsecure) _[**needs inspection** : last commit 2010]_ <br>
+AppSecure uses Gemalto's eGate smart card framework to enforce pay as you go services for Win32 applications. This entry made it to the pre-final round of Gemalto's eGate Open Contest in 2004           
+- [PBOC3Applet](https://github.com/jiankeliu5/PBOC3Applet) _[**needs inspection** : last commit 2014]_ <br>
+payment applet
+- [PayPass applet](https://github.com/jiankeliu5/CardApplet-PayPass) _[**needs inspection** : last commit 2014]_ <br>
+Javacard Applet for functioning paypass credential. The javacard code included will answer to any reader that requests MasterCard PayPass contactless cards.
+- [PayPass, VisaMSD, MMPP applets](https://github.com/SimplyTapp/CardExamples) _[**needs inspection** : last commit 2014]_ <br>
+This repository contains multiple card applet/card agent examples for using on simplytapp, GPL to v1.2.1.
+*probably significant project, needs closer look*
+- [JavaCard Wallet](https://github.com/RimGazzeh/JavaCard_Wallet) _[**needs inspection** : last commit 2016]_ <br>
+Client/Server application of an electronic wallet (Pin, Storage, control, payment..) 
+- [EMVCAP](https://github.com/zoobab/EMVCAP) _[**needs inspection** : last commit 2017]_ <br>
+This tool emulates an EMV-CAP device, to illustrate the article "Banque en ligne : a la decouverte d'EMV-CAP" published in MISC, issue #56.
+- [Mobile banking applet via STK](https://github.com/ubs121/mbank_STK) _[**needs inspection** : last commit 2016]_ <br>
+Mobile banking solution using SIM Toolkit
+- [Loyalty Card Applet](https://github.com/Anthirian/Loyalty-Card) _[**needs inspection** : last commit 2013]_ <br>
+Loyalty Card System based on a Java Card featuring a smart card and a terminal. This is a system that allows customers to get credits by shopping in the same store repeatedly. Customers can spend credits to buy products in the store.
 
 ### Key and password managers
 #### (needs further inspection)
