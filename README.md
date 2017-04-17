@@ -137,9 +137,22 @@ This software system allows you to decrypt and sign your e-mails with your smart
 
 ### e-Health
 #### (needs further inspection)
+- [Electronic health card](https://github.com/gabriellewp/eHealthCard) _[**needs inspection** : last commit 2016]_ <br>
+eHealth card implementation
+- [HealthCard: JavaCard + JML specs](https://sourceforge.net/projects/healthcard/) _[**needs inspection** : last commit 2014]_ <br>
+Prototype of a Java Card application for smart cards and its client application. It was developed with the support of JML (Java Modeling Language) used to formally specify the requirements for developing the HealthCard application in Java Card.
+- [EGKfeuer](https://github.com/elnin0815/EGKfeuer) _[**needs inspection** : last commit 2016]_ <br>
+A project to read the German health insurance card (Elektronische Gesundheitskarte (EGK)), transform the read data to FHIR@copy; ressources, and send them to a choosable FHIR Endpoint
 
 ### NDEF tags
+- [JavaCard NDEF Applet](https://github.com/promovicz/javacard-ndef) _[**mature** : last commit 2015]_ <br>
+This project contains a JavaCard applet acting as an NFC NDEF Tag. It is intended as a convenience applet, allowing storage of an NDEF record on a smartcard to direct the user to a relevant host-device application, such as a smartphone app related to the card or a web page for which the card serves as an authorization token. Data can be preloaded at install time using standards-compliant methods so that this generic applet can be used in different use cases without modification.
+
 #### (needs further inspection)
+- [JavaCard NDEF application](https://github.com/slomo/ndef-javacard) _[**needs inspection** : last commit 2014]_ <br>
+JavaCard applet for speaking NDEF. Implementation of the NDEF Nfc-Forum specification for JavaCard 2.2.1. The aim is to support sending of urls to smartphones, and provoiding only compile time writeability.
+- [Pico NDEF Applet](https://github.com/MpicoSys/PicoLabel/tree/master/scc_applet/Pico_NDEF/src/org/aispring/javacard/ndef) _[**needs inspection** : last commit 2017]_ <br>
+
 
 ### Bitcoin wallets
 #### (needs further inspection)
