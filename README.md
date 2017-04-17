@@ -1,6 +1,3 @@
-# javacard-currated-list
-Currated list of open-source JavaCard applets and related applications for cryptographic smartcards 
-
 # Currated list of JavaCard applications
 The goal is to provide currated catalog of all open-source JavaCard applets and applications relevant for JavaCard development. The initail list was compiled by complete search for all GitHub and SourceForge repositories for *'javacard.framework'* keyword.
 
@@ -202,6 +199,40 @@ Identity and the security of data transmission is very critical for the success 
 
 
 ## Library code (code which is expected to be used as part of other code)
+#### (needs further inspection)
+- [Primitives for JavaCard](https://github.com/albertocarp/Primitives_SmartCard) _[**needs inspection** : last commit 2016]_ <br>
+JBigInteger, JCMath, SHA3, UProve...
+- [OpenTLSSec](https://github.com/halemmerich/opentlssc) _[**needs inspection** : last commit 2013]_ <br>
+Open source java card library for TLS secured communication under GPL v3. (Seems like significant project)
+- [SRP-6a password-authenticated secure channel](https://github.com/mobilesec/secure-channel-srp6a-applet) _[**needs inspection** : last commit 2015]_ <br>
+Java Card applet for SRP-6a password-authenticated secure channel to secure elements/smartcards. This Java Card applet is an implementation of the Secure Remote Password (SRP-6a) password-authenticated secure channel protocol by Wu [1]. In combination with an implementation of an off-card application, such as an Android application using our SRP-6A Android Library, you can establish a secure communication channel that is mutually authenticated with a PIN or password. 
+- [ykneo-curves](https://github.com/Yubico/ykneo-curves) _[**needs inspection** : last commit 2014]_ <br>
+This is an applet demonstrating several curves for use in YubiKey NEO.
+- [Java Card Synchronization Framework](https://github.com/jfhren/jc_sync) _[**needs inspection** : last commit 2014]_ <br>
+The main goal of this framework is to synchronize Java Card 2 applets through the exchange of ciphered APDUs. The current state of the framework is lacking in many ways and requires more works to be fully functional. However it can serve as a proof of concept for the synchronization of applet data in a secure fashion in a pure Java Card 2 setting (i.e.: without tweaking the Java Card VM).
+- [Secure Element Evaluation Kit for the Android platform](https://github.com/seek-for-android/pool) _[**needs inspection** : last commit 2015]_ <br>
+SmartCard API for Android. The SmartCard API adds the necessary modules and API’s to the Android platform. It offers flexible access to secure elements, allowing a secure application solution to make use of any secure form factor, such as a USIM card, a secure µSD card, an embedded secure element.
+- [OPACITY auth protocol for JC](https://github.com/shevelevsergey/opacity-for-smartcard) _[**needs inspection** : last commit 2015]_ <br>
+This project is designed to authenticate users to the Web service using contactless smart cards. As an authentication protocol was chosen protocol OPACITY. This protocol has been specifically designed for contactless payments and it is officially registered now as an authentication protocol ISO/IEC 24727-6.
+- [HMAC and CMAC computation](https://github.com/mll11/jcard/tree/master/TestMAC) _[**needs inspection** : last commit 2014]_ <br>
+This Java Card applet support APDUs to test HMAC (SHA-1, SHA-256) and CMAC (AES-128). It uses Java Card 2.2.2.
+- [ Self-Blindable credentials](https://github.com/credentials/sbcred_javacard) _[**needs inspection** : last commit 2014]_ <br>
+Java Card implementation of Self-Blindable credentials           
+- [TelephonyManager Carrier Privilege granting](https://github.com/sabtmoha/carrier_privilege) _[**needs inspection** : last commit 2015]_ <br>
+Since Android 5.1, applications are able to communicate with UICC using the class TelephonyManager. However, the concerned functions require a special privilege, that is the carrier privilege. This JavaCard applet grants this privilege to the app whose signature is included inside the applet (the variable SHA256_SIGN)
+- [AES, OAEP, SHA2-384 and SHA2-512 JC reimplementation,](https://github.com/petrs/JCSWAlgs) _[**needs inspection** : last commit 2016]_ <br>
+The Suite of software reimplementations of selected cryptographic algorithms potentially missing on your smartcard with JavaCard platform. Optimized for speed and small memory footprint.
+- [Hashchain applet](https://github.com/raminarmanfar/Java-smart-card-cryptographic-protocols) _[**needs inspection** : last commit 2016]_ <br>
+Implementation of some hash chain
+- [ElGamal-based Threshold Scheme for Electronic Elections](https://github.com/CRISES-URV/eVerification-2) _[**needs inspection** : last commit 2013]_ <br>
+TTP SmartCard-Based ElGamal Cryptosystem Using Threshold Scheme for Electronic Elections. EU Project CRISES group has studied the feasibility of developing ElGamal cryptosystem and Shamir’s secret sharing scheme into JavaCards, whose API gives no support for it. (probably significant applet).
+- [Audit TTP SmartCard-Based ElGamal Cryptosystem](https://github.com/AuditURV/Audit) _[**needs inspection** : last commit 2016]_ <br>
+TTP SmartCard-Based ElGamal Cryptosystem Using Threshold Scheme for Electronic Elections. EU Project.
+- [Protocol for Lightweight Authentication of Identity (PLAID)](https://github.com/martinpaljak/AppletPlayground/tree/master/src/plaid804) _[**needs inspection** : last commit 2015]_ <br>
+Protocol for Lightweight Authentication of Identity [PLAID](https://www.humanservices.gov.au/corporate/publications-and-resources/protocol-lightweight-authentication-identity-plaid/plaid-reference-implementation-department-human-services), Australian Government
+- [Sec2 cloud security project](https://github.com/RUB-NDS/Sec2) _[**needs inspection** : last commit 2016]_ <br>
+message-level security must at least be applied to protect those data during and after the storing process. Novel solution for secure data storage in the cloud. It presents a security concept allowing each client to encrypt outgoing data on one’s mobile device and share it among a defined user group while using a seamless service provision. J. Somorovsky, research proof of the concept
+
 
 ## Developer tools 
 ### Applet build, upload and management
