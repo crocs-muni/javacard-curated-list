@@ -106,9 +106,34 @@ Loyalty Card System based on a Java Card featuring a smart card and a terminal. 
 
 ### Key and password managers
 #### (needs further inspection)
+- [CryptSetup JavaCard Key Manager](https://github.com/WOnder93/cryptsetup-javacard) _[**needs inspection** : last commit 2016]_ <br>
+A JavaCard key manager for Cryptsetup. School project, but well documented and extensive 
+- [SIM Password Manager](https://github.com/nelenkov/sim-password-manager) _[**needs inspection** : last commit 2013]_ <br>
+Android password manager app that implements password encryption inside a secure element (SE). Can only run on a device that supports the Open Mobile API (aka SmartCardService). Requires associated Java Card applet to be loaded in the SE (SIM card or embedded SE) in advance.
+- [SIM password store](https://github.com/gtomek/sim-password-store) _[**needs inspection** : last commit 2014]_ <br>
+SIM toolkit application allowing storage and retrieval of the logins and passwords by SMS in a secure way. It demonstates how to develop a SIM toolkit application that can securely store and manage information on the SIM and communcate with an external world via SMS.
+- [TrueCrypt password storage applet](https://github.com/Mercixor/smartcard-truecrypt) _[**needs inspection** : last commit 2015]_ <br>
+Using TrueCrypt with a JavaCard. The app stores the user container passwords on a SmartCard and automatically loads the passwords from it to the choosen Containers. The user just remember a four digit PIN to access the SmartCard. Additionally I've implented an password-share methode. The user is able to share passwords with previous stored PublicKeys (RSA 2048 Bit). The private key is generated during the of the card and don't leave this.
+- [Password manager](https://github.com/cranixx/Passmg) _[**needs inspection** : last commit 2016]_ <br>
+Password manager for javacards. Tested on J3A081 card. 
+- [JCPasswordManager](https://github.com/bayotop/JCPasswordManager) _[**needs inspection** : last commit 2016]_ <br>
+JavaCard Password Manager is a java applet used to create and securely store a strong password used with the steganography app created by arunenigma (https://github.com/arunenigma/Steganography-Java-GUI). School project, but well documented.
 
 ### Digital signing, OpenPGP and mail security
+- [Yubico OpenPGP applet](https://github.com/Yubico/ykneo-openpgp) _[**mature** : active]_ <br>
+This project implement the OpenPGP card functionality used on the YubiKey NEO device. This project is based on the Java Card OpenPGP Card project made by Joeri de Ruiter. The OpenPGP Card applet is typically used through GnuPG.
+
 #### (needs further inspection)
+- [SigAnima](https://github.com/tsenger/SigAnima) _[**needs inspection** : last commit 2014]_ <br>
+SigAnima is an JavaCard ECDSA signing applet. This applet is based on the [javacardsign applet]((http://sourceforge.net/projects/javacardsign/)) from Wojciech Mostowski . The applet supports the following standardized EC domain parameters: secp224r1, BrainpoolP224r1, secp256r1, BrainpoolP256r1, BrainpoolP320r1. Seems like interesting applet
+- [FluffyPGP applet](https://github.com/JavaCardOS/FluffyPGP-Applet) _[**needs inspection** : last commit 2016]_ <br>
+The FluffyPGP Applet implements the OpenGPG Card v 2.0.1 specification without using secure channels or Global Platform for portability. GPL3
+- [JCOpenPGP](https://sourceforge.net/projects/jcopenpgp) _[**needs inspection** : last commit 2016]_ <br>
+Aim of this project is to create JavaCard applet implementing Functional Specification of the OpenPGP application on ISO Smart Card Operating Systems.
+- [Virtual KeyCard applet](https://github.com/eriknellessen/Virtual-Keycard) _[**needs inspection** : last commit 2015]_ <br>
+This software system allows you to decrypt and sign your e-mails with your smartphone instead of using a contactless smartcard. The smartphone communicates with your PC via NFC (as a contactless smartcard would). bachelor's thesis. Warning: This is just proof-of-concept code and should NOT be used in production environments.
+
+
 
 ### e-Health
 #### (needs further inspection)
