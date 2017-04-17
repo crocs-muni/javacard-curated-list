@@ -1,5 +1,5 @@
 # Currated list of JavaCard applications
-The goal is to provide currated catalog of all open-source JavaCard applets and applications relevant for JavaCard development. The initail list was compiled by complete search for all GitHub and SourceForge repositories for *'javacard.framework'* keyword.
+The goal is to provide currated catalog of all open-source JavaCard applets and applications relevant for JavaCard development. The initial list was compiled by complete search for all GitHub and SourceForge repositories for *'javacard.framework'* keyword.
 
 You are encouraged to contribute - please read the [contribution guidelines]() first, then create pull request. 
 
@@ -236,16 +236,51 @@ message-level security must at least be applied to protect those data during and
 
 ## Developer tools 
 ### Applet build, upload and management
+- [Ant-JavaCard](https://github.com/martinpaljak/ant-javacard) _[**mature** : last commit 2017]_ <br>
+Easy to use Ant task for building JavaCard CAP files in a declarative way.
+- [GlobalPlatform tools (GPShell)](https://sourceforge.net/p/globalplatform/) _[**mature** : last commit 2014]_ <br>
+The GlobalPlatform card specification provides a standard for the management of the contents on a smart card. Mainly this comprises the installation and the removal of applications. 
+- [Sun/Oracle JavaCard SDK binaries](https://github.com/martinpaljak/oracle_javacard_sdks) _[**mature** : last commit 2016]_ <br>
+Oracle JavaCard SDK-s for using as a Git submodule for ant-javacard projects.     
+
 #### (needs further inspection)
+
+- [Smart-Card-Tool-pyResMan](https://sourceforge.net/projects/pyresman) _[**needs inspection** : last commit 2015]_ <br>
+pyResMan is a free open source smartcard tool for JavaCard and other smart card. It can be used to send APDU(s), execute APDU script(s); It can be used to debug ISO14443 protocol commands and Mifare commands with R502 SPY reader; It can also be used to manage resource of GP card. It is based on pyScard and GlobalPlatform open source projects.
+last commit 2017
+- [JavaCard debugging toolkit](https://github.com/omarbenhamid/jcdebug) _[**needs inspection** : last commit 2015]_ <br>
+JCDebug is a JavaCard debugging toolkit. A simple command line tools that instruments JavaCard applets to offer debugging and inspection services directly on the target plateform.       
+potentially significant project, needs closer look
+last commit 2016    
+- [Card2Jar](https://github.com/benjholla/Card2Jar) _[**needs inspection** : last commit 2014]_ <br>
+A converter for converting Java Card CAP files to JAR files. Currently this is just a handy wrapper around the JCDK3.0.4_ClassicEdition SDK distribution's normalizer utility. It is subject to all the same caveats as the normalizer.bat interface (must have export EXP file and must be a Java Card 2.2.2 or lower applet).
 
 ### Card capabilities testing (algorithms support, performance)
+- [JCAlgTest](https://github.com/crocs-muni/JCAlgTest) _[**mature** : last commit 2017]_ <br>
+Automated testing tool for algorithms from JavaCard API supported by particular smart card. Performance testing of almost all available methods. The results for more than 60+ cards available at https://jcalgtest.org. 
+- [ECTester](https://github.com/petrs/ECTester) _[**aspiring** : last commit 2016]_ <br>
+Tester of Eliptic curves support and behavior (TYPE_EC_FP and TYPE_EC_F2M) on smartcards with JavaCard platform. 
+
+#### (needs further inspection)
+- [Performance Benchmark Applet for Javacard/smartcard](https://github.com/dmdclab/smartcard-benchmark) _[**needs inspection** : last commit 2016]_ <br>
+Performance testing for various algorithms, similar as JCAlgTest (needs investigation about difference to JCAlgTest) 
+- [HandlerTest](https://github.com/LudovicRousseau/HandlerTest) _[**needs inspection** : last commit 2016]_ <br>
+L. Rousseau PCSCLite reader test : This program send commands to a card through the reader.           
+
+### Formal verification and code transformation tools
+- [VeriFast](https://github.com/verifast/verifast) _[**mature** : last commit 2017]_ <br>
+VeriFast is a research prototype of a tool for modular formal verification of correctness properties of single-threaded and multithreaded C and Java programs annotated with preconditions and postconditions written in separation logic. Examples on JavaCard applets: EPurse, EidCard. Very active project.
+- [Joana IFC analysis framework](https://github.com/joana-team/joana) _[**mature** : last commit 2017]_ <br>
+Joana is a static analysis tool that can be used for information flow control (IFC) of Java bytecode. IFC allows to verify the INTEGRITY (no attacker can temper with sensitive information) or CONFIDENTIALITY (no attacker can infer secret information from public outputs) of a Java program. System dependence graphs (SDG) form the basic technology for our analyses. Examples also on JavaCard applets. Very active project.
+- [CesTa project](https://github.com/formanek/CesTa) _[**aspiring** : last commit 2013]_ <br>
+Security hardening (duplicate variables, constant branches, transaction detection...) for JavaCard applets based on ANTLR automatic code transformations
+
 #### (needs further inspection)
 
-### Formal verification tools
-#### (needs further inspection)
-
-### Applet code transformations
-#### (needs further inspection)
+- [The KeY project](https://github.com/cirosantilli/key-java-formal-verification-fork) _[**needs inspection** : last commit 2015]_ <br>
+examples on JavaCard, this github repo is not official (https://www.key-project.org) 
+- [KeYmaera 3](https://github.com/LS-Lab/KeYmaera-release) _[**needs inspection** : last commit 2014]_ <br>
+KeYmaera 3: A Hybrid Theorem Prover for Hybrid Systems with examples on JavaCard applets (among others). http://symbolaris.com/info/KeYmaera.html
 
 ## JavaCard simulators and emulators
 
