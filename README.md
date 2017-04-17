@@ -21,10 +21,13 @@ _________________________________________________
 ## Applets (standalone applications)
 ### Electronic passports and citizen ID
  
-- [JMRTD: Machine Readable Travel Documents](https://sourceforge.net/projects/jmrtd/) _[**mature project** : active]_ <br> 
+- [JMRTD: Machine Readable Travel Documents](https://sourceforge.net/projects/jmrtd/) _[**mature** : last commit 2017]_ <br> 
 Free implementation of the MRTD (Machine Readable Travel Documents) standards as set by ICAO used in the ePassport. Consists of an API for card terminal software and a Java Card applet.
-- [EstEID compatible JavaCard applets](https://github.com/martinpaljak/esteid-applets) _[**mature project** : active]_ <br> 
-Various JavaCard applets compatible* to EstEID chip protocol: FakeEstEID, MyEstEID
+- [EstEID compatible JavaCard applets](https://github.com/martinpaljak/esteid-applets) _[**mature** : last commit 2016]_ <br> 
+Various JavaCard applets compatible to EstEID chip protocol: FakeEstEID, MyEstEID
+- [Electronic Driving License](https://github.com/martinpaljak/AppletPlayground/tree/master/src/org/isodl/applet) _[**mature project** : last commit 2015]_ <br> 
+A reference implementation of the ISO18013 standards. Based on the passport applet code developed by the JMRTD team. The project implements the host API for reading out ISO compliant electronic driving licenses and a Java Card applet that implements the standard on a smart card. 
+
 
 #### (needs further inspection)
 
@@ -37,7 +40,7 @@ EidCard project
 
 ### Authentication and access control
 
-- [YubiKey NEO App: OATH](https://github.com/Yubico/ykneo-oath) _[**mature project** : active]_ <br>
+- [YubiKey NEO App: OATH](https://github.com/Yubico/ykneo-oath) _[**mature** : active]_ <br>
 This project implement the HOTP/TOTP card functionality used on the YubiKey NEO device that is sold by Yubico. Its primary use is to use the YubiKey NEO to generate OATH HOTP/TOTP one-time-passwords. GPLv3+
 - [SSH support applet](https://github.com/scs/uclinux/blob/eb0cf9617bd22b69ad625575a95cf4fa2c140d55/user/ssh/scard/Ssh.java) _[**mature** : inactive]_ <br>
 Old, but widely copied applet perforimg RSA decrypt on card and used by SSH client 
@@ -107,6 +110,10 @@ Loyalty Card System based on a Java Card featuring a smart card and a terminal. 
 #### (needs further inspection)
 - [CryptSetup JavaCard Key Manager](https://github.com/WOnder93/cryptsetup-javacard) _[**needs inspection** : last commit 2016]_ <br>
 A JavaCard key manager for Cryptsetup. School project, but well documented and extensive 
+- [KeepassNFC](https://github.com/JavaCardOS/KeepassNFC) _[**needs inspection** : last commit 2016]_ <br>
+KeepassNFC is a applet in javacard platform that it can protect the secret key of KeePass database. 
+- [Smartcard crypto applet](https://github.com/nfd/smartcard_crypto_applet) _[**needs inspection** : last commit 2016]_ <br>
+This applet performs secure decryption of secrets via NFC. It was made for KeePassNFC, but could be used for other things.
 - [SIM Password Manager](https://github.com/nelenkov/sim-password-manager) _[**needs inspection** : last commit 2013]_ <br>
 Android password manager app that implements password encryption inside a secure element (SE). Can only run on a device that supports the Open Mobile API (aka SmartCardService). Requires associated Java Card applet to be loaded in the SE (SIM card or embedded SE) in advance.
 - [SIM password store](https://github.com/gtomek/sim-password-store) _[**needs inspection** : last commit 2014]_ <br>
@@ -124,7 +131,7 @@ This project implement the OpenPGP card functionality used on the YubiKey NEO de
 
 #### (needs further inspection)
 - [SigAnima](https://github.com/tsenger/SigAnima) _[**needs inspection** : last commit 2014]_ <br>
-SigAnima is an JavaCard ECDSA signing applet. This applet is based on the [javacardsign applet]((http://sourceforge.net/projects/javacardsign/)) from Wojciech Mostowski . The applet supports the following standardized EC domain parameters: secp224r1, BrainpoolP224r1, secp256r1, BrainpoolP256r1, BrainpoolP320r1. Seems like interesting applet
+SigAnima is an JavaCard ECDSA signing applet. This applet is based on the [javacardsign applet]((http://sourceforge.net/projects/javacardsign/)) from Wojciech Mostowski . The applet supports the following standardized EC domain parameters: secp224r1, BrainpoolP224r1, secp256r1, BrainpoolP256r1, BrainpoolP320r1. (Seems like interesting applet)
 - [FluffyPGP applet](https://github.com/JavaCardOS/FluffyPGP-Applet) _[**needs inspection** : last commit 2016]_ <br>
 The FluffyPGP Applet implements the OpenGPG Card v 2.0.1 specification without using secure channels or Global Platform for portability. GPL3
 - [JCOpenPGP](https://sourceforge.net/projects/jcopenpgp) _[**needs inspection** : last commit 2016]_ <br>
