@@ -1,5 +1,5 @@
 # Currated list of JavaCard applications
-The goal is to provide currated catalog of all open-source JavaCard applets and applications relevant for JavaCard development. The initial list was compiled by complete search for all GitHub and SourceForge repositories for *'javacard.framework'* keyword.
+The goal is to provide currated catalog of all open-source JavaCard applets and applications relevant for JavaCard development. The initial list was compiled by complete search for all GitHub and SourceForge repositories with *'javacard.framework'* keyword.
 
 You are encouraged to contribute - please read the [contribution guidelines]() first, then create pull request. 
 
@@ -283,6 +283,28 @@ examples on JavaCard, this github repo is not official (https://www.key-project.
 KeYmaera 3: A Hybrid Theorem Prover for Hybrid Systems with examples on JavaCard applets (among others). http://symbolaris.com/info/KeYmaera.html
 
 ## JavaCard simulators and emulators
+
+- [JCardSim:](https://github.com/licel/jcardsim) _[**mature** : last commit 2017]_ <br>
+Capable JavaCard simulator implemented atop of BouncyCastle. Very good for unit testing, quick prototyping and educational purposes. Allows for multiple simulated cards in parallel.   
+
+#### (needs further inspection)
+- [vJCRE ](https://github.com/martinpaljak/vJCRE) _[**needs inspection** : last commit 2016]_ <br>
+vJCRE is a virtual Java Card Runtime Environment
+- [Secure Element Emulator](https://github.com/mobilesec/secure-element-emulator) _[**needs inspection** : last commit 2015]_ <br>
+This project aims at emulating a secure element environment for debugging and rapid-prototyping of secure element applets. It is a fork of the open-source Java Card simulator jCardSim (original source code available here). Within our research we added extensions to emulate an application life-cycle that matches the life-cycle of applications on real smartcard chips.
+- [Java Card Simulator via Node.js](https://github.com/adamnoakes/javacard-simulator) _[**needs inspection** : last commit 2016]_ <br>
+This project provides an implementation of a Java Card Runtime Enviornment (JCRE) produced using Node.js which is capable of creating virtual smart card devices and sending APDU commands to the smart card devices for execution via a RESTful API. The project also provides a web-based interface for interacting with the JCRE. 
+- [PythonCard:](https://github.com/benallard/pythoncard) _[**needs inspection** : last commit 2012]_ <br>
+JavaCard API simulated in Python environment. The goal is to provide a classic 3.0.1 version, while maintaining compatiblity with earlier version like 2.1.2.
+- [JCardMock](https://github.com/christianhujer/jcardmock) _[**needs inspection** : last commit 2012]_ <br>
+Mock implementation of the Java Card API 3.0.4 in order to test Java Card applet code without a card or simulator. It runs the Java Card API 3.0.4 in a normal Java Virtual Machine. The purpose is to allow for unit tests for Java Card applets with normal test frameworks like JUnit or TestNG in a normal Java Virtual Machine (unfinished)
+- [CAPRunner  https://bitbucket.org/benallard/caprunner/,](https://github.com/benallard/caprunner) _[**needs inspection** : last commit 2015]_ <br>
+CAPRunner is a javacard bytecode emulator that is able to execute CAP files. It also comes with an handy runcap.py that bind them together and allow you to send some APDUs to a CAP file (without the need for a smartcard).
+developement on BitBucket
+- [FreeJCVM](https://sourceforge.net/projects/freejcvm) _[**needs inspection** : last commit 2015]_ <br>
+Free javacard vm implementation for AVR MCU.
+- [openjcvm](https://sourceforge.net/projects/openjcvm/) _[**needs inspection** : last commit 2015]_ <br>
+A open source java card virtual machine implementation. And also some part of the VM code can be used as part of kinds of tools such as javacard bytecode disassembler.
 
 ## Learning (various school projects, simple hello world applets....)
 
