@@ -1,15 +1,7 @@
 # Currated list of JavaCard applications
 The goal is to provide currated catalog of all open-source JavaCard applets and applications relevant for JavaCard development. The initial list was compiled by complete search for all GitHub and SourceForge repositories with *'javacard.framework'* keyword.
 
-You are encouraged to contribute - please create pull request. 
-
-### Methodology
-- DONE (2017-04-15) Search all GitHub repositories with "javacard.framework.Applet" string
-- DONE (2017-04-15) Analyze applets included in AppletPlayground
-- DONE (2017-04-15) Search all SourceForge repositories with "javacard" string
-- DONE (2017-04-16) Sort applets into categories according to basic topic
-- Inspect other repositories of relevant developers
-- Analyze status and maturity of included projects (subsection 'needs further inspection')
+You are encouraged to contribute - please create a pull request. 
 
 ### Format and notation
 > **Project name _[status : activity]_** <br> Short description, often taken from a project readme.md
@@ -349,3 +341,12 @@ This repository will provide you with javacard applet for absolutely beginners\ 
 old project, CryptoFlex uploader?
 - [unifei-smart-cards](https://github.com/tiagorg/unifei-smart-cards) _[**needs inspection** : last commit 2014]_ <br>
 Material developed in UNIFEI-MG research about Smart Cards          
+
+
+### Methodology
+- DONE (2017-04-15) Search all GitHub repositories with "javacard.framework.Applet" string
+- DONE (2017-04-15) Analyze applets included in AppletPlayground
+- DONE (2017-04-15) Search all SourceForge repositories with "javacard" string
+- DONE (2017-04-16) Sort applets into categories according to basic topic
+- Inspect other repositories of relevant developers
+- Analyze status and maturity of included projects (subsection 'needs further inspection')
