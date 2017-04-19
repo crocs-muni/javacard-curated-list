@@ -34,23 +34,24 @@ EidCard project
 
 - [YubiKey NEO App: OATH](https://github.com/Yubico/ykneo-oath) _[**mature** : active]_ <br>
 This project implement the HOTP/TOTP card functionality used on the YubiKey NEO device that is sold by Yubico. Its primary use is to use the YubiKey NEO to generate OATH HOTP/TOTP one-time-passwords. GPLv3+
+- [ISOApplet PKI](https://github.com/philipWendland/IsoApplet) _[**mature** : active]_ <br>
+A Java Card PKI Applet aiming to be ISO 7816 compliant. The Applet is capable of saving a PKCS#15 file structure and performing PKI related operations using the private key, such as signing or decrypting. Private keys can be generated directly on the smartcard or imported from the host computer. The import of private keys is disabled in the default security configuration. 
 - [SSH support applet](https://github.com/scs/uclinux/blob/eb0cf9617bd22b69ad625575a95cf4fa2c140d55/user/ssh/scard/Ssh.java) _[**mature** : inactive]_ <br>
 Old, but widely copied applet perforimg RSA decrypt on card and used by SSH client 
+- [CoolKey Applet](https://github.com/NabilNoaman/CoolkeyApplet) _[**mature, inactive** : last commit 2010]_ <br>
+CoolKey Applet with the idea of making it a fresh JavaCard 2.2.2 applet meant to be revival of CardEdge Muscle card applet.
 - [MuscleApplet](https://github.com/martinpaljak/MuscleApplet) _[**mature, outdated** : last commit 2005]_ <br>
-Significant, but outdated applet used for OpenSC. Supreseeded by PKCS#15 and PIV standards.
+Significant, but outdated applet used for OpenSC. Superseeded by PKCS#15 and PIV standards.
 
 #### (needs further inspection)
+- [PKCS#15 applet](https://github.com/lupascualex/p15) _[**needs inspection** : last commit 2015]_ <br>
+Implementation of card according to RSA PKCS#15 specification. (seems like extensive implementation, but fails to convert under ant-javacard so far)  
 - [PKI applet](https://github.com/rakeb/PKIApplet) _[**needs inspection** : last commit 2016]_ <br>
-extensive PKI applet
-- [ISOApplet PKI](https://github.com/philipWendland/IsoApplet) _[**needs inspection** : active]_ <br>
-A Java Card PKI Applet aiming to be ISO 7816 compliant. The Applet is capable of saving a PKCS#15 file structure and performing PKI related operations using the private key, such as signing or decrypting. Private keys can be generated directly on the smartcard or imported from the host computer. The import of private keys is disabled in the default security configuration. 
-mature project
+(extensive PKI applet, requires JavaCard 3.0.5)
 - [Generic Identity Device Specification Applet](https://github.com/vletoux/GidsApplet) _[**needs inspection** : active]_ <br>
-Generic Identity Device Specification (GIDS) smart card is the only PKI smart card whose driver is integrated on each Windows since Windows 7 SP1 and which can be used read and write. No Windows driver installation is required and this card can be used instantly.
+Generic Identity Device Specification (GIDS) smart card is the only PKI smart card whose driver is integrated on each Windows since Windows 7 SP1 and which can be used read and write. No Windows driver installation is required. Based on [ISOApplet PKI](https://github.com/philipWendland/IsoApplet).
 - [PIV CryptonitApplet](https://github.com/mbrossard/cryptonit-applet) _[**needs inspection** : active]_ <br>
 Personal Identity Verification (PIV) applet
-- [PKCS#15 applet](https://github.com/lupascualex/p15) _[**needs inspection** : last commit 2015]_ <br>
-Implementation of card according to RSA PKCS#15 specification
 - [Ledger U2F Applet](https://github.com/LedgerHQ/ledger-u2f-javacard) _[**needs inspection** : last commit 2016]_ <br> 
 This applet is a Java Card implementation of the FIDO Alliance U2F standard. It uses no proprietary vendor API and is freely available on Ledger Unplugged and for a small fee on other Fidesmo devices through Fidesmo store.
 - [U2FToken](https://github.com/fightyz/U2FToken) _[**needs inspection** : last commit 2016]_ <br>
@@ -63,8 +64,6 @@ Fuzzy extractor to authenticate with biometric data
 radiius.com Radiius applet, applet seems to be just starting to implement required functionality as per specification 
 - [OTP client and server applets](https://github.com/gelvaos/otp) _[**needs inspection** : last commit 2012]_ <br>
 This is proof-of-concept implementation of One Time password JavaCard STK applet and authentication server. Load JavaCard applet to SIM card and use STK menu.
-- [CoolKey Applet](https://github.com/NabilNoaman/CoolkeyApplet) _[**needs inspection** : last commit 2010]_ <br>
-CoolKey Applet with the idea of making it a fresh JavaCard 2.2.2 applet meant to be revival of CardEdge Muscle card applet.
 - [Trusted Identity Module](https://github.com/Orange-OpenSource/TIM) _[**needs inspection** : last commit 2015]_ <br>
 A local smartphone module acting as an OpenID Connect Server proxy and delivers trusted tokens to installed native applications. The TIM improves the user experience with single sign on, security and privacy enhancement. The Trusted Identity Module project is a set of four projects: an Android service (tim_service), a JAVA Card Service (TimCardlet), a modified OpenID Connect Server (phpOpTim) and a basic Android TIM-Client app enabling to test the TIM services (HelloTim). The OIDC-TIM server is based on an open source implementation of OpenID Connect in PHP by Nomura Research Institute, Ltd. Seems to be extensive and well documented. 
 
