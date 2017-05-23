@@ -1,5 +1,5 @@
-# Currated list of JavaCard applications
-The goal is to provide currated catalog of all open-source JavaCard applets and applications relevant for JavaCard development. The initial list was compiled by complete search for all GitHub and SourceForge repositories with *'javacard.framework'* keyword.
+# Curated list of JavaCard applications
+The goal is to provide curated catalog of all open-source JavaCard applets and applications relevant for JavaCard development. The initial list was compiled by complete search for all GitHub and SourceForge repositories with *'javacard.framework'* keyword.
 
 You are encouraged to contribute - please create a pull request. 
 
