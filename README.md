@@ -120,6 +120,10 @@ JavaCard Password Manager is a java applet used to create and securely store a s
 - [Yubico OpenPGP applet](https://github.com/Yubico/ykneo-openpgp) _[**mature** : active]_ <br>
 This project implement the OpenPGP card functionality used on the YubiKey NEO device. This project is based on the Java Card OpenPGP Card project made by Joeri de Ruiter. The OpenPGP Card applet is typically used through GnuPG.
 
+- [ANSSI-FR SmartPGP applet](https://github.com/ANSSI-FR/SmartPGP) _[**mature** : active]_ <br>
+SmartPGP is a free and open source implementation of the OpenPGP card 3.x specification in JavaCard. The main improvement introduced in OpenPGP card 3.x specification from previous version is the support of elliptic curve cryptography with several existing curves (NIST P-256, NIST P-384, NIST P-521, brainpool p256r1, brainpool p384r1 and brainpool p512r1). The SmartPGP Card applet is typically used through GnuPG.
+
+
 #### (needs further inspection)
 - [SigAnima](https://github.com/tsenger/SigAnima) _[**needs inspection** : last commit 2014]_ <br>
 SigAnima is an JavaCard ECDSA signing applet. This applet is based on the [javacardsign applet]((http://sourceforge.net/projects/javacardsign/)) from Wojciech Mostowski . The applet supports the following standardized EC domain parameters: secp224r1, BrainpoolP224r1, secp256r1, BrainpoolP256r1, BrainpoolP320r1. (Seems like interesting applet)
