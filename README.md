@@ -54,6 +54,8 @@ Generic Identity Device Specification (GIDS) smart card is the only PKI smart ca
 Personal Identity Verification (PIV) applet
 - [Ledger U2F Applet](https://github.com/LedgerHQ/ledger-u2f-javacard) _[**needs inspection** : last commit 2016]_ <br> 
 This applet is a Java Card implementation of the FIDO Alliance U2F standard. It uses no proprietary vendor API and is freely available on Ledger Unplugged and for a small fee on other Fidesmo devices through Fidesmo store.
+- [FIDO CCU2F Applet](https://github.com/tsenger/CCU2F) _[**needs inspection** : last commit 2017]_ <br> 
+This CCU2F JavaCard Applet is based on the Ledger U2F Applet. I imported this applet to Eclipse with installed JCOP Tools and modified the AID of this applet to the standardized AID for FIDO NFC token ( 0xA0000006472F0001). I also provided some example data ([Attestation Certificate and Key](u2f-javacard/U2F Example Attestation Certificate and Key Bytes.txt)) to bring this applet to run. This Applet was succesfully tested on JCOP v2.4.2 R3 cards with KeyAgreementX.ALG_EC_SVDP_DH_PLAIN_XY from NXPs JCOP library for EC Point Multiplication. 
 - [U2FToken](https://github.com/fightyz/U2FToken) _[**needs inspection** : last commit 2016]_ <br>
 An U2F Token implementation based on Ledger U2F Applet which cannot pass the NFC self-conformance test in the phase: "U2F_REGISTER, Short APDU, Change BlockSize", as it doesn't handle the situation which Le(BlockSize) is not 256 bytes.)
 - [Yubikey Neo One Time Pad](https://github.com/cayennegraphics/Yubisec) _[**needs inspection** : last commit 2015]_ <br>
