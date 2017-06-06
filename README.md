@@ -317,6 +317,9 @@ A open source java card virtual machine implementation. And also some part of th
 - [AppletPlayground](https://github.com/martinpaljak/AppletPlayground) _[**mature** : last commit 2017]_ <br>
 AppletPlayground is an educational repository for getting to know JavaCard development by learning from existing open source software. It includes various open source applets from the internet, bundled into ready to use package. Everything you need to edit, compile and load the applets to real JavaCard-s or test with an emulator.
 
+- [Simple AES encrypt/decrypt](https://github.com/pauksk/nrf6310-pca10007) _[last commit 2017]_ <br>
+Master thesis - protection of wireless networks in smart homes using secure hardware
+
 #### (needs further inspection)
 - [JavaCard Demo](https://github.com/leowenyang/JCDemo) _[**needs inspection** : last commit 2015]_ <br>
 Examples of various JavaCard functionalities (as separate applets)
@@ -325,7 +328,6 @@ An school of applied science smartcard project. This project contains offCard an
 - [Hotel Buddy](https://github.com/prayzzz/smartcard) _[**needs inspection** : last commit 2015]_ <br>
 Various JavaCard projects created for a lecture-series. Some PKI.           
 - [Simple calculator on JavaCard](https://github.com/steff7/javacard-calculator) _[**needs inspection** : last commit 2013]_ <br>
-- [Simple AES encrypt/decrypt](https://github.com/pauksk/nrf6310-pca10007) _[**needs inspection** : last commit 2017]_ <br>
 - [Maze solver on JavaCard](https://github.com/henryhoo/javacard_maze) _[**needs inspection** : last commit 2015]_ <br>
 A small experiment on memory about java card using jcopv2.2.1           
 - [TraninCard applet](https://github.com/TBoonX/sc_traincard) _[**needs inspection** : last commit 2014]_ <br>
