@@ -79,7 +79,7 @@ seems like mature project
 Collection of source code for many EMV-related projects: SimpleEMVApplet, java-card-openEMV, card-spy, emvdemoBook, emv-bertlv...
 - [Simple Wallet](https://github.com/fitpay/javacard-simple-wallet) _[**needs inspection** : last commit 2015]_ <br>
 This is a simple wallet simply maintains a running account balance allowing you to credit, debit, or review the current balance of the wallet. This is simply for pure demonstration on various wearable technologies where a javacard secure element is available.
-- [E-Purse](https://github.com/aredev/hw-epurse) _[**needs inspection** : active]_ <br>
+- [E-Purse](https://github.com/tomirio619/hw-epurse) _[**needs inspection** : active]_ <br>
 just started, unifinished (04/2017)
 - [AppSecure](https://github.com/deepakprabhakara/appsecure) _[**needs inspection** : last commit 2010]_ <br>
 AppSecure uses Gemalto's eGate smart card framework to enforce pay as you go services for Win32 applications. This entry made it to the pre-final round of Gemalto's eGate Open Contest in 2004           
