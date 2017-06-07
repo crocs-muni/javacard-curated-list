@@ -38,6 +38,8 @@ This project implement the HOTP/TOTP card functionality used on the YubiKey NEO 
 A Java Card PKI Applet aiming to be ISO 7816 compliant. The Applet is capable of saving a PKCS#15 file structure and performing PKI related operations using the private key, such as signing or decrypting. Private keys can be generated directly on the smartcard or imported from the host computer. The import of private keys is disabled in the default security configuration. 
 - [SSH support applet](https://github.com/scs/uclinux/blob/eb0cf9617bd22b69ad625575a95cf4fa2c140d55/user/ssh/scard/Ssh.java) _[**mature** : inactive]_ <br>
 Old, but widely copied applet perforimg RSA decrypt on card and used by SSH client 
+- [HOTP authenticator via NDEF tag](https://github.com/petrs/hotp_via_ndef) _[**aspiring** : active]_ <br>
+JavaCard HMAC-based One Time Password generator which delivers new code via URL tag of NDEF every time the card is put close to NFC-enabled phone. As the Android (and soon also iOS) handles the NDEF tags natively, no additional software is required (after initial card personalization with OTP secret key).
 - [CoolKey Applet](https://github.com/NabilNoaman/CoolkeyApplet) _[**mature, inactive** : last commit 2010]_ <br>
 CoolKey Applet with the idea of making it a fresh JavaCard 2.2.2 applet meant to be revival of CardEdge Muscle card applet.
 - [MuscleApplet](https://github.com/martinpaljak/MuscleApplet) _[**mature, outdated** : last commit 2005]_ <br>
