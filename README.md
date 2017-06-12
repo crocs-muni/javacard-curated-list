@@ -249,10 +249,12 @@ Easy to use Ant task for building JavaCard CAP files in a declarative way.
 - [GlobalPlatform tools (GPShell)](https://sourceforge.net/p/globalplatform/) _[**mature** : last commit 2014]_ <br>
 The GlobalPlatform card specification provides a standard for the management of the contents on a smart card. Mainly this comprises the installation and the removal of applications. 
 - [Sun/Oracle JavaCard SDK binaries](https://github.com/martinpaljak/oracle_javacard_sdks) _[**mature** : last commit 2016]_ <br>
-Oracle JavaCard SDK-s for using as a Git submodule for ant-javacard projects.     
+Oracle JavaCard SDK-s for using as a Git submodule for ant-javacard projects.    
 
 #### (needs further inspection)
 
+- [CAP File Manipulation](https://bitbucket.org/ssd/capmap-free) _[**needs inspection** : last commit 2012]_
+A Java Card CAP file parser. 
 - [Smart-Card-Tool-pyResMan](https://sourceforge.net/projects/pyresman) _[**needs inspection** : last commit 2015]_ <br>
 pyResMan is a free open source smartcard tool for JavaCard and other smart card. It can be used to send APDU(s), execute APDU script(s); It can be used to debug ISO14443 protocol commands and Mifare commands with R502 SPY reader; It can also be used to manage resource of GP card. It is based on pyScard and GlobalPlatform open source projects.
 last commit 2017
