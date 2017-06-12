@@ -252,7 +252,9 @@ The GlobalPlatform card specification provides a standard for the management of 
 Oracle JavaCard SDK-s for using as a Git submodule for ant-javacard projects.    
 
 #### (needs further inspection)
-
+- [OPAL - GlobalPlatform lib](https://bitbucket.org/ssd/opal) _[**needs inspection** : last commit 2015]_
+A GlobalPlatform Java Library. OPAL implements several authentication, encryption and transfer protocols for
+smart card. This tool has been developped by the SSD Research Team (XLIM Labs, University of Limoges, France).
 - [CAP File Manipulation](https://bitbucket.org/ssd/capmap-free) _[**needs inspection** : last commit 2012]_
 A Java Card CAP file parser. 
 - [Smart-Card-Tool-pyResMan](https://sourceforge.net/projects/pyresman) _[**needs inspection** : last commit 2015]_ <br>
