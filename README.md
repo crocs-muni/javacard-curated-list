@@ -302,8 +302,8 @@ vJCRE is a virtual Java Card Runtime Environment
 This project aims at emulating a secure element environment for debugging and rapid-prototyping of secure element applets. It is a fork of the open-source Java Card simulator jCardSim (original source code available here). Within our research we added extensions to emulate an application life-cycle that matches the life-cycle of applications on real smartcard chips.
 - [Java Card Simulator via Node.js](https://github.com/adamnoakes/javacard-simulator) _[**needs inspection** : last commit 2016]_ <br>
 This project provides an implementation of a Java Card Runtime Enviornment (JCRE) produced using Node.js which is capable of creating virtual smart card devices and sending APDU commands to the smart card devices for execution via a RESTful API. The project also provides a web-based interface for interacting with the JCRE. 
-- [PythonCard:](https://github.com/benallard/pythoncard) _[**needs inspection** : last commit 2012]_ <br>
-JavaCard API simulated in Python environment. The goal is to provide a classic 3.0.1 version, while maintaining compatiblity with earlier version like 2.1.2.
+- [PythonCard:](https://bitbucket.org/benallard/pythoncard/) _[**needs inspection** : last commit 2013]_ <br>
+JavaCard API simulated in Python environment. The goal is to provide a classic 3.0.1 version, while maintaining compatiblity with earlier version like 2.1.2. Older version on [GitHub also available](https://github.com/benallard/pythoncard)
 - [JCardMock](https://github.com/christianhujer/jcardmock) _[**needs inspection** : last commit 2012]_ <br>
 Mock implementation of the Java Card API 3.0.4 in order to test Java Card applet code without a card or simulator. It runs the Java Card API 3.0.4 in a normal Java Virtual Machine. The purpose is to allow for unit tests for Java Card applets with normal test frameworks like JUnit or TestNG in a normal Java Virtual Machine (unfinished)
 - [CAPRunner  https://bitbucket.org/benallard/caprunner/,](https://github.com/benallard/caprunner) _[**needs inspection** : last commit 2015]_ <br>
