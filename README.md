@@ -1,3 +1,5 @@
+![Logo of Enigma Bridge](http://www.ideaspace.cam.ac.uk/images/iswestimages/enigmabridgelogo/image_preview)
+
 # Curated list of JavaCard applications
 The goal is to provide curated catalog of all open-source JavaCard applets and applications relevant for JavaCard development. The initial list was compiled by complete search for all GitHub and SourceForge repositories with *'javacard.framework'* keyword.
 
