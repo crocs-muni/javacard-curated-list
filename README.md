@@ -5,6 +5,8 @@ The goal is to provide curated catalog of all open-source JavaCard applets and a
 
 You are encouraged to contribute - please create a pull request. 
 
+The projects collected in this list were analyzed and published in [Analysis of JavaCard open-source ecosystem](https://medium.com/enigma-shards/analysis-of-javacard-open-source-ecosystem-9be0bfd66398)
+
 ### Format and notation
 > **Project name _[status : activity]_** <br> Short description, often taken from a project readme.md
 > - **status**: subjective state of project: *mature* (well developed), *aspiring* (promising, but not yet mature), *playground* (initial stages, just playing/learning), *needs inspection* (not analysed yet)
