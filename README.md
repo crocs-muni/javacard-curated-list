@@ -272,6 +272,10 @@ potentially significant project, needs closer look
 last commit 2016    
 - [Card2Jar](https://github.com/benjholla/Card2Jar) _[**needs inspection** : last commit 2014]_ <br>
 A converter for converting Java Card CAP files to JAR files. Currently this is just a handy wrapper around the JCDK3.0.4_ClassicEdition SDK distribution's normalizer utility. It is subject to all the same caveats as the normalizer.bat interface (must have export EXP file and must be a Java Card 2.2.2 or lower applet).
+- ["Allow all" ARA-M](https://github.com/seek-for-android/allow-all-ara) _[**needs inspection** : last commit 2015]_ <br>
+GlobalPlatform dummy ARA applet to grant full access
+
+
 
 ### Card capabilities testing (algorithms support, performance)
 - [JCAlgTest](https://github.com/crocs-muni/JCAlgTest) _[**mature** : last commit 2017]_ <br>
