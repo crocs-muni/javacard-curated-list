@@ -178,6 +178,8 @@ This applet is an implementation of the Ledger Wallet Hardware Wallet specificat
 SatoChip stands for Secure Anonymous Trustless and Open Chip. It is a javacard applet that can be used as a secure hardware wallet running for example on a Yubikey Neo. The SatoChip has full BIP32 supports but due to technical limitations on current javacards, hardened keys (i.e. child keys using indices 2^31 through 2^32-1) are derived much faster than normal keys.
 - [Bitcoin wallet](https://github.com/JavaCardOS/BitcoinWallet) _[**needs inspection** : last commit 2016]_ <br>
 BitcoinWallet is a Bitcoin Hardware Wallet implementation. It is based on the project Ledger Wallet and can be run on JavaCard platform with JCRE version 3.0.x above.
+- [Lamassu card](https://github.com/lamassu/ssu-card/) _[last commit 2016]_ <br>
+Very simple applet used by Lamassu Bitcoin machines to sign transaction with ECDSA. 
 
 ### Emulation of some proprietary cards
 #### (needs further inspection)
