@@ -49,6 +49,8 @@ CoolKey Applet with the idea of making it a fresh JavaCard 2.2.2 applet meant to
 Significant, but outdated applet used for OpenSC. Superseeded by PKCS#15 and PIV standards.
 - [OpenFIPS201 PIV applet] (https://github.com/makinako/OpenFIPS201) _[**mature, active** : last commit 2018]_ <br>
 Personal Identity Verification (PIV) applet. Commissioned and funded by the Australian Department of Defence
+- [PIV applet](https://github.com/arekinath/PivApplet) _[**mature, active** : last commit 2018]_<br>
+Personal Identity Verification (PIV) applet (NIST SP 800-73-4). Target is JavaCard 2.2.2, with 2-3k of transient memory.
 
 #### (needs further inspection)
 - [ORWL KeyFob applets](https://github.com/O-R-W-L/KeyFob-applet)  _[**needs inspection** : last commit 2017]_ <br>
