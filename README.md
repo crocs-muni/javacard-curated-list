@@ -342,6 +342,8 @@ AppletPlayground is an educational repository for getting to know JavaCard devel
 Master thesis - protection of wireless networks in smart homes using secure hardware
 
 #### (needs further inspection)
+- [SecureChat](https://github.com/sharedbits/JavaChat) _[**needs inspection** : last commit 2018]_ <br>
+Secure chat client/server application 
 - [JavaCard Demo](https://github.com/leowenyang/JCDemo) _[**needs inspection** : last commit 2015]_ <br>
 Examples of various JavaCard functionalities (as separate applets)
 - [MultiCard](https://github.com/Dragonexodus/MultiCard) _[**needs inspection** : last commit 2016]_ <br>
