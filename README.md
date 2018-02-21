@@ -214,9 +214,13 @@ EVIV is a highly sound End-to-end Verifiable Internet Voting system, which offer
 - [UPSC framework](https://github.com/paromix/upsc) _[**needs inspection** : last commit 2017]_ <br>
 Identity and the security of data transmission is very critical for the success of these e-services. SIM cards might take an important role as a security service provider. They have been used for so many years to preserve the security keys(Ki) and algorithms (A3A8) for authenticating and encrypting the data. Within this project, the international consortium will try to implement a software framework on both the mobile terminal and SIM card that expose the required security functions to popular e-services like Mobile commerce, Financial transactions, Data Encryption, Secure Cloud Storage and Mobile Identity.
 
-
 ## Library code (code which is expected to be used as part of other code)
+
+- [JCMathLib - ECPoint library](https://github.com/OpenCryptoProject/JCMathLib) _[**mature** : last commit 2018]_ <br>
+Provides software re-implementation of low-level operations like ECPoint or BigInteger without any use of proprietary API.
+
 #### (needs further inspection)
+
 - [LibESE Android verified boot](https://github.com/ADVAN-ELAA-8QM-PRC1/platform-external-libese) _[**needs inspection** : last commit 2017]_ <br>
 Minimal transport wrapper for communicating with embedded secure elements on Android
 - [ACORN, AEGIS, ASCON, CLOC, and MORUS AEAD ciphers implementation](https://github.com/palkrajesh/AEonJC) _[**needs inspection** : last commit 2017]_ <br>
