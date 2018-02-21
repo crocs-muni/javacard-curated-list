@@ -112,6 +112,8 @@ Loyalty Card System based on a Java Card featuring a smart card and a terminal. 
 
 ### Key and password managers
 #### (needs further inspection)
+[SIM password wallet](https://github.com/bertrandmartel/sim-password-wallet)_[last commit 2017]_ <br>
+Android application interacting with a JavaCard applet installed on SIM card. 
 - [CryptSetup JavaCard Key Manager](https://github.com/WOnder93/cryptsetup-javacard) _[**needs inspection** : last commit 2016]_ <br>
 A JavaCard key manager for Cryptsetup. School project, but well documented and extensive 
 - [KeepassNFC](https://github.com/JavaCardOS/KeepassNFC) _[**needs inspection** : last commit 2016]_ <br>
