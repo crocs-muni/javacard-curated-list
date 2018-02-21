@@ -267,6 +267,8 @@ The GlobalPlatform card specification provides a standard for the management of 
 Oracle JavaCard SDK-s for using as a Git submodule for ant-javacard projects.    
 
 #### (needs further inspection)
+- [JCProfiler: JavaCard performance profiler](https://github.com/OpenCryptoProject/JCProfiler)_[**aspiring** : last commit 2017]_ <br>
+Performance profiler for Java Card code. Automatically inserts special execution interruption "traps" into applet code, repeatedly execute target operation and measures time differences between traps. Annotates code with measured time. 
 - [OPAL - GlobalPlatform lib](https://bitbucket.org/ssd/opal) _[**needs inspection** : last commit 2015]_
 A GlobalPlatform Java Library. OPAL implements several authentication, encryption and transfer protocols for
 smart card. This tool has been developped by the SSD Research Team (XLIM Labs, University of Limoges, France).
