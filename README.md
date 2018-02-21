@@ -48,6 +48,8 @@ JavaCard HMAC-based One Time Password generator which delivers new code via URL 
 CoolKey Applet with the idea of making it a fresh JavaCard 2.2.2 applet meant to be revival of CardEdge Muscle card applet.
 - [MuscleApplet](https://github.com/martinpaljak/MuscleApplet) _[**mature, outdated** : last commit 2005]_ <br>
 Significant, but outdated applet used for OpenSC. Superseeded by PKCS#15 and PIV standards.
+- [OpenFIPS201 PIV applet] (https://github.com/makinako/OpenFIPS201) _[**mature, active** : last commit 2018]_ <br>
+Personal Identity Verification (PIV) applet. Commissioned and funded by the Australian Department of Defence
 
 #### (needs further inspection)
 - [PKCS#15 applet](https://github.com/lupascualex/p15) _[**needs inspection** : last commit 2015]_ <br>
