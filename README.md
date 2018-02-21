@@ -109,7 +109,7 @@ Mobile banking solution using SIM Toolkit
 Loyalty Card System based on a Java Card featuring a smart card and a terminal. This is a system that allows customers to get credits by shopping in the same store repeatedly. Customers can spend credits to buy products in the store.
 
 ### Key and password managers
-[SIM password wallet](https://github.com/bertrandmartel/sim-password-wallet)_[last commit 2017]_ <br>
+- [SIM password wallet](https://github.com/bertrandmartel/sim-password-wallet) _[last commit 2017]_ <br>
 Android application interacting with a JavaCard applet installed on SIM card. 
 - [CryptSetup JavaCard Key Manager](https://github.com/WOnder93/cryptsetup-javacard) _[last commit 2016]_ <br>
 A JavaCard key manager for Cryptsetup. School project, but well documented and extensive 
@@ -190,7 +190,7 @@ JC emulation of some Chinese card?
 This is an implementation of a TAG 4 for emulation
 
 ### Unsorted applications
-- [TPM2 applet] (https://github.com/mobilesec/tpm2-se-applet) _[last commit 2017]_ <br>
+- [TPM2 applet](https://github.com/mobilesec/tpm2-se-applet) _[last commit 2017]_ <br>
 The project aims to implement basic TPM2 functionalities for smart cards that run Java Card. Currently, this implementation supports :
 TPM_Startup, TPM_StartAuthSession, TPM_PCR_Extend, TPM_PCR_Read, TPM_PCR_Reset, TPM_ReadPublic, TPM_GetRandom
 - [SmartMeterIQ](https://github.com/adityasawhney/SmartMeterIQ) _[last commit 2013]_ <br>
