@@ -51,8 +51,8 @@ Significant, but outdated applet used for OpenSC. Superseeded by PKCS#15 and PIV
 Personal Identity Verification (PIV) applet. Commissioned and funded by the Australian Department of Defence
 
 #### (needs further inspection)
-- [KeyFob applets](https://github.com/O-R-W-L/KeyFob-applet)  _[**needs inspection** : last commit 2017]_ <br>
-Contains applets for KeyFOB NFC Secure Element for performing association, authentication and identification
+- [ORWL KeyFob applets](https://github.com/O-R-W-L/KeyFob-applet)  _[**needs inspection** : last commit 2017]_ <br>
+Contains applets for KeyFOB NFC Secure Element for performing association, authentication and identification. Relates to ORWL secure computer.
 - [PKCS#15 applet](https://github.com/lupascualex/p15) _[**needs inspection** : last commit 2015]_ <br>
 Implementation of card according to RSA PKCS#15 specification. (seems like extensive implementation, but fails to convert under ant-javacard so far)  
 - [PKI applet](https://github.com/rakeb/PKIApplet) _[**needs inspection** : last commit 2016]_ <br>
@@ -134,6 +134,8 @@ This project implement the OpenPGP card functionality used on the YubiKey NEO de
 - [ANSSI-FR SmartPGP applet](https://github.com/ANSSI-FR/SmartPGP) _[**mature** : active]_ <br>
 SmartPGP is a free and open source implementation of the OpenPGP card 3.x specification in JavaCard. The main improvement introduced in OpenPGP card 3.x specification from previous version is the support of elliptic curve cryptography with several existing curves (NIST P-256, NIST P-384, NIST P-521, brainpool p256r1, brainpool p384r1 and brainpool p512r1). The SmartPGP Card applet is typically used through GnuPG.
 
+- [Secure multi-party signatures Myst](https://github.com/OpenCryptoProject/Myst) _[**aspiring** : active]_ <br>
+Secure multiparty Schnorr-based EC signatures implemented without proprietary ECPoint API. 
 
 #### (needs further inspection)
 - [SigAnima](https://github.com/tsenger/SigAnima) _[**needs inspection** : last commit 2014]_ <br>
