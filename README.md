@@ -35,7 +35,6 @@ A privacy-friendly alternative for the Belgian eID card. The project aims to imp
 EidCard project
 
 ### Authentication and access control
-
 - [YubiKey NEO App: OATH](https://github.com/Yubico/ykneo-oath) _[**mature** : active]_ <br>
 This project implement the HOTP/TOTP card functionality used on the YubiKey NEO device that is sold by Yubico. Its primary use is to use the YubiKey NEO to generate OATH HOTP/TOTP one-time-passwords. GPLv3+
 - [ISOApplet PKI](https://github.com/philipWendland/IsoApplet) _[**mature** : active]_ <br>
@@ -52,6 +51,8 @@ Significant, but outdated applet used for OpenSC. Superseeded by PKCS#15 and PIV
 Personal Identity Verification (PIV) applet. Commissioned and funded by the Australian Department of Defence
 
 #### (needs further inspection)
+- [KeyFob applets](https://github.com/O-R-W-L/KeyFob-applet)  _[**needs inspection** : last commit 2017]_ <br>
+Contains applets for KeyFOB NFC Secure Element for performing association, authentication and identification
 - [PKCS#15 applet](https://github.com/lupascualex/p15) _[**needs inspection** : last commit 2015]_ <br>
 Implementation of card according to RSA PKCS#15 specification. (seems like extensive implementation, but fails to convert under ant-javacard so far)  
 - [PKI applet](https://github.com/rakeb/PKIApplet) _[**needs inspection** : last commit 2016]_ <br>
