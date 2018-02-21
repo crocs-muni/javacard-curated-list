@@ -372,7 +372,7 @@ Material developed in UNIFEI-MG research about Smart Cards
 
 
 ### Methodology
-- DONE (2017-04-15) Search all GitHub repositories with "javacard.framework.Applet" string
+- DONE (2018-02-22) Search all GitHub repositories with "javacard.framework.Applet" string. For repeated searches, sort by _Sort:Recently indexed_ to get new projects first
 - DONE (2017-04-15) Analyze applets included in AppletPlayground
 - DONE (2017-04-15) Search all SourceForge repositories with "javacard" string
 - DONE (2017-04-16) Sort applets into categories according to basic topic
