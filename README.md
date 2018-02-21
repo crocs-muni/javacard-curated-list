@@ -279,7 +279,7 @@ GlobalPlatform dummy ARA applet to grant full access
 
 
 
-### Card capabilities testing (algorithms support, performance)
+### Card capabilities testing (algorithms support, performance, security issues)
 - [JCAlgTest](https://github.com/crocs-muni/JCAlgTest) _[**mature** : last commit 2017]_ <br>
 Automated testing tool for algorithms from JavaCard API supported by particular smart card. Performance testing of almost all available methods. The results for more than 60+ cards available at https://jcalgtest.org. 
 - [ECTester](https://github.com/petrs/ECTester) _[**aspiring** : last commit 2016]_ <br>
@@ -290,7 +290,8 @@ Tester of Eliptic curves support and behavior (TYPE_EC_FP and TYPE_EC_F2M) on sm
 Performance testing for various algorithms, similar as JCAlgTest (needs investigation about difference to JCAlgTest) 
 - [HandlerTest](https://github.com/LudovicRousseau/HandlerTest) _[**needs inspection** : last commit 2016]_ <br>
 L. Rousseau PCSCLite reader test : This program send commands to a card through the reader.           
-
+- [Memory profiling tool] (https://github.com/maxashwin/JavaCard/tree/master/Wkg_MemoryMeasurementScript)_[**needs inspection** : last commit 2017]_ <br>
+Locates an applet constructor and places free memory measurements hooks before and after every allocation command. Summarizes required memory for every allocated object (RAM, EEPROM)   
 ### Formal verification and code transformation tools
 - [VeriFast](https://github.com/verifast/verifast) _[**mature** : last commit 2017]_ <br>
 VeriFast is a research prototype of a tool for modular formal verification of correctness properties of single-threaded and multithreaded C and Java programs annotated with preconditions and postconditions written in separation logic. Examples on JavaCard applets: EPurse, EidCard. Very active project.
