@@ -212,6 +212,8 @@ Identity and the security of data transmission is very critical for the success 
 
 ## Library code (code which is expected to be used as part of other code)
 #### (needs further inspection)
+- [ACORN, AEGIS, ASCON, CLOC, and MORUS AEAD ciphers implementation](AEAD https://github.com/palkrajesh/AEonJC)[**needs inspection** : last commit 2017]_ <br>
+Optimalized implementation of 5 selected candidates for authenticated encryption from CAESAR competition
 - [Primitives for JavaCard](https://github.com/albertocarp/Primitives_SmartCard) _[**needs inspection** : last commit 2016]_ <br>
 JBigInteger, JCMath, SHA3, UProve...
 - [OpenTLSSec](https://github.com/halemmerich/opentlssc) _[**needs inspection** : last commit 2013]_ <br>
