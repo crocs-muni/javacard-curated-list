@@ -163,7 +163,7 @@ JavaCard applet for speaking NDEF. Implementation of the NDEF Nfc-Forum specific
 - [Pico NDEF Applet](https://github.com/MpicoSys/PicoLabel/tree/master/scc_applet/Pico_NDEF/src/org/aispring/javacard/ndef) _[**needs inspection** : last commit 2017]_ <br>
 
 
-### Bitcoin wallets
+### CryptoCurrency wallets
 #### (needs further inspection)
 - [SecureBitcoinWalletJavaCardApplet](https://github.com/acidg/SecureBitcoinWalletJavaCardApplet) _[**needs inspection** : last commit 2015]_ <br>
 This project is the JavaCard applet for the Secure Bitcoin Wallet App.
@@ -212,6 +212,8 @@ Identity and the security of data transmission is very critical for the success 
 
 ## Library code (code which is expected to be used as part of other code)
 #### (needs further inspection)
+- [LibESE Android verified boot](https://github.com/ADVAN-ELAA-8QM-PRC1/platform-external-libese) _[**needs inspection** : last commit 2017]_ <br>
+Minimal transport wrapper for communicating with embedded secure elements on Android
 - [ACORN, AEGIS, ASCON, CLOC, and MORUS AEAD ciphers implementation](https://github.com/palkrajesh/AEonJC) _[**needs inspection** : last commit 2017]_ <br>
 Optimalized implementation of 5 selected candidates for authenticated encryption from CAESAR competition
 - [Primitives for JavaCard](https://github.com/albertocarp/Primitives_SmartCard) _[**needs inspection** : last commit 2016]_ <br>
