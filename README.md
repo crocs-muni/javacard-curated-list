@@ -33,6 +33,8 @@ Fork of JMRTD electronic passport applet without EAC support. The target device 
 A privacy-friendly alternative for the Belgian eID card. The project aims to improve security of Belgian ID holders by limiting the current extensive exposure of their profiles. To do so, we build an alternative ID card which limits service providers to strickly necessary ID holder profile information. 
 - [FedICT Quick-Key Toolset](https://github.com/Twuk/eid-quick-key-toolset/tree/master/eid-quick-key-toolset) _[**needs inspection** : last commit 2011]_ <br> 
 EidCard project
+[IdentityCard applet](https://github.com/JavaCardSpot-dev/IdentityCard-applet/tree/master/workspace/JavaCard) _[last commit 2017]_ <br> 
+Vrije University Brussels applet (be.msec.smartcard.IdentityCard.java) with authentication, identity metadata storage and retrieval and time update functionality.
 
 ### Authentication and access control
 - [YkOtpApplet - OTP applet](https://github.com/arekinath/YkOtpApplet) _[**mature** : active]_ <br>
