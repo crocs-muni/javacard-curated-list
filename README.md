@@ -202,6 +202,9 @@ This is an implementation of a TAG 4 for emulation
 
 ### Unsorted applications
 #### (needs further inspection)
+- [TPM2 applet] (https://github.com/mobilesec/tpm2-se-applet) _[last commit 2017]_ <br>
+The project aims to implement basic TPM2 functionalities for smart cards that run Java Card. Currently, this implementation supports :
+TPM_Startup, TPM_StartAuthSession, TPM_PCR_Extend, TPM_PCR_Read, TPM_PCR_Reset, TPM_ReadPublic, TPM_GetRandom
 - [SmartMeterIQ](https://github.com/adityasawhney/SmartMeterIQ) _[**needs inspection** : last commit 2013]_ <br>
 The main concern with Smart Meters is the granularity of the data which enables physical and behavioral analysis of the consumer in terms of the brand and make of devices installed and their house hold activities (like when do they wake up, when they are not at home). We propose using Java Card platform as it is a natural fit and is designed to be tamper-proof and secure. In addition, we explore using advanced cryptography techniques such as Zero Knowledge Proof of Knowledge (using Pedersen Commitments) to enable the Utility Supplier to trust the data it is getting from the central device.
 - [STKApplet](https://github.com/aliasnash/z-first-applet) _[**needs inspection** : last commit 2017]_ <br>
