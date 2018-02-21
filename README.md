@@ -292,6 +292,8 @@ Performance testing for various algorithms, similar as JCAlgTest (needs investig
 L. Rousseau PCSCLite reader test : This program send commands to a card through the reader.           
 - [Memory profiling tool] (https://github.com/maxashwin/JavaCard/tree/master/Wkg_MemoryMeasurementScript)_[**needs inspection** : last commit 2017]_ <br>
 Locates an applet constructor and places free memory measurements hooks before and after every allocation command. Summarizes required memory for every allocated object (RAM, EEPROM)   
+- [Three applets testing on-card defenses against maliciously modified applets](https://github.com/maxashwin/JavaCard)_[**needs inspection** : last commit 2017]_ <br>
+Abuse of Shareable interface, type confusion after use of Shareable interface, direct modification of CAP file
 ### Formal verification and code transformation tools
 - [VeriFast](https://github.com/verifast/verifast) _[**mature** : last commit 2017]_ <br>
 VeriFast is a research prototype of a tool for modular formal verification of correctness properties of single-threaded and multithreaded C and Java programs annotated with preconditions and postconditions written in separation logic. Examples on JavaCard applets: EPurse, EidCard. Very active project.
