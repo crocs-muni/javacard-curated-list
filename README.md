@@ -35,6 +35,8 @@ A privacy-friendly alternative for the Belgian eID card. The project aims to imp
 EidCard project
 
 ### Authentication and access control
+- [YkOtpApplet - OTP applet](https://github.com/arekinath/YkOtpApplet) _[**mature** : active]_ <br>
+Javacard applet emulating the Yubikey challenge-response interface
 - [YubiKey NEO App: OATH](https://github.com/Yubico/ykneo-oath) _[**mature** : active]_ <br>
 This project implement the HOTP/TOTP card functionality used on the YubiKey NEO device that is sold by Yubico. Its primary use is to use the YubiKey NEO to generate OATH HOTP/TOTP one-time-passwords. GPLv3+
 - [ISOApplet PKI](https://github.com/philipWendland/IsoApplet) _[**mature** : active]_ <br>
