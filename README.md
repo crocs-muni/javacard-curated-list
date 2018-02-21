@@ -296,7 +296,7 @@ Automated testing tool for algorithms from JavaCard API supported by particular 
 - [ECTester](https://github.com/petrs/ECTester) _[**aspiring** : last commit 2016]_ <br>
 Tester of Eliptic curves support and behavior (TYPE_EC_FP and TYPE_EC_F2M) on smartcards with JavaCard platform. 
 
-[PicoLabel AES/DES/RSA speed tester](https://github.com/MpicoSys/PicoLabel) _[last commit 2017]_ <br>
+- [PicoLabel AES/DES/RSA speed tester](https://github.com/MpicoSys/PicoLabel) _[last commit 2017]_ <br>
 Performance testing for DES/AES/RSA 
 - [Performance Benchmark Applet for Javacard/smartcard](https://github.com/dmdclab/smartcard-benchmark) _[last commit 2016]_ <br>
 Performance testing for various algorithms, similar as JCAlgTest (needs investigation about difference to JCAlgTest) 
