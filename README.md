@@ -47,7 +47,7 @@ JavaCard HMAC-based One Time Password generator which delivers new code via URL 
 CoolKey Applet with the idea of making it a fresh JavaCard 2.2.2 applet meant to be revival of CardEdge Muscle card applet.
 - [MuscleApplet](https://github.com/martinpaljak/MuscleApplet) _[**mature, outdated** : last commit 2005]_ <br>
 Significant, but outdated applet used for OpenSC. Superseeded by PKCS#15 and PIV standards.
-- [OpenFIPS201 PIV applet] (https://github.com/makinako/OpenFIPS201) _[**mature, active** : last commit 2018]_ <br>
+- [OpenFIPS201 PIV applet](https://github.com/makinako/OpenFIPS201) _[**mature, active** : last commit 2018]_ <br>
 Personal Identity Verification (PIV) applet. Commissioned and funded by the Australian Department of Defence
 - [PIV applet](https://github.com/arekinath/PivApplet) _[**mature, active** : last commit 2018]_<br>
 Personal Identity Verification (PIV) applet (NIST SP 800-73-4). Target is JavaCard 2.2.2, with 2-3k of transient memory.
@@ -126,7 +126,7 @@ Using TrueCrypt with a JavaCard. The app stores the user container passwords on 
 - [Password manager](https://github.com/cranixx/Passmg) _[last commit 2016]_ <br>
 Password manager for javacards. Tested on J3A081 card. 
 - [JCPasswordManager](https://github.com/bayotop/JCPasswordManager) _[last commit 2016]_ <br>
-JavaCard Password Manager is a java applet used to create and securely store a strong password used with the steganography app created by arunenigma (https://github.com/arunenigma/Steganography-Java-GUI). School project, but well documented.
+JavaCard Password Manager is a java applet used to create and securely store a strong password used with the steganography app created by [arunenigma](https://github.com/arunenigma/Steganography-Java-GUI). School project, but well documented.
 
 ### Digital signing, OpenPGP and mail security
 - [Yubico OpenPGP applet](https://github.com/Yubico/ykneo-openpgp) _[**mature** : active]_ <br>
@@ -302,9 +302,9 @@ Performance testing for DES/AES/RSA
 Performance testing for various algorithms, similar as JCAlgTest (needs investigation about difference to JCAlgTest) 
 - [HandlerTest](https://github.com/LudovicRousseau/HandlerTest) _[last commit 2016]_ <br>
 L. Rousseau PCSCLite reader test : This program send commands to a card through the reader.           
-- [Memory profiling tool] (https://github.com/maxashwin/JavaCard/tree/master/Wkg_MemoryMeasurementScript)_[last commit 2017]_ <br>
+- [Memory profiling tool](https://github.com/maxashwin/JavaCard/tree/master/Wkg_MemoryMeasurementScript) _[last commit 2017]_ <br>
 Locates an applet constructor and places free memory measurements hooks before and after every allocation command. Summarizes required memory for every allocated object (RAM, EEPROM)   
-- [Three applets testing on-card defenses against maliciously modified applets](https://github.com/maxashwin/JavaCard)_[last commit 2017]_ <br>
+- [Three applets testing on-card defenses against maliciously modified applets](https://github.com/maxashwin/JavaCard) _[last commit 2017]_ <br>
 Abuse of Shareable interface, type confusion after use of Shareable interface, direct modification of CAP file
 
 ### Formal verification and code transformation tools
