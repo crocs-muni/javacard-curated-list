@@ -7,6 +7,9 @@ You are encouraged to contribute - please create a pull request.
 
 The projects collected in this list were analyzed and published (June 2017) in [Analysis of JavaCard open-source ecosystem](https://medium.com/enigma-shards/analysis-of-javacard-open-source-ecosystem-9be0bfd66398)
 
+## Backup of listed repositories
+As repositores are sometimes moved or removed, the fork of each repository under the virtual organization ['javacard-curated-list'](https://github.com/javacard-FOSS-applets) is created. Try to find a repository there if link doesn't work.
+
 ### Format and notation
 > **Project name _[status : activity]_** <br> Short description, often taken from a project readme.md
 > - **status**: subjective state of project: *mature* (well developed), *aspiring* (promising, but not yet mature), *playground* (initial stages, just playing/learning), *needs inspection* (not analysed yet)
@@ -29,7 +32,7 @@ Fork of JMRTD electronic passport applet without EAC support. The target device 
 A privacy-friendly alternative for the Belgian eID card. The project aims to improve security of Belgian ID holders by limiting the current extensive exposure of their profiles. To do so, we build an alternative ID card which limits service providers to strickly necessary ID holder profile information. 
 - [FedICT Quick-Key Toolset](https://github.com/Twuk/eid-quick-key-toolset/tree/master/eid-quick-key-toolset) _[last commit 2011]_ <br> 
 EidCard project
-[IdentityCard applet](https://github.com/JavaCardSpot-dev/IdentityCard-applet/tree/master/workspace/JavaCard) _[last commit 2017]_ <br> 
+- [IdentityCard applet](https://github.com/JavaCardSpot-dev/IdentityCard-applet/tree/master/workspace/JavaCard) _[last commit 2017]_ <br> 
 Vrije University Brussels applet (be.msec.smartcard.IdentityCard.java) with authentication, identity metadata storage and retrieval and time update functionality.
 
 ### Authentication and access control
@@ -54,10 +57,10 @@ Personal Identity Verification (PIV) applet (NIST SP 800-73-4). Target is JavaCa
 
 - [ORWL KeyFob applets](https://github.com/O-R-W-L/KeyFob-applet)  _[last commit 2017]_ <br>
 Contains applets for KeyFOB NFC Secure Element for performing association, authentication and identification. Relates to ORWL secure computer.
-- [PKCS#15 applet](https://github.com/lupascualex/p15) _[last commit 2015]_ <br>
+- [PKCS#15 applet](https://github.com/lupascualex/p15) _[REMOVED, last commit 2015]_ <br>
 Implementation of card according to RSA PKCS#15 specification. (seems like extensive implementation, but fails to convert under ant-javacard so far)  
-- [PKI applet](https://github.com/rakeb/PKIApplet) _[last commit 2016]_ <br>
-(extensive PKI applet, requires JavaCard 3.0.5)
+- [PKI applet](https://github.com/rakeb/PKIApplet) _[REMOVED, last commit 2016]_ <br>
+(extensive PKI applet, requires JavaCard 3.0.5) 
 - [Generic Identity Device Specification Applet](https://github.com/vletoux/GidsApplet) _[active]_ <br>
 Generic Identity Device Specification (GIDS) smart card is the only PKI smart card whose driver is integrated on each Windows since Windows 7 SP1 and which can be used read and write. No Windows driver installation is required. Based on [ISOApplet PKI](https://github.com/philipWendland/IsoApplet).
 - [PIV CryptonitApplet](https://github.com/mbrossard/cryptonit-applet) _[active]_ <br>
@@ -207,7 +210,7 @@ applet handling license usage counters and relevant stuff (no documentation)
 Prototype firmware for the Trusted Execution Module (TEM). The firmware is a JavaCard applet, and it can turn any capable JavaCard into a TEM.
 - [Secure-Storage-and-Erasure](https://github.com/SecurityResearcher/SSE) _[last commit 2014]_ <br>
 This is an open source prototype of Secure Storage and Erasure (SSE) System, including both the JavaCard and host programs. 
-- [Mobile-ID USAT applet](https://sourceforge.net/projects/mobile-id-usat-applethealt) _[last commit 2017]_ <br>
+- [Mobile-ID USAT applet](https://sourceforge.net/projects/mobile-id-usat-applethealt) _[REMOVED, last commit 2017]_ <br>
 The Remarc Mobile-ID USAT applet this is a JavaCard applet with USIM Application Toolkit menu support. 
 Basic functions of the Remarc Mobile-ID SAT applet: Authentication function; Signing function; Changing PIN1/PIN2;  Changing PUK; Unblock PIN1/PIN2; View information - in a USAT menu is present a menu item with information of PIN usage
 - [E-Voting applet](https://github.com/EVIVoting/EVIV) _[last commit 2016]_ <br>
@@ -335,7 +338,7 @@ This project provides an implementation of a Java Card Runtime Enviornment (JCRE
 JavaCard API simulated in Python environment. The goal is to provide a classic 3.0.1 version, while maintaining compatiblity with earlier version like 2.1.2. Older version on [GitHub also available](https://github.com/benallard/pythoncard)
 - [JCardMock](https://github.com/christianhujer/jcardmock) _[last commit 2012]_ <br>
 Mock implementation of the Java Card API 3.0.4 in order to test Java Card applet code without a card or simulator. It runs the Java Card API 3.0.4 in a normal Java Virtual Machine. The purpose is to allow for unit tests for Java Card applets with normal test frameworks like JUnit or TestNG in a normal Java Virtual Machine (unfinished)
-- [CAPRunner  https://bitbucket.org/benallard/caprunner/,](https://github.com/benallard/caprunner) _[last commit 2015]_ <br>
+- [CAPRunner](https://github.com/benallard/caprunner) _[last commit 2015]_ <br>
 CAPRunner is a javacard bytecode emulator that is able to execute CAP files. It also comes with an handy runcap.py that bind them together and allow you to send some APDUs to a CAP file (without the need for a smartcard).
 developement on BitBucket
 - [FreeJCVM](https://sourceforge.net/projects/freejcvm) _[last commit 2015]_ <br>
