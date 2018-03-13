@@ -116,8 +116,8 @@ Loyalty Card System based on a Java Card featuring a smart card and a terminal. 
 Android application interacting with a JavaCard applet installed on SIM card. 
 - [CryptSetup JavaCard Key Manager](https://github.com/WOnder93/cryptsetup-javacard) _[last commit 2016]_ <br>
 A JavaCard key manager for Cryptsetup. School project, but well documented and extensive 
-- [KeepassNFC](https://github.com/JavaCardOS/KeepassNFC) _[last commit 2016]_ <br>
-KeepassNFC is a applet in javacard platform that it can protect the secret key of KeePass database. 
+- [KeepassNFCApplet](https://github.com/JavaCardOS/KeepassNFCApplet) _[last commit 2017]_ <br>
+KeepassNFC is a applet in javacard platform that can protect the secret key of KeePass database.
 - [Smartcard crypto applet](https://github.com/nfd/smartcard_crypto_applet) _[last commit 2016]_ <br>
 This applet performs secure decryption of secrets via NFC. It was made for KeePassNFC, but could be used for other things.
 - [SIM Password Manager](https://github.com/nelenkov/sim-password-manager) _[last commit 2013]_ <br>
