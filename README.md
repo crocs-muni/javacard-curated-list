@@ -235,6 +235,8 @@ Open source java card library for TLS secured communication under GPL v3. (Seems
 Client implementation of TLS 1.0 in Java Card (tested with Gmail mobile (lightweight version) with the card G&D SmartCafe 3.2)
 - [SRP-6a password-authenticated secure channel](https://github.com/mobilesec/secure-channel-srp6a-applet) _[last commit 2015]_ <br>
 Java Card applet for SRP-6a password-authenticated secure channel to secure elements/smartcards. This Java Card applet is an implementation of the Secure Remote Password (SRP-6a) password-authenticated secure channel protocol by Wu [1]. In combination with an implementation of an off-card application, such as an Android application using our SRP-6A Android Library, you can establish a secure communication channel that is mutually authenticated with a PIN or password. 
+- [EC-SRP-5 password-authenticated secure channel](https://github.com/mobilesec/secure-channel-ec-srp-applet) _[last commit 2015]_ <br>
+An implementation of the elliptic curve variant of the Secure Remote Password (SRP-5) password-authenticated secure channel protocol from IEEE Std 1363.2-2008 for secure channel to secure elements/smartcards. Utilizes NXP proprietary API.
 - [ykneo-curves](https://github.com/Yubico/ykneo-curves) _[last commit 2014]_ <br>
 This is an applet demonstrating several curves for use in YubiKey NEO.
 - [Java Card Synchronization Framework](https://github.com/jfhren/jc_sync) _[last commit 2014]_ <br>
