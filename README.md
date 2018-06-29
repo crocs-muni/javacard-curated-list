@@ -281,6 +281,10 @@ A GlobalPlatform Java Library. OPAL implements several authentication, encryptio
 smart card. This tool has been developped by the SSD Research Team (XLIM Labs, University of Limoges, France).
 - [CAP File Manipulation](https://bitbucket.org/ssd/capmap-free) _[last commit 2012]_
 A Java Card CAP file parser. 
+
+- [capfile handling tool](https://github.com/martinpaljak/capfile) _[last commit 2018]_ <br>
+Small library for JavaCard CAP file handling
+
 - [Smart-Card-Tool-pyResMan](https://sourceforge.net/projects/pyresman) _[last commit 2015]_ <br>
 pyResMan is a free open source smartcard tool for JavaCard and other smart card. It can be used to send APDU(s), execute APDU script(s); It can be used to debug ISO14443 protocol commands and Mifare commands with R502 SPY reader; It can also be used to manage resource of GP card. It is based on pyScard and GlobalPlatform open source projects.
 last commit 2017
