@@ -7,13 +7,37 @@ You are encouraged to contribute - please create a pull request.
 
 The projects collected in this list were analyzed and published (June 2017) in [Analysis of JavaCard open-source ecosystem](https://medium.com/enigma-shards/analysis-of-javacard-open-source-ecosystem-9be0bfd66398)
 
-## Backup of listed repositories
+### Backup of listed repositories
 As repositores are sometimes moved or removed, the fork of each repository under the virtual organization ['javacard-curated-list'](https://github.com/javacard-FOSS-applets) is created. Try to find a repository there if link doesn't work.
 
 ### Format and notation
 > **Project name _[status : activity]_** <br> Short description, often taken from a project readme.md
 > - **status**: subjective state of project: *mature* (well developed), *aspiring* (promising, but not yet mature), *playground* (initial stages, just playing/learning), *needs inspection* (not analysed yet)
 > - **activity**: *active* (at last one commit during the last year), *last commit* (date of last commit for less active / inactive projects)
+
+## Contents
+
+1. [Applets (standalone applications)](#applets-standalone-applications)
+    - [Electronic passports and citizen ID](#electronic-passports-and-citizen-id)
+    - [Authentication and access control](#authentication-and-access-control)
+    - [Payments and loyalty](#payments-and-loyalty)
+    - [Key and password managers](#key-and-password-managers)
+    - [Digital signing, OpenPGP and mail security](#digital-signing-ppenpgp-and-mail-security)
+    - [e-Health](e-health)
+    - [NDEF tags](#ndef-tags)
+    - [CryptoCurrency wallets](#cryptocurrency-wallets)
+    - [Emulation of some proprietary cards](#emulation-of-some-proprietary-cards)
+    - [Unsorted applications](#unsorted-applications)
+2.  [Library code (code which is expected to be used as part of other code)](#library-code-code-which-is-expected-to-be-used-as-part-of-other-code)
+3. [Developer tools](#developer-tools)
+    - [Applet build, upload and management](#applet-build-upload-and-management)
+    - [Card capabilities testing (algorithms support, performance, security issues)](#card-capabilities-testing-algorithms-support-performance-security-issues)
+    - [Formal verification and code transformation tools](#formal-verification-and-code-transformation-tools)
+4. [JavaCard simulators and emulators](#javacard-simulators-and-emulators)
+5. [Learning (various school projects, simple hello world applets, etc)](#learning-various-school-projects-simple-hello-world-applets)
+6. [Unsorted](#unsorted)
+   - [(needs further inspection)](#needs-further-inspection)
+   - [Methodology](#methodology)
 
 _________________________________________________
 
@@ -352,7 +376,7 @@ Free javacard vm implementation for AVR MCU.
 - [openjcvm](https://sourceforge.net/projects/openjcvm/) _[last commit 2015]_ <br>
 A open source java card virtual machine implementation. And also some part of the VM code can be used as part of kinds of tools such as javacard bytecode disassembler.
 
-## Learning (various school projects, simple hello world applets....)
+## Learning (various school projects, simple hello world applets, etc)
 
 - [AppletPlayground](https://github.com/martinpaljak/AppletPlayground) _[**mature** : last commit 2017]_ <br>
 AppletPlayground is an educational repository for getting to know JavaCard development by learning from existing open source software. It includes various open source applets from the internet, bundled into ready to use package. Everything you need to edit, compile and load the applets to real JavaCard-s or test with an emulator.
@@ -384,7 +408,7 @@ This repository will provide you with javacard applet for absolutely beginners\ 
 
 ## Unsorted
 
-#### (needs further inspection)
+### (needs further inspection)
 - [Corba](https://github.com/lbarbisan/corba) _[last commit 2015]_ <br>
 old project, CryptoFlex uploader?
 - [unifei-smart-cards](https://github.com/tiagorg/unifei-smart-cards) _[last commit 2014]_ <br>
