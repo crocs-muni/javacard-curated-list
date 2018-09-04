@@ -34,7 +34,7 @@ As repositores are sometimes moved or removed, the fork of each repository under
     - [Card capabilities testing (algorithms support, performance, security issues)](#card-capabilities-testing-algorithms-support-performance-security-issues)
     - [Formal verification and code transformation tools](#formal-verification-and-code-transformation-tools)
 4. [JavaCard simulators and emulators](#javacard-simulators-and-emulators)
-5. [Learning (various school projects, simple hello world applets, etc)](##learning-various-school-projects-simple-hello-world-applets-etc)
+5. [Learning (various school projects, simple hello world applets, etc)](#learning-various-school-projects-simple-hello-world-applets-etc)
 6. [Unsorted](#unsorted)
    - [(needs further inspection)](#needs-further-inspection)
    - [Methodology](#methodology)
