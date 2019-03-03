@@ -249,6 +249,8 @@ Provides software re-implementation of low-level operations like ECPoint or BigI
 
 - [LibESE Android verified boot](https://github.com/ADVAN-ELAA-8QM-PRC1/platform-external-libese) _[last commit 2017]_ <br>
 Minimal transport wrapper for communicating with embedded secure elements on Android
+- [JavaCard ChaCha20 implementation](https://github.com/thotheolh/jcChaCha2032) _[ last commit 2019]_ <br>
+32-bit JavaCard based ChaCha20 stream cipher optimized for JavaCard environment with 32-bit Integer support
 - [ACORN, AEGIS, ASCON, CLOC, and MORUS AEAD ciphers implementation](https://github.com/palkrajesh/AEonJC) _[ last commit 2017]_ <br>
 Optimalized implementation of 5 selected candidates for authenticated encryption from CAESAR competition
 - [Primitives for JavaCard](https://github.com/albertocarp/Primitives_SmartCard) _[last commit 2016]_ <br>
