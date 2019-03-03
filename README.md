@@ -185,7 +185,7 @@ Prototype of a Java Card application for smart cards and its client application.
 A project to read the German health insurance card (Elektronische Gesundheitskarte (EGK)), transform the read data to FHIR@copy; ressources, and send them to a choosable FHIR Endpoint
 
 ### NDEF tags
-- [JavaCard NDEF Applet](https://github.com/promovicz/javacard-ndef) _[**mature** : last commit 2015]_ <br>
+- [JavaCard NDEF Applet](https://github.com/OpenJavaCard/openjavacard-ndef) _[**mature** : last commit 2019]_ <br>
 This project contains a JavaCard applet acting as an NFC NDEF Tag. It is intended as a convenience applet, allowing storage of an NDEF record on a smartcard to direct the user to a relevant host-device application, such as a smartphone app related to the card or a web page for which the card serves as an authorization token. Data can be preloaded at install time using standards-compliant methods so that this generic applet can be used in different use cases without modification.
 
 - [JavaCard NDEF application](https://github.com/slomo/ndef-javacard) _[last commit 2014]_ <br>
