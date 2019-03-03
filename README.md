@@ -246,7 +246,8 @@ Identity and the security of data transmission is very critical for the success 
 
 - [JCMathLib - ECPoint library](https://github.com/OpenCryptoProject/JCMathLib) _[**mature** : last commit 2018]_ <br>
 Provides software re-implementation of low-level operations like ECPoint or BigInteger without any use of proprietary API.
-
+- [ACORN, AEGIS, ASCON, CLOC, and MORUS AEAD ciphers implementation](https://github.com/MiragePV/OptimizedJCAlgs) _[ last commit 2019]_ <br>
+Optimalized implementation of AEGIS, ACORN, ASCON, CLOC, MORUS (Authenticated Encryption), TWINE, Zorro (Block Ciphers), SHA-3 (Message Digest) and PBKDF2 (Key derivation) 
 - [LibESE Android verified boot](https://github.com/ADVAN-ELAA-8QM-PRC1/platform-external-libese) _[last commit 2017]_ <br>
 Minimal transport wrapper for communicating with embedded secure elements on Android
 - [JavaCard ChaCha20 implementation](https://github.com/thotheolh/jcChaCha2032) _[ last commit 2019]_ <br>
