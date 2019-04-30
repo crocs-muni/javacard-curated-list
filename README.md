@@ -355,6 +355,10 @@ An implementation of the elliptic curve variant of the Secure Remote Password (S
   <br>
 This is an applet demonstrating several curves for use in YubiKey NEO.
 
+- [Curve25519 jc implementation](https://github.com/david-oswald/jc_curve25519)    ![stars](https://img.shields.io/github/stars/david-oswald/jc_curve25519.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/david-oswald/jc_curve25519.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/david-oswald/jc_curve25519.svg) 
+  <br>
+Javacard implementation of Curve25519, JavaCard 3.0.1 or higher (currently developed on J2D081)
+
 - [Java Card Synchronization Framework](https://github.com/jfhren/jc_sync)    ![stars](https://img.shields.io/github/stars/jfhren/jc_sync.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/jfhren/jc_sync.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/jfhren/jc_sync.svg) 
   <br>
 The main goal of this framework is to synchronize Java Card 2 applets through the exchange of ciphered APDUs. The current state of the framework is lacking in many ways and requires more works to be fully functional. However it can serve as a proof of concept for the synchronization of applet data in a secure fashion in a pure Java Card 2 setting (i.e.: without tweaking the Java Card VM).
