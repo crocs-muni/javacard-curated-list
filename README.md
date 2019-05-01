@@ -255,9 +255,15 @@ JavaCard applet for speaking NDEF. Implementation of the NDEF Nfc-Forum specific
 - [SecureBitcoinWalletJavaCardApplet](https://github.com/acidg/SecureBitcoinWalletJavaCardApplet)    ![stars](https://img.shields.io/github/stars/acidg/SecureBitcoinWalletJavaCardApplet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/acidg/SecureBitcoinWalletJavaCardApplet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/acidg/SecureBitcoinWalletJavaCardApplet.svg) 
   <br>
 This project is the JavaCard applet for the Secure Bitcoin Wallet App.
+
 - [Ledger Bitcoin Hardware Wallet ](https://github.com/LedgerHQ/ledger-javacard)    ![stars](https://img.shields.io/github/stars/LedgerHQ/ledger-javacard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/LedgerHQ/ledger-javacard.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/LedgerHQ/ledger-javacard.svg) 
   <br>
 This applet is an implementation of the Ledger Wallet Hardware Wallet specification emulating an NFC Forum Type 4 tag to display the second factor, with specific extensions. 
+
+- [Status KeyCard](https://github.com/status-im/status-keycard)    ![stars](https://img.shields.io/github/stars/status-im/status-keycard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/status-im/status-keycard.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/status-im/status-keycard.svg) 
+  <br>
+Keycard is a an implementation of a BIP-32 HD wallet running on Javacard 3.0.4+. Supports among others key generation, derivation and signing, exporting keys defined in the context of EIP-1581, card duplicationand setting up a NFC NDEF tag.
+
 - [SatoChip Bitcoin applet](https://github.com/Toporin/SatoChipApplet)    ![stars](https://img.shields.io/github/stars/Toporin/SatoChipApplet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/Toporin/SatoChipApplet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/Toporin/SatoChipApplet.svg) 
   <br>
 SatoChip stands for Secure Anonymous Trustless and Open Chip. It is a javacard applet that can be used as a secure hardware wallet running for example on a Yubikey Neo. The SatoChip has full BIP32 supports but due to technical limitations on current javacards, hardened keys (i.e. child keys using indices 2^31 through 2^32-1) are derived much faster than normal keys.
