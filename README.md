@@ -291,6 +291,11 @@ JC emulation of some Chinese card?
 - [TAG 4 emulation](https://github.com/Tordensky/Tag4)    ![stars](https://img.shields.io/github/stars/Tordensky/Tag4.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/Tordensky/Tag4.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/Tordensky/Tag4.svg)  <br>
 This is an implementation of a TAG 4 for emulation
 
+- [Gauss Key Card](https://github.com/darconeous/gauss-key-card)    ![stars](https://img.shields.io/github/stars/darconeous/gauss-key-card.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/darconeous/gauss-key-card.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/darconeous/gauss-key-card.svg)  <br>
+Gauss Key Card is a Java Card applet that implements the minimal working subset of the Tesla Key Card Protocol. Supported Java Card implementations that load this application will be able to be paired with a compatible vehicle and subsequently unlock, start, or lock the vehicle in the same way you would with an official key card.
+
+
+
 ### Unsorted applications
 - [TPM2 applet](https://github.com/mobilesec/tpm2-se-applet)    ![stars](https://img.shields.io/github/stars/mobilesec/tpm2-se-applet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/mobilesec/tpm2-se-applet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/mobilesec/tpm2-se-applet.svg) 
   <br>
