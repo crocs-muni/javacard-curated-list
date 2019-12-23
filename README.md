@@ -64,6 +64,9 @@ EidCard project
 - [IdentityCard applet](https://github.com/JavaCardSpot-dev/IdentityCard-applet/tree/master/workspace/JavaCard) (**GitHub**) _[last commit 2017]_
   <br> 
 Vrije University Brussels applet (be.msec.smartcard.IdentityCard.java) with authentication, identity metadata storage and retrieval and time update functionality.
+- [belgian-e-id applet](https://github.com/amoerie/belgian-e-id)  ![stars](https://img.shields.io/github/stars/amoerie/belgian-e-id.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/amoerie/belgian-e-id.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/amoerie/belgian-e-id.svg) 
+  <br> 
+Belgian e-id applet
 
 ### Authentication and access control
 - [YkOtpApplet - OTP applet](https://github.com/arekinath/YkOtpApplet)    ![stars](https://img.shields.io/github/stars/arekinath/YkOtpApplet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/arekinath/YkOtpApplet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/arekinath/YkOtpApplet.svg) 
