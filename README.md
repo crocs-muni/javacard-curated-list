@@ -189,7 +189,10 @@ A JavaCard key manager for Cryptsetup. School project, but well documented and e
 KeepassNFC is a applet in javacard platform that can protect the secret key of KeePass database.
 - [Smartcard crypto applet](https://github.com/nfd/smartcard_crypto_applet)    ![stars](https://img.shields.io/github/stars/nfd/smartcard_crypto_applet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/nfd/smartcard_crypto_applet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/nfd/smartcard_crypto_applet.svg) 
   <br>
-This applet performs secure decryption of secrets via NFC. It was made for KeePassNFC, but could be used for other things.
+This repository constains the same source code ( -Februrary 2020- ) as the repository listed above ([KeepassNFCApplet](https://github.com/JavaCardOS/KeepassNFCApplet))
+- [Java Card OpenPGP Card](https://github.com/jderuiter/javacard-openpgpcard)    ![stars](https://img.shields.io/github/stars/jderuiter/javacard-openpgpcard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/jderuiter/javacard-openpgpcard.svg)  ![numcontributors](https://img.shields.io/github/contributors-anon/jderuiter/javacard-openpgpcard.svg) 
+  <br>
+This is a Java Card implementation of the OpenPGP smart card specifications.
 - [SIM Password Manager](https://github.com/nelenkov/sim-password-manager)    ![stars](https://img.shields.io/github/stars/nelenkov/sim-password-manager.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/nelenkov/sim-password-manager.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/nelenkov/sim-password-manager.svg) 
   <br>
 Android password manager app that implements password encryption inside a secure element (SE). Can only run on a device that supports the Open Mobile API (aka SmartCardService). Requires associated Java Card applet to be loaded in the SE (SIM card or embedded SE) in advance.
@@ -229,8 +232,8 @@ Aim of this project is to create JavaCard applet implementing Functional Specifi
 
 - [Virtual KeyCard applet](https://github.com/eriknellessen/Virtual-Keycard)    ![stars](https://img.shields.io/github/stars/eriknellessen/Virtual-Keycard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/eriknellessen/Virtual-Keycard.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/eriknellessen/Virtual-Keycard.svg)   <br>
 This software system allows you to decrypt and sign your e-mails with your smartphone instead of using a contactless smartcard. The smartphone communicates with your PC via NFC (as a contactless smartcard would). bachelor's thesis. Warning: This is just proof-of-concept code and should NOT be used in production environments.
-
-
+  <br>
+The repository contains only CardEdge applet but it is not the applet development repository. Main purpose of this repo is to run card simulator inside a smartphone; the applet is just used here.  
 
 ### e-Health
 - [Electronic health card](https://github.com/gabriellewp/eHealthCard)    ![stars](https://img.shields.io/github/stars/gabriellewp/eHealthCard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/gabriellewp/eHealthCard.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/gabriellewp/eHealthCard.svg) 
@@ -240,7 +243,7 @@ eHealth card implementation
 Prototype of a Java Card application for smart cards and its client application. It was developed with the support of JML (Java Modeling Language) used to formally specify the requirements for developing the HealthCard application in Java Card.
 - [EGKfeuer](https://github.com/elnin0815/EGKfeuer)    ![stars](https://img.shields.io/github/stars/elnin0815/EGKfeuer.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/elnin0815/EGKfeuer.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/elnin0815/EGKfeuer.svg) 
   <br>
-A project to read the German health insurance card (Elektronische Gesundheitskarte (EGK)), transform the read data to FHIR@copy; ressources, and send them to a choosable FHIR Endpoint
+A project to read the German health insurance card (Elektronische Gesundheitskarte (EGK)), transform the read data to FHIR@copy; ressources, and send them to a choosable FHIR Endpoint. <b>This repository does not contain an applet, it is only client tool.</b>
 
 ### NDEF tags
 - [JavaCard NDEF Applet](https://github.com/OpenJavaCard/openjavacard-ndef)    ![stars](https://img.shields.io/github/stars/OpenJavaCard/openjavacard-ndef.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/OpenJavaCard/openjavacard-ndef.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/OpenJavaCard/openjavacard-ndef.svg) 
@@ -262,6 +265,8 @@ This project is the JavaCard applet for the Secure Bitcoin Wallet App.
 - [Ledger Bitcoin Hardware Wallet ](https://github.com/LedgerHQ/ledger-javacard)    ![stars](https://img.shields.io/github/stars/LedgerHQ/ledger-javacard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/LedgerHQ/ledger-javacard.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/LedgerHQ/ledger-javacard.svg) 
   <br>
 This applet is an implementation of the Ledger Wallet Hardware Wallet specification emulating an NFC Forum Type 4 tag to display the second factor, with specific extensions. 
+  <br>
+<b>This project is DISCONTINUED</b>. Derived project can be found [here](https://github.com/JavaCardOS/BitcoinWallet).
 
 - [Status KeyCard](https://github.com/status-im/status-keycard)    ![stars](https://img.shields.io/github/stars/status-im/status-keycard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/status-im/status-keycard.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/status-im/status-keycard.svg) 
   <br>
