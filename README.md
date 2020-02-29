@@ -266,7 +266,7 @@ This project is the JavaCard applet for the Secure Bitcoin Wallet App.
   <br>
 This applet is an implementation of the Ledger Wallet Hardware Wallet specification emulating an NFC Forum Type 4 tag to display the second factor, with specific extensions. 
   <br>
-<b>This project is DISCONTINUED</b>. Derived project can be found [here](https://github.com/JavaCardOS/BitcoinWallet).
+<b>This project is DISCONTINUED according to issues section.</b>. Derived project can be found [here](https://github.com/JavaCardOS/BitcoinWallet).
 
 - [Status KeyCard](https://github.com/status-im/status-keycard)    ![stars](https://img.shields.io/github/stars/status-im/status-keycard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/status-im/status-keycard.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/status-im/status-keycard.svg) 
   <br>
