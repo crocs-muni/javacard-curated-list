@@ -27,7 +27,7 @@ If is the project located on GitHub as primary project (not only source code in 
     - [CryptoCurrency wallets](#cryptocurrency-wallets)
     - [Emulation of some proprietary cards](#emulation-of-some-proprietary-cards)
     - [Unsorted applications](#unsorted-applications)
-2.  [Library code (code which is expected to be used as part of other code)](#library-code-code-which-is-expected-to-be-used-as-part-of-other-code)
+2. [Library code (code which is expected to be used as part of other code)](#library-code-code-which-is-expected-to-be-used-as-part-of-other-code)
 3. [Developer tools](#developer-tools)
     - [Applet build, upload and management](#applet-build-upload-and-management)
     - [Card capabilities testing (algorithms support, performance, security issues)](#card-capabilities-testing-algorithms-support-performance-security-issues)
@@ -346,6 +346,11 @@ EVIV is a highly sound End-to-end Verifiable Internet Voting system, which offer
 - [UPSC framework](https://github.com/paromix/upsc)    ![stars](https://img.shields.io/github/stars/paromix/upsc.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/paromix/upsc.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/paromix/upsc.svg) 
   <br>
 Identity and the security of data transmission is very critical for the success of these e-services. SIM cards might take an important role as a security service provider. They have been used for so many years to preserve the security keys(Ki) and algorithms (A3A8) for authenticating and encrypting the data. Within this project, the international consortium will try to implement a software framework on both the mobile terminal and SIM card that expose the required security functions to popular e-services like Mobile commerce, Financial transactions, Data Encryption, Secure Cloud Storage and Mobile Identity.
+
+- [MQTT-SCACAuth: Message Queuing Telemetry Transport (MQTT) protocol for SC](https://github.com/EBuetas78/MQTT-SCACAuth)    ![stars](https://img.shields.io/github/stars/EBuetas78/MQTT-SCACAuth.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/EBuetas78/MQTT-SCACAuth.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/EBuetas78/MQTT-SCACAuth.svg) 
+  <br>
+Security Method for the Message Queuing Telemetry Transport (MQTT) protocol for  Internet of Things (IoT). Additional message protection implemented on smartcards,  
+SCACAuth_Applets_v2 folder contains the eclipse project for create the applet for JavaCard 3.0.4
 
 ## Library code (code which is expected to be used as part of other code)
 
