@@ -8,7 +8,7 @@ You are encouraged to contribute - please create a pull request.
 The projects collected in this list were analyzed and published (June 2017) in [Analysis of JavaCard open-source ecosystem](https://medium.com/enigma-shards/analysis-of-javacard-open-source-ecosystem-9be0bfd66398)
 
 ### Backup of listed repositories
-As repositores are sometimes moved or removed, the fork of each repository under the virtual organization ['javacard-curated-list'](https://github.com/javacard-FOSS-applets) is created. Try to find a repository there if link doesn't work.
+As repositores are sometimes moved or removed, the fork of each repository under the virtual organization ['javacard-curated-list'](https://github.com/javacard-FOSS-applets) is created. Try to find a repository there if the link doesn't work.
 
 ### Format and notation
 > **Project name _[activity]_** <br> Short description, often taken from a project readme.md
@@ -507,6 +507,10 @@ Locates an applet constructor and places free memory measurements hooks before a
 
 - [Three applets testing on-card defenses against maliciously modified applets](https://github.com/maxashwin/JavaCard)    ![stars](https://img.shields.io/github/stars/maxashwin/JavaCard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/maxashwin/JavaCard.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/maxashwin/JavaCard.svg)  <br>
 Abuse of Shareable interface, type confusion after use of Shareable interface, direct modification of CAP file
+
+- [JCOSTestKit](https://github.com/ThothTrustCom/JCOSTestKit) [stars](https://img.shields.io/github/stars/ThothTrustCom/JCOSTestKit.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/ThothTrustCom/JCOSTestKit.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/ThothTrustCom/JCOSTestKit.svg) 
+  <br>
+JCOS testing kit platform with modular plugin capability. Possibly alternative approach to JCAlgTest allowing for finer definition of the operations and their sequence as defined by host plugin.
 
 ### Formal verification and code transformation tools
 - [VeriFast](https://github.com/verifast/verifast)    ![stars](https://img.shields.io/github/stars/verifast/verifast.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/verifast/verifast.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/verifast/verifast.svg) 
