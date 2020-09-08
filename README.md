@@ -357,6 +357,12 @@ Identity and the security of data transmission is very critical for the success 
 Security Method for the Message Queuing Telemetry Transport (MQTT) protocol for  Internet of Things (IoT). Additional message protection implemented on smartcards,  
 SCACAuth_Applets_v2 folder contains the eclipse project for create the applet for JavaCard 3.0.4
 
+- [T101-Devhub](https://github.com/ThothTrustCom/T101-Devhub)    ![stars](https://img.shields.io/github/stars/ThothTrustCom/T101-Devhub.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/ThothTrustCom/T101-Devhub.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/ThothTrustCom/T101-Devhub.svg) 
+  <br>
+Set of javacard applets like PGP, OTP, password manager, Satochip (T101-Devhub/Samples/) to run on [ThothTrust THETAKey T101 card](https://github.com/ThothTrustCom/T101-Devhub/blob/master/THETAKey%20T101.md)
+
+
+
 ## Library code (code which is expected to be used as part of other code)
 
 - [JCMathLib - ECPoint library](https://github.com/OpenCryptoProject/JCMathLib)    ![stars](https://img.shields.io/github/stars/OpenCryptoProject/JCMathLib.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/OpenCryptoProject/JCMathLib.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/OpenCryptoProject/JCMathLib.svg)   <br>
