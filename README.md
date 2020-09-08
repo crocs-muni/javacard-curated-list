@@ -181,6 +181,11 @@ Mobile banking solution using SIM Toolkit
 Loyalty Card System based on a Java Card featuring a smart card and a terminal. This is a system that allows customers to get credits by shopping in the same store repeatedly. Customers can spend credits to buy products in the store.
 
 ### Key and password managers
+- [JavaCardKeymaster](https://github.com/divegeek/JavaCardKeymaster)    ![stars](https://img.shields.io/github/stars/divegeek/JavaCardKeymaster.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/divegeek/JavaCardKeymaster.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/divegeek/JavaCardKeymaster.svg) 
+  <br>
+JavaCard implementation of the Android Keymaster 4.1 HAL (most of the specification is in the Android Keymaster 4.0 HAL), intended for creation of StrongBox Keymaster instances to support the Android Hardware-backed Keystore.
+
+
 - [SIM password wallet](https://github.com/bertrandmartel/sim-password-wallet)    ![stars](https://img.shields.io/github/stars/bertrandmartel/sim-password-wallet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/bertrandmartel/sim-password-wallet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/bertrandmartel/sim-password-wallet.svg) 
   <br>
 Android application interacting with a JavaCard applet installed on SIM card. 
