@@ -471,7 +471,7 @@ A Java Card CAP file parser.
 
 - [capfile handling tool](https://github.com/martinpaljak/capfile)    ![stars](https://img.shields.io/github/stars/martinpaljak/capfile.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/martinpaljak/capfile.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/martinpaljak/capfile.svg) 
   <br>
-Small library for JavaCard CAP file handling
+Handle JavaCard CAP files, from command line or Java project. Cap file parsing, signing, displaying metadata....
 
 - [ExpParser](https://sourceforge.net/projects/javacardtools/) (**SourceForge**) _[last commit 2008]_ <br>
 Parser for JavaCard export files (\*.exp) - display content in human-readable form
