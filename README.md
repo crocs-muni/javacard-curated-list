@@ -281,6 +281,12 @@ SatoChip stands for Secure Anonymous Trustless and Open Chip. It is a javacard a
 - [Bitcoin wallet](https://github.com/JavaCardOS/BitcoinWallet)    ![stars](https://img.shields.io/github/stars/JavaCardOS/BitcoinWallet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/JavaCardOS/BitcoinWallet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/JavaCardOS/BitcoinWallet.svg) 
   <br>
 BitcoinWallet is a Bitcoin Hardware Wallet implementation. It is based on the project Ledger Wallet and can be run on JavaCard platform with JCRE version 3.0.x above.
+
+- [Specter-DIY Bitcoin wallet applets](https://github.com/cryptoadvance/specter-javacard)    ![stars](https://img.shields.io/github/stars/cryptoadvance/specter-javacard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/cryptoadvance/specter-javacard.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/cryptoadvance/specter-javacard.svg) 
+  <br>
+This is a collection of JavaCardOS applets for Specter-DIY secrets storage for use by Specter Bitcoin multisignature wallet.
+
+
 - [Lamassu card](https://github.com/lamassu/ssu-card/)    ![stars](https://img.shields.io/github/stars/lamassu/ssu-card/.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/lamassu/ssu-card/.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/lamassu/ssu-card/.svg) 
   <br>
 Very simple applet used by Lamassu Bitcoin machines to sign transaction with ECDSA. 
