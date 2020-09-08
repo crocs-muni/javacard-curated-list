@@ -617,6 +617,11 @@ old project, CryptoFlex uploader?
   <br>
 Material developed in UNIFEI-MG research about Smart Cards          
 
+- [Teleport secret Bitcoin applet](https://github.com/EyeOfPython/teleport_secret)    ![stars](https://img.shields.io/github/stars/EyeOfPython/teleport_secret.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/EyeOfPython/teleport_secret.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/EyeOfPython/teleport_secret.svg) 
+  <br>
+Basic applet implementing simple Bitcoin signature functionality.      
+
+
 
 ### Methodology
 - DONE (2018-02-22) Search all GitHub repositories with "javacard.framework.Applet" string. For repeated searches, sort by _Sort:Recently indexed_ to get new projects first
