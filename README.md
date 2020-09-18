@@ -389,6 +389,10 @@ Open source java card library for TLS secured communication under GPL v3. (Seems
 - [SmartCardTLS](https://github.com/gilb/smart_card_TLS)    ![stars](https://img.shields.io/github/stars/gilb/smart_card_TLS.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/gilb/smart_card_TLS.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/gilb/smart_card_TLS.svg)   <br>
 Client implementation of TLS 1.0 in Java Card (tested with Gmail mobile (lightweight version) with the card G&D SmartCafe 3.2)
 
+- [SCP10 secure channel and attack](https://github.com/ddealmei/SCP10-attack)    ![stars](https://img.shields.io/github/stars/ddealmei/SCP10-attack.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/ddealmei/SCP10-attack.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/ddealmei/SCP10-attack.svg)   <br>
+Implementation of GlobalPlatform SCP'10 secure channel protocol, PoC attacks against it and fixed version. 
+
+
 - [SRP-6a password-authenticated secure channel](https://github.com/mobilesec/secure-channel-srp6a-applet)    ![stars](https://img.shields.io/github/stars/mobilesec/secure-channel-srp6a-applet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/mobilesec/secure-channel-srp6a-applet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/mobilesec/secure-channel-srp6a-applet.svg)  <br>
 Java Card applet for SRP-6a password-authenticated secure channel to secure elements/smartcards. This Java Card applet is an implementation of the Secure Remote Password (SRP-6a) password-authenticated secure channel protocol by Wu [1]. In combination with an implementation of an off-card application, such as an Android application using our SRP-6A Android Library, you can establish a secure communication channel that is mutually authenticated with a PIN or password. 
 
