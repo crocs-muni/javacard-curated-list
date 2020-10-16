@@ -539,6 +539,11 @@ Abuse of Shareable interface, type confusion after use of Shareable interface, d
   <br>
 JCOS testing kit platform with modular plugin capability. Possibly alternative approach to JCAlgTest allowing for finer definition of the operations and their sequence as defined by host plugin.
 
+- [SPA-JavaCard-Applet](https://github.com/crocs-muni/SPA-JavaCard-Applet) [stars](https://img.shields.io/github/stars/crocs-muni/SPA-JavaCard-Applet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/crocs-muni/SPA-JavaCard-Applet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/crocs-muni/SPA-JavaCard-Applet.svg) 
+  <br>
+JavaCard applet implementating basic cryptographic operations triggered during power analysis measurements using [SPA-Cryptographic-Operations-Extractor](https://github.com/crocs-muni/SPA-Cryptographic-Operations-Extractor) tool
+
+
 ### Formal verification and code transformation tools
 - [VeriFast](https://github.com/verifast/verifast)    ![stars](https://img.shields.io/github/stars/verifast/verifast.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/verifast/verifast.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/verifast/verifast.svg) 
   <br>
