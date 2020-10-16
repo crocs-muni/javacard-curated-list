@@ -361,6 +361,9 @@ SCACAuth_Applets_v2 folder contains the eclipse project for create the applet fo
   <br>
 Set of javacard applets like PGP, OTP, password manager, Satochip (T101-Devhub/Samples/) to run on [ThothTrust THETAKey T101 card](https://github.com/ThothTrustCom/T101-Devhub/blob/master/THETAKey%20T101.md)
 
+- [Wookey Javacard applets](https://github.com/wookey-project/javacard-applet)    ![stars](https://img.shields.io/github/stars/wookey-project/javacard-applet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/wookey-project/javacard-applet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/wookey-project/javacard-applet.svg)
+  <br>
+Set of javacard applets for the WooKey project: authentication, DFU and signature tokens to run with the [WooKey](https://wookey-project.github.io/), a secure and trusted USB mass storage device featuring user data encryption and strong user authentication, with fully open source and open hardware foundations, developed by ANSSI.
 
 
 ## Library code (code which is expected to be used as part of other code)
