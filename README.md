@@ -503,6 +503,9 @@ A converter for converting Java Card CAP files to JAR files. Currently this is j
   <br>
 GlobalPlatform dummy ARA applet to grant full access
 
+- [Real ARA-M](https://github.com/bertrandmartel/aram-applet)    ![stars](https://img.shields.io/github/stars/bertrandmartel/aram-applet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/bertrandmartel/aram-applet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/bertrandmartel/aram-applet.svg)
+  <br>
+A "real" ARA-M applet that doesn't just do Allow-all but offers a fairly complete implementation of the Secure Element Access Control v1.0 specification.
 
 
 ### Card capabilities testing (algorithms support, performance, security issues)
