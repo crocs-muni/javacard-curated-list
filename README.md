@@ -473,7 +473,7 @@ The GlobalPlatform card specification provides a standard for the management of 
   <br>
 Oracle JavaCard SDK-s for using as a Git submodule for ant-javacard projects.    
 
-- [GlobalPlatform export files](https://github.com/OpenJavaCard/globalplatform-exports)    ![stars](https://img.shields.io/github/stars/mOpenJavaCard/globalplatform-exports.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/OpenJavaCard/globalplatform-exports.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/OpenJavaCard/globalplatform-exports.svg) 
+- [GlobalPlatform export files](https://github.com/OpenJavaCard/globalplatform-exports)    ![stars](https://img.shields.io/github/stars/OpenJavaCard/globalplatform-exports.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/OpenJavaCard/globalplatform-exports.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/OpenJavaCard/globalplatform-exports.svg) 
   <br>
 All export files for GlobalPlatform APIs
 
