@@ -473,6 +473,10 @@ The GlobalPlatform card specification provides a standard for the management of 
   <br>
 Oracle JavaCard SDK-s for using as a Git submodule for ant-javacard projects.    
 
+- [GlobalPlatform export files](https://github.com/OpenJavaCard/globalplatform-exports)    ![stars](https://img.shields.io/github/stars/mOpenJavaCard/globalplatform-exports.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/OpenJavaCard/globalplatform-exports.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/OpenJavaCard/globalplatform-exports.svg) 
+  <br>
+All export files for GlobalPlatform APIs
+
 - [JCProfiler: JavaCard performance profiler](https://github.com/OpenCryptoProject/JCProfiler)    ![stars](https://img.shields.io/github/stars/OpenCryptoProject/JCProfiler.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/OpenCryptoProject/JCProfiler.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/OpenCryptoProject/JCProfiler.svg)  <br>
 Performance profiler for Java Card code. Automatically inserts special execution interruption "traps" into applet code, repeatedly execute target operation and measures time differences between traps. Annotates code with measured time. 
 
