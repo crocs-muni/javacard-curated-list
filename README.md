@@ -255,19 +255,10 @@ Using TrueCrypt with a JavaCard. The app stores the user container passwords on 
 
 
 ### Digital signing, OpenPGP and mail security
-- [Yubico OpenPGP applet](https://github.com/Yubico/ykneo-openpgp)    ![stars](https://img.shields.io/github/stars/Yubico/ykneo-openpgp.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/Yubico/ykneo-openpgp.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/Yubico/ykneo-openpgp.svg) 
-  <br>
-This project implement the OpenPGP card functionality used on the YubiKey NEO device. This project is based on the Java Card OpenPGP Card project made by Joeri de Ruiter. The OpenPGP Card applet is typically used through GnuPG.
 
 - [ANSSI-FR SmartPGP applet](https://github.com/ANSSI-FR/SmartPGP)    ![stars](https://img.shields.io/github/stars/ANSSI-FR/SmartPGP.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/ANSSI-FR/SmartPGP.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/ANSSI-FR/SmartPGP.svg) 
   <br>
 SmartPGP is a free and open source implementation of the OpenPGP card 3.x specification in JavaCard. The main improvement introduced in OpenPGP card 3.x specification from previous version is the support of elliptic curve cryptography with several existing curves (NIST P-256, NIST P-384, NIST P-521, brainpool p256r1, brainpool p384r1 and brainpool p512r1). The SmartPGP Card applet is typically used through GnuPG.
-
-- [Secure multi-party signatures Myst](https://github.com/OpenCryptoProject/Myst)    ![stars](https://img.shields.io/github/stars/OpenCryptoProject/Myst.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/OpenCryptoProject/Myst.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/OpenCryptoProject/Myst.svg)  <br>
-Secure multiparty Schnorr-based EC signatures implemented without proprietary ECPoint API. 
-
-- [SigAnima](https://github.com/tsenger/SigAnima)    ![stars](https://img.shields.io/github/stars/tsenger/SigAnima.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/tsenger/SigAnima.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/tsenger/SigAnima.svg)   <br>
-SigAnima is an JavaCard ECDSA signing applet. This applet is based on the [javacardsign applet]((http://sourceforge.net/projects/javacardsign/)) from Wojciech Mostowski . The applet supports the following standardized EC domain parameters: secp224r1, BrainpoolP224r1, secp256r1, BrainpoolP256r1, BrainpoolP320r1. 
 
 - [FluffyPGP applet](https://github.com/JavaCardOS/FluffyPGP-Applet)    ![stars](https://img.shields.io/github/stars/JavaCardOS/FluffyPGP-Applet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/JavaCardOS/FluffyPGP-Applet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/JavaCardOS/FluffyPGP-Applet.svg)   <br>
 The FluffyPGP Applet implements the OpenGPG Card v 2.0.1 specification without using secure channels or Global Platform for portability. GPL3
@@ -275,22 +266,36 @@ The FluffyPGP Applet implements the OpenGPG Card v 2.0.1 specification without u
 - [JCOpenPGP](https://sourceforge.net/projects/jcopenpgp) (**SourceForge**) _[last commit 2016]_ <br>
 Aim of this project is to create JavaCard applet implementing Functional Specification of the OpenPGP application on ISO Smart Card Operating Systems.
 
+- [Secure multi-party signatures Myst](https://github.com/OpenCryptoProject/Myst)    ![stars](https://img.shields.io/github/stars/OpenCryptoProject/Myst.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/OpenCryptoProject/Myst.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/OpenCryptoProject/Myst.svg)  <br>
+Secure multiparty Schnorr-based EC signatures implemented without proprietary ECPoint API. 
+
+- [SigAnima](https://github.com/tsenger/SigAnima)    ![stars](https://img.shields.io/github/stars/tsenger/SigAnima.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/tsenger/SigAnima.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/tsenger/SigAnima.svg)   <br>
+SigAnima is an JavaCard ECDSA signing applet. This applet is based on the [javacardsign applet]((http://sourceforge.net/projects/javacardsign/)) from Wojciech Mostowski . The applet supports the following standardized EC domain parameters: secp224r1, BrainpoolP224r1, secp256r1, BrainpoolP256r1, BrainpoolP320r1. 
+
 - [Virtual KeyCard applet](https://github.com/eriknellessen/Virtual-Keycard)    ![stars](https://img.shields.io/github/stars/eriknellessen/Virtual-Keycard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/eriknellessen/Virtual-Keycard.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/eriknellessen/Virtual-Keycard.svg)   <br>
 This software system allows you to decrypt and sign your e-mails with your smartphone instead of using a contactless smartcard. The smartphone communicates with your PC via NFC (as a contactless smartcard would). bachelor's thesis. Warning: This is just proof-of-concept code and should NOT be used in production environments.
   <br>
 The repository contains only CardEdge applet but it is not the applet development repository. Main purpose of this repo is to run card simulator inside a smartphone; the applet is just used here.  
 
-### e-Health
-- [Electronic health card](https://github.com/gabriellewp/eHealthCard)    ![stars](https://img.shields.io/github/stars/gabriellewp/eHealthCard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/gabriellewp/eHealthCard.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/gabriellewp/eHealthCard.svg) 
+- [Yubico OpenPGP applet](https://github.com/Yubico/ykneo-openpgp)    ![stars](https://img.shields.io/github/stars/Yubico/ykneo-openpgp.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/Yubico/ykneo-openpgp.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/Yubico/ykneo-openpgp.svg) 
   <br>
-eHealth card implementation
-- [HealthCard: JavaCard + JML specs](https://sourceforge.net/projects/healthcard/) (**SourceForge**) _[last commit 2014]_ <br>
-Prototype of a Java Card application for smart cards and its client application. It was developed with the support of JML (Java Modeling Language) used to formally specify the requirements for developing the HealthCard application in Java Card.
+This project implement the OpenPGP card functionality used on the YubiKey NEO device. This project is based on the Java Card OpenPGP Card project made by Joeri de Ruiter. The OpenPGP Card applet is typically used through GnuPG.
+
+### e-Health
+
 - [EGKfeuer](https://github.com/elnin0815/EGKfeuer)    ![stars](https://img.shields.io/github/stars/elnin0815/EGKfeuer.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/elnin0815/EGKfeuer.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/elnin0815/EGKfeuer.svg) 
   <br>
 A project to read the German health insurance card (Elektronische Gesundheitskarte (EGK)), transform the read data to FHIR@copy; ressources, and send them to a choosable FHIR Endpoint. <b>This repository does not contain an applet, it is only client tool.</b>
 
+- [Electronic health card](https://github.com/gabriellewp/eHealthCard)    ![stars](https://img.shields.io/github/stars/gabriellewp/eHealthCard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/gabriellewp/eHealthCard.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/gabriellewp/eHealthCard.svg) 
+  <br>
+eHealth card implementation
+
+- [HealthCard: JavaCard + JML specs](https://sourceforge.net/projects/healthcard/) (**SourceForge**) _[last commit 2014]_ <br>
+Prototype of a Java Card application for smart cards and its client application. It was developed with the support of JML (Java Modeling Language) used to formally specify the requirements for developing the HealthCard application in Java Card.
+
 ### NDEF tags
+
 - [JavaCard NDEF Applet](https://github.com/OpenJavaCard/openjavacard-ndef)    ![stars](https://img.shields.io/github/stars/OpenJavaCard/openjavacard-ndef.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/OpenJavaCard/openjavacard-ndef.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/OpenJavaCard/openjavacard-ndef.svg) 
   <br>
 This project contains a JavaCard applet acting as an NFC NDEF Tag. It is intended as a convenience applet, allowing storage of an NDEF record on a smartcard to direct the user to a relevant host-device application, such as a smartphone app related to the card or a web page for which the card serves as an authorization token. Data can be preloaded at install time using standards-compliant methods so that this generic applet can be used in different use cases without modification.
@@ -298,6 +303,7 @@ This project contains a JavaCard applet acting as an NFC NDEF Tag. It is intende
 - [JavaCard NDEF application](https://github.com/slomo/ndef-javacard)    ![stars](https://img.shields.io/github/stars/slomo/ndef-javacard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/slomo/ndef-javacard.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/slomo/ndef-javacard.svg) 
   <br>
 JavaCard applet for speaking NDEF. Implementation of the NDEF Nfc-Forum specification for JavaCard 2.2.1. The aim is to support sending of urls to smartphones, and provoiding only compile time writeability.
+
 - [Pico NDEF Applet](https://github.com/MpicoSys/PicoLabel/tree/master/scc_applet/Pico_NDEF/src/org/aispring/javacard/ndef) (**GitHub**) _[last commit 2017]_ 
   <br>
 
