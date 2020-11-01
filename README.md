@@ -158,45 +158,56 @@ This project has been submitted to the YubiKing 2015 Hackathon. Yubisec is an im
 
 
 ### Payments and loyalty
-- [OpenEMV](https://github.com/JavaCardOS/OpenEMV)  ![stars](https://img.shields.io/github/stars/JavaCardOS/OpenEMV.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/JavaCardOS/OpenEMV.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/JavaCardOS/OpenEMV.svg)  <br>
-The OpenEMV is a Java Card implementation of the EMV standard. This applet is a very basic EMV applet supporting only SDA and plaintext offline PIN.It does not offer personalisation support - everything is hard-coded.
-seems like mature project
-- [EMV card simulator](https://github.com/mrautio/emv-card-simulator)  ![stars](https://img.shields.io/github/stars/mrautio/emv-card-simulator.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/mrautio/emv-card-simulator.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/mrautio/emv-card-simulator.svg)  <br>
-JavaCard implementation of an EMV card for payment terminal functional and security testing.
-- [EMV-TOOLS](https://github.com/gabessolo/EMV-TOOLS)    ![stars](https://img.shields.io/github/stars/gabessolo/EMV-TOOLS.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/gabessolo/EMV-TOOLS.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/gabessolo/EMV-TOOLS.svg) 
+
+- [AppSecure](https://github.com/deepakprabhakara/appsecure)    ![stars](https://img.shields.io/github/stars/deepakprabhakara/appsecure.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/deepakprabhakara/appsecure.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/deepakprabhakara/appsecure.svg) 
   <br>
-Collection of source code for many EMV-related projects: SimpleEMVApplet, java-card-openEMV, card-spy, emvdemoBook, emv-bertlv...
-- [Simple Wallet](https://github.com/fitpay/javacard-simple-wallet)    ![stars](https://img.shields.io/github/stars/fitpay/javacard-simple-wallet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/fitpay/javacard-simple-wallet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/fitpay/javacard-simple-wallet.svg) 
-  <br>
-This is a simple wallet simply maintains a running account balance allowing you to credit, debit, or review the current balance of the wallet. This is simply for pure demonstration on various wearable technologies where a javacard secure element is available.
+AppSecure uses Gemalto's eGate smart card framework to enforce pay as you go services for Win32 applications. This entry made it to the pre-final round of Gemalto's eGate Open Contest in 2004    
+
 - [E-Purse](https://github.com/tomirio619/hw-epurse)    ![stars](https://img.shields.io/github/stars/tomirio619/hw-epurse.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/tomirio619/hw-epurse.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/tomirio619/hw-epurse.svg) 
   <br>
 just started, unifinished (04/2017)
-- [AppSecure](https://github.com/deepakprabhakara/appsecure)    ![stars](https://img.shields.io/github/stars/deepakprabhakara/appsecure.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/deepakprabhakara/appsecure.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/deepakprabhakara/appsecure.svg) 
+
+- [EMV card simulator](https://github.com/mrautio/emv-card-simulator)  ![stars](https://img.shields.io/github/stars/mrautio/emv-card-simulator.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/mrautio/emv-card-simulator.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/mrautio/emv-card-simulator.svg)  <br>
+JavaCard implementation of an EMV card for payment terminal functional and security testing.
+
+- [EMV-TOOLS](https://github.com/gabessolo/EMV-TOOLS)    ![stars](https://img.shields.io/github/stars/gabessolo/EMV-TOOLS.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/gabessolo/EMV-TOOLS.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/gabessolo/EMV-TOOLS.svg) 
   <br>
-AppSecure uses Gemalto's eGate smart card framework to enforce pay as you go services for Win32 applications. This entry made it to the pre-final round of Gemalto's eGate Open Contest in 2004           
-- [PBOC3Applet](https://github.com/jiankeliu5/PBOC3Applet)    ![stars](https://img.shields.io/github/stars/jiankeliu5/PBOC3Applet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/jiankeliu5/PBOC3Applet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/jiankeliu5/PBOC3Applet.svg) 
-  <br>
-payment applet
-- [PayPass applet](https://github.com/jiankeliu5/CardApplet-PayPass)    ![stars](https://img.shields.io/github/stars/jiankeliu5/CardApplet-PayPass.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/jiankeliu5/CardApplet-PayPass.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/jiankeliu5/CardApplet-PayPass.svg) 
-  <br>
-Javacard Applet for functioning paypass credential. The javacard code included will answer to any reader that requests MasterCard PayPass contactless cards.
-- [PayPass, VisaMSD, MMPP applets](https://github.com/SimplyTapp/CardExamples)    ![stars](https://img.shields.io/github/stars/SimplyTapp/CardExamples.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/SimplyTapp/CardExamples.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/SimplyTapp/CardExamples.svg) 
-  <br>
-This repository contains multiple card applet/card agent examples for using on simplytapp, GPL to v1.2.1.
-*probably significant project, needs closer look*
-- [JavaCard Wallet](https://github.com/RimGazzeh/JavaCard_Wallet)    ![stars](https://img.shields.io/github/stars/RimGazzeh/JavaCard_Wallet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/RimGazzeh/JavaCard_Wallet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/RimGazzeh/JavaCard_Wallet.svg) 
-  <br>
-Client/Server application of an electronic wallet (Pin, Storage, control, payment..) 
+Collection of source code for many EMV-related projects: SimpleEMVApplet, java-card-openEMV, card-spy, emvdemoBook, emv-bertlv...
+
 - [EMVCAP](https://github.com/zoobab/EMVCAP)    ![stars](https://img.shields.io/github/stars/zoobab/EMVCAP.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/zoobab/EMVCAP.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/zoobab/EMVCAP.svg) 
   <br>
 This tool emulates an EMV-CAP device, to illustrate the article "Banque en ligne : a la decouverte d'EMV-CAP" published in MISC, issue #56.
-- [Mobile banking applet via STK](https://github.com/ubs121/mbank_STK)    ![stars](https://img.shields.io/github/stars/ubs121/mbank_STK.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/ubs121/mbank_STK.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/ubs121/mbank_STK.svg) 
+
+- [JavaCard Wallet](https://github.com/RimGazzeh/JavaCard_Wallet)    ![stars](https://img.shields.io/github/stars/RimGazzeh/JavaCard_Wallet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/RimGazzeh/JavaCard_Wallet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/RimGazzeh/JavaCard_Wallet.svg) 
   <br>
-Mobile banking solution using SIM Toolkit
+Client/Server application of an electronic wallet (Pin, Storage, control, payment..) 
+
 - [Loyalty Card Applet](https://github.com/Anthirian/Loyalty-Card)    ![stars](https://img.shields.io/github/stars/Anthirian/Loyalty-Card.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/Anthirian/Loyalty-Card.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/Anthirian/Loyalty-Card.svg) 
   <br>
 Loyalty Card System based on a Java Card featuring a smart card and a terminal. This is a system that allows customers to get credits by shopping in the same store repeatedly. Customers can spend credits to buy products in the store.
+
+- [Mobile banking applet via STK](https://github.com/ubs121/mbank_STK)    ![stars](https://img.shields.io/github/stars/ubs121/mbank_STK.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/ubs121/mbank_STK.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/ubs121/mbank_STK.svg) 
+  <br>
+Mobile banking solution using SIM Toolkit
+
+- [OpenEMV](https://github.com/JavaCardOS/OpenEMV)  ![stars](https://img.shields.io/github/stars/JavaCardOS/OpenEMV.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/JavaCardOS/OpenEMV.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/JavaCardOS/OpenEMV.svg)  <br>
+The OpenEMV is a Java Card implementation of the EMV standard. This applet is a very basic EMV applet supporting only SDA and plaintext offline PIN.It does not offer personalisation support - everything is hard-coded.
+
+- [PayPass applet](https://github.com/jiankeliu5/CardApplet-PayPass)    ![stars](https://img.shields.io/github/stars/jiankeliu5/CardApplet-PayPass.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/jiankeliu5/CardApplet-PayPass.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/jiankeliu5/CardApplet-PayPass.svg) 
+  <br>
+Javacard Applet for functioning paypass credential. The javacard code included will answer to any reader that requests MasterCard PayPass contactless cards.
+
+- [PayPass, VisaMSD, MMPP applets](https://github.com/SimplyTapp/CardExamples)    ![stars](https://img.shields.io/github/stars/SimplyTapp/CardExamples.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/SimplyTapp/CardExamples.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/SimplyTapp/CardExamples.svg) 
+  <br>
+This repository contains multiple card applet/card agent examples for using on simplytapp, GPL to v1.2.1.
+
+- [PBOC3Applet](https://github.com/jiankeliu5/PBOC3Applet)    ![stars](https://img.shields.io/github/stars/jiankeliu5/PBOC3Applet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/jiankeliu5/PBOC3Applet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/jiankeliu5/PBOC3Applet.svg) 
+  <br>
+payment applet
+
+- [Simple Wallet](https://github.com/fitpay/javacard-simple-wallet)    ![stars](https://img.shields.io/github/stars/fitpay/javacard-simple-wallet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/fitpay/javacard-simple-wallet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/fitpay/javacard-simple-wallet.svg) 
+  <br>
+This is a simple wallet simply maintains a running account balance allowing you to credit, debit, or review the current balance of the wallet. This is simply for pure demonstration on various wearable technologies where a javacard secure element is available.
 
 ### Key and password managers
 - [JavaCardKeymaster](https://github.com/divegeek/JavaCardKeymaster)    ![stars](https://img.shields.io/github/stars/divegeek/JavaCardKeymaster.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/divegeek/JavaCardKeymaster.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/divegeek/JavaCardKeymaster.svg) 
