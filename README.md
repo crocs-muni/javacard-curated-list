@@ -597,49 +597,27 @@ JavaCard applet implementating basic cryptographic operations triggered during p
 Abuse of Shareable interface, type confusion after use of Shareable interface, direct modification of CAP file
 
 ### Formal verification and code transformation tools
-- [VeriFast](https://github.com/verifast/verifast)    ![stars](https://img.shields.io/github/stars/verifast/verifast.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/verifast/verifast.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/verifast/verifast.svg) 
-  <br>
-VeriFast is a research prototype of a tool for modular formal verification of correctness properties of single-threaded and multithreaded C and Java programs annotated with preconditions and postconditions written in separation logic. Examples on JavaCard applets: EPurse, EidCard. Very active project.
+
+- [CesTa project](https://github.com/formanek/CesTa)    ![stars](https://img.shields.io/github/stars/formanek/CesTa.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/formanek/CesTa.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/formanek/CesTa.svg)  <br>
+Security hardening (duplicate variables, constant branches, transaction detection...) for JavaCard applets based on ANTLR automatic code transformations
 
 - [Joana IFC analysis framework](https://github.com/joana-team/joana)    ![stars](https://img.shields.io/github/stars/joana-team/joana.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/joana-team/joana.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/joana-team/joana.svg) 
   <br>
 Joana is a static analysis tool that can be used for information flow control (IFC) of Java bytecode. IFC allows to verify the INTEGRITY (no attacker can temper with sensitive information) or CONFIDENTIALITY (no attacker can infer secret information from public outputs) of a Java program. System dependence graphs (SDG) form the basic technology for our analyses. Examples also on JavaCard applets. Very active project.
 
-- [CesTa project](https://github.com/formanek/CesTa)    ![stars](https://img.shields.io/github/stars/formanek/CesTa.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/formanek/CesTa.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/formanek/CesTa.svg)  <br>
-Security hardening (duplicate variables, constant branches, transaction detection...) for JavaCard applets based on ANTLR automatic code transformations
+- [KeYmaera 3](https://github.com/LS-Lab/KeYmaera-release)    ![stars](https://img.shields.io/github/stars/LS-Lab/KeYmaera-release.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/LS-Lab/KeYmaera-release.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/LS-Lab/KeYmaera-release.svg) 
+  <br>
+KeYmaera 3: A Hybrid Theorem Prover for Hybrid Systems with examples on JavaCard applets (among others). http://symbolaris.com/info/KeYmaera.html
 
 - [The KeY project](https://github.com/cirosantilli/key-java-formal-verification-fork)    ![stars](https://img.shields.io/github/stars/cirosantilli/key-java-formal-verification-fork.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/cirosantilli/key-java-formal-verification-fork.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/cirosantilli/key-java-formal-verification-fork.svg) 
   <br>
 examples on JavaCard, this github repo is not official (https://www.key-project.org) 
 
-- [KeYmaera 3](https://github.com/LS-Lab/KeYmaera-release)    ![stars](https://img.shields.io/github/stars/LS-Lab/KeYmaera-release.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/LS-Lab/KeYmaera-release.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/LS-Lab/KeYmaera-release.svg) 
+- [VeriFast](https://github.com/verifast/verifast)    ![stars](https://img.shields.io/github/stars/verifast/verifast.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/verifast/verifast.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/verifast/verifast.svg) 
   <br>
-KeYmaera 3: A Hybrid Theorem Prover for Hybrid Systems with examples on JavaCard applets (among others). http://symbolaris.com/info/KeYmaera.html
+VeriFast is a research prototype of a tool for modular formal verification of correctness properties of single-threaded and multithreaded C and Java programs annotated with preconditions and postconditions written in separation logic. Examples on JavaCard applets: EPurse, EidCard. Very active project.
 
 ## JavaCard simulators and emulators
-
-- [JCardSim:](https://github.com/licel/jcardsim)    ![stars](https://img.shields.io/github/stars/licel/jcardsim.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/licel/jcardsim.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/licel/jcardsim.svg) 
-  <br>
-Capable JavaCard simulator implemented atop of BouncyCastle. Very good for unit testing, quick prototyping and educational purposes. Allows for multiple simulated cards in parallel.   
-
-- [vJCRE ](https://github.com/martinpaljak/vJCRE)    ![stars](https://img.shields.io/github/stars/martinpaljak/vJCRE.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/martinpaljak/vJCRE.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/martinpaljak/vJCRE.svg) 
-  <br>
-vJCRE is a virtual Java Card Runtime Environment
-
-- [Secure Element Emulator](https://github.com/mobilesec/secure-element-emulator)    ![stars](https://img.shields.io/github/stars/mobilesec/secure-element-emulator.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/mobilesec/secure-element-emulator.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/mobilesec/secure-element-emulator.svg) 
-  <br>
-This project aims at emulating a secure element environment for debugging and rapid-prototyping of secure element applets. It is a fork of the open-source Java Card simulator jCardSim (original source code available here). Within our research we added extensions to emulate an application life-cycle that matches the life-cycle of applications on real smartcard chips.
-
-- [Java Card Simulator via Node.js](https://github.com/adamnoakes/javacard-simulator)    ![stars](https://img.shields.io/github/stars/adamnoakes/javacard-simulator.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/adamnoakes/javacard-simulator.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/adamnoakes/javacard-simulator.svg) 
-  <br>
-This project provides an implementation of a Java Card Runtime Enviornment (JCRE) produced using Node.js which is capable of creating virtual smart card devices and sending APDU commands to the smart card devices for execution via a RESTful API. The project also provides a web-based interface for interacting with the JCRE. 
-
-- [PythonCard:](https://bitbucket.org/benallard/pythoncard/) (**BitBucket**) _[last commit 2013] <br>
-JavaCard API simulated in Python environment. The goal is to provide a classic 3.0.1 version, while maintaining compatiblity with earlier version like 2.1.2.
-
-- [JCardMock](https://github.com/christianhujer/jcardmock)    ![stars](https://img.shields.io/github/stars/christianhujer/jcardmock.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/christianhujer/jcardmock.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/christianhujer/jcardmock.svg) 
-  <br>
-Mock implementation of the Java Card API 3.0.4 in order to test Java Card applet code without a card or simulator. It runs the Java Card API 3.0.4 in a normal Java Virtual Machine. The purpose is to allow for unit tests for Java Card applets with normal test frameworks like JUnit or TestNG in a normal Java Virtual Machine (unfinished)
 
 - [CAPRunner](https://github.com/benallard/caprunner)    ![stars](https://img.shields.io/github/stars/benallard/caprunner.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/benallard/caprunner.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/benallard/caprunner.svg) 
   <br>
@@ -649,8 +627,31 @@ developement on BitBucket
 - [FreeJCVM](https://sourceforge.net/projects/freejcvm) (**SourceForge**) _[last commit 2015]_ <br>
 Free javacard vm implementation for AVR MCU.
 
+- [Java Card Simulator via Node.js](https://github.com/adamnoakes/javacard-simulator)    ![stars](https://img.shields.io/github/stars/adamnoakes/javacard-simulator.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/adamnoakes/javacard-simulator.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/adamnoakes/javacard-simulator.svg) 
+  <br>
+This project provides an implementation of a Java Card Runtime Enviornment (JCRE) produced using Node.js which is capable of creating virtual smart card devices and sending APDU commands to the smart card devices for execution via a RESTful API. The project also provides a web-based interface for interacting with the JCRE. 
+
+- [JCardMock](https://github.com/christianhujer/jcardmock)    ![stars](https://img.shields.io/github/stars/christianhujer/jcardmock.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/christianhujer/jcardmock.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/christianhujer/jcardmock.svg) 
+  <br>
+Mock implementation of the Java Card API 3.0.4 in order to test Java Card applet code without a card or simulator. It runs the Java Card API 3.0.4 in a normal Java Virtual Machine. The purpose is to allow for unit tests for Java Card applets with normal test frameworks like JUnit or TestNG in a normal Java Virtual Machine (unfinished)
+
+- [JCardSim:](https://github.com/licel/jcardsim)    ![stars](https://img.shields.io/github/stars/licel/jcardsim.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/licel/jcardsim.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/licel/jcardsim.svg) 
+  <br>
+Capable JavaCard simulator implemented atop of BouncyCastle. Very good for unit testing, quick prototyping and educational purposes. Allows for multiple simulated cards in parallel.   
+
 - [openjcvm](https://sourceforge.net/projects/openjcvm/) (**SourceForge**) _[last commit 2015]_ <br>
 A open source java card virtual machine implementation. And also some part of the VM code can be used as part of kinds of tools such as javacard bytecode disassembler.
+
+- [PythonCard:](https://bitbucket.org/benallard/pythoncard/) (**BitBucket**) _[last commit 2013] <br>
+JavaCard API simulated in Python environment. The goal is to provide a classic 3.0.1 version, while maintaining compatiblity with earlier version like 2.1.2.
+
+- [Secure Element Emulator](https://github.com/mobilesec/secure-element-emulator)    ![stars](https://img.shields.io/github/stars/mobilesec/secure-element-emulator.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/mobilesec/secure-element-emulator.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/mobilesec/secure-element-emulator.svg) 
+  <br>
+This project aims at emulating a secure element environment for debugging and rapid-prototyping of secure element applets. It is a fork of the open-source Java Card simulator jCardSim (original source code available here). Within our research we added extensions to emulate an application life-cycle that matches the life-cycle of applications on real smartcard chips.
+
+- [vJCRE ](https://github.com/martinpaljak/vJCRE)    ![stars](https://img.shields.io/github/stars/martinpaljak/vJCRE.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/martinpaljak/vJCRE.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/martinpaljak/vJCRE.svg) 
+  <br>
+vJCRE is a virtual Java Card Runtime Environment
 
 ## Learning (various school projects, simple hello world applets, etc)
 
@@ -658,42 +659,51 @@ A open source java card virtual machine implementation. And also some part of th
   <br>
 AppletPlayground is an educational repository for getting to know JavaCard development by learning from existing open source software. It includes various open source applets from the internet, bundled into ready to use package. Everything you need to edit, compile and load the applets to real JavaCard-s or test with an emulator.
 
-- [Simple AES encrypt/decrypt](https://github.com/pauksk/nrf6310-pca10007)    ![stars](https://img.shields.io/github/stars/pauksk/nrf6310-pca10007.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/pauksk/nrf6310-pca10007.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/pauksk/nrf6310-pca10007.svg) 
-  <br>
-Master thesis - protection of wireless networks in smart homes using secure hardware
-
-- [SecureChat](https://github.com/sharedbits/JavaChat)    ![stars](https://img.shields.io/github/stars/sharedbits/JavaChat.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/sharedbits/JavaChat.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/sharedbits/JavaChat.svg) 
-  <br>
-Secure chat client/server application 
-- [JavaCard Demo](https://github.com/leowenyang/JCDemo)    ![stars](https://img.shields.io/github/stars/leowenyang/JCDemo.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/leowenyang/JCDemo.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/leowenyang/JCDemo.svg) 
-  <br>
-Examples of various JavaCard functionalities (as separate applets)
-- [MultiCard](https://github.com/Dragonexodus/MultiCard)    ![stars](https://img.shields.io/github/stars/Dragonexodus/MultiCard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/Dragonexodus/MultiCard.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/Dragonexodus/MultiCard.svg) 
-  <br>
-An school of applied science smartcard project. This project contains offCard and onCard components with various aspects of javacard development.
-- [Hotel Buddy](https://github.com/prayzzz/smartcard)    ![stars](https://img.shields.io/github/stars/prayzzz/smartcard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/prayzzz/smartcard.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/prayzzz/smartcard.svg) 
-  <br>
-Various JavaCard projects created for a lecture-series. Some PKI.           
-- [Simple calculator on JavaCard](https://github.com/steff7/javacard-calculator)    ![stars](https://img.shields.io/github/stars/steff7/javacard-calculator.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/steff7/javacard-calculator.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/steff7/javacard-calculator.svg) 
-  <br>
-- [Maze solver on JavaCard](https://github.com/henryhoo/javacard_maze)    ![stars](https://img.shields.io/github/stars/henryhoo/javacard_maze.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/henryhoo/javacard_maze.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/henryhoo/javacard_maze.svg) 
-  <br>
-A small experiment on memory about java card using jcopv2.2.1           
-- [TraninCard applet](https://github.com/TBoonX/sc_traincard)    ![stars](https://img.shields.io/github/stars/TBoonX/sc_traincard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/TBoonX/sc_traincard.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/TBoonX/sc_traincard.svg) 
-  <br>
-SmartCard - Traincard, No Pain No Gain Project at HTWk Leipzig. 
 - [Client applet for CDAX Crypto](https://github.com/marlonbaeten/cdax-crypto-cpp/tree/f3329fcdf348b6a3ddc95b993dbc97b806aea335/applet) (**GitHub**) _[last commit 2014]_  <br>
 The applet with implementation of basic cryptographic functions offered by JavaCard API
 
 - [CryptedBankCard](https://github.com/Herve-M/UQAM-EMB7015)    ![stars](https://img.shields.io/github/stars/Herve-M/UQAM-EMB7015.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/Herve-M/UQAM-EMB7015.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/Herve-M/UQAM-EMB7015.svg) 
   <br>
 The school project with goal to develop a secure banking card.
-- [Smartcard-Offline-Lock](https://github.com/GeorgesAlkhouri/Smartcard-Offline-Lock)    ![stars](https://img.shields.io/github/stars/GeorgesAlkhouri/Smartcard-Offline-Lock.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/GeorgesAlkhouri/Smartcard-Offline-Lock.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/GeorgesAlkhouri/Smartcard-Offline-Lock.svg) 
+
+- [Hotel Buddy](https://github.com/prayzzz/smartcard)    ![stars](https://img.shields.io/github/stars/prayzzz/smartcard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/prayzzz/smartcard.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/prayzzz/smartcard.svg) 
   <br>
-Electronic door locks are commonly used at hotels, exhibitions or public facilities. An offline-operational solution for an electronic lock is required. This is a study project, so please don't expect to much comfort (single DES key used).
+Various JavaCard projects created for a lecture-series. Some PKI.    
+
+- [JavaCard Demo](https://github.com/leowenyang/JCDemo)    ![stars](https://img.shields.io/github/stars/leowenyang/JCDemo.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/leowenyang/JCDemo.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/leowenyang/JCDemo.svg) 
+  <br>
+Examples of various JavaCard functionalities (as separate applets)
+
 - [Learning applets repository](https://github.com/gracebear/JavaCard)    ![stars](https://img.shields.io/github/stars/gracebear/JavaCard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/gracebear/JavaCard.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/gracebear/JavaCard.svg) 
   <br>
 This repository will provide you with javacard applet for absolutely beginners\ javacard development tools\ javacard open source applets. 
+
+- [Maze solver on JavaCard](https://github.com/henryhoo/javacard_maze)    ![stars](https://img.shields.io/github/stars/henryhoo/javacard_maze.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/henryhoo/javacard_maze.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/henryhoo/javacard_maze.svg) 
+  <br>
+A small experiment on memory about java card using jcopv2.2.1  
+
+- [MultiCard](https://github.com/Dragonexodus/MultiCard)    ![stars](https://img.shields.io/github/stars/Dragonexodus/MultiCard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/Dragonexodus/MultiCard.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/Dragonexodus/MultiCard.svg) 
+  <br>
+An school of applied science smartcard project. This project contains offCard and onCard components with various aspects of javacard development.
+
+- [SecureChat](https://github.com/sharedbits/JavaChat)    ![stars](https://img.shields.io/github/stars/sharedbits/JavaChat.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/sharedbits/JavaChat.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/sharedbits/JavaChat.svg) 
+  <br>
+Secure chat client/server application 
+
+- [Simple AES encrypt/decrypt](https://github.com/pauksk/nrf6310-pca10007)    ![stars](https://img.shields.io/github/stars/pauksk/nrf6310-pca10007.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/pauksk/nrf6310-pca10007.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/pauksk/nrf6310-pca10007.svg) 
+  <br>
+Master thesis - protection of wireless networks in smart homes using secure hardware
+       
+- [Simple calculator on JavaCard](https://github.com/steff7/javacard-calculator)    ![stars](https://img.shields.io/github/stars/steff7/javacard-calculator.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/steff7/javacard-calculator.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/steff7/javacard-calculator.svg) 
+  <br>
+    
+- [Smartcard-Offline-Lock](https://github.com/GeorgesAlkhouri/Smartcard-Offline-Lock)    ![stars](https://img.shields.io/github/stars/GeorgesAlkhouri/Smartcard-Offline-Lock.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/GeorgesAlkhouri/Smartcard-Offline-Lock.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/GeorgesAlkhouri/Smartcard-Offline-Lock.svg) 
+  <br>
+Electronic door locks are commonly used at hotels, exhibitions or public facilities. An offline-operational solution for an electronic lock is required. This is a study project, so please don't expect to much comfort (single DES key used).
+  
+- [TraninCard applet](https://github.com/TBoonX/sc_traincard)    ![stars](https://img.shields.io/github/stars/TBoonX/sc_traincard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/TBoonX/sc_traincard.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/TBoonX/sc_traincard.svg) 
+  <br>
+SmartCard - Traincard, No Pain No Gain Project at HTWk Leipzig. 
 
 ## Unsorted
 
