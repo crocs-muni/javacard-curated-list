@@ -309,9 +309,10 @@ JavaCard applet for speaking NDEF. Implementation of the NDEF Nfc-Forum specific
 
 
 ### CryptoCurrency wallets
-- [SecureBitcoinWalletJavaCardApplet](https://github.com/acidg/SecureBitcoinWalletJavaCardApplet)    ![stars](https://img.shields.io/github/stars/acidg/SecureBitcoinWalletJavaCardApplet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/acidg/SecureBitcoinWalletJavaCardApplet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/acidg/SecureBitcoinWalletJavaCardApplet.svg) 
+
+- [Bitcoin wallet](https://github.com/JavaCardOS/BitcoinWallet)    ![stars](https://img.shields.io/github/stars/JavaCardOS/BitcoinWallet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/JavaCardOS/BitcoinWallet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/JavaCardOS/BitcoinWallet.svg) 
   <br>
-This project is the JavaCard applet for the Secure Bitcoin Wallet App.
+BitcoinWallet is a Bitcoin Hardware Wallet implementation. It is based on the project Ledger Wallet and can be run on JavaCard platform with JCRE version 3.0.x above.
 
 - [Ledger Bitcoin Hardware Wallet ](https://github.com/LedgerHQ/ledger-javacard)    ![stars](https://img.shields.io/github/stars/LedgerHQ/ledger-javacard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/LedgerHQ/ledger-javacard.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/LedgerHQ/ledger-javacard.svg) 
   <br>
@@ -319,30 +320,33 @@ This applet is an implementation of the Ledger Wallet Hardware Wallet specificat
   <br>
 <b>This project is DISCONTINUED according to issues section.</b>. Derived project can be found [here](https://github.com/JavaCardOS/BitcoinWallet).
 
-- [Status KeyCard](https://github.com/status-im/status-keycard)    ![stars](https://img.shields.io/github/stars/status-im/status-keycard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/status-im/status-keycard.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/status-im/status-keycard.svg) 
+- [Lamassu card](https://github.com/lamassu/ssu-card/)    ![stars](https://img.shields.io/github/stars/lamassu/ssu-card/.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/lamassu/ssu-card/.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/lamassu/ssu-card/.svg) 
   <br>
-Keycard is a an implementation of a BIP-32 HD wallet running on Javacard 3.0.4+. Supports among others key generation, derivation and signing, exporting keys defined in the context of EIP-1581, card duplicationand setting up a NFC NDEF tag.
+Very simple applet used by Lamassu Bitcoin machines to sign transaction with ECDSA. 
 
 - [SatoChip Bitcoin applet](https://github.com/Toporin/SatoChipApplet)    ![stars](https://img.shields.io/github/stars/Toporin/SatoChipApplet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/Toporin/SatoChipApplet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/Toporin/SatoChipApplet.svg) 
   <br>
 SatoChip stands for Secure Anonymous Trustless and Open Chip. It is a javacard applet that can be used as a secure hardware wallet running for example on a Yubikey Neo. The SatoChip has full BIP32 supports but due to technical limitations on current javacards, hardened keys (i.e. child keys using indices 2^31 through 2^32-1) are derived much faster than normal keys.
-- [Bitcoin wallet](https://github.com/JavaCardOS/BitcoinWallet)    ![stars](https://img.shields.io/github/stars/JavaCardOS/BitcoinWallet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/JavaCardOS/BitcoinWallet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/JavaCardOS/BitcoinWallet.svg) 
+
+- [SecureBitcoinWalletJavaCardApplet](https://github.com/acidg/SecureBitcoinWalletJavaCardApplet)    ![stars](https://img.shields.io/github/stars/acidg/SecureBitcoinWalletJavaCardApplet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/acidg/SecureBitcoinWalletJavaCardApplet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/acidg/SecureBitcoinWalletJavaCardApplet.svg) 
   <br>
-BitcoinWallet is a Bitcoin Hardware Wallet implementation. It is based on the project Ledger Wallet and can be run on JavaCard platform with JCRE version 3.0.x above.
+This project is the JavaCard applet for the Secure Bitcoin Wallet App.
 
 - [Specter-DIY Bitcoin wallet applets](https://github.com/cryptoadvance/specter-javacard)    ![stars](https://img.shields.io/github/stars/cryptoadvance/specter-javacard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/cryptoadvance/specter-javacard.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/cryptoadvance/specter-javacard.svg) 
   <br>
 This is a collection of JavaCardOS applets for Specter-DIY secrets storage for use by Specter Bitcoin multisignature wallet.
 
-
-- [Lamassu card](https://github.com/lamassu/ssu-card/)    ![stars](https://img.shields.io/github/stars/lamassu/ssu-card/.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/lamassu/ssu-card/.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/lamassu/ssu-card/.svg) 
+- [Status KeyCard](https://github.com/status-im/status-keycard)    ![stars](https://img.shields.io/github/stars/status-im/status-keycard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/status-im/status-keycard.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/status-im/status-keycard.svg) 
   <br>
-Very simple applet used by Lamassu Bitcoin machines to sign transaction with ECDSA. 
+Keycard is a an implementation of a BIP-32 HD wallet running on Javacard 3.0.4+. Supports among others key generation, derivation and signing, exporting keys defined in the context of EIP-1581, card duplicationand setting up a NFC NDEF tag.
 
 ### Emulation of some proprietary cards
 
 - [DESFire applet](https://github.com/robsbeat1/Java-Card-Project)    ![stars](https://img.shields.io/github/stars/robsbeat1/Java-Card-Project.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/robsbeat1/Java-Card-Project.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/robsbeat1/Java-Card-Project.svg)  <br>
 reimplementation of DESFire card - master's thesis proof of concept
+
+- [Gauss Key Card](https://github.com/darconeous/gauss-key-card)    ![stars](https://img.shields.io/github/stars/darconeous/gauss-key-card.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/darconeous/gauss-key-card.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/darconeous/gauss-key-card.svg)  <br>
+Gauss Key Card is a Java Card applet that implements the minimal working subset of the Tesla Key Card Protocol. Supported Java Card implementations that load this application will be able to be paired with a compatible vehicle and subsequently unlock, start, or lock the vehicle in the same way you would with an official key card.
 
 - [JavaCard DESFire emulation](https://github.com/SakaZulu/java-card-desfire-emulation)    ![stars](https://img.shields.io/github/stars/SakaZulu/java-card-desfire-emulation.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/SakaZulu/java-card-desfire-emulation.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/SakaZulu/java-card-desfire-emulation.svg)   <br>
   Emulation of DESFire card
@@ -353,61 +357,64 @@ JC emulation of some Chinese card?
 - [TAG 4 emulation](https://github.com/Tordensky/Tag4)    ![stars](https://img.shields.io/github/stars/Tordensky/Tag4.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/Tordensky/Tag4.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/Tordensky/Tag4.svg)  <br>
 This is an implementation of a TAG 4 for emulation
 
-- [Gauss Key Card](https://github.com/darconeous/gauss-key-card)    ![stars](https://img.shields.io/github/stars/darconeous/gauss-key-card.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/darconeous/gauss-key-card.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/darconeous/gauss-key-card.svg)  <br>
-Gauss Key Card is a Java Card applet that implements the minimal working subset of the Tesla Key Card Protocol. Supported Java Card implementations that load this application will be able to be paired with a compatible vehicle and subsequently unlock, start, or lock the vehicle in the same way you would with an official key card.
-
-
-
 ### Unsorted applications
-- [TPM2 applet](https://github.com/mobilesec/tpm2-se-applet)    ![stars](https://img.shields.io/github/stars/mobilesec/tpm2-se-applet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/mobilesec/tpm2-se-applet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/mobilesec/tpm2-se-applet.svg) 
-  <br>
-The project aims to implement basic TPM2 functionalities for smart cards that run Java Card. Currently, this implementation supports :
-TPM_Startup, TPM_StartAuthSession, TPM_PCR_Extend, TPM_PCR_Read, TPM_PCR_Reset, TPM_ReadPublic, TPM_GetRandom
-- [SmartMeterIQ](https://github.com/adityasawhney/SmartMeterIQ)    ![stars](https://img.shields.io/github/stars/adityasawhney/SmartMeterIQ.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/adityasawhney/SmartMeterIQ.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/adityasawhney/SmartMeterIQ.svg) 
-  <br>
-The main concern with Smart Meters is the granularity of the data which enables physical and behavioral analysis of the consumer in terms of the brand and make of devices installed and their house hold activities (like when do they wake up, when they are not at home). We propose using Java Card platform as it is a natural fit and is designed to be tamper-proof and secure. In addition, we explore using advanced cryptography techniques such as Zero Knowledge Proof of Knowledge (using Pedersen Commitments) to enable the Utility Supplier to trust the data it is getting from the central device.
-- [STKApplet](https://github.com/aliasnash/z-first-applet)    ![stars](https://img.shields.io/github/stars/aliasnash/z-first-applet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/aliasnash/z-first-applet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/aliasnash/z-first-applet.svg) 
-  <br>
-SIM Toolkit Applet
-- [javacard-petrol-rationing](https://github.com/alegen/javacard-petrol-rationing) _[REMOVED, last commit 2014]_ <br>
-Applet for security of Petrol rationing, including design documents, Radboud University, Hardware Security course, JavaCard project
-
-- [LiteID-SimApp](https://github.com/LiteID/LiteID-SimApp)    ![stars](https://img.shields.io/github/stars/LiteID/LiteID-SimApp.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/LiteID/LiteID-SimApp.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/LiteID/LiteID-SimApp.svg) 
-  <br>
-A Sim Application client for LiteID, just started, unfinished 
-- [LicenseCardApp](https://github.com/FourTree/LicenseCardApp)    ![stars](https://img.shields.io/github/stars/FourTree/LicenseCardApp.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/FourTree/LicenseCardApp.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/FourTree/LicenseCardApp.svg) 
-  <br>
-applet handling license usage counters and relevant stuff (no documentation)
-- [Prototype firmware for the Trusted Execution Module (TEM)](https://github.com/csail/tem_fw)    ![stars](https://img.shields.io/github/stars/csail/tem_fw.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/csail/tem_fw.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/csail/tem_fw.svg) 
-  <br>
-Prototype firmware for the Trusted Execution Module (TEM). The firmware is a JavaCard applet, and it can turn any capable JavaCard into a TEM.
-- [Secure-Storage-and-Erasure](https://github.com/SecurityResearcher/SSE)    ![stars](https://img.shields.io/github/stars/SecurityResearcher/SSE.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/SecurityResearcher/SSE.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/SecurityResearcher/SSE.svg) 
-  <br>
-This is an open source prototype of Secure Storage and Erasure (SSE) System, including both the JavaCard and host programs. 
-- [Mobile-ID USAT applet](https://sourceforge.net/projects/mobile-id-usat-applethealt) _[REMOVED, last commit 2017]_ <br>
-The Remarc Mobile-ID USAT applet this is a JavaCard applet with USIM Application Toolkit menu support. 
-Basic functions of the Remarc Mobile-ID SAT applet: Authentication function; Signing function; Changing PIN1/PIN2;  Changing PUK; Unblock PIN1/PIN2; View information - in a USAT menu is present a menu item with information of PIN usage
 
 - [E-Voting applet](https://github.com/EVIVoting/EVIV)    ![stars](https://img.shields.io/github/stars/EVIVoting/EVIV.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/EVIVoting/EVIV.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/EVIVoting/EVIV.svg) 
   <br>
 EVIV is a highly sound End-to-end Verifiable Internet Voting system, which offers full voter’s mobility and preserves the voter’s privacy from the vote casting PC even if the voter votes from a public PC, such as a PC at a cybercafe ́ or at a public library.
-- [UPSC framework](https://github.com/paromix/upsc)    ![stars](https://img.shields.io/github/stars/paromix/upsc.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/paromix/upsc.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/paromix/upsc.svg) 
+
+- [javacard-petrol-rationing](https://github.com/alegen/javacard-petrol-rationing) _[REMOVED, last commit 2014]_ <br>
+Applet for security of Petrol rationing, including design documents, Radboud University, Hardware Security course, JavaCard project
+
+- [LicenseCardApp](https://github.com/FourTree/LicenseCardApp)    ![stars](https://img.shields.io/github/stars/FourTree/LicenseCardApp.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/FourTree/LicenseCardApp.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/FourTree/LicenseCardApp.svg) 
   <br>
-Identity and the security of data transmission is very critical for the success of these e-services. SIM cards might take an important role as a security service provider. They have been used for so many years to preserve the security keys(Ki) and algorithms (A3A8) for authenticating and encrypting the data. Within this project, the international consortium will try to implement a software framework on both the mobile terminal and SIM card that expose the required security functions to popular e-services like Mobile commerce, Financial transactions, Data Encryption, Secure Cloud Storage and Mobile Identity.
+applet handling license usage counters and relevant stuff (no documentation)
+
+- [LiteID-SimApp](https://github.com/LiteID/LiteID-SimApp)    ![stars](https://img.shields.io/github/stars/LiteID/LiteID-SimApp.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/LiteID/LiteID-SimApp.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/LiteID/LiteID-SimApp.svg) 
+  <br>
+A Sim Application client for LiteID
+
+- [Mobile-ID USAT applet](https://sourceforge.net/projects/mobile-id-usat-applethealt) _[REMOVED, last commit 2017]_ <br>
+The Remarc Mobile-ID USAT applet this is a JavaCard applet with USIM Application Toolkit menu support. 
+Basic functions of the Remarc Mobile-ID SAT applet: Authentication function; Signing function; Changing PIN1/PIN2;  Changing PUK; Unblock PIN1/PIN2; View information - in a USAT menu is present a menu item with information of PIN usage
 
 - [MQTT-SCACAuth: Message Queuing Telemetry Transport (MQTT) protocol for SC](https://github.com/EBuetas78/MQTT-SCACAuth)    ![stars](https://img.shields.io/github/stars/EBuetas78/MQTT-SCACAuth.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/EBuetas78/MQTT-SCACAuth.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/EBuetas78/MQTT-SCACAuth.svg) 
   <br>
 Security Method for the Message Queuing Telemetry Transport (MQTT) protocol for  Internet of Things (IoT). Additional message protection implemented on smartcards,  
 SCACAuth_Applets_v2 folder contains the eclipse project for create the applet for JavaCard 3.0.4
 
+- [Prototype firmware for the Trusted Execution Module (TEM)](https://github.com/csail/tem_fw)    ![stars](https://img.shields.io/github/stars/csail/tem_fw.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/csail/tem_fw.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/csail/tem_fw.svg) 
+  <br>
+Prototype firmware for the Trusted Execution Module (TEM). The firmware is a JavaCard applet, and it can turn any capable JavaCard into a TEM.
+
+- [Secure-Storage-and-Erasure](https://github.com/SecurityResearcher/SSE)    ![stars](https://img.shields.io/github/stars/SecurityResearcher/SSE.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/SecurityResearcher/SSE.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/SecurityResearcher/SSE.svg) 
+  <br>
+This is an open source prototype of Secure Storage and Erasure (SSE) System, including both the JavaCard and host programs. 
+
+- [SmartMeterIQ](https://github.com/adityasawhney/SmartMeterIQ)    ![stars](https://img.shields.io/github/stars/adityasawhney/SmartMeterIQ.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/adityasawhney/SmartMeterIQ.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/adityasawhney/SmartMeterIQ.svg) 
+  <br>
+The main concern with Smart Meters is the granularity of the data which enables physical and behavioral analysis of the consumer in terms of the brand and make of devices installed and their house hold activities (like when do they wake up, when they are not at home). We propose using Java Card platform as it is a natural fit and is designed to be tamper-proof and secure. In addition, we explore using advanced cryptography techniques such as Zero Knowledge Proof of Knowledge (using Pedersen Commitments) to enable the Utility Supplier to trust the data it is getting from the central device.
+
+- [STKApplet](https://github.com/aliasnash/z-first-applet)    ![stars](https://img.shields.io/github/stars/aliasnash/z-first-applet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/aliasnash/z-first-applet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/aliasnash/z-first-applet.svg) 
+  <br>
+SIM Toolkit Applet
+
 - [T101-Devhub](https://github.com/ThothTrustCom/T101-Devhub)    ![stars](https://img.shields.io/github/stars/ThothTrustCom/T101-Devhub.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/ThothTrustCom/T101-Devhub.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/ThothTrustCom/T101-Devhub.svg) 
   <br>
 Set of javacard applets like PGP, OTP, password manager, Satochip (T101-Devhub/Samples/) to run on [ThothTrust THETAKey T101 card](https://github.com/ThothTrustCom/T101-Devhub/blob/master/THETAKey%20T101.md)
 
+- [TPM2 applet](https://github.com/mobilesec/tpm2-se-applet)    ![stars](https://img.shields.io/github/stars/mobilesec/tpm2-se-applet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/mobilesec/tpm2-se-applet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/mobilesec/tpm2-se-applet.svg) 
+  <br>
+The project aims to implement basic TPM2 functionalities for smart cards that run Java Card. Currently, this implementation supports :
+TPM_Startup, TPM_StartAuthSession, TPM_PCR_Extend, TPM_PCR_Read, TPM_PCR_Reset, TPM_ReadPublic, TPM_GetRandom
+
+- [UPSC framework](https://github.com/paromix/upsc)    ![stars](https://img.shields.io/github/stars/paromix/upsc.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/paromix/upsc.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/paromix/upsc.svg) 
+  <br>
+Identity and the security of data transmission is very critical for the success of these e-services. SIM cards might take an important role as a security service provider. They have been used for so many years to preserve the security keys(Ki) and algorithms (A3A8) for authenticating and encrypting the data. Within this project, the international consortium will try to implement a software framework on both the mobile terminal and SIM card that expose the required security functions to popular e-services like Mobile commerce, Financial transactions, Data Encryption, Secure Cloud Storage and Mobile Identity.
+
 - [Wookey Javacard applets](https://github.com/wookey-project/javacard-applet)    ![stars](https://img.shields.io/github/stars/wookey-project/javacard-applet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/wookey-project/javacard-applet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/wookey-project/javacard-applet.svg)
   <br>
 Set of javacard applets for the WooKey project: authentication, DFU and signature tokens to run with the [WooKey](https://wookey-project.github.io/), a secure and trusted USB mass storage device featuring user data encryption and strong user authentication, with fully open source and open hardware foundations, developed by ANSSI.
-
 
 ## Library code (code which is expected to be used as part of other code)
 
