@@ -510,27 +510,14 @@ This is an applet demonstrating several curves for use in YubiKey NEO.
 
 ## Developer tools 
 ### Applet build, upload and management
+
+- ["Allow all" ARA-M](https://github.com/seek-for-android/allow-all-ara)    ![stars](https://img.shields.io/github/stars/seek-for-android/allow-all-ara.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/seek-for-android/allow-all-ara.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/seek-for-android/allow-all-ara.svg) 
+  <br>
+GlobalPlatform dummy ARA applet to grant full access
+
 - [Ant-JavaCard](https://github.com/martinpaljak/ant-javacard)    ![stars](https://img.shields.io/github/stars/martinpaljak/ant-javacard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/martinpaljak/ant-javacard.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/martinpaljak/ant-javacard.svg) 
   <br>
 Easy to use Ant task for building JavaCard CAP files in a declarative way.
-
-- [GlobalPlatform tools (GPShell)](https://sourceforge.net/p/globalplatform/) (**SourceForge**) _[last commit 2014]_ <br>
-The GlobalPlatform card specification provides a standard for the management of the contents on a smart card. Mainly this comprises the installation and the removal of applications. 
-
-- [Sun/Oracle JavaCard SDK binaries](https://github.com/martinpaljak/oracle_javacard_sdks)    ![stars](https://img.shields.io/github/stars/martinpaljak/oracle_javacard_sdks.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/martinpaljak/oracle_javacard_sdks.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/martinpaljak/oracle_javacard_sdks.svg) 
-  <br>
-Oracle JavaCard SDK-s for using as a Git submodule for ant-javacard projects.    
-
-- [GlobalPlatform export files](https://github.com/OpenJavaCard/globalplatform-exports)    ![stars](https://img.shields.io/github/stars/OpenJavaCard/globalplatform-exports.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/OpenJavaCard/globalplatform-exports.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/OpenJavaCard/globalplatform-exports.svg) 
-  <br>
-All export files for GlobalPlatform APIs
-
-- [JCProfiler: JavaCard performance profiler](https://github.com/OpenCryptoProject/JCProfiler)    ![stars](https://img.shields.io/github/stars/OpenCryptoProject/JCProfiler.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/OpenCryptoProject/JCProfiler.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/OpenCryptoProject/JCProfiler.svg)  <br>
-Performance profiler for Java Card code. Automatically inserts special execution interruption "traps" into applet code, repeatedly execute target operation and measures time differences between traps. Annotates code with measured time. 
-
-- [OPAL - GlobalPlatform lib](https://bitbucket.org/ssd/opal) (**BitBucket**) _[last commit 2015]_ <br>
-A GlobalPlatform Java Library. OPAL implements several authentication, encryption and transfer protocols for
-smart card. This tool has been developped by the SSD Research Team (XLIM Labs, University of Limoges, France).
 
 - [CAP File Manipulation](https://bitbucket.org/ssd/capmap-free) (**BitBucket**) _[last commit 2012]_ <br>
 A Java Card CAP file parser. 
@@ -539,62 +526,75 @@ A Java Card CAP file parser.
   <br>
 Handle JavaCard CAP files, from command line or Java project. Cap file parsing, signing, displaying metadata....
 
-- [ExpParser](https://sourceforge.net/projects/javacardtools/) (**SourceForge**) _[last commit 2008]_ <br>
-Parser for JavaCard export files (\*.exp) - display content in human-readable form
-
-- [Smart-Card-Tool-pyResMan](https://sourceforge.net/projects/pyresman) (**SourceForge**) _[last commit 2017]_ <br>
-pyResMan is a free open source smartcard tool for JavaCard and other smart card. It can be used to send APDU(s), execute APDU script(s); It can be used to debug ISO14443 protocol commands and Mifare commands with R502 SPY reader; It can also be used to manage resource of GP card. It is based on pyScard and GlobalPlatform open source projects.
-
-- [JavaCard debugging toolkit](https://github.com/omarbenhamid/jcdebug)    ![stars](https://img.shields.io/github/stars/omarbenhamid/jcdebug.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/omarbenhamid/jcdebug.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/omarbenhamid/jcdebug.svg)  <br>
-JCDebug is a JavaCard debugging toolkit. A simple command line tools that instruments JavaCard applets to offer debugging and inspection services directly on the target plateform. Potentially significant project, needs closer look
-
 - [Card2Jar](https://github.com/benjholla/Card2Jar)    ![stars](https://img.shields.io/github/stars/benjholla/Card2Jar.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/benjholla/Card2Jar.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/benjholla/Card2Jar.svg) 
   <br>
 A converter for converting Java Card CAP files to JAR files. Currently this is just a handy wrapper around the JCDK3.0.4_ClassicEdition SDK distribution's normalizer utility. It is subject to all the same caveats as the normalizer.bat interface (must have export EXP file and must be a Java Card 2.2.2 or lower applet).
 
-- ["Allow all" ARA-M](https://github.com/seek-for-android/allow-all-ara)    ![stars](https://img.shields.io/github/stars/seek-for-android/allow-all-ara.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/seek-for-android/allow-all-ara.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/seek-for-android/allow-all-ara.svg) 
+- [ExpParser](https://sourceforge.net/projects/javacardtools/) (**SourceForge**) _[last commit 2008]_ <br>
+Parser for JavaCard export files (\*.exp) - display content in human-readable form
+
+- [GlobalPlatform export files](https://github.com/OpenJavaCard/globalplatform-exports)    ![stars](https://img.shields.io/github/stars/OpenJavaCard/globalplatform-exports.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/OpenJavaCard/globalplatform-exports.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/OpenJavaCard/globalplatform-exports.svg) 
   <br>
-GlobalPlatform dummy ARA applet to grant full access
+All export files for GlobalPlatform APIs
+
+- [GlobalPlatform tools (GPShell)](https://sourceforge.net/p/globalplatform/) (**SourceForge**) _[last commit 2014]_ <br>
+The GlobalPlatform card specification provides a standard for the management of the contents on a smart card. Mainly this comprises the installation and the removal of applications. 
+
+- [JavaCard debugging toolkit](https://github.com/omarbenhamid/jcdebug)    ![stars](https://img.shields.io/github/stars/omarbenhamid/jcdebug.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/omarbenhamid/jcdebug.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/omarbenhamid/jcdebug.svg)  <br>
+JCDebug is a JavaCard debugging toolkit. A simple command line tools that instruments JavaCard applets to offer debugging and inspection services directly on the target plateform. Potentially significant project, needs closer look
+
+- [JCProfiler: JavaCard performance profiler](https://github.com/OpenCryptoProject/JCProfiler)    ![stars](https://img.shields.io/github/stars/OpenCryptoProject/JCProfiler.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/OpenCryptoProject/JCProfiler.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/OpenCryptoProject/JCProfiler.svg)  <br>
+Performance profiler for Java Card code. Automatically inserts special execution interruption "traps" into applet code, repeatedly execute target operation and measures time differences between traps. Annotates code with measured time. 
+
+- [OPAL - GlobalPlatform lib](https://bitbucket.org/ssd/opal) (**BitBucket**) _[last commit 2015]_ <br>
+A GlobalPlatform Java Library. OPAL implements several authentication, encryption and transfer protocols for
+smart card. This tool has been developped by the SSD Research Team (XLIM Labs, University of Limoges, France).
 
 - [Real ARA-M](https://github.com/bertrandmartel/aram-applet)    ![stars](https://img.shields.io/github/stars/bertrandmartel/aram-applet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/bertrandmartel/aram-applet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/bertrandmartel/aram-applet.svg)
   <br>
 A "real" ARA-M applet that doesn't just do Allow-all but offers a fairly complete implementation of the Secure Element Access Control v1.0 specification.
 
+- [Smart-Card-Tool-pyResMan](https://sourceforge.net/projects/pyresman) (**SourceForge**) _[last commit 2017]_ <br>
+pyResMan is a free open source smartcard tool for JavaCard and other smart card. It can be used to send APDU(s), execute APDU script(s); It can be used to debug ISO14443 protocol commands and Mifare commands with R502 SPY reader; It can also be used to manage resource of GP card. It is based on pyScard and GlobalPlatform open source projects.
+
+- [Sun/Oracle JavaCard SDK binaries](https://github.com/martinpaljak/oracle_javacard_sdks)    ![stars](https://img.shields.io/github/stars/martinpaljak/oracle_javacard_sdks.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/martinpaljak/oracle_javacard_sdks.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/martinpaljak/oracle_javacard_sdks.svg) 
+  <br>
+Oracle JavaCard SDK-s for using as a Git submodule for ant-javacard projects.    
 
 ### Card capabilities testing (algorithms support, performance, security issues)
-- [JCAlgTest](https://github.com/crocs-muni/JCAlgTest)    ![stars](https://img.shields.io/github/stars/crocs-muni/JCAlgTest.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/crocs-muni/JCAlgTest.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/crocs-muni/JCAlgTest.svg) 
-  <br>
-Automated testing tool for algorithms from JavaCard API supported by particular smart card. Performance testing of almost all available methods. The results for more than 60+ cards available at https://jcalgtest.org. 
 
 - [ECTester](https://github.com/petrs/ECTester)    ![stars](https://img.shields.io/github/stars/petrs/ECTester.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/petrs/ECTester.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/petrs/ECTester.svg)  <br>
 Tester of Eliptic curves support and behavior (TYPE_EC_FP and TYPE_EC_F2M) on smartcards with JavaCard platform. 
-
-- [PicoLabel AES/DES/RSA speed tester](https://github.com/MpicoSys/PicoLabel)    ![stars](https://img.shields.io/github/stars/MpicoSys/PicoLabel.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/MpicoSys/PicoLabel.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/MpicoSys/PicoLabel.svg) 
-  <br>
-Performance testing for DES/AES/RSA 
-
-- [Performance Benchmark Applet for Javacard/smartcard](https://github.com/dmdclab/smartcard-benchmark)    ![stars](https://img.shields.io/github/stars/dmdclab/smartcard-benchmark.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/dmdclab/smartcard-benchmark.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/dmdclab/smartcard-benchmark.svg) 
-  <br>
-Performance testing for various algorithms, similar as JCAlgTest (needs investigation about difference to JCAlgTest) 
 
 - [HandlerTest](https://github.com/LudovicRousseau/HandlerTest)    ![stars](https://img.shields.io/github/stars/LudovicRousseau/HandlerTest.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/LudovicRousseau/HandlerTest.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/LudovicRousseau/HandlerTest.svg) 
   <br>
 L. Rousseau PCSCLite reader test : This program send commands to a card through the reader.           
 
-- [Memory profiling tool](https://github.com/maxashwin/JavaCard/tree/master/Wkg_MemoryMeasurementScript) (**GitHub**) _[last commit 2017]_  <br>
-Locates an applet constructor and places free memory measurements hooks before and after every allocation command. Summarizes required memory for every allocated object (RAM, EEPROM)   
-
-- [Three applets testing on-card defenses against maliciously modified applets](https://github.com/maxashwin/JavaCard)    ![stars](https://img.shields.io/github/stars/maxashwin/JavaCard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/maxashwin/JavaCard.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/maxashwin/JavaCard.svg)  <br>
-Abuse of Shareable interface, type confusion after use of Shareable interface, direct modification of CAP file
+- [JCAlgTest](https://github.com/crocs-muni/JCAlgTest)    ![stars](https://img.shields.io/github/stars/crocs-muni/JCAlgTest.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/crocs-muni/JCAlgTest.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/crocs-muni/JCAlgTest.svg) 
+  <br>
+Automated testing tool for algorithms from JavaCard API supported by particular smart card. Performance testing of almost all available methods. The results for more than 60+ cards available at https://jcalgtest.org. 
 
 - [JCOSTestKit](https://github.com/ThothTrustCom/JCOSTestKit) [stars](https://img.shields.io/github/stars/ThothTrustCom/JCOSTestKit.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/ThothTrustCom/JCOSTestKit.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/ThothTrustCom/JCOSTestKit.svg) 
   <br>
 JCOS testing kit platform with modular plugin capability. Possibly alternative approach to JCAlgTest allowing for finer definition of the operations and their sequence as defined by host plugin.
 
+- [Memory profiling tool](https://github.com/maxashwin/JavaCard/tree/master/Wkg_MemoryMeasurementScript) (**GitHub**) _[last commit 2017]_  <br>
+Locates an applet constructor and places free memory measurements hooks before and after every allocation command. Summarizes required memory for every allocated object (RAM, EEPROM)   
+
+- [Performance Benchmark Applet for Javacard/smartcard](https://github.com/dmdclab/smartcard-benchmark)    ![stars](https://img.shields.io/github/stars/dmdclab/smartcard-benchmark.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/dmdclab/smartcard-benchmark.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/dmdclab/smartcard-benchmark.svg) 
+  <br>
+Performance testing for various algorithms, similar as JCAlgTest (needs investigation about difference to JCAlgTest) 
+
+- [PicoLabel AES/DES/RSA speed tester](https://github.com/MpicoSys/PicoLabel)    ![stars](https://img.shields.io/github/stars/MpicoSys/PicoLabel.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/MpicoSys/PicoLabel.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/MpicoSys/PicoLabel.svg) 
+  <br>
+Performance testing for DES/AES/RSA 
+
 - [SPA-JavaCard-Applet](https://github.com/crocs-muni/SPA-JavaCard-Applet) [stars](https://img.shields.io/github/stars/crocs-muni/SPA-JavaCard-Applet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/crocs-muni/SPA-JavaCard-Applet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/crocs-muni/SPA-JavaCard-Applet.svg) 
   <br>
 JavaCard applet implementating basic cryptographic operations triggered during power analysis measurements using [SPA-Cryptographic-Operations-Extractor](https://github.com/crocs-muni/SPA-Cryptographic-Operations-Extractor) tool
 
+- [Three applets testing on-card defenses against maliciously modified applets](https://github.com/maxashwin/JavaCard)    ![stars](https://img.shields.io/github/stars/maxashwin/JavaCard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/maxashwin/JavaCard.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/maxashwin/JavaCard.svg)  <br>
+Abuse of Shareable interface, type confusion after use of Shareable interface, direct modification of CAP file
 
 ### Formal verification and code transformation tools
 - [VeriFast](https://github.com/verifast/verifast)    ![stars](https://img.shields.io/github/stars/verifast/verifast.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/verifast/verifast.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/verifast/verifast.svg) 
