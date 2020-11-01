@@ -708,17 +708,18 @@ SmartCard - Traincard, No Pain No Gain Project at HTWk Leipzig.
 ## Unsorted
 
 ### (needs further inspection)
+
 - [Corba](https://github.com/lbarbisan/corba)    ![stars](https://img.shields.io/github/stars/lbarbisan/corba.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/lbarbisan/corba.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/lbarbisan/corba.svg) 
   <br>
 old project, CryptoFlex uploader?
-- [unifei-smart-cards](https://github.com/tiagorg/unifei-smart-cards)    ![stars](https://img.shields.io/github/stars/tiagorg/unifei-smart-cards.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/tiagorg/unifei-smart-cards.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/tiagorg/unifei-smart-cards.svg) 
-  <br>
-Material developed in UNIFEI-MG research about Smart Cards          
 
 - [Teleport secret Bitcoin applet](https://github.com/EyeOfPython/teleport_secret)    ![stars](https://img.shields.io/github/stars/EyeOfPython/teleport_secret.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/EyeOfPython/teleport_secret.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/EyeOfPython/teleport_secret.svg) 
   <br>
 Basic applet implementing simple Bitcoin signature functionality.      
 
+- [unifei-smart-cards](https://github.com/tiagorg/unifei-smart-cards)    ![stars](https://img.shields.io/github/stars/tiagorg/unifei-smart-cards.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/tiagorg/unifei-smart-cards.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/tiagorg/unifei-smart-cards.svg) 
+  <br>
+Material developed in UNIFEI-MG research about Smart Cards          
 
 
 ### Methodology
