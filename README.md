@@ -210,41 +210,49 @@ payment applet
 This is a simple wallet simply maintains a running account balance allowing you to credit, debit, or review the current balance of the wallet. This is simply for pure demonstration on various wearable technologies where a javacard secure element is available.
 
 ### Key and password managers
+- [CryptSetup JavaCard Key Manager](https://github.com/WOnder93/cryptsetup-javacard)    ![stars](https://img.shields.io/github/stars/WOnder93/cryptsetup-javacard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/WOnder93/cryptsetup-javacard.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/WOnder93/cryptsetup-javacard.svg) 
+  <br>
+A JavaCard key manager for Cryptsetup. School project, but well documented and extensive 
+
+- [Java Card OpenPGP Card](https://github.com/jderuiter/javacard-openpgpcard)    ![stars](https://img.shields.io/github/stars/jderuiter/javacard-openpgpcard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/jderuiter/javacard-openpgpcard.svg)  ![numcontributors](https://img.shields.io/github/contributors-anon/jderuiter/javacard-openpgpcard.svg) 
+  <br>
+This is a Java Card implementation of the OpenPGP smart card specifications.
+
 - [JavaCardKeymaster](https://github.com/divegeek/JavaCardKeymaster)    ![stars](https://img.shields.io/github/stars/divegeek/JavaCardKeymaster.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/divegeek/JavaCardKeymaster.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/divegeek/JavaCardKeymaster.svg) 
   <br>
 JavaCard implementation of the Android Keymaster 4.1 HAL (most of the specification is in the Android Keymaster 4.0 HAL), intended for creation of StrongBox Keymaster instances to support the Android Hardware-backed Keystore.
 
+- [JCPasswordManager](https://github.com/bayotop/JCPasswordManager)    ![stars](https://img.shields.io/github/stars/bayotop/JCPasswordManager.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/bayotop/JCPasswordManager.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/bayotop/JCPasswordManager.svg)   <br>
+JavaCard Password Manager is a java applet used to create and securely store a strong password used with the steganography app created by. School project, but well documented.
 
-- [SIM password wallet](https://github.com/bertrandmartel/sim-password-wallet)    ![stars](https://img.shields.io/github/stars/bertrandmartel/sim-password-wallet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/bertrandmartel/sim-password-wallet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/bertrandmartel/sim-password-wallet.svg) 
-  <br>
-Android application interacting with a JavaCard applet installed on SIM card. 
-- [CryptSetup JavaCard Key Manager](https://github.com/WOnder93/cryptsetup-javacard)    ![stars](https://img.shields.io/github/stars/WOnder93/cryptsetup-javacard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/WOnder93/cryptsetup-javacard.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/WOnder93/cryptsetup-javacard.svg) 
-  <br>
-A JavaCard key manager for Cryptsetup. School project, but well documented and extensive 
 - [KeepassNFCApplet](https://github.com/JavaCardOS/KeepassNFCApplet)    ![stars](https://img.shields.io/github/stars/JavaCardOS/KeepassNFCApplet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/JavaCardOS/KeepassNFCApplet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/JavaCardOS/KeepassNFCApplet.svg) 
   <br>
 KeepassNFC is a applet in javacard platform that can protect the secret key of KeePass database.
-- [Smartcard crypto applet](https://github.com/nfd/smartcard_crypto_applet)    ![stars](https://img.shields.io/github/stars/nfd/smartcard_crypto_applet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/nfd/smartcard_crypto_applet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/nfd/smartcard_crypto_applet.svg) 
-  <br>
-This repository constains the same source code ( -Februrary 2020- ) as the repository listed above ([KeepassNFCApplet](https://github.com/JavaCardOS/KeepassNFCApplet))
-- [Java Card OpenPGP Card](https://github.com/jderuiter/javacard-openpgpcard)    ![stars](https://img.shields.io/github/stars/jderuiter/javacard-openpgpcard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/jderuiter/javacard-openpgpcard.svg)  ![numcontributors](https://img.shields.io/github/contributors-anon/jderuiter/javacard-openpgpcard.svg) 
-  <br>
-This is a Java Card implementation of the OpenPGP smart card specifications.
-- [SIM Password Manager](https://github.com/nelenkov/sim-password-manager)    ![stars](https://img.shields.io/github/stars/nelenkov/sim-password-manager.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/nelenkov/sim-password-manager.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/nelenkov/sim-password-manager.svg) 
-  <br>
-Android password manager app that implements password encryption inside a secure element (SE). Can only run on a device that supports the Open Mobile API (aka SmartCardService). Requires associated Java Card applet to be loaded in the SE (SIM card or embedded SE) in advance.
-- [SIM password store](https://github.com/gtomek/sim-password-store)    ![stars](https://img.shields.io/github/stars/gtomek/sim-password-store.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/gtomek/sim-password-store.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/gtomek/sim-password-store.svg) 
-  <br>
-SIM toolkit application allowing storage and retrieval of the logins and passwords by SMS in a secure way. It demonstates how to develop a SIM toolkit application that can securely store and manage information on the SIM and communcate with an external world via SMS.
-- [TrueCrypt password storage applet](https://github.com/Mercixor/smartcard-truecrypt)    ![stars](https://img.shields.io/github/stars/Mercixor/smartcard-truecrypt.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/Mercixor/smartcard-truecrypt.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/Mercixor/smartcard-truecrypt.svg) 
-  <br>
-Using TrueCrypt with a JavaCard. The app stores the user container passwords on a SmartCard and automatically loads the passwords from it to the choosen Containers. The user just remember a four digit PIN to access the SmartCard. Additionally I've implented an password-share methode. The user is able to share passwords with previous stored PublicKeys (RSA 2048 Bit). The private key is generated during the of the card and don't leave this.
+
 - [Password manager](https://github.com/cranixx/Passmg)    ![stars](https://img.shields.io/github/stars/cranixx/Passmg.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/cranixx/Passmg.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/cranixx/Passmg.svg) 
   <br>
 Password manager for javacards. Tested on J3A081 card. 
 
-- [JCPasswordManager](https://github.com/bayotop/JCPasswordManager)    ![stars](https://img.shields.io/github/stars/bayotop/JCPasswordManager.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/bayotop/JCPasswordManager.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/bayotop/JCPasswordManager.svg)   <br>
-JavaCard Password Manager is a java applet used to create and securely store a strong password used with the steganography app created by. School project, but well documented.
+- [SIM Password Manager](https://github.com/nelenkov/sim-password-manager)    ![stars](https://img.shields.io/github/stars/nelenkov/sim-password-manager.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/nelenkov/sim-password-manager.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/nelenkov/sim-password-manager.svg) 
+  <br>
+Android password manager app that implements password encryption inside a secure element (SE). Can only run on a device that supports the Open Mobile API (aka SmartCardService). Requires associated Java Card applet to be loaded in the SE (SIM card or embedded SE) in advance.
+
+- [SIM password store](https://github.com/gtomek/sim-password-store)    ![stars](https://img.shields.io/github/stars/gtomek/sim-password-store.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/gtomek/sim-password-store.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/gtomek/sim-password-store.svg) 
+  <br>
+SIM toolkit application allowing storage and retrieval of the logins and passwords by SMS in a secure way. It demonstates how to develop a SIM toolkit application that can securely store and manage information on the SIM and communcate with an external world via SMS.
+
+- [SIM password wallet](https://github.com/bertrandmartel/sim-password-wallet)    ![stars](https://img.shields.io/github/stars/bertrandmartel/sim-password-wallet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/bertrandmartel/sim-password-wallet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/bertrandmartel/sim-password-wallet.svg) 
+  <br>
+Android application interacting with a JavaCard applet installed on SIM card. 
+
+- [Smartcard crypto applet](https://github.com/nfd/smartcard_crypto_applet)    ![stars](https://img.shields.io/github/stars/nfd/smartcard_crypto_applet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/nfd/smartcard_crypto_applet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/nfd/smartcard_crypto_applet.svg) 
+  <br>
+This repository constains the same source code ( -Februrary 2020- ) as the repository listed above ([KeepassNFCApplet](https://github.com/JavaCardOS/KeepassNFCApplet))
+
+- [TrueCrypt password storage applet](https://github.com/Mercixor/smartcard-truecrypt)    ![stars](https://img.shields.io/github/stars/Mercixor/smartcard-truecrypt.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/Mercixor/smartcard-truecrypt.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/Mercixor/smartcard-truecrypt.svg) 
+  <br>
+Using TrueCrypt with a JavaCard. The app stores the user container passwords on a SmartCard and automatically loads the passwords from it to the choosen Containers. The user just remember a four digit PIN to access the SmartCard. Additionally I've implented an password-share methode. The user is able to share passwords with previous stored PublicKeys (RSA 2048 Bit). The private key is generated during the of the card and don't leave this.
+
 
 ### Digital signing, OpenPGP and mail security
 - [Yubico OpenPGP applet](https://github.com/Yubico/ykneo-openpgp)    ![stars](https://img.shields.io/github/stars/Yubico/ykneo-openpgp.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/Yubico/ykneo-openpgp.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/Yubico/ykneo-openpgp.svg) 
