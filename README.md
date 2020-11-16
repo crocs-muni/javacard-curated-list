@@ -540,6 +540,10 @@ All export files for GlobalPlatform APIs
 - [GlobalPlatform tools (GPShell)](https://sourceforge.net/p/globalplatform/) (**SourceForge**) _[last commit 2014]_ <br>
 The GlobalPlatform card specification provides a standard for the management of the contents on a smart card. Mainly this comprises the installation and the removal of applications. 
 
+- [GlobalPlatformPro tool](https://github.com/martinpaljak/GlobalPlatformPro)    ![stars](https://img.shields.io/github/stars/martinpaljak/GlobalPlatformPro.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/martinpaljak/GlobalPlatformPro.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/martinpaljak/GlobalPlatformPro.svg) 
+  <br>
+Mature tool for managing applets via GlobalPlatform
+
 - [JavaCard debugging toolkit](https://github.com/omarbenhamid/jcdebug)    ![stars](https://img.shields.io/github/stars/omarbenhamid/jcdebug.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/omarbenhamid/jcdebug.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/omarbenhamid/jcdebug.svg)  <br>
 JCDebug is a JavaCard debugging toolkit. A simple command line tools that instruments JavaCard applets to offer debugging and inspection services directly on the target plateform. Potentially significant project, needs closer look
 
