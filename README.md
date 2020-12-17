@@ -357,6 +357,9 @@ JC emulation of some Chinese card?
 - [TAG 4 emulation](https://github.com/Tordensky/Tag4)    ![stars](https://img.shields.io/github/stars/Tordensky/Tag4.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/Tordensky/Tag4.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/Tordensky/Tag4.svg)  <br>
 This is an implementation of a TAG 4 for emulation
 
+- [IllegalSecurityChip](https://github.com/dogtopus/IllegalSecurityChip)    ![stars](https://img.shields.io/github/stars/dogtopus/IllegalSecurityChip.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/dogtopus/IllegalSecurityChip.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/dogtopus/IllegalSecurityChip.svg)   <br>
+An APDU layer emulator for the secure element found in PS4 officially licensed peripherals. It tries to be legal unlike its name suggests.
+
 ### Unsorted applications
 
 - [E-Voting applet](https://github.com/EVIVoting/EVIV)    ![stars](https://img.shields.io/github/stars/EVIVoting/EVIV.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/EVIVoting/EVIV.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/EVIVoting/EVIV.svg) 
