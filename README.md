@@ -348,6 +348,9 @@ reimplementation of DESFire card - master's thesis proof of concept
 - [Gauss Key Card](https://github.com/darconeous/gauss-key-card)    ![stars](https://img.shields.io/github/stars/darconeous/gauss-key-card.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/darconeous/gauss-key-card.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/darconeous/gauss-key-card.svg)  <br>
 Gauss Key Card is a Java Card applet that implements the minimal working subset of the Tesla Key Card Protocol. Supported Java Card implementations that load this application will be able to be paired with a compatible vehicle and subsequently unlock, start, or lock the vehicle in the same way you would with an official key card.
 
+- [IllegalSecurityChip](https://github.com/dogtopus/IllegalSecurityChip)    ![stars](https://img.shields.io/github/stars/dogtopus/IllegalSecurityChip.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/dogtopus/IllegalSecurityChip.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/dogtopus/IllegalSecurityChip.svg)   <br>
+An APDU layer emulator for the secure element found in PS4 officially licensed peripherals. It tries to be legal unlike its name suggests.
+
 - [JavaCard DESFire emulation](https://github.com/SakaZulu/java-card-desfire-emulation)    ![stars](https://img.shields.io/github/stars/SakaZulu/java-card-desfire-emulation.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/SakaZulu/java-card-desfire-emulation.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/SakaZulu/java-card-desfire-emulation.svg)   <br>
   Emulation of DESFire card
 
@@ -356,9 +359,6 @@ JC emulation of some Chinese card?
 
 - [TAG 4 emulation](https://github.com/Tordensky/Tag4)    ![stars](https://img.shields.io/github/stars/Tordensky/Tag4.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/Tordensky/Tag4.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/Tordensky/Tag4.svg)  <br>
 This is an implementation of a TAG 4 for emulation
-
-- [IllegalSecurityChip](https://github.com/dogtopus/IllegalSecurityChip)    ![stars](https://img.shields.io/github/stars/dogtopus/IllegalSecurityChip.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/dogtopus/IllegalSecurityChip.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/dogtopus/IllegalSecurityChip.svg)   <br>
-An APDU layer emulator for the secure element found in PS4 officially licensed peripherals. It tries to be legal unlike its name suggests.
 
 ### Unsorted applications
 
