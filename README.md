@@ -88,6 +88,9 @@ This CCU2F JavaCard Applet is based on the Ledger U2F Applet. I imported this ap
 - [Generic Identity Device Specification Applet](https://github.com/vletoux/GidsApplet)  ![stars](https://img.shields.io/github/stars/vletoux/GidsApplet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/vletoux/GidsApplet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/vletoux/GidsApplet.svg)  <br>
 Generic Identity Device Specification (GIDS) smart card is the only PKI smart card whose driver is integrated on each Windows since Windows 7 SP1 and which can be used read and write. No Windows driver installation is required. Based on ISOApplet PKI
 
+- [Generic Identity Device Applet (JavaCardOS)](https://github.com/JavaCardOS/GidsApp)  ![stars](https://img.shields.io/github/stars/JavaCardOS/GidsApp.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/JavaCardOS/GidsApp.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/JavaCardOS/GidsApp.svg)  <br>
+GidsApp is a javacard applet which was developed according the specification GIDS 2.0 (Generic Identity Device Specification).This project is based on GidsApplet (above). It provides a generic identity command set for interaction with smart cards that are used for identity applications.
+
 - [HOTP authenticator via NDEF tag](https://github.com/petrs/hotp_via_ndef)    ![stars](https://img.shields.io/github/stars/petrs/hotp_via_ndef.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/petrs/hotp_via_ndef.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/petrs/hotp_via_ndef.svg)  <br>
 JavaCard HMAC-based One Time Password generator which delivers new code via URL tag of NDEF every time the card is put close to NFC-enabled phone. As the Android (and soon also iOS) handles the NDEF tags natively, no additional software is required (after initial card personalization with OTP secret key).
 
