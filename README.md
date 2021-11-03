@@ -550,6 +550,10 @@ The GlobalPlatform card specification provides a standard for the management of 
   <br>
 Mature tool for managing applets via GlobalPlatform
 
+- [GlobalPlatform Open Mobile API (OMAPI) tests](https://github.com/GlobalPlatform/OMAPI-applets)    ![stars](https://img.shields.io/github/stars/GlobalPlatform/OMAPI-applets.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/GlobalPlatform/OMAPI-applets.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/GlobalPlatform/OMAPI-applets.svg) 
+  <br>
+Large set of test applets for GlobalPlatform Open Mobile API (OMAPI).
+
 - [JavaCard debugging toolkit](https://github.com/omarbenhamid/jcdebug)    ![stars](https://img.shields.io/github/stars/omarbenhamid/jcdebug.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/omarbenhamid/jcdebug.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/omarbenhamid/jcdebug.svg)  <br>
 JCDebug is a JavaCard debugging toolkit. A simple command line tools that instruments JavaCard applets to offer debugging and inspection services directly on the target plateform. Potentially significant project, needs closer look
 
