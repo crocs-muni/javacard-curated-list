@@ -97,6 +97,9 @@ JavaCard HMAC-based One Time Password generator which delivers new code via URL 
 - [ISOApplet PKI](https://github.com/philipWendland/IsoApplet)    ![stars](https://img.shields.io/github/stars/philipWendland/IsoApplet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/philipWendland/IsoApplet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/philipWendland/IsoApplet.svg)   <br>
 A Java Card PKI Applet aiming to be ISO 7816 compliant. The Applet is capable of saving a PKCS#15 file structure and performing PKI related operations using the private key, such as signing or decrypting. Private keys can be generated directly on the smartcard or imported from the host computer. The import of private keys is disabled in the default security configuration. 
 
+- [Android Identity Credential HAL JCICStoreApplet](https://github.com/mdwivedi/JavacardIdentity)    ![stars](https://img.shields.io/github/stars/mdwivedi/JavacardIdentity.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/mdwivedi/JavacardIdentity.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/mdwivedi/JavacardIdentity.svg)   <br>
+Javacard Implementation for the Android Identity Credential HAL
+
 - [Ledger U2F Applet](https://github.com/LedgerHQ/ledger-u2f-javacard)    ![stars](https://img.shields.io/github/stars/LedgerHQ/ledger-u2f-javacard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/LedgerHQ/ledger-u2f-javacard.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/LedgerHQ/ledger-u2f-javacard.svg) 
   <br> 
 This applet is a Java Card implementation of the FIDO Alliance U2F standard. It uses no proprietary vendor API and is freely available on Ledger Unplugged and for a small fee on other Fidesmo devices through Fidesmo store.
