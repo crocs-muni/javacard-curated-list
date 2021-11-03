@@ -464,7 +464,7 @@ Provides software re-implementation of low-level operations like ECPoint or BigI
   <br>
 Implementation of some hash chain
 
-- [LibESE Android verified boot](https://github.com/ADVAN-ELAA-8QM-PRC1/platform-external-libese)    ![stars](https://img.shields.io/github/stars/ADVAN-ELAA-8QM-PRC1/platform-external-libese.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/ADVAN-ELAA-8QM-PRC1/platform-external-libese.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/ADVAN-ELAA-8QM-PRC1/platform-external-libese.svg)   <br>
+- [LibESE Android verified boot](https://github.com/TinkerBoard2-Android/external-libese)    ![stars](https://img.shields.io/github/stars/TinkerBoard2-Android/external-libese.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/TinkerBoard2-Android/external-libese.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/TinkerBoard2-Android/external-libese.svg)   <br>
 Minimal transport wrapper for communicating with embedded secure elements on Android
 
 - [OPACITY auth protocol for JC](https://github.com/shevelevsergey/opacity-for-smartcard)    ![stars](https://img.shields.io/github/stars/shevelevsergey/opacity-for-smartcard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/shevelevsergey/opacity-for-smartcard.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/shevelevsergey/opacity-for-smartcard.svg) 
