@@ -181,6 +181,10 @@ Collection of source code for many EMV-related projects: SimpleEMVApplet, java-c
   <br>
 This tool emulates an EMV-CAP device, to illustrate the article "Banque en ligne : a la decouverte d'EMV-CAP" published in MISC, issue #56.
 
+- [Gemplus Purse applet](https://github.com/ncatanoc/chasetool)    ![stars](https://img.shields.io/github/stars/ncatanoc/chasetool.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/ncatanoc/chasetool.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/ncatanoc/chasetool.svg) 
+  <br>
+Static analysis of java code applied to example of very old Gemplus Purse applet 
+
 - [JavaCard Wallet](https://github.com/RimGazzeh/JavaCard_Wallet)    ![stars](https://img.shields.io/github/stars/RimGazzeh/JavaCard_Wallet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/RimGazzeh/JavaCard_Wallet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/RimGazzeh/JavaCard_Wallet.svg) 
   <br>
 Client/Server application of an electronic wallet (Pin, Storage, control, payment..) 
