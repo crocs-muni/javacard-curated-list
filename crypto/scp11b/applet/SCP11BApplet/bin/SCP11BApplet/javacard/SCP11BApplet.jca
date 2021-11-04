@@ -1,0 +1,4827 @@
+// converted by version 1.3
+// on Sat Oct 30 14:30:42 SGT 2021
+
+.package SCP11BApplet {
+	.aid 0x35:0x35:0x35:0x35:0x35:0x35:0x35:0x35:0x35:0x35;
+	.version 1.0;
+
+	.imports {
+		0xA0:0x0:0x0:0x0:0x62:0x0:0x1 1.0;		//java/lang
+		0xA0:0x0:0x0:0x0:0x62:0x2:0x1 1.5;		//javacardx/crypto
+		0xA0:0x0:0x0:0x0:0x62:0x1:0x2 1.5;		//javacard/security
+		0xA0:0x0:0x0:0x0:0x62:0x1:0x1 1.5;		//javacard/framework
+	}
+
+	.applet {
+		0x35:0x35:0x35:0x35:0x35:0x35:0x35:0x35:0x35:0x35:0x0 SCP11BApplet;
+	}
+
+	.constantPool {
+		// 0
+		instanceFieldRef 2.19 KeyProfile/pubKey;
+		// 1
+		instanceFieldRef 2.18 KeyProfile/privKey;
+		// 2
+		instanceFieldRef 2.16 KeyProfile/kp;
+		// 3
+		instanceFieldRef byte KeyProfile/ecKeyAlgo;
+		// 4
+		virtualMethodRef 1.1.3(Ljavacard/security/Key;B)V;		// init(Ljavacard/security/Key;B)V
+			.descriptor	Ljavacard/security/Key;	2.0;
+
+		// 5
+		virtualMethodRef 1.1.1([BSS[BS)S;		// doFinal([BSS[BS)S
+		// 6
+		staticMethodRef 3.16.2([BS[BSS)S;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+		// 7
+		staticMethodRef MathUtil/shiftLeft([BSSS)V;
+		// 8
+		staticFieldRef byte[] CMAC/Rb;
+		// 9
+		staticMethodRef MathUtil/xorN([BS[BSS[BS)V;
+		// 10
+		staticMethodRef MathUtil/ceil(SS)S;
+		// 11
+		classRef 0.2;		// java/lang/Exception
+		// 12
+		staticFieldRef byte[] ECC/EC_P256R1_FIELD_A;
+		// 13
+		classRef 2.17;		// javacard/security/ECKey
+		// 14
+		staticFieldRef byte[] ECC/EC_P256R1_FIELD_B;
+		// 15
+		staticFieldRef byte[] ECC/EC_P256R1_FIELD_G;
+		// 16
+		staticFieldRef byte[] ECC/EC_P256R1_FIELD_R;
+		// 17
+		staticFieldRef byte[] ECC/EC_P256R1_FP;
+		// 18
+		staticFieldRef byte ECC/K;
+		// 19
+		staticFieldRef byte[] ECC/EC_P256K1_FIELD_A;
+		// 20
+		staticFieldRef byte[] ECC/EC_P256K1_FIELD_B;
+		// 21
+		staticFieldRef byte[] ECC/EC_P256K1_FP;
+		// 22
+		staticFieldRef byte[] ECC/EC_P256K1_FIELD_G;
+		// 23
+		staticFieldRef byte[] ECC/EC_P256K1_FIELD_R;
+		// 24
+		staticFieldRef byte[] ECC/EC_P384R1_FIELD_A;
+		// 25
+		staticFieldRef byte[] ECC/EC_P384R1_FIELD_B;
+		// 26
+		staticFieldRef byte[] ECC/EC_P384R1_FIELD_G;
+		// 27
+		staticFieldRef byte[] ECC/EC_P384R1_FIELD_R;
+		// 28
+		staticFieldRef byte[] ECC/EC_P384R1_FP;
+		// 29
+		staticFieldRef byte[] ECC/EC_P521R1_FIELD_A;
+		// 30
+		staticFieldRef byte[] ECC/EC_P521R1_FIELD_B;
+		// 31
+		staticFieldRef byte[] ECC/EC_P521R1_FIELD_G;
+		// 32
+		staticFieldRef byte[] ECC/EC_P521R1_FIELD_R;
+		// 33
+		staticFieldRef byte[] ECC/EC_P521R1_FP;
+		// 34
+		staticMethodRef 3.7.1(S)V;		// javacard/framework/ISOException.throwIt(S)V
+		// 35
+		staticMethodRef 0.0.0()V;		// java/lang/Object.<init>()V
+		// 36
+		staticMethodRef CMAC/cmacGenerateSubKey(Ljavacardx/crypto/Cipher;Ljavacard/security/AESKey;[BS[BS[BS[BS)V;
+			.descriptor	Ljavacardx/crypto/Cipher;	1.1;
+			.descriptor	Ljavacard/security/AESKey;	2.20;
+
+		// 37
+		staticMethodRef CMAC/cmacGenerateMAC(Ljavacardx/crypto/Cipher;Ljavacard/security/AESKey;[BSS[BSS[BS[BS[BS[BS)Z;
+			.descriptor	Ljavacardx/crypto/Cipher;	1.1;
+			.descriptor	Ljavacard/security/AESKey;	2.20;
+
+		// 38
+		staticMethodRef 3.16.3([BSSB)S;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+		// 39
+		virtualMethodRef KeyProfile/isValidKeyAlgo(B)Z;
+		// 40
+		staticFieldRef short SCP11BApplet/SW_INVALID_ALGO;
+		// 41
+		classRef 2.18;		// javacard/security/ECPrivateKey
+		// 42
+		classRef 2.19;		// javacard/security/ECPublicKey
+		// 43
+		staticMethodRef 2.13.0(BSZ)Ljavacard/security/Key;;		// javacard/security/KeyBuilder.buildKey(BSZ)Ljavacard/security/Key;
+			.descriptor	Ljavacard/security/Key;	2.0;
+
+		// 44
+		staticMethodRef ECC/setCommonCurveParameters(Ljavacard/security/ECKey;B)Z;
+			.descriptor	Ljavacard/security/ECKey;	2.17;
+
+		// 45
+		classRef 2.16;		// javacard/security/KeyPair
+		// 46
+		staticMethodRef 2.16.1(Ljavacard/security/PublicKey;Ljavacard/security/PrivateKey;)V;		// javacard/security/KeyPair.<init>(Ljavacard/security/PublicKey;Ljavacard/security/PrivateKey;)V
+			.descriptor	Ljavacard/security/PublicKey;	2.3;
+			.descriptor	Ljavacard/security/PrivateKey;	2.2;
+
+		// 47
+		virtualMethodRef 2.16.1()V;		// genKeyPair()V
+		// 48
+		staticFieldRef short SCP11BApplet/SW_INVALID_KEY_SIZE;
+		// 49
+		staticFieldRef 2.22 SCP11BApplet/ka;
+		// 50
+		virtualMethodRef 2.22.1(Ljavacard/security/PrivateKey;)V;		// init(Ljavacard/security/PrivateKey;)V
+			.descriptor	Ljavacard/security/PrivateKey;	2.2;
+
+		// 51
+		virtualMethodRef 2.22.3([BSS[BS)S;		// generateSecret([BSS[BS)S
+		// 52
+		staticFieldRef byte SCP11BApplet/ALGO_EC_P256R1;
+		// 53
+		staticFieldRef byte SCP11BApplet/ALGO_EC_P256K1;
+		// 54
+		staticMethodRef MathUtil/add(BB[BS)B;
+		// 55
+		staticMethodRef MathUtil/add(BBB[BS)B;
+		// 56
+		staticMethodRef MathUtil/add([BS[BS[BS)V;
+		// 57
+		staticMethodRef MathUtil/add64([BS[BS[BS)V;
+		// 58
+		staticMethodRef MathUtil/add128([BS[BS[BS)V;
+		// 59
+		staticMethodRef MathUtil/mod64Add([BS[BS[BS)V;
+		// 60
+		staticMethodRef MathUtil/mod128Add([BS[BS[BS)V;
+		// 61
+		classRef 0.5;		// java/lang/ArrayIndexOutOfBoundsException
+		// 62
+		staticMethodRef 3.16.5(BB)S;		// javacard/framework/Util.makeShort(BB)S
+		// 63
+		staticFieldRef byte[] MathUtil/ASCIIHEX;
+		// 64
+		staticMethodRef MathUtil/asciiNibbleToBin(B)B;
+		// 65
+		staticFieldRef byte[] MathUtil/BCD_SIZE_PER_BYTES;
+		// 66
+		staticMethodRef 3.3.0()V;		// javacard/framework/Applet.<init>()V
+		// 67
+		staticMethodRef 3.8.13(SB)[B;		// javacard/framework/JCSystem.makeTransientByteArray(SB)[B
+		// 68
+		staticFieldRef byte[] SCP11BApplet/b0;
+		// 69
+		staticFieldRef byte[] SCP11BApplet/b1;
+		// 70
+		staticFieldRef byte[] SCP11BApplet/b2;
+		// 71
+		staticFieldRef byte[] SCP11BApplet/hmacSHA256KeyBuff;
+		// 72
+		staticFieldRef byte[] SCP11BApplet/secSessMacChain;
+		// 73
+		staticFieldRef byte[] SCP11BApplet/secSessIV;
+		// 74
+		staticFieldRef byte[] SCP11BApplet/debugBytes;
+		// 75
+		staticFieldRef byte[] SCP11BApplet/debugBytes1;
+		// 76
+		staticMethodRef 2.14.0(B)Ljavacard/security/RandomData;;		// javacard/security/RandomData.getInstance(B)Ljavacard/security/RandomData;
+			.descriptor	Ljavacard/security/RandomData;	2.14;
+
+		// 77
+		staticFieldRef 2.14 SCP11BApplet/rand;
+		// 78
+		staticMethodRef 2.22.0(BZ)Ljavacard/security/KeyAgreement;;		// javacard/security/KeyAgreement.getInstance(BZ)Ljavacard/security/KeyAgreement;
+			.descriptor	Ljavacard/security/KeyAgreement;	2.22;
+
+		// 79
+		staticMethodRef 2.11.0(BZ)Ljavacard/security/MessageDigest;;		// javacard/security/MessageDigest.getInstance(BZ)Ljavacard/security/MessageDigest;
+			.descriptor	Ljavacard/security/MessageDigest;	2.11;
+
+		// 80
+		staticFieldRef 2.11 SCP11BApplet/sha256;
+		// 81
+		staticMethodRef 1.1.0(BZ)Ljavacardx/crypto/Cipher;;		// javacardx/crypto/Cipher.getInstance(BZ)Ljavacardx/crypto/Cipher;
+			.descriptor	Ljavacardx/crypto/Cipher;	1.1;
+
+		// 82
+		staticFieldRef 1.1 SCP11BApplet/aesCBCNoPad;
+		// 83
+		staticFieldRef 1.1 SCP11BApplet/aesECB;
+		// 84
+		classRef KeyProfile;
+		// 85
+		staticMethodRef KeyProfile/<init>()V;
+		// 86
+		staticFieldRef KeyProfile SCP11BApplet/hwProfile;
+		// 87
+		virtualMethodRef KeyProfile/genNewKeyPair(B)V;
+		// 88
+		staticFieldRef 2.18 SCP11BApplet/ecTmpPriv;
+		// 89
+		staticFieldRef 2.19 SCP11BApplet/ecTmpPub;
+		// 90
+		staticFieldRef 2.16 SCP11BApplet/tmpKP;
+		// 91
+		classRef 2.20;		// javacard/security/AESKey
+		// 92
+		staticFieldRef 2.20 SCP11BApplet/SMACKey;
+		// 93
+		staticFieldRef 2.20 SCP11BApplet/SRMACKey;
+		// 94
+		staticFieldRef 2.20 SCP11BApplet/SENCKey;
+		// 95
+		staticFieldRef 2.20 SCP11BApplet/SDECKey;
+		// 96
+		staticFieldRef 2.20 SCP11BApplet/receiptKey;
+		// 97
+		classRef SCP11BApplet;
+		// 98
+		staticMethodRef SCP11BApplet/<init>()V;
+		// 99
+		virtualMethodRef 3.3.2([BSB)V;		// register([BSB)V
+		// 100
+		virtualMethodRef 3.3.3()Z;		// selectingApplet()Z
+		// 101
+		virtualMethodRef 3.10.1()[B;		// getBuffer()[B
+		// 102
+		staticMethodRef 3.8.18()V;		// javacard/framework/JCSystem.requestObjectDeletion()V
+		// 103
+		virtualMethodRef KeyProfile/getPublicKey()Ljavacard/security/ECPublicKey;;
+			.descriptor	Ljavacard/security/ECPublicKey;	2.19;
+
+		// 104
+		virtualMethodRef 3.10.8(SS)V;		// setOutgoingAndSend(SS)V
+		// 105
+		virtualMethodRef 3.10.6()S;		// setIncomingAndReceive()S
+		// 106
+		virtualMethodRef 3.10.16()S;		// getOffsetCdata()S
+		// 107
+		virtualMethodRef KeyProfile/getPrivateKey()Ljavacard/security/ECPrivateKey;;
+			.descriptor	Ljavacard/security/ECPrivateKey;	2.18;
+
+		// 108
+		staticMethodRef SecureChannel/initSecureChannelOpen([BSSLjavacard/security/ECPrivateKey;[BS[BS[BSLjavacard/security/AESKey;Ljavacard/security/AESKey;Ljavacard/security/AESKey;Ljavacard/security/AESKey;Ljavacard/security/AESKey;)S;
+			.descriptor	Ljavacard/security/ECPrivateKey;	2.18;
+			.descriptor	Ljavacard/security/AESKey;	2.20;
+			.descriptor	Ljavacard/security/AESKey;	2.20;
+			.descriptor	Ljavacard/security/AESKey;	2.20;
+			.descriptor	Ljavacard/security/AESKey;	2.20;
+			.descriptor	Ljavacard/security/AESKey;	2.20;
+
+		// 109
+		staticMethodRef SecureChannel/generateSCP11BReceipt(Ljavacard/security/AESKey;[BSS[BS[BS[BS)S;
+			.descriptor	Ljavacard/security/AESKey;	2.20;
+
+		// 110
+		staticMethodRef SecureChannel/handleMessage(ZLjavacard/security/AESKey;Ljavacard/security/AESKey;[BSS[BS[BS[BS[BS)S;
+			.descriptor	Ljavacard/security/AESKey;	2.20;
+			.descriptor	Ljavacard/security/AESKey;	2.20;
+
+		// 111
+		virtualMethodRef KeyProfile/computeECDHSharedSecretASN1([BSS[BS)S;
+		// 112
+		virtualMethodRef KeyProfile/computeECDHSharedSecretASN1(Ljavacard/security/ECPrivateKey;[BSS[BS)S;
+			.descriptor	Ljavacard/security/ECPrivateKey;	2.18;
+
+		// 113
+		virtualMethodRef 2.11.4()V;		// reset()V
+		// 114
+		virtualMethodRef 2.11.1([BSS[BS)S;		// doFinal([BSS[BS)S
+		// 115
+		staticFieldRef byte[] SecureChannel/CRTTLCA6;
+		// 116
+		staticFieldRef byte[] SecureChannel/ePKOCEECKATAG;
+		// 117
+		staticMethodRef CMAC/process(Ljavacardx/crypto/Cipher;Ljavacard/security/AESKey;[BSS[BS[BSS)S;
+			.descriptor	Ljavacardx/crypto/Cipher;	1.1;
+			.descriptor	Ljavacard/security/AESKey;	2.20;
+
+		// 118
+		staticMethodRef SecureChannel/calcAPDUCrypto(ZLjavacard/security/AESKey;[BSS[BS[BS[BS)S;
+			.descriptor	Ljavacard/security/AESKey;	2.20;
+
+		// 119
+		staticMethodRef SecureChannel/calcAPDURMAC(Ljavacard/security/AESKey;[BSS[BS[BS[BS)S;
+			.descriptor	Ljavacard/security/AESKey;	2.20;
+
+		// 120
+		staticMethodRef SecureChannel/calcAPDUCMAC(Ljavacard/security/AESKey;[BSS[BS[BS[BS)S;
+			.descriptor	Ljavacard/security/AESKey;	2.20;
+
+		// 121
+		staticMethodRef 3.16.0([BS[BSS)B;		// javacard/framework/Util.arrayCompare([BS[BSS)B
+		// 122
+		virtualMethodRef 1.1.4(Ljavacard/security/Key;B[BSS)V;		// init(Ljavacard/security/Key;B[BSS)V
+			.descriptor	Ljavacard/security/Key;	2.0;
+
+		// 123
+		staticMethodRef ISO9797Pad/process(Z[BSS[BS)S;
+		// 124
+		staticMethodRef MathUtil/increment128([BS[BS[BS)V;
+	}
+
+	.class public CMAC 0 extends 0.0 {		// extends java/lang/Object
+
+		.fields {
+			public static final short blockSize = 16;		// S
+			public static final short subKeys = 2;		// S
+			public static final short subKeyLen = 16;		// S
+			public static final byte[] Rb 0 = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-121};		// [B
+		}
+
+		.publicMethodTable 1 {
+			equals(Ljava/lang/Object;)Z;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method public <init>()V 0 {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					invokespecial 35;		// java/lang/Object.<init>()V
+					return;
+		}
+
+		.method public static process(Ljavacardx/crypto/Cipher;Ljavacard/security/AESKey;[BSS[BS[BSS)S 1 {
+			.stack 17;
+			.locals 0;
+
+			.descriptor	Ljavacardx/crypto/Cipher;	1.1;
+			.descriptor	Ljavacard/security/AESKey;	2.20;
+
+				L0:	aload_0;
+					aload_1;
+					aload 5;
+					sload 6;
+					bspush 32;
+					sadd;
+					aload 5;
+					sload 6;
+					aload 5;
+					sload 6;
+					bspush 16;
+					sadd;
+					aload 5;
+					sload 6;
+					bspush 48;
+					sadd;
+					invokestatic 36;		// SCP11BApplet/CMAC.cmacGenerateSubKey(Ljavacardx/crypto/Cipher;Ljavacard/security/AESKey;[BS[BS[BS[BS)V
+					aload_0;
+					aload_1;
+					aload_2;
+					sload_3;
+					sload 4;
+					aload 7;
+					sload 8;
+					sload 9;
+					aload 5;
+					sload 6;
+					aload 5;
+					sload 6;
+					bspush 16;
+					sadd;
+					aload 5;
+					sload 6;
+					bspush 32;
+					sadd;
+					aload 5;
+					sload 6;
+					bspush 48;
+					sadd;
+					invokestatic 37;		// SCP11BApplet/CMAC.cmacGenerateMAC(Ljavacardx/crypto/Cipher;Ljavacard/security/AESKey;[BSS[BSS[BS[BS[BS[BS)Z
+					ifeq L2;
+				L1:	sload 9;
+					sreturn;
+				L2:	sconst_0;
+					sreturn;
+		}
+
+		.method private static cmacGenerateSubKey(Ljavacardx/crypto/Cipher;Ljavacard/security/AESKey;[BS[BS[BS[BS)V {
+			.stack 7;
+			.locals 0;
+
+			.descriptor	Ljavacardx/crypto/Cipher;	1.1;
+			.descriptor	Ljavacard/security/AESKey;	2.20;
+
+				L0:	aload_2;
+					sload_3;
+					bspush 16;
+					sconst_0;
+					invokestatic 38;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					aload_0;
+					aload_1;
+					sconst_2;
+					invokevirtual 4;		// init(Ljavacard/security/Key;B)V
+					aload_0;
+					aload_2;
+					sload_3;
+					bspush 16;
+					aload_2;
+					sload_3;
+					invokevirtual 5;		// doFinal([BSS[BS)S
+					pop;
+					aload_2;
+					sload_3;
+					aload 4;
+					sload 5;
+					bspush 16;
+					invokestatic 6;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					aload 4;
+					sload 5;
+					bspush 16;
+					sconst_1;
+					invokestatic 7;		// SCP11BApplet/MathUtil.shiftLeft([BSSS)V
+					aload_2;
+					sload_3;
+					baload;
+					bspush -128;
+					sand;
+					ifeq L2;
+				L1:	aload 4;
+					sload 5;
+					getstatic_a 8;		// reference SCP11BApplet/CMAC.Rb
+					sconst_0;
+					bspush 16;
+					aload 4;
+					sload 5;
+					invokestatic 9;		// SCP11BApplet/MathUtil.xorN([BS[BSS[BS)V
+				L2:	aload 4;
+					sload 5;
+					aload 6;
+					sload 7;
+					bspush 16;
+					invokestatic 6;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					aload 6;
+					sload 7;
+					bspush 16;
+					sconst_1;
+					invokestatic 7;		// SCP11BApplet/MathUtil.shiftLeft([BSSS)V
+					aload 4;
+					sload 5;
+					baload;
+					bspush -128;
+					sand;
+					ifeq L4;
+				L3:	aload 6;
+					sload 7;
+					getstatic_a 8;		// reference SCP11BApplet/CMAC.Rb
+					sconst_0;
+					bspush 16;
+					aload 6;
+					sload 7;
+					invokestatic 9;		// SCP11BApplet/MathUtil.xorN([BS[BSS[BS)V
+				L4:	return;
+		}
+
+		.method private static cmacGenerateMAC(Ljavacardx/crypto/Cipher;Ljavacard/security/AESKey;[BSS[BSS[BS[BS[BS[BS)Z {
+			.stack 7;
+			.locals 5;
+
+			.descriptor	Ljavacardx/crypto/Cipher;	1.1;
+			.descriptor	Ljavacard/security/AESKey;	2.20;
+
+				L0:	sload 4;
+					bspush 16;
+					invokestatic 10;		// SCP11BApplet/MathUtil.ceil(SS)S
+					sstore 16;
+				L1:	sconst_0;
+					sstore 17;
+				L2:	sload 7;
+					bspush 16;
+					if_scmple L4;
+				L3:	sconst_0;
+					sreturn;
+				L4:	aload 12;
+					sload 13;
+					bspush 16;
+					sconst_0;
+					invokestatic 38;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					aload 14;
+					sload 15;
+					bspush 16;
+					sconst_0;
+					invokestatic 38;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					sload 16;
+					ifne L6;
+				L5:	sconst_1;
+					sstore 16;
+					goto L8;
+				L6:	sload 4;
+					bspush 16;
+					srem;
+					ifne L8;
+				L7:	sconst_1;
+					sstore 17;
+				L8:	sconst_0;
+					sstore 18;
+				L9:	goto_w L24;
+				L10:	sload 18;
+					sload 16;
+					sconst_1;
+					ssub;
+					if_scmpne_w L22;
+				L11:	sload 17;
+					ifne L20;
+				L12:	sconst_0;
+					sstore 19;
+				L13:	sconst_0;
+					sstore 20;
+				L14:	sload 4;
+					ifle L18;
+				L15:	sload 18;
+					ifne L17;
+				L16:	bspush 16;
+					sload 4;
+					ssub;
+					sstore 20;
+					goto L18;
+				L17:	sload 18;
+					bspush 16;
+					smul;
+					sstore 19;
+					sload 4;
+					sload 19;
+					ssub;
+					sstore 20;
+				L18:	aload 12;
+					sload 13;
+					bspush 16;
+					sconst_0;
+					invokestatic 38;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					aload_2;
+					sload 19;
+					sload_3;
+					sadd;
+					aload 12;
+					sload 13;
+					sload 20;
+					invokestatic 6;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					aload 12;
+					sload 13;
+					sload 20;
+					sadd;
+					bspush -128;
+					bastore;
+					aload 12;
+					sload 13;
+					aload 10;
+					sload 11;
+					bspush 16;
+					aload 12;
+					sload 13;
+					invokestatic 9;		// SCP11BApplet/MathUtil.xorN([BS[BSS[BS)V
+				L19:	goto L21;
+				L20:	aload_2;
+					sload_3;
+					sload 18;
+					bspush 16;
+					smul;
+					sadd;
+					aload 12;
+					sload 13;
+					bspush 16;
+					invokestatic 6;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					aload 12;
+					sload 13;
+					aload 8;
+					sload 9;
+					bspush 16;
+					aload 12;
+					sload 13;
+					invokestatic 9;		// SCP11BApplet/MathUtil.xorN([BS[BSS[BS)V
+				L21:	aload 14;
+					sload 15;
+					aload 12;
+					sload 13;
+					bspush 16;
+					aload 12;
+					sload 13;
+					invokestatic 9;		// SCP11BApplet/MathUtil.xorN([BS[BSS[BS)V
+					aload_0;
+					aload_1;
+					sconst_2;
+					invokevirtual 4;		// init(Ljavacard/security/Key;B)V
+					aload_0;
+					aload 12;
+					sload 13;
+					bspush 16;
+					aload 12;
+					sload 13;
+					invokevirtual 5;		// doFinal([BSS[BS)S
+					pop;
+					aload 12;
+					sload 13;
+					aload 5;
+					sload 6;
+					sload 7;
+					invokestatic 6;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					goto L23;
+				L22:	aload_2;
+					sload_3;
+					sload 18;
+					bspush 16;
+					smul;
+					sadd;
+					aload 12;
+					sload 13;
+					bspush 16;
+					invokestatic 6;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					aload 14;
+					sload 15;
+					aload 12;
+					sload 13;
+					bspush 16;
+					aload 12;
+					sload 13;
+					invokestatic 9;		// SCP11BApplet/MathUtil.xorN([BS[BSS[BS)V
+					aload_0;
+					aload_1;
+					sconst_2;
+					invokevirtual 4;		// init(Ljavacard/security/Key;B)V
+					aload_0;
+					aload 12;
+					sload 13;
+					bspush 16;
+					aload 12;
+					sload 13;
+					invokevirtual 5;		// doFinal([BSS[BS)S
+					pop;
+					aload 12;
+					sload 13;
+					aload 14;
+					sload 15;
+					bspush 16;
+					invokestatic 6;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+				L23:	sinc 18 1;
+				L24:	sload 18;
+					sload 16;
+					if_scmplt_w L10;
+				L25:	sconst_1;
+					sreturn;
+		}
+
+	}
+
+	.class public ECC 1 extends 0.0 {		// extends java/lang/Object
+
+		.fields {
+			protected static byte[] EC_P256R1_FIELD_A 0 = {-1,-1,-1,-1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-4};		// [B
+			protected static byte[] EC_P256R1_FIELD_B 1 = {90,-58,53,-40,-86,58,-109,-25,-77,-21,-67,85,118,-104,-122,-68,101,29,6,-80,-52,83,-80,-10,59,-50,60,62,39,-46,96,75};		// [B
+			protected static byte[] EC_P256R1_FIELD_G 2 = {4,107,23,-47,-14,-31,44,66,71,-8,-68,-26,-27,99,-92,64,-14,119,3,125,-127,45,-21,51,-96,-12,-95,57,69,-40,-104,-62,-106,79,-29,66,-30,-2,26,127,-101,-114,-25,-21,74,124,15,-98,22,43,-50,51,87,107,49,94,-50,-53,-74,64,104,55,-65,81,-11};		// [B
+			protected static byte[] EC_P256R1_FIELD_R 3 = {-1,-1,-1,-1,0,0,0,0,-1,-1,-1,-1,-1,-1,-1,-1,-68,-26,-6,-83,-89,23,-98,-124,-13,-71,-54,-62,-4,99,37,81};		// [B
+			protected static byte[] EC_P256R1_FP 4 = {-1,-1,-1,-1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1};		// [B
+			protected static byte[] EC_P256K1_FIELD_A 5 = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};		// [B
+			protected static byte[] EC_P256K1_FIELD_B 6 = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7};		// [B
+			protected static byte[] EC_P256K1_FIELD_G 7 = {4,121,-66,102,126,-7,-36,-69,-84,85,-96,98,-107,-50,-121,11,7,2,-101,-4,-37,45,-50,40,-39,89,-14,-127,91,22,-8,23,-104,72,58,-38,119,38,-93,-60,101,93,-92,-5,-4,14,17,8,-88,-3,23,-76,72,-90,-123,84,25,-100,71,-48,-113,-5,16,-44,-72};		// [B
+			protected static byte[] EC_P256K1_FIELD_R 8 = {-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-2,-70,-82,-36,-26,-81,72,-96,59,-65,-46,94,-116,-48,54,65,65};		// [B
+			protected static byte[] EC_P256K1_FP 9 = {-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-2,-1,-1,-4,47};		// [B
+			protected static byte[] EC_P384R1_FIELD_A 10 = {-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-2,-1,-1,-1,-1,0,0,0,0,0,0,0,0,-1,-1,-1,-4};		// [B
+			protected static byte[] EC_P384R1_FIELD_B 11 = {-77,49,47,-89,-30,62,-25,-28,-104,-114,5,107,-29,-8,45,25,24,29,-100,110,-2,-127,65,18,3,20,8,-113,80,19,-121,90,-58,86,57,-115,-118,46,-47,-99,42,-123,-56,-19,-45,-20,42,-17};		// [B
+			protected static byte[] EC_P384R1_FIELD_G 12 = {4,-86,-121,-54,34,-66,-117,5,55,-114,-79,-57,30,-13,32,-83,116,110,29,59,98,-117,-89,-101,-104,89,-9,65,-32,-126,84,42,56,85,2,-14,93,-65,85,41,108,58,84,94,56,114,118,10,-73,54,23,-34,74,-106,38,44,111,93,-98,-104,-65,-110,-110,-36,41,-8,-12,29,-67,40,-102,20,124,-23,-38,49,19,-75,-16,-72,-64,10,96,-79,-50,29,126,-127,-99,122,67,29,124,-112,-22,14,95};		// [B
+			protected static byte[] EC_P384R1_FIELD_R 13 = {-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-57,99,77,-127,-12,55,45,-33,88,26,13,-78,72,-80,-89,122,-20,-20,25,106,-52,-59,41,115};		// [B
+			protected static byte[] EC_P384R1_FP 14 = {-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-2,-1,-1,-1,-1,0,0,0,0,0,0,0,0,-1,-1,-1,-1};		// [B
+			protected static byte[] EC_P521R1_FIELD_A 15 = {1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-4};		// [B
+			protected static byte[] EC_P521R1_FIELD_B 16 = {0,81,-107,62,-71,97,-114,28,-102,31,-110,-102,33,-96,-74,-123,64,-18,-94,-38,114,91,-103,-77,21,-13,-72,-76,-119,-111,-114,-15,9,-31,86,25,57,81,-20,126,-109,123,22,82,-64,-67,59,-79,-65,7,53,115,-33,-120,61,44,52,-15,-17,69,31,-44,107,80,63,0};		// [B
+			protected static byte[] EC_P521R1_FIELD_G 17 = {4,0,-58,-123,-114,6,-73,4,4,-23,-51,-98,62,-53,102,35,-107,-76,66,-100,100,-127,57,5,63,-75,33,-8,40,-81,96,107,77,61,-70,-95,75,94,119,-17,-25,89,40,-2,29,-63,39,-94,-1,-88,-34,51,72,-77,-63,-123,106,66,-101,-7,126,126,49,-62,-27,-67,102,1,24,57,41,106,120,-102,59,-64,4,92,-118,95,-76,44,125,27,-39,-104,-11,68,73,87,-101,68,104,23,-81,-67,23,39,62,102,44,-105,-18,114,-103,94,-12,38,64,-59,80,-71,1,63,-83,7,97,53,60,112,-122,-94,114,-62,64,-120,-66,-108,118,-97,-47,102,80};		// [B
+			protected static byte[] EC_P521R1_FIELD_R 18 = {1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-6,81,-122,-121,-125,-65,47,-106,107,127,-52,1,72,-9,9,-91,-48,59,-75,-55,-72,-119,-100,71,-82,-69,111,-73,30,-111,56,100,9};		// [B
+			protected static byte[] EC_P521R1_FP 19 = {1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1};		// [B
+			protected static byte K 20 = 1;		// B
+		}
+
+		.publicMethodTable 1 {
+			equals(Ljava/lang/Object;)Z;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method public <init>()V 0 {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					invokespecial 35;		// java/lang/Object.<init>()V
+					return;
+		}
+
+		.method protected static setCommonCurveParameters(Ljavacard/security/ECKey;B)Z 1 {
+			.stack 4;
+			.locals 0;
+
+			.descriptor	Ljavacard/security/ECKey;	2.17;
+
+				L0:	sload_1;
+					stableswitch L9 1 4 L1 L3 L5 L7;
+				L1:	aload_0;
+					getstatic_a 12;		// reference SCP11BApplet/ECC.EC_P256R1_FIELD_A
+					sconst_0;
+					getstatic_a 12;		// reference SCP11BApplet/ECC.EC_P256R1_FIELD_A
+					arraylength;
+					invokeinterface 4 13 3;		// javacard/security/ECKey
+					aload_0;
+					getstatic_a 14;		// reference SCP11BApplet/ECC.EC_P256R1_FIELD_B
+					sconst_0;
+					getstatic_a 14;		// reference SCP11BApplet/ECC.EC_P256R1_FIELD_B
+					arraylength;
+					invokeinterface 4 13 4;		// javacard/security/ECKey
+					aload_0;
+					getstatic_a 15;		// reference SCP11BApplet/ECC.EC_P256R1_FIELD_G
+					sconst_0;
+					getstatic_a 15;		// reference SCP11BApplet/ECC.EC_P256R1_FIELD_G
+					arraylength;
+					invokeinterface 4 13 5;		// javacard/security/ECKey
+					aload_0;
+					getstatic_a 16;		// reference SCP11BApplet/ECC.EC_P256R1_FIELD_R
+					sconst_0;
+					getstatic_a 16;		// reference SCP11BApplet/ECC.EC_P256R1_FIELD_R
+					arraylength;
+					invokeinterface 4 13 6;		// javacard/security/ECKey
+					aload_0;
+					getstatic_a 17;		// reference SCP11BApplet/ECC.EC_P256R1_FP
+					sconst_0;
+					getstatic_a 17;		// reference SCP11BApplet/ECC.EC_P256R1_FP
+					arraylength;
+					invokeinterface 4 13 0;		// javacard/security/ECKey
+					aload_0;
+					getstatic_b 18;		// byte SCP11BApplet/ECC.K
+					invokeinterface 2 13 7;		// javacard/security/ECKey
+				L2:	sconst_1;
+					sreturn;
+				L3:	aload_0;
+					getstatic_a 19;		// reference SCP11BApplet/ECC.EC_P256K1_FIELD_A
+					sconst_0;
+					getstatic_a 19;		// reference SCP11BApplet/ECC.EC_P256K1_FIELD_A
+					arraylength;
+					invokeinterface 4 13 3;		// javacard/security/ECKey
+					aload_0;
+					getstatic_a 20;		// reference SCP11BApplet/ECC.EC_P256K1_FIELD_B
+					sconst_0;
+					getstatic_a 20;		// reference SCP11BApplet/ECC.EC_P256K1_FIELD_B
+					arraylength;
+					invokeinterface 4 13 4;		// javacard/security/ECKey
+					aload_0;
+					getstatic_a 21;		// reference SCP11BApplet/ECC.EC_P256K1_FP
+					sconst_0;
+					getstatic_a 21;		// reference SCP11BApplet/ECC.EC_P256K1_FP
+					arraylength;
+					invokeinterface 4 13 0;		// javacard/security/ECKey
+					aload_0;
+					getstatic_a 22;		// reference SCP11BApplet/ECC.EC_P256K1_FIELD_G
+					sconst_0;
+					getstatic_a 22;		// reference SCP11BApplet/ECC.EC_P256K1_FIELD_G
+					arraylength;
+					invokeinterface 4 13 5;		// javacard/security/ECKey
+					aload_0;
+					getstatic_a 23;		// reference SCP11BApplet/ECC.EC_P256K1_FIELD_R
+					sconst_0;
+					getstatic_a 23;		// reference SCP11BApplet/ECC.EC_P256K1_FIELD_R
+					arraylength;
+					invokeinterface 4 13 6;		// javacard/security/ECKey
+					aload_0;
+					getstatic_b 18;		// byte SCP11BApplet/ECC.K
+					invokeinterface 2 13 7;		// javacard/security/ECKey
+				L4:	sconst_1;
+					sreturn;
+				L5:	aload_0;
+					getstatic_a 24;		// reference SCP11BApplet/ECC.EC_P384R1_FIELD_A
+					sconst_0;
+					getstatic_a 24;		// reference SCP11BApplet/ECC.EC_P384R1_FIELD_A
+					arraylength;
+					invokeinterface 4 13 3;		// javacard/security/ECKey
+					aload_0;
+					getstatic_a 25;		// reference SCP11BApplet/ECC.EC_P384R1_FIELD_B
+					sconst_0;
+					getstatic_a 25;		// reference SCP11BApplet/ECC.EC_P384R1_FIELD_B
+					arraylength;
+					invokeinterface 4 13 4;		// javacard/security/ECKey
+					aload_0;
+					getstatic_a 26;		// reference SCP11BApplet/ECC.EC_P384R1_FIELD_G
+					sconst_0;
+					getstatic_a 26;		// reference SCP11BApplet/ECC.EC_P384R1_FIELD_G
+					arraylength;
+					invokeinterface 4 13 5;		// javacard/security/ECKey
+					aload_0;
+					getstatic_a 27;		// reference SCP11BApplet/ECC.EC_P384R1_FIELD_R
+					sconst_0;
+					getstatic_a 27;		// reference SCP11BApplet/ECC.EC_P384R1_FIELD_R
+					arraylength;
+					invokeinterface 4 13 6;		// javacard/security/ECKey
+					aload_0;
+					getstatic_a 28;		// reference SCP11BApplet/ECC.EC_P384R1_FP
+					sconst_0;
+					getstatic_a 28;		// reference SCP11BApplet/ECC.EC_P384R1_FP
+					arraylength;
+					invokeinterface 4 13 0;		// javacard/security/ECKey
+					aload_0;
+					getstatic_b 18;		// byte SCP11BApplet/ECC.K
+					invokeinterface 2 13 7;		// javacard/security/ECKey
+				L6:	sconst_1;
+					sreturn;
+				L7:	aload_0;
+					getstatic_a 29;		// reference SCP11BApplet/ECC.EC_P521R1_FIELD_A
+					sconst_0;
+					getstatic_a 29;		// reference SCP11BApplet/ECC.EC_P521R1_FIELD_A
+					arraylength;
+					invokeinterface 4 13 3;		// javacard/security/ECKey
+					aload_0;
+					getstatic_a 30;		// reference SCP11BApplet/ECC.EC_P521R1_FIELD_B
+					sconst_0;
+					getstatic_a 30;		// reference SCP11BApplet/ECC.EC_P521R1_FIELD_B
+					arraylength;
+					invokeinterface 4 13 4;		// javacard/security/ECKey
+					aload_0;
+					getstatic_a 31;		// reference SCP11BApplet/ECC.EC_P521R1_FIELD_G
+					sconst_0;
+					getstatic_a 31;		// reference SCP11BApplet/ECC.EC_P521R1_FIELD_G
+					arraylength;
+					invokeinterface 4 13 5;		// javacard/security/ECKey
+					aload_0;
+					getstatic_a 32;		// reference SCP11BApplet/ECC.EC_P521R1_FIELD_R
+					sconst_0;
+					getstatic_a 32;		// reference SCP11BApplet/ECC.EC_P521R1_FIELD_R
+					arraylength;
+					invokeinterface 4 13 6;		// javacard/security/ECKey
+					aload_0;
+					getstatic_a 33;		// reference SCP11BApplet/ECC.EC_P521R1_FP
+					sconst_0;
+					getstatic_a 33;		// reference SCP11BApplet/ECC.EC_P521R1_FP
+					arraylength;
+					invokeinterface 4 13 0;		// javacard/security/ECKey
+					aload_0;
+					getstatic_b 18;		// byte SCP11BApplet/ECC.K
+					invokeinterface 2 13 7;		// javacard/security/ECKey
+				L8:	sconst_1;
+					sreturn;
+				L9:	goto L11;
+				L10:	pop;
+					sconst_0;
+					sreturn;
+				L11:	sconst_0;
+					sreturn;
+			.exceptionTable {
+				// start_block end_block handler_block catch_type_index
+				L0 L2 L10 11;
+				L3 L4 L10 11;
+				L5 L6 L10 11;
+				L7 L8 L10 11;
+			}
+		}
+
+		.method public static asn1SignatureToRS([BSS[BS)S 2 {
+			.stack 5;
+			.locals 2;
+
+				L0:	sconst_0;
+					sstore 5;
+				L1:	sconst_0;
+					sstore 6;
+				L2:	aload_3;
+					sload 4;
+					bspush 64;
+					sconst_0;
+					invokestatic 38;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					aload_0;
+					sload_1;
+					baload;
+					bspush 48;
+					if_scmpeq L4;
+				L3:	sspush 28577;
+					invokestatic 34;		// javacard/framework/ISOException.throwIt(S)V
+					sconst_0;
+					sreturn;
+				L4:	sinc 5 1;
+					aload_0;
+					sload_1;
+					sload 5;
+					sadd;
+					baload;
+					sspush 255;
+					sand;
+					sstore 6;
+					sload_2;
+					sconst_2;
+					ssub;
+					sload 6;
+					if_scmpeq L6;
+				L5:	sspush 28578;
+					invokestatic 34;		// javacard/framework/ISOException.throwIt(S)V
+					sconst_0;
+					sreturn;
+				L6:	sinc 5 1;
+					aload_0;
+					sload_1;
+					sload 5;
+					sadd;
+					baload;
+					sconst_2;
+					if_scmpeq L8;
+				L7:	sspush 28579;
+					invokestatic 34;		// javacard/framework/ISOException.throwIt(S)V
+					sconst_0;
+					sreturn;
+				L8:	sinc 5 1;
+					aload_0;
+					sload_1;
+					sload 5;
+					sadd;
+					baload;
+					sspush 255;
+					sand;
+					sstore 6;
+					sload 6;
+					bspush 31;
+					if_scmplt L10;
+				L9:	sload 6;
+					bspush 33;
+					if_scmple L11;
+				L10:	sspush 28580;
+					invokestatic 34;		// javacard/framework/ISOException.throwIt(S)V
+					sconst_0;
+					sreturn;
+				L11:	sinc 5 1;
+					sload 6;
+					bspush 31;
+					if_scmpne L13;
+				L12:	aload_0;
+					sload_1;
+					sload 5;
+					sadd;
+					aload_3;
+					sload 4;
+					sconst_1;
+					sadd;
+					bspush 31;
+					invokestatic 6;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					sinc 5 31;
+					goto L17;
+				L13:	sload 6;
+					bspush 32;
+					if_scmpne L15;
+				L14:	aload_0;
+					sload_1;
+					sload 5;
+					sadd;
+					aload_3;
+					sload 4;
+					bspush 32;
+					invokestatic 6;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					sinc 5 32;
+					goto L17;
+				L15:	sload 6;
+					bspush 33;
+					if_scmpne L17;
+				L16:	aload_0;
+					sload_1;
+					sload 5;
+					sadd;
+					sconst_1;
+					sadd;
+					aload_3;
+					sload 4;
+					bspush 32;
+					invokestatic 6;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					sinc 5 33;
+				L17:	aload_0;
+					sload_1;
+					sload 5;
+					sadd;
+					baload;
+					sconst_2;
+					if_scmpeq L19;
+				L18:	sspush 28581;
+					invokestatic 34;		// javacard/framework/ISOException.throwIt(S)V
+					sconst_0;
+					sreturn;
+				L19:	sinc 5 1;
+					aload_0;
+					sload_1;
+					sload 5;
+					sadd;
+					baload;
+					sspush 255;
+					sand;
+					sstore 6;
+					sload 6;
+					bspush 31;
+					if_scmplt L21;
+				L20:	sload 6;
+					bspush 33;
+					if_scmple L22;
+				L21:	sspush 28582;
+					invokestatic 34;		// javacard/framework/ISOException.throwIt(S)V
+					sconst_0;
+					sreturn;
+				L22:	sinc 5 1;
+					sload 6;
+					bspush 31;
+					if_scmpne L24;
+				L23:	aload_0;
+					sload_1;
+					sload 5;
+					sadd;
+					aload_3;
+					sload 4;
+					bspush 33;
+					sadd;
+					bspush 31;
+					invokestatic 6;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					sinc 5 31;
+					goto L28;
+				L24:	sload 6;
+					bspush 32;
+					if_scmpne L26;
+				L25:	aload_0;
+					sload_1;
+					sload 5;
+					sadd;
+					aload_3;
+					sload 4;
+					bspush 32;
+					sadd;
+					bspush 32;
+					invokestatic 6;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					sinc 5 32;
+					goto L28;
+				L26:	sload 6;
+					bspush 33;
+					if_scmpne L28;
+				L27:	aload_0;
+					sload_1;
+					sload 5;
+					sadd;
+					sconst_1;
+					sadd;
+					aload_3;
+					sload 4;
+					bspush 32;
+					sadd;
+					bspush 32;
+					invokestatic 6;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					sinc 5 33;
+				L28:	bspush 64;
+					sreturn;
+		}
+
+	}
+
+	.class public ISO9797Pad 2 extends 0.0 {		// extends java/lang/Object
+
+		.publicMethodTable 1 {
+			equals(Ljava/lang/Object;)Z;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method public <init>()V 0 {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					invokespecial 35;		// java/lang/Object.<init>()V
+					return;
+		}
+
+		.method public static process(Z[BSS[BS)S 1 {
+			.stack 5;
+			.locals 2;
+
+				L0:	aload_1;
+					ifnull L23;
+				L1:	sload_3;
+					ifeq L23;
+				L2:	sload_0;
+					ifeq L12;
+				L3:	sload_3;
+					sstore 6;
+				L4:	aload 4;
+					ifnull L6;
+				L5:	aload_1;
+					sload_2;
+					aload 4;
+					sload 5;
+					sload_3;
+					invokestatic 6;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					aload 4;
+					sload 5;
+					sload 6;
+					sadd;
+					bspush -128;
+					bastore;
+				L6:	sinc 6 1;
+					goto L10;
+				L7:	aload 4;
+					ifnull L9;
+				L8:	aload 4;
+					sload 5;
+					sload 6;
+					sadd;
+					sconst_0;
+					bastore;
+				L9:	sinc 6 1;
+				L10:	sload 6;
+					bspush 16;
+					srem;
+					ifne L7;
+				L11:	sload 6;
+					sreturn;
+				L12:	sload_3;
+					sconst_1;
+					ssub;
+					sstore 7;
+				L13:	goto L22;
+				L14:	aload_1;
+					sload_2;
+					sload 7;
+					sadd;
+					baload;
+					sstore 6;
+				L15:	sload 6;
+					bspush -128;
+					if_scmpne L19;
+				L16:	aload 4;
+					ifnull L18;
+				L17:	aload_1;
+					sload_2;
+					aload 4;
+					sload 5;
+					sload 7;
+					invokestatic 6;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+				L18:	sload 7;
+					sreturn;
+				L19:	sload 6;
+					ifeq L21;
+				L20:	sconst_m1;
+					sreturn;
+				L21:	sinc 7 -1;
+				L22:	sload 7;
+					ifge L14;
+				L23:	sconst_0;
+					sreturn;
+		}
+
+	}
+
+	.class public KeyProfile 3 extends 0.0 {		// extends java/lang/Object
+
+		.fields {
+			private 2.19 pubKey 0;		// Ljavacard/security/ECPublicKey;
+			private 2.18 privKey 1;		// Ljavacard/security/ECPrivateKey;
+			private 2.16 kp 2;		// Ljavacard/security/KeyPair;
+			private byte ecKeyAlgo 3;		// B
+		}
+
+		.publicMethodTable 1 {
+			equals(Ljava/lang/Object;)Z;
+			getPublicKey()Ljavacard/security/ECPublicKey;;
+			getPrivateKey()Ljavacard/security/ECPrivateKey;;
+			genNewKeyPair(B)V;
+			clearKeys()V;
+			getKeyType()B;
+			computeECDHSharedSecret([BSS[BS[BS)S;
+			computeECDHSharedSecret(Ljavacard/security/ECPrivateKey;[BSS[BS[BS)S;
+			computeECDHSharedSecretASN1([BSS[BS)S;
+			computeECDHSharedSecretASN1(Ljavacard/security/ECPrivateKey;[BSS[BS)S;
+			isValidKeyAlgo(B)Z;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method public <init>()V 0 {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					invokespecial 35;		// java/lang/Object.<init>()V
+					aload_0;
+					aconst_null;
+					putfield_a 0;		// reference SCP11BApplet/KeyProfile.pubKey
+					aload_0;
+					aconst_null;
+					putfield_a 1;		// reference SCP11BApplet/KeyProfile.privKey
+					aload_0;
+					aconst_null;
+					putfield_a 2;		// reference SCP11BApplet/KeyProfile.kp
+					aload_0;
+					sconst_0;
+					putfield_b 3;		// byte SCP11BApplet/KeyProfile.ecKeyAlgo
+					return;
+		}
+
+		.method public getPublicKey()Ljavacard/security/ECPublicKey; 1 {
+			.stack 1;
+			.locals 0;
+
+			.descriptor	Ljavacard/security/ECPublicKey;	2.19;
+
+				L0:	getfield_a_this 0;		// reference SCP11BApplet/KeyProfile.pubKey
+					areturn;
+		}
+
+		.method public getPrivateKey()Ljavacard/security/ECPrivateKey; 2 {
+			.stack 1;
+			.locals 0;
+
+			.descriptor	Ljavacard/security/ECPrivateKey;	2.18;
+
+				L0:	getfield_a_this 1;		// reference SCP11BApplet/KeyProfile.privKey
+					areturn;
+		}
+
+		.method public genNewKeyPair(B)V 3 {
+			.stack 5;
+			.locals 0;
+
+				L0:	aload_0;
+					sload_1;
+					invokevirtual 39;		// isValidKeyAlgo(B)Z
+					ifeq L2;
+				L1:	aload_0;
+					sload_1;
+					putfield_b 3;		// byte SCP11BApplet/KeyProfile.ecKeyAlgo
+					goto L3;
+				L2:	getstatic_s 40;		// short SCP11BApplet/SCP11BApplet.SW_INVALID_ALGO
+					invokestatic 34;		// javacard/framework/ISOException.throwIt(S)V
+				L3:	getfield_a_this 1;		// reference SCP11BApplet/KeyProfile.privKey
+					ifnull L5;
+				L4:	getfield_a_this 1;		// reference SCP11BApplet/KeyProfile.privKey
+					invokeinterface 1 41 0;		// javacard/security/ECPrivateKey
+					aload_0;
+					aconst_null;
+					putfield_a 1;		// reference SCP11BApplet/KeyProfile.privKey
+				L5:	getfield_a_this 0;		// reference SCP11BApplet/KeyProfile.pubKey
+					ifnull L7;
+				L6:	getfield_a_this 0;		// reference SCP11BApplet/KeyProfile.pubKey
+					invokeinterface 1 42 0;		// javacard/security/ECPublicKey
+					aload_0;
+					aconst_null;
+					putfield_a 0;		// reference SCP11BApplet/KeyProfile.pubKey
+				L7:	aload_0;
+					bspush 12;
+					sspush 256;
+					sconst_0;
+					invokestatic 43;		// javacard/security/KeyBuilder.buildKey(BSZ)Ljavacard/security/Key;
+					checkcast 0 41;		// T_CLASSORINTERFACE javacard/security/ECPrivateKey
+					putfield_a 1;		// reference SCP11BApplet/KeyProfile.privKey
+					getfield_a_this 1;		// reference SCP11BApplet/KeyProfile.privKey
+					getfield_b_this 3;		// byte SCP11BApplet/KeyProfile.ecKeyAlgo
+					invokestatic 44;		// SCP11BApplet/ECC.setCommonCurveParameters(Ljavacard/security/ECKey;B)Z
+					pop;
+					aload_0;
+					bspush 11;
+					sspush 256;
+					sconst_0;
+					invokestatic 43;		// javacard/security/KeyBuilder.buildKey(BSZ)Ljavacard/security/Key;
+					checkcast 0 42;		// T_CLASSORINTERFACE javacard/security/ECPublicKey
+					putfield_a 0;		// reference SCP11BApplet/KeyProfile.pubKey
+					getfield_a_this 0;		// reference SCP11BApplet/KeyProfile.pubKey
+					getfield_b_this 3;		// byte SCP11BApplet/KeyProfile.ecKeyAlgo
+					invokestatic 44;		// SCP11BApplet/ECC.setCommonCurveParameters(Ljavacard/security/ECKey;B)Z
+					pop;
+					aload_0;
+					new 45;		// javacard/security/KeyPair
+					dup;
+					getfield_a_this 0;		// reference SCP11BApplet/KeyProfile.pubKey
+					getfield_a_this 1;		// reference SCP11BApplet/KeyProfile.privKey
+					invokespecial 46;		// javacard/security/KeyPair.<init>(Ljavacard/security/PublicKey;Ljavacard/security/PrivateKey;)V
+					putfield_a 2;		// reference SCP11BApplet/KeyProfile.kp
+					getfield_a_this 2;		// reference SCP11BApplet/KeyProfile.kp
+					invokevirtual 47;		// genKeyPair()V
+					return;
+		}
+
+		.method public clearKeys()V 4 {
+			.stack 2;
+			.locals 0;
+
+				L0:	aload_0;
+					sconst_0;
+					putfield_b 3;		// byte SCP11BApplet/KeyProfile.ecKeyAlgo
+					getfield_a_this 1;		// reference SCP11BApplet/KeyProfile.privKey
+					ifnull L2;
+				L1:	getfield_a_this 1;		// reference SCP11BApplet/KeyProfile.privKey
+					invokeinterface 1 41 0;		// javacard/security/ECPrivateKey
+					aload_0;
+					aconst_null;
+					putfield_a 1;		// reference SCP11BApplet/KeyProfile.privKey
+				L2:	getfield_a_this 0;		// reference SCP11BApplet/KeyProfile.pubKey
+					ifnull L4;
+				L3:	getfield_a_this 0;		// reference SCP11BApplet/KeyProfile.pubKey
+					invokeinterface 1 42 0;		// javacard/security/ECPublicKey
+					aload_0;
+					aconst_null;
+					putfield_a 0;		// reference SCP11BApplet/KeyProfile.pubKey
+				L4:	return;
+		}
+
+		.method public getKeyType()B 5 {
+			.stack 1;
+			.locals 0;
+
+				L0:	getfield_b_this 3;		// byte SCP11BApplet/KeyProfile.ecKeyAlgo
+					sreturn;
+		}
+
+		.method public computeECDHSharedSecret([BSS[BS[BS)S 6 {
+			.stack 6;
+			.locals 0;
+
+				L0:	sload_3;
+					bspush 64;
+					if_scmpeq L2;
+				L1:	getstatic_s 48;		// short SCP11BApplet/SCP11BApplet.SW_INVALID_KEY_SIZE
+					invokestatic 34;		// javacard/framework/ISOException.throwIt(S)V
+				L2:	aload 4;
+					sload 5;
+					sconst_4;
+					bastore;
+					aload_1;
+					sload_2;
+					aload 4;
+					sload 5;
+					sconst_1;
+					sadd;
+					bspush 64;
+					invokestatic 6;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					getstatic_a 49;		// reference SCP11BApplet/SCP11BApplet.ka
+					getfield_a_this 1;		// reference SCP11BApplet/KeyProfile.privKey
+					invokevirtual 50;		// init(Ljavacard/security/PrivateKey;)V
+					getstatic_a 49;		// reference SCP11BApplet/SCP11BApplet.ka
+					aload 4;
+					sload 5;
+					bspush 65;
+					aload 6;
+					sload 7;
+					invokevirtual 51;		// generateSecret([BSS[BS)S
+					sreturn;
+		}
+
+		.method public computeECDHSharedSecret(Ljavacard/security/ECPrivateKey;[BSS[BS[BS)S 7 {
+			.stack 6;
+			.locals 0;
+
+			.descriptor	Ljavacard/security/ECPrivateKey;	2.18;
+
+				L0:	sload 4;
+					bspush 64;
+					if_scmpeq L2;
+				L1:	getstatic_s 48;		// short SCP11BApplet/SCP11BApplet.SW_INVALID_KEY_SIZE
+					invokestatic 34;		// javacard/framework/ISOException.throwIt(S)V
+				L2:	aload 5;
+					sload 6;
+					sconst_4;
+					bastore;
+					aload_2;
+					sload_3;
+					aload 5;
+					sload 6;
+					sconst_1;
+					sadd;
+					bspush 64;
+					invokestatic 6;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					getstatic_a 49;		// reference SCP11BApplet/SCP11BApplet.ka
+					aload_1;
+					invokevirtual 50;		// init(Ljavacard/security/PrivateKey;)V
+					getstatic_a 49;		// reference SCP11BApplet/SCP11BApplet.ka
+					aload 5;
+					sload 6;
+					bspush 65;
+					aload 7;
+					sload 8;
+					invokevirtual 51;		// generateSecret([BSS[BS)S
+					sreturn;
+		}
+
+		.method public computeECDHSharedSecretASN1([BSS[BS)S 8 {
+			.stack 6;
+			.locals 0;
+
+				L0:	sload_3;
+					bspush 65;
+					if_scmpeq L3;
+				L1:	aload_1;
+					sload_2;
+					baload;
+					sconst_4;
+					if_scmpeq L3;
+				L2:	getstatic_s 48;		// short SCP11BApplet/SCP11BApplet.SW_INVALID_KEY_SIZE
+					invokestatic 34;		// javacard/framework/ISOException.throwIt(S)V
+				L3:	getstatic_a 49;		// reference SCP11BApplet/SCP11BApplet.ka
+					getfield_a_this 1;		// reference SCP11BApplet/KeyProfile.privKey
+					invokevirtual 50;		// init(Ljavacard/security/PrivateKey;)V
+					getstatic_a 49;		// reference SCP11BApplet/SCP11BApplet.ka
+					aload_1;
+					sload_2;
+					sload_3;
+					aload 4;
+					sload 5;
+					invokevirtual 51;		// generateSecret([BSS[BS)S
+					sreturn;
+		}
+
+		.method public computeECDHSharedSecretASN1(Ljavacard/security/ECPrivateKey;[BSS[BS)S 9 {
+			.stack 6;
+			.locals 0;
+
+			.descriptor	Ljavacard/security/ECPrivateKey;	2.18;
+
+				L0:	sload 4;
+					bspush 65;
+					if_scmpeq L3;
+				L1:	aload_2;
+					sload_3;
+					baload;
+					sconst_4;
+					if_scmpeq L3;
+				L2:	getstatic_s 48;		// short SCP11BApplet/SCP11BApplet.SW_INVALID_KEY_SIZE
+					invokestatic 34;		// javacard/framework/ISOException.throwIt(S)V
+				L3:	getstatic_a 49;		// reference SCP11BApplet/SCP11BApplet.ka
+					aload_1;
+					invokevirtual 50;		// init(Ljavacard/security/PrivateKey;)V
+					getstatic_a 49;		// reference SCP11BApplet/SCP11BApplet.ka
+					aload_2;
+					sload_3;
+					sload 4;
+					aload 5;
+					sload 6;
+					invokevirtual 51;		// generateSecret([BSS[BS)S
+					sreturn;
+		}
+
+		.method public isValidKeyAlgo(B)Z 10 {
+			.stack 2;
+			.locals 0;
+
+				L0:	sload_1;
+					getstatic_b 52;		// byte SCP11BApplet/SCP11BApplet.ALGO_EC_P256R1
+					if_scmpeq L2;
+				L1:	sload_1;
+					getstatic_b 53;		// byte SCP11BApplet/SCP11BApplet.ALGO_EC_P256K1
+					if_scmpne L3;
+				L2:	sconst_1;
+					sreturn;
+				L3:	sconst_0;
+					sreturn;
+		}
+
+	}
+
+	.class public MathUtil 4 extends 0.0 {		// extends java/lang/Object
+
+		.fields {
+			public static final byte CMP_EQUALS_TO = 0;		// B
+			public static final byte CMP_BIGGER_THAN = 1;		// B
+			public static final byte CMP_SMALLER_THAN = 2;		// B
+			public static final byte CMP_FAIL = 15;		// B
+			public static final byte[] ASCIIHEX 0 = {48,49,50,51,52,53,54,55,56,57,65,66,67,68,69,70};		// [B
+			public static final byte[] BCD_SIZE_PER_BYTES 1 = {0,3,5,8,10,13,15,17,20,22,25,27,29,32,34,37,39,41,44,46,49,51,53,56,58,61,63,66,68,70,73,75,78};		// [B
+		}
+
+		.publicMethodTable 1 {
+			equals(Ljava/lang/Object;)Z;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method public <init>()V 0 {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					invokespecial 35;		// java/lang/Object.<init>()V
+					return;
+		}
+
+		.method private static add(BB[BS)B {
+			.stack 3;
+			.locals 2;
+
+				L0:	sconst_0;
+					sstore 4;
+				L1:	goto L4;
+				L2:	sload_0;
+					sload_1;
+					sand;
+					sstore 5;
+				L3:	sload 4;
+					sload 5;
+					sor;
+					sstore 4;
+					sload_0;
+					sload_1;
+					sxor;
+					sstore_0;
+					sload 5;
+					sconst_1;
+					sshl;
+					s2b;
+					sstore_1;
+				L4:	sload_1;
+					ifne L2;
+				L5:	aload_2;
+					sload_3;
+					sload_0;
+					bastore;
+					sload 4;
+					sspush 128;
+					sand;
+					ifeq L7;
+				L6:	sconst_1;
+					goto L8;
+				L7:	sconst_0;
+				L8:	sreturn;
+		}
+
+		.method private static add(BBB[BS)B {
+			.stack 5;
+			.locals 1;
+
+				L0:	sload_0;
+					sload_1;
+					aload_3;
+					sload 4;
+					invokestatic 54;		// SCP11BApplet/MathUtil.add(BB[BS)B
+					sstore 5;
+				L1:	sload_2;
+					ifle L3;
+				L2:	sload 5;
+					aload_3;
+					sload 4;
+					baload;
+					sload_2;
+					aload_3;
+					sload 4;
+					invokestatic 54;		// SCP11BApplet/MathUtil.add(BB[BS)B
+					sor;
+					sstore 5;
+				L3:	sload 5;
+					sreturn;
+		}
+
+		.method private static add([BS[BS[BS)V {
+			.stack 6;
+			.locals 1;
+
+				L0:	sconst_0;
+					sstore 6;
+				L1:	aload_0;
+					sload_1;
+					sconst_3;
+					sadd;
+					baload;
+					aload_2;
+					sload_3;
+					sconst_3;
+					sadd;
+					baload;
+					sload 6;
+					aload 4;
+					sload 5;
+					sconst_3;
+					sadd;
+					invokestatic 55;		// SCP11BApplet/MathUtil.add(BBB[BS)B
+					sstore 6;
+					aload_0;
+					sload_1;
+					sconst_2;
+					sadd;
+					baload;
+					aload_2;
+					sload_3;
+					sconst_2;
+					sadd;
+					baload;
+					sload 6;
+					aload 4;
+					sload 5;
+					sconst_2;
+					sadd;
+					invokestatic 55;		// SCP11BApplet/MathUtil.add(BBB[BS)B
+					sstore 6;
+					aload_0;
+					sload_1;
+					sconst_1;
+					sadd;
+					baload;
+					aload_2;
+					sload_3;
+					sconst_1;
+					sadd;
+					baload;
+					sload 6;
+					aload 4;
+					sload 5;
+					sconst_1;
+					sadd;
+					invokestatic 55;		// SCP11BApplet/MathUtil.add(BBB[BS)B
+					sstore 6;
+					aload_0;
+					sload_1;
+					baload;
+					aload_2;
+					sload_3;
+					baload;
+					sload 6;
+					aload 4;
+					sload 5;
+					invokestatic 55;		// SCP11BApplet/MathUtil.add(BBB[BS)B
+					sstore 6;
+					return;
+		}
+
+		.method private static add64([BS[BS[BS)V {
+			.stack 6;
+			.locals 1;
+
+				L0:	sconst_0;
+					sstore 6;
+				L1:	aload_0;
+					sload_1;
+					bspush 7;
+					sadd;
+					baload;
+					aload_2;
+					sload_3;
+					bspush 7;
+					sadd;
+					baload;
+					sload 6;
+					aload 4;
+					sload 5;
+					bspush 7;
+					sadd;
+					invokestatic 55;		// SCP11BApplet/MathUtil.add(BBB[BS)B
+					sstore 6;
+					aload_0;
+					sload_1;
+					bspush 6;
+					sadd;
+					baload;
+					aload_2;
+					sload_3;
+					bspush 6;
+					sadd;
+					baload;
+					sload 6;
+					aload 4;
+					sload 5;
+					bspush 6;
+					sadd;
+					invokestatic 55;		// SCP11BApplet/MathUtil.add(BBB[BS)B
+					sstore 6;
+					aload_0;
+					sload_1;
+					sconst_5;
+					sadd;
+					baload;
+					aload_2;
+					sload_3;
+					sconst_5;
+					sadd;
+					baload;
+					sload 6;
+					aload 4;
+					sload 5;
+					sconst_5;
+					sadd;
+					invokestatic 55;		// SCP11BApplet/MathUtil.add(BBB[BS)B
+					sstore 6;
+					aload_0;
+					sload_1;
+					sconst_4;
+					sadd;
+					baload;
+					aload_2;
+					sload_3;
+					sconst_4;
+					sadd;
+					baload;
+					sload 6;
+					aload 4;
+					sload 5;
+					sconst_4;
+					sadd;
+					invokestatic 55;		// SCP11BApplet/MathUtil.add(BBB[BS)B
+					sstore 6;
+					aload_0;
+					sload_1;
+					sconst_3;
+					sadd;
+					baload;
+					aload_2;
+					sload_3;
+					sconst_3;
+					sadd;
+					baload;
+					sload 6;
+					aload 4;
+					sload 5;
+					sconst_3;
+					sadd;
+					invokestatic 55;		// SCP11BApplet/MathUtil.add(BBB[BS)B
+					sstore 6;
+					aload_0;
+					sload_1;
+					sconst_2;
+					sadd;
+					baload;
+					aload_2;
+					sload_3;
+					sconst_2;
+					sadd;
+					baload;
+					sload 6;
+					aload 4;
+					sload 5;
+					sconst_2;
+					sadd;
+					invokestatic 55;		// SCP11BApplet/MathUtil.add(BBB[BS)B
+					sstore 6;
+					aload_0;
+					sload_1;
+					sconst_1;
+					sadd;
+					baload;
+					aload_2;
+					sload_3;
+					sconst_1;
+					sadd;
+					baload;
+					sload 6;
+					aload 4;
+					sload 5;
+					sconst_1;
+					sadd;
+					invokestatic 55;		// SCP11BApplet/MathUtil.add(BBB[BS)B
+					sstore 6;
+					aload_0;
+					sload_1;
+					baload;
+					aload_2;
+					sload_3;
+					baload;
+					sload 6;
+					aload 4;
+					sload 5;
+					invokestatic 55;		// SCP11BApplet/MathUtil.add(BBB[BS)B
+					sstore 6;
+					return;
+		}
+
+		.method private static add128([BS[BS[BS)V {
+			.stack 6;
+			.locals 1;
+
+				L0:	sconst_0;
+					sstore 6;
+				L1:	aload_0;
+					sload_1;
+					bspush 15;
+					sadd;
+					baload;
+					aload_2;
+					sload_3;
+					bspush 15;
+					sadd;
+					baload;
+					sload 6;
+					aload 4;
+					sload 5;
+					bspush 15;
+					sadd;
+					invokestatic 55;		// SCP11BApplet/MathUtil.add(BBB[BS)B
+					sstore 6;
+					aload_0;
+					sload_1;
+					bspush 14;
+					sadd;
+					baload;
+					aload_2;
+					sload_3;
+					bspush 14;
+					sadd;
+					baload;
+					sload 6;
+					aload 4;
+					sload 5;
+					bspush 14;
+					sadd;
+					invokestatic 55;		// SCP11BApplet/MathUtil.add(BBB[BS)B
+					sstore 6;
+					aload_0;
+					sload_1;
+					bspush 13;
+					sadd;
+					baload;
+					aload_2;
+					sload_3;
+					bspush 13;
+					sadd;
+					baload;
+					sload 6;
+					aload 4;
+					sload 5;
+					bspush 13;
+					sadd;
+					invokestatic 55;		// SCP11BApplet/MathUtil.add(BBB[BS)B
+					sstore 6;
+					aload_0;
+					sload_1;
+					bspush 12;
+					sadd;
+					baload;
+					aload_2;
+					sload_3;
+					bspush 12;
+					sadd;
+					baload;
+					sload 6;
+					aload 4;
+					sload 5;
+					bspush 12;
+					sadd;
+					invokestatic 55;		// SCP11BApplet/MathUtil.add(BBB[BS)B
+					sstore 6;
+					aload_0;
+					sload_1;
+					bspush 11;
+					sadd;
+					baload;
+					aload_2;
+					sload_3;
+					bspush 11;
+					sadd;
+					baload;
+					sload 6;
+					aload 4;
+					sload 5;
+					bspush 11;
+					sadd;
+					invokestatic 55;		// SCP11BApplet/MathUtil.add(BBB[BS)B
+					sstore 6;
+					aload_0;
+					sload_1;
+					bspush 10;
+					sadd;
+					baload;
+					aload_2;
+					sload_3;
+					bspush 10;
+					sadd;
+					baload;
+					sload 6;
+					aload 4;
+					sload 5;
+					bspush 10;
+					sadd;
+					invokestatic 55;		// SCP11BApplet/MathUtil.add(BBB[BS)B
+					sstore 6;
+					aload_0;
+					sload_1;
+					bspush 9;
+					sadd;
+					baload;
+					aload_2;
+					sload_3;
+					bspush 9;
+					sadd;
+					baload;
+					sload 6;
+					aload 4;
+					sload 5;
+					bspush 9;
+					sadd;
+					invokestatic 55;		// SCP11BApplet/MathUtil.add(BBB[BS)B
+					sstore 6;
+					aload_0;
+					sload_1;
+					bspush 8;
+					sadd;
+					baload;
+					aload_2;
+					sload_3;
+					bspush 8;
+					sadd;
+					baload;
+					sload 6;
+					aload 4;
+					sload 5;
+					bspush 8;
+					sadd;
+					invokestatic 55;		// SCP11BApplet/MathUtil.add(BBB[BS)B
+					sstore 6;
+					aload_0;
+					sload_1;
+					bspush 7;
+					sadd;
+					baload;
+					aload_2;
+					sload_3;
+					bspush 7;
+					sadd;
+					baload;
+					sload 6;
+					aload 4;
+					sload 5;
+					bspush 7;
+					sadd;
+					invokestatic 55;		// SCP11BApplet/MathUtil.add(BBB[BS)B
+					sstore 6;
+					aload_0;
+					sload_1;
+					bspush 6;
+					sadd;
+					baload;
+					aload_2;
+					sload_3;
+					bspush 6;
+					sadd;
+					baload;
+					sload 6;
+					aload 4;
+					sload 5;
+					bspush 6;
+					sadd;
+					invokestatic 55;		// SCP11BApplet/MathUtil.add(BBB[BS)B
+					sstore 6;
+					aload_0;
+					sload_1;
+					sconst_5;
+					sadd;
+					baload;
+					aload_2;
+					sload_3;
+					sconst_5;
+					sadd;
+					baload;
+					sload 6;
+					aload 4;
+					sload 5;
+					sconst_5;
+					sadd;
+					invokestatic 55;		// SCP11BApplet/MathUtil.add(BBB[BS)B
+					sstore 6;
+					aload_0;
+					sload_1;
+					sconst_4;
+					sadd;
+					baload;
+					aload_2;
+					sload_3;
+					sconst_4;
+					sadd;
+					baload;
+					sload 6;
+					aload 4;
+					sload 5;
+					sconst_4;
+					sadd;
+					invokestatic 55;		// SCP11BApplet/MathUtil.add(BBB[BS)B
+					sstore 6;
+					aload_0;
+					sload_1;
+					sconst_3;
+					sadd;
+					baload;
+					aload_2;
+					sload_3;
+					sconst_3;
+					sadd;
+					baload;
+					sload 6;
+					aload 4;
+					sload 5;
+					sconst_3;
+					sadd;
+					invokestatic 55;		// SCP11BApplet/MathUtil.add(BBB[BS)B
+					sstore 6;
+					aload_0;
+					sload_1;
+					sconst_2;
+					sadd;
+					baload;
+					aload_2;
+					sload_3;
+					sconst_2;
+					sadd;
+					baload;
+					sload 6;
+					aload 4;
+					sload 5;
+					sconst_2;
+					sadd;
+					invokestatic 55;		// SCP11BApplet/MathUtil.add(BBB[BS)B
+					sstore 6;
+					aload_0;
+					sload_1;
+					sconst_1;
+					sadd;
+					baload;
+					aload_2;
+					sload_3;
+					sconst_1;
+					sadd;
+					baload;
+					sload 6;
+					aload 4;
+					sload 5;
+					sconst_1;
+					sadd;
+					invokestatic 55;		// SCP11BApplet/MathUtil.add(BBB[BS)B
+					sstore 6;
+					aload_0;
+					sload_1;
+					baload;
+					aload_2;
+					sload_3;
+					baload;
+					sload 6;
+					aload 4;
+					sload 5;
+					invokestatic 55;		// SCP11BApplet/MathUtil.add(BBB[BS)B
+					sstore 6;
+					return;
+		}
+
+		.method public static mod32Add([BS[BS[BS)V 1 {
+			.stack 6;
+			.locals 0;
+
+				L0:	aload_0;
+					sload_1;
+					aload_2;
+					sload_3;
+					aload 4;
+					sload 5;
+					invokestatic 56;		// SCP11BApplet/MathUtil.add([BS[BS[BS)V
+					aload 4;
+					sload 5;
+					dup2;
+					baload;
+					sspush 255;
+					sand;
+					s2b;
+					bastore;
+					aload 4;
+					sload 5;
+					sconst_1;
+					sadd;
+					dup2;
+					baload;
+					sspush 255;
+					sand;
+					s2b;
+					bastore;
+					aload 4;
+					sload 5;
+					sconst_2;
+					sadd;
+					dup2;
+					baload;
+					sspush 255;
+					sand;
+					s2b;
+					bastore;
+					aload 4;
+					sload 5;
+					sconst_3;
+					sadd;
+					dup2;
+					baload;
+					sspush 255;
+					sand;
+					s2b;
+					bastore;
+					return;
+		}
+
+		.method public static mod64Add([BS[BS[BS)V 2 {
+			.stack 6;
+			.locals 0;
+
+				L0:	aload_0;
+					sload_1;
+					aload_2;
+					sload_3;
+					aload 4;
+					sload 5;
+					invokestatic 57;		// SCP11BApplet/MathUtil.add64([BS[BS[BS)V
+					aload 4;
+					sload 5;
+					dup2;
+					baload;
+					sspush 255;
+					sand;
+					s2b;
+					bastore;
+					aload 4;
+					sload 5;
+					sconst_1;
+					sadd;
+					dup2;
+					baload;
+					sspush 255;
+					sand;
+					s2b;
+					bastore;
+					aload 4;
+					sload 5;
+					sconst_2;
+					sadd;
+					dup2;
+					baload;
+					sspush 255;
+					sand;
+					s2b;
+					bastore;
+					aload 4;
+					sload 5;
+					sconst_3;
+					sadd;
+					dup2;
+					baload;
+					sspush 255;
+					sand;
+					s2b;
+					bastore;
+					aload 4;
+					sload 5;
+					sconst_4;
+					sadd;
+					dup2;
+					baload;
+					sspush 255;
+					sand;
+					s2b;
+					bastore;
+					aload 4;
+					sload 5;
+					sconst_5;
+					sadd;
+					dup2;
+					baload;
+					sspush 255;
+					sand;
+					s2b;
+					bastore;
+					aload 4;
+					sload 5;
+					bspush 6;
+					sadd;
+					dup2;
+					baload;
+					sspush 255;
+					sand;
+					s2b;
+					bastore;
+					aload 4;
+					sload 5;
+					bspush 7;
+					sadd;
+					dup2;
+					baload;
+					sspush 255;
+					sand;
+					s2b;
+					bastore;
+					return;
+		}
+
+		.method public static mod128Add([BS[BS[BS)V 3 {
+			.stack 6;
+			.locals 0;
+
+				L0:	aload_0;
+					sload_1;
+					aload_2;
+					sload_3;
+					aload 4;
+					sload 5;
+					invokestatic 58;		// SCP11BApplet/MathUtil.add128([BS[BS[BS)V
+					aload 4;
+					sload 5;
+					dup2;
+					baload;
+					sspush 255;
+					sand;
+					s2b;
+					bastore;
+					aload 4;
+					sload 5;
+					sconst_1;
+					sadd;
+					dup2;
+					baload;
+					sspush 255;
+					sand;
+					s2b;
+					bastore;
+					aload 4;
+					sload 5;
+					sconst_2;
+					sadd;
+					dup2;
+					baload;
+					sspush 255;
+					sand;
+					s2b;
+					bastore;
+					aload 4;
+					sload 5;
+					sconst_3;
+					sadd;
+					dup2;
+					baload;
+					sspush 255;
+					sand;
+					s2b;
+					bastore;
+					aload 4;
+					sload 5;
+					sconst_4;
+					sadd;
+					dup2;
+					baload;
+					sspush 255;
+					sand;
+					s2b;
+					bastore;
+					aload 4;
+					sload 5;
+					sconst_5;
+					sadd;
+					dup2;
+					baload;
+					sspush 255;
+					sand;
+					s2b;
+					bastore;
+					aload 4;
+					sload 5;
+					bspush 6;
+					sadd;
+					dup2;
+					baload;
+					sspush 255;
+					sand;
+					s2b;
+					bastore;
+					aload 4;
+					sload 5;
+					bspush 7;
+					sadd;
+					dup2;
+					baload;
+					sspush 255;
+					sand;
+					s2b;
+					bastore;
+					aload 4;
+					sload 5;
+					bspush 8;
+					sadd;
+					dup2;
+					baload;
+					sspush 255;
+					sand;
+					s2b;
+					bastore;
+					aload 4;
+					sload 5;
+					bspush 9;
+					sadd;
+					dup2;
+					baload;
+					sspush 255;
+					sand;
+					s2b;
+					bastore;
+					aload 4;
+					sload 5;
+					bspush 10;
+					sadd;
+					dup2;
+					baload;
+					sspush 255;
+					sand;
+					s2b;
+					bastore;
+					aload 4;
+					sload 5;
+					bspush 11;
+					sadd;
+					dup2;
+					baload;
+					sspush 255;
+					sand;
+					s2b;
+					bastore;
+					aload 4;
+					sload 5;
+					bspush 12;
+					sadd;
+					dup2;
+					baload;
+					sspush 255;
+					sand;
+					s2b;
+					bastore;
+					aload 4;
+					sload 5;
+					bspush 13;
+					sadd;
+					dup2;
+					baload;
+					sspush 255;
+					sand;
+					s2b;
+					bastore;
+					aload 4;
+					sload 5;
+					bspush 14;
+					sadd;
+					dup2;
+					baload;
+					sspush 255;
+					sand;
+					s2b;
+					bastore;
+					aload 4;
+					sload 5;
+					bspush 15;
+					sadd;
+					dup2;
+					baload;
+					sspush 255;
+					sand;
+					s2b;
+					bastore;
+					return;
+		}
+
+		.method public static increment64([BS[BS[BS)V 4 {
+			.stack 6;
+			.locals 0;
+
+				L0:	aload_2;
+					sload_3;
+					bspush 8;
+					sconst_0;
+					invokestatic 38;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					aload_2;
+					sload_3;
+					bspush 7;
+					sadd;
+					sconst_1;
+					bastore;
+					aload_0;
+					sload_1;
+					aload_2;
+					sload_3;
+					aload 4;
+					sload 5;
+					invokestatic 59;		// SCP11BApplet/MathUtil.mod64Add([BS[BS[BS)V
+					return;
+		}
+
+		.method public static increment128([BS[BS[BS)V 5 {
+			.stack 6;
+			.locals 0;
+
+				L0:	aload_2;
+					sload_3;
+					bspush 16;
+					sconst_0;
+					invokestatic 38;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					aload_2;
+					sload_3;
+					bspush 15;
+					sadd;
+					sconst_1;
+					bastore;
+					aload_0;
+					sload_1;
+					aload_2;
+					sload_3;
+					aload 4;
+					sload 5;
+					invokestatic 60;		// SCP11BApplet/MathUtil.mod128Add([BS[BS[BS)V
+					return;
+		}
+
+		.method public static and64([BS[BS[BS)V 6 {
+			.stack 6;
+			.locals 0;
+
+				L0:	aload 4;
+					sload 5;
+					aload_0;
+					sload_1;
+					baload;
+					aload_2;
+					sload_3;
+					baload;
+					sand;
+					bastore;
+					aload 4;
+					sload 5;
+					sconst_1;
+					sadd;
+					aload_0;
+					sload_1;
+					sconst_1;
+					sadd;
+					baload;
+					aload_2;
+					sload_3;
+					sconst_1;
+					sadd;
+					baload;
+					sand;
+					bastore;
+					aload 4;
+					sload 5;
+					sconst_2;
+					sadd;
+					aload_0;
+					sload_1;
+					sconst_2;
+					sadd;
+					baload;
+					aload_2;
+					sload_3;
+					sconst_2;
+					sadd;
+					baload;
+					sand;
+					bastore;
+					aload 4;
+					sload 5;
+					sconst_3;
+					sadd;
+					aload_0;
+					sload_1;
+					sconst_3;
+					sadd;
+					baload;
+					aload_2;
+					sload_3;
+					sconst_3;
+					sadd;
+					baload;
+					sand;
+					bastore;
+					aload 4;
+					sload 5;
+					sconst_4;
+					sadd;
+					aload_0;
+					sload_1;
+					sconst_4;
+					sadd;
+					baload;
+					aload_2;
+					sload_3;
+					sconst_4;
+					sadd;
+					baload;
+					sand;
+					bastore;
+					aload 4;
+					sload 5;
+					sconst_5;
+					sadd;
+					aload_0;
+					sload_1;
+					sconst_5;
+					sadd;
+					baload;
+					aload_2;
+					sload_3;
+					sconst_5;
+					sadd;
+					baload;
+					sand;
+					bastore;
+					aload 4;
+					sload 5;
+					bspush 6;
+					sadd;
+					aload_0;
+					sload_1;
+					bspush 6;
+					sadd;
+					baload;
+					aload_2;
+					sload_3;
+					bspush 6;
+					sadd;
+					baload;
+					sand;
+					bastore;
+					aload 4;
+					sload 5;
+					bspush 7;
+					sadd;
+					aload_0;
+					sload_1;
+					bspush 7;
+					sadd;
+					baload;
+					aload_2;
+					sload_3;
+					bspush 7;
+					sadd;
+					baload;
+					sand;
+					bastore;
+					return;
+		}
+
+		.method public static xorN([BS[BSS[BS)V 7 {
+			.stack 6;
+			.locals 1;
+
+				L0:	sconst_0;
+					sstore 7;
+				L1:	goto L3;
+				L2:	aload 5;
+					sload 6;
+					sload 7;
+					sadd;
+					aload_0;
+					sload_1;
+					sload 7;
+					sadd;
+					baload;
+					aload_2;
+					sload_3;
+					sload 7;
+					sadd;
+					baload;
+					sxor;
+					bastore;
+					sinc 7 1;
+				L3:	sload 7;
+					sload 4;
+					if_scmplt L2;
+				L4:	return;
+		}
+
+		.method public static rotl([BSS[BSS)V 8 {
+			.stack 6;
+			.locals 5;
+
+				L0:	sload_2;
+					bspush 8;
+					srem;
+					sstore 6;
+				L1:	sload_2;
+					bspush 8;
+					sdiv;
+					sstore 7;
+				L2:	sconst_0;
+					sstore 8;
+				L3:	sconst_0;
+					sstore 9;
+				L4:	sload 5;
+					bspush 8;
+					sdiv;
+					sstore 10;
+				L5:	aload_3;
+					sload 4;
+					aload_0;
+					sload_1;
+					baload;
+					bastore;
+					sload 10;
+					sconst_1;
+					ssub;
+					sstore 8;
+					goto L7;
+				L6:	aload_3;
+					sload 4;
+					sconst_1;
+					sadd;
+					aload_0;
+					sload_1;
+					sload 8;
+					sadd;
+					baload;
+					bastore;
+					sload 8;
+					s2i;
+					sload 7;
+					s2i;
+					isub;
+					bipush 8;
+					iadd;
+					sload 10;
+					s2i;
+					irem;
+					i2s;
+					sstore 9;
+					aload_3;
+					sload 4;
+					sconst_2;
+					sadd;
+					sload 9;
+					sadd;
+					aload_3;
+					sload 4;
+					sconst_1;
+					sadd;
+					baload;
+					sload 6;
+					sshl;
+					s2b;
+					aload_3;
+					sload 4;
+					baload;
+					sspush 255;
+					sand;
+					bspush 8;
+					sload 6;
+					ssub;
+					sushr;
+					sor;
+					s2b;
+					bastore;
+					aload_3;
+					sload 4;
+					aload_3;
+					sload 4;
+					sconst_1;
+					sadd;
+					baload;
+					bastore;
+					sinc 8 -1;
+				L7:	sload 8;
+					ifge L6;
+				L8:	aload_3;
+					sload 4;
+					sconst_2;
+					sadd;
+					aload_0;
+					sload_1;
+					sload 10;
+					invokestatic 6;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					return;
+		}
+
+		.method public static shiftLeft([BSSS)V 9 {
+			.stack 4;
+			.locals 8;
+
+				L0:	sload_3;
+					bspush 8;
+					sdiv;
+					sconst_1;
+					sadd;
+					sstore 4;
+				L1:	sload_3;
+					bspush 8;
+					srem;
+					sstore 5;
+				L2:	sconst_1;
+					sload 5;
+					sshl;
+					sconst_1;
+					ssub;
+					s2b;
+					sstore 6;
+				L3:	sload 4;
+					sconst_1;
+					ssub;
+					sstore 7;
+				L4:	sconst_0;
+					sstore 8;
+				L5:	goto L15;
+				L6:	sload 8;
+					sload 7;
+					sadd;
+					sstore 9;
+				L7:	sload 9;
+					sload_2;
+					if_scmplt L9;
+				L8:	aload_0;
+					sload_1;
+					sload 8;
+					sadd;
+					sconst_0;
+					bastore;
+					goto L14;
+				L9:	aload_0;
+					sload_1;
+					sload 9;
+					sadd;
+					baload;
+					sstore 10;
+				L10:	sload 10;
+					sload 5;
+					sshl;
+					s2b;
+					sstore 11;
+				L11:	sload 9;
+					sconst_1;
+					sadd;
+					sload_2;
+					if_scmpge L13;
+				L12:	sload 11;
+					aload_0;
+					sload_1;
+					sload 9;
+					sadd;
+					sconst_1;
+					sadd;
+					baload;
+					bspush 8;
+					sload 5;
+					ssub;
+					sushr;
+					sload 6;
+					sand;
+					sor;
+					s2b;
+					sstore 11;
+				L13:	aload_0;
+					sload_1;
+					sload 8;
+					sadd;
+					sload 11;
+					bastore;
+				L14:	sinc 8 1;
+				L15:	sload 8;
+					sload_2;
+					if_scmplt L6;
+				L16:	return;
+		}
+
+		.method public static flip64([BS)V 10 {
+			.stack 5;
+			.locals 0;
+
+				L0:	aload_0;
+					sload_1;
+					aload_0;
+					sload_1;
+					baload;
+					sconst_m1;
+					sxor;
+					bastore;
+					aload_0;
+					sload_1;
+					sconst_1;
+					sadd;
+					aload_0;
+					sload_1;
+					sconst_1;
+					sadd;
+					baload;
+					sconst_m1;
+					sxor;
+					bastore;
+					aload_0;
+					sload_1;
+					sconst_2;
+					sadd;
+					aload_0;
+					sload_1;
+					sconst_2;
+					sadd;
+					baload;
+					sconst_m1;
+					sxor;
+					bastore;
+					aload_0;
+					sload_1;
+					sconst_3;
+					sadd;
+					aload_0;
+					sload_1;
+					sconst_3;
+					sadd;
+					baload;
+					sconst_m1;
+					sxor;
+					bastore;
+					aload_0;
+					sload_1;
+					sconst_4;
+					sadd;
+					aload_0;
+					sload_1;
+					sconst_4;
+					sadd;
+					baload;
+					sconst_m1;
+					sxor;
+					bastore;
+					aload_0;
+					sload_1;
+					sconst_5;
+					sadd;
+					aload_0;
+					sload_1;
+					sconst_5;
+					sadd;
+					baload;
+					sconst_m1;
+					sxor;
+					bastore;
+					aload_0;
+					sload_1;
+					bspush 6;
+					sadd;
+					aload_0;
+					sload_1;
+					bspush 6;
+					sadd;
+					baload;
+					sconst_m1;
+					sxor;
+					bastore;
+					aload_0;
+					sload_1;
+					bspush 7;
+					sadd;
+					aload_0;
+					sload_1;
+					bspush 7;
+					sadd;
+					baload;
+					sconst_m1;
+					sxor;
+					bastore;
+					return;
+		}
+
+		.method public static littleEndian64([BS[BSB)V 11 {
+			.stack 5;
+			.locals 0;
+
+				L0:	aload_0;
+					sload_1;
+					bspush 7;
+					sadd;
+					baload;
+					sstore 4;
+					aload_2;
+					sload_3;
+					bspush 7;
+					sadd;
+					aload_0;
+					sload_1;
+					baload;
+					bastore;
+					aload_2;
+					sload_3;
+					sload 4;
+					bastore;
+				L1:	goto L3;
+				L2:	pop;
+					bspush 106;
+					bspush -15;
+					invokestatic 62;		// javacard/framework/Util.makeShort(BB)S
+					invokestatic 34;		// javacard/framework/ISOException.throwIt(S)V
+				L3:	aload_0;
+					sload_1;
+					bspush 6;
+					sadd;
+					baload;
+					sstore 4;
+					aload_2;
+					sload_3;
+					bspush 6;
+					sadd;
+					aload_0;
+					sload_1;
+					sconst_1;
+					sadd;
+					baload;
+					bastore;
+					aload_2;
+					sload_3;
+					sconst_1;
+					sadd;
+					sload 4;
+					bastore;
+				L4:	goto L6;
+				L5:	pop;
+					bspush 106;
+					bspush -14;
+					invokestatic 62;		// javacard/framework/Util.makeShort(BB)S
+					invokestatic 34;		// javacard/framework/ISOException.throwIt(S)V
+				L6:	aload_0;
+					sload_1;
+					sconst_5;
+					sadd;
+					baload;
+					sstore 4;
+					aload_2;
+					sload_3;
+					sconst_5;
+					sadd;
+					aload_0;
+					sload_1;
+					sconst_2;
+					sadd;
+					baload;
+					bastore;
+					aload_2;
+					sload_3;
+					sconst_2;
+					sadd;
+					sload 4;
+					bastore;
+				L7:	goto L9;
+				L8:	pop;
+					bspush 106;
+					bspush -13;
+					invokestatic 62;		// javacard/framework/Util.makeShort(BB)S
+					invokestatic 34;		// javacard/framework/ISOException.throwIt(S)V
+				L9:	aload_0;
+					sload_1;
+					sconst_4;
+					sadd;
+					baload;
+					sstore 4;
+					aload_2;
+					sload_3;
+					sconst_4;
+					sadd;
+					aload_0;
+					sload_1;
+					sconst_3;
+					sadd;
+					baload;
+					bastore;
+					aload_2;
+					sload_3;
+					sconst_3;
+					sadd;
+					sload 4;
+					bastore;
+				L10:	goto L12;
+				L11:	pop;
+					bspush 106;
+					bspush -12;
+					invokestatic 62;		// javacard/framework/Util.makeShort(BB)S
+					invokestatic 34;		// javacard/framework/ISOException.throwIt(S)V
+				L12:	return;
+			.exceptionTable {
+				// start_block end_block handler_block catch_type_index
+				L0 L1 L2 61;
+				L3 L4 L5 61;
+				L6 L7 L8 61;
+				L9 L10 L11 61;
+			}
+		}
+
+		.method public static unixTimeCompare([BS[BSS)B 12 {
+			.stack 4;
+			.locals 0;
+
+				L0:	sconst_0;
+					sstore 4;
+					goto L6;
+				L1:	aload_0;
+					sload_1;
+					sload 4;
+					sadd;
+					baload;
+					aload_2;
+					sload_3;
+					sload 4;
+					sadd;
+					baload;
+					if_scmpeq L5;
+				L2:	aload_0;
+					sload_1;
+					sload 4;
+					sadd;
+					baload;
+					sspush 255;
+					sand;
+					aload_2;
+					sload_3;
+					sload 4;
+					sadd;
+					baload;
+					sspush 255;
+					sand;
+					if_scmple L4;
+				L3:	sconst_1;
+					sreturn;
+				L4:	sconst_2;
+					sreturn;
+				L5:	sinc 4 1;
+				L6:	sload 4;
+					sconst_4;
+					if_scmplt L1;
+				L7:	sconst_0;
+					sreturn;
+		}
+
+		.method public static binToAsciiHex([BSS[BSS)S 13 {
+			.stack 7;
+			.locals 0;
+
+				L0:	sconst_0;
+					sstore 5;
+					goto L2;
+				L1:	aload_3;
+					sload 4;
+					sload 5;
+					sadd;
+					getstatic_a 63;		// reference SCP11BApplet/MathUtil.ASCIIHEX
+					aload_0;
+					sload_1;
+					sload 5;
+					sconst_2;
+					sdiv;
+					sadd;
+					baload;
+					sconst_4;
+					sshr;
+					bspush 15;
+					sand;
+					baload;
+					bastore;
+					aload_3;
+					sload 4;
+					sload 5;
+					sadd;
+					sconst_1;
+					sadd;
+					getstatic_a 63;		// reference SCP11BApplet/MathUtil.ASCIIHEX
+					aload_0;
+					sload_1;
+					sload 5;
+					sconst_2;
+					sdiv;
+					sadd;
+					baload;
+					bspush 15;
+					sand;
+					baload;
+					bastore;
+					sinc 5 2;
+				L2:	sload 5;
+					sload_2;
+					sconst_2;
+					smul;
+					if_scmplt L1;
+				L3:	sload_2;
+					sconst_2;
+					smul;
+					sreturn;
+		}
+
+		.method public static asciiNibbleToBin(B)B 14 {
+			.stack 2;
+			.locals 0;
+
+				L0:	sload_0;
+					sspush 255;
+					sand;
+					bspush 47;
+					if_scmple L3;
+				L1:	sload_0;
+					sspush 255;
+					sand;
+					bspush 58;
+					if_scmpge L3;
+				L2:	sload_0;
+					bspush 15;
+					sand;
+					sreturn;
+				L3:	sload_0;
+					bspush 65;
+					if_scmpeq L5;
+				L4:	sload_0;
+					bspush 97;
+					if_scmpne L6;
+				L5:	bspush 10;
+					sreturn;
+				L6:	sload_0;
+					bspush 66;
+					if_scmpeq L8;
+				L7:	sload_0;
+					bspush 98;
+					if_scmpne L9;
+				L8:	bspush 11;
+					sreturn;
+				L9:	sload_0;
+					bspush 67;
+					if_scmpeq L11;
+				L10:	sload_0;
+					bspush 99;
+					if_scmpne L12;
+				L11:	bspush 12;
+					sreturn;
+				L12:	sload_0;
+					bspush 68;
+					if_scmpeq L14;
+				L13:	sload_0;
+					bspush 100;
+					if_scmpne L15;
+				L14:	bspush 13;
+					sreturn;
+				L15:	sload_0;
+					bspush 69;
+					if_scmpeq L17;
+				L16:	sload_0;
+					bspush 101;
+					if_scmpne L18;
+				L17:	bspush 14;
+					sreturn;
+				L18:	sload_0;
+					bspush 70;
+					if_scmpeq L20;
+				L19:	sload_0;
+					bspush 102;
+					if_scmpne L21;
+				L20:	bspush 15;
+					sreturn;
+				L21:	sconst_m1;
+					sreturn;
+		}
+
+		.method public static hexStrToBin([BSS[BSS[BS)S 15 {
+			.stack 6;
+			.locals 0;
+
+				L0:	sload_2;
+					sconst_2;
+					srem;
+					ifne L8;
+				L1:	sconst_0;
+					sstore 5;
+					goto L6;
+				L2:	aload 6;
+					sload 7;
+					aload_0;
+					sload_1;
+					sload 5;
+					sadd;
+					baload;
+					invokestatic 64;		// SCP11BApplet/MathUtil.asciiNibbleToBin(B)B
+					bastore;
+					aload 6;
+					sload 7;
+					sconst_1;
+					sadd;
+					aload_0;
+					sload_1;
+					sload 5;
+					sadd;
+					sconst_1;
+					sadd;
+					baload;
+					invokestatic 64;		// SCP11BApplet/MathUtil.asciiNibbleToBin(B)B
+					bastore;
+					aload 6;
+					sload 7;
+					baload;
+					sconst_m1;
+					if_scmpeq L4;
+				L3:	aload 6;
+					sload 7;
+					sconst_1;
+					sadd;
+					baload;
+					sconst_m1;
+					if_scmpne L5;
+				L4:	sconst_m1;
+					sreturn;
+				L5:	aload_3;
+					sload 4;
+					sload 5;
+					sconst_2;
+					sdiv;
+					sadd;
+					aload 6;
+					sload 7;
+					baload;
+					sconst_4;
+					sshl;
+					s2b;
+					aload 6;
+					sload 7;
+					sconst_1;
+					sadd;
+					baload;
+					sor;
+					bastore;
+					sinc 5 2;
+				L6:	sload 5;
+					sload_2;
+					if_scmplt L2;
+				L7:	sload_2;
+					sconst_2;
+					sdiv;
+					sreturn;
+				L8:	sconst_m1;
+					sreturn;
+		}
+
+		.method public static asciiToInt([BSS[BS)V 16 {
+			.stack 6;
+			.locals 0;
+
+				L0:	aload_3;
+					sload 4;
+					aload_0;
+					sload_1;
+					baload;
+					bspush 15;
+					sand;
+					bastore;
+					sload_2;
+					sconst_2;
+					if_scmpne L2;
+				L1:	aload_3;
+					sload 4;
+					aload_3;
+					sload 4;
+					baload;
+					sconst_4;
+					sshl;
+					s2b;
+					aload_0;
+					sload_1;
+					sconst_1;
+					sadd;
+					baload;
+					bspush 15;
+					sand;
+					sor;
+					bastore;
+				L2:	return;
+		}
+
+		.method public static toDecimalASCII([BSS[BS)S 17 {
+			.stack 4;
+			.locals 6;
+
+				L0:	getstatic_a 65;		// reference SCP11BApplet/MathUtil.BCD_SIZE_PER_BYTES
+					sload_2;
+					baload;
+					sstore 5;
+				L1:	sconst_0;
+					sstore 9;
+				L2:	goto L11;
+				L3:	sconst_0;
+					sstore 8;
+				L4:	sconst_0;
+					sstore 10;
+				L5:	goto L9;
+				L6:	aload_0;
+					sload_1;
+					sload 10;
+					sadd;
+					baload;
+					sspush 255;
+					sand;
+					sstore 6;
+				L7:	sload 8;
+					sspush 256;
+					smul;
+					sload 6;
+					sadd;
+					sstore 7;
+				L8:	sload 7;
+					bspush 10;
+					srem;
+					sstore 8;
+					aload_0;
+					sload_1;
+					sload 10;
+					sadd;
+					sload 7;
+					bspush 10;
+					sdiv;
+					s2b;
+					bastore;
+					sinc 10 1;
+				L9:	sload 10;
+					sload_2;
+					if_scmplt L6;
+				L10:	aload_3;
+					sload 4;
+					sload 5;
+					sadd;
+					sload 9;
+					ssub;
+					sconst_1;
+					ssub;
+					sload 8;
+					bspush 48;
+					sadd;
+					s2b;
+					bastore;
+					sinc 9 1;
+				L11:	sload 9;
+					sload 5;
+					if_scmplt L3;
+				L12:	sload 5;
+					sreturn;
+		}
+
+		.method public static byteBool(Z)B 18 {
+			.stack 1;
+			.locals 0;
+
+				L0:	sload_0;
+					ifeq L2;
+				L1:	sconst_m1;
+					sreturn;
+				L2:	sconst_0;
+					sreturn;
+		}
+
+		.method public static boolByte(B)Z 19 {
+			.stack 2;
+			.locals 0;
+
+				L0:	sload_0;
+					sconst_m1;
+					if_scmpne L2;
+				L1:	sconst_1;
+					sreturn;
+				L2:	sconst_0;
+					sreturn;
+		}
+
+		.method public static shortBool(Z)S 20 {
+			.stack 1;
+			.locals 0;
+
+				L0:	sload_0;
+					ifeq L2;
+				L1:	sconst_1;
+					sreturn;
+				L2:	sconst_0;
+					sreturn;
+		}
+
+		.method public static boolShort(S)Z 21 {
+			.stack 2;
+			.locals 0;
+
+				L0:	sload_0;
+					sconst_1;
+					if_scmpne L2;
+				L1:	sconst_1;
+					sreturn;
+				L2:	sconst_0;
+					sreturn;
+		}
+
+		.method public static ceil(SS)S 22 {
+			.stack 4;
+			.locals 0;
+
+				L0:	sload_0;
+					s2i;
+					sload_1;
+					s2i;
+					iadd;
+					iconst_1;
+					isub;
+					sload_1;
+					s2i;
+					idiv;
+					i2s;
+					sreturn;
+		}
+
+	}
+
+	.class public SCP11BApplet 5 extends 3.3 {		// extends javacard/framework/Applet
+
+		.fields {
+			public static KeyProfile hwProfile 0;		// LSCP11BApplet/KeyProfile;
+			public static 2.18 ecTmpPriv 1;		// Ljavacard/security/ECPrivateKey;
+			public static 2.19 ecTmpPub 2;		// Ljavacard/security/ECPublicKey;
+			public static 2.16 tmpKP 3;		// Ljavacard/security/KeyPair;
+			public static 2.20 tmpCryptKey 4;		// Ljavacard/security/AESKey;
+			public static 2.20 SMACKey 5;		// Ljavacard/security/AESKey;
+			public static 2.20 SRMACKey 6;		// Ljavacard/security/AESKey;
+			public static 2.20 SENCKey 7;		// Ljavacard/security/AESKey;
+			public static 2.20 SDECKey 8;		// Ljavacard/security/AESKey;
+			public static 2.20 receiptKey 9;		// Ljavacard/security/AESKey;
+			public static 2.22 ka 10;		// Ljavacard/security/KeyAgreement;
+			public static 2.11 sha256 11;		// Ljavacard/security/MessageDigest;
+			public static 2.14 rand 12;		// Ljavacard/security/RandomData;
+			public static 1.1 aesECB 13;		// Ljavacardx/crypto/Cipher;
+			public static 1.1 aesCBCNoPad 14;		// Ljavacardx/crypto/Cipher;
+			public static byte[] b0 15;		// [B
+			public static byte[] b1 16;		// [B
+			public static byte[] b2 17;		// [B
+			public static byte[] hmacSHA256KeyBuff 18;		// [B
+			public static byte[] secSessMacChain 19;		// [B
+			public static byte[] secSessIV 20;		// [B
+			public static byte[] debugBytes 21;		// [B
+			public static byte[] debugBytes1 22;		// [B
+			public static short SW_INVALID_ALGO 23 = 28593;		// S
+			public static short SW_INVALID_KEY_SIZE 24 = 28594;		// S
+			public static byte ALGO_EC_P256R1 25 = 1;		// B
+			public static byte ALGO_EC_P256K1 26 = 2;		// B
+		}
+
+		.publicMethodTable 7 {
+			equals(Ljava/lang/Object;)Z;
+			register()V;
+			register([BSB)V;
+			selectingApplet()Z;
+			deselect()V;
+			getShareableInterfaceObject(Ljavacard/framework/AID;B)Ljavacard/framework/Shareable;;
+			select()Z;
+			process(Ljavacard/framework/APDU;)V;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method public <init>()V 0 {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					invokespecial 66;		// javacard/framework/Applet.<init>()V
+					return;
+		}
+
+		.method public static install([BSB)V 1 {
+			.stack 5;
+			.locals 0;
+
+				L0:	sspush 267;
+					sconst_1;
+					invokestatic 67;		// javacard/framework/JCSystem.makeTransientByteArray(SB)[B
+					putstatic_a 68;		// reference SCP11BApplet/SCP11BApplet.b0
+					sspush 267;
+					sconst_1;
+					invokestatic 67;		// javacard/framework/JCSystem.makeTransientByteArray(SB)[B
+					putstatic_a 69;		// reference SCP11BApplet/SCP11BApplet.b1
+					sspush 258;
+					sconst_1;
+					invokestatic 67;		// javacard/framework/JCSystem.makeTransientByteArray(SB)[B
+					putstatic_a 70;		// reference SCP11BApplet/SCP11BApplet.b2
+					bspush 32;
+					sconst_1;
+					invokestatic 67;		// javacard/framework/JCSystem.makeTransientByteArray(SB)[B
+					putstatic_a 71;		// reference SCP11BApplet/SCP11BApplet.hmacSHA256KeyBuff
+					bspush 16;
+					sconst_1;
+					invokestatic 67;		// javacard/framework/JCSystem.makeTransientByteArray(SB)[B
+					putstatic_a 72;		// reference SCP11BApplet/SCP11BApplet.secSessMacChain
+					bspush 16;
+					sconst_1;
+					invokestatic 67;		// javacard/framework/JCSystem.makeTransientByteArray(SB)[B
+					putstatic_a 73;		// reference SCP11BApplet/SCP11BApplet.secSessIV
+					sspush 160;
+					sconst_1;
+					invokestatic 67;		// javacard/framework/JCSystem.makeTransientByteArray(SB)[B
+					putstatic_a 74;		// reference SCP11BApplet/SCP11BApplet.debugBytes
+					bspush 71;
+					sconst_1;
+					invokestatic 67;		// javacard/framework/JCSystem.makeTransientByteArray(SB)[B
+					putstatic_a 75;		// reference SCP11BApplet/SCP11BApplet.debugBytes1
+					sconst_2;
+					invokestatic 76;		// javacard/security/RandomData.getInstance(B)Ljavacard/security/RandomData;
+					putstatic_a 77;		// reference SCP11BApplet/SCP11BApplet.rand
+					sconst_3;
+					sconst_0;
+					invokestatic 78;		// javacard/security/KeyAgreement.getInstance(BZ)Ljavacard/security/KeyAgreement;
+					putstatic_a 49;		// reference SCP11BApplet/SCP11BApplet.ka
+					sconst_4;
+					sconst_0;
+					invokestatic 79;		// javacard/security/MessageDigest.getInstance(BZ)Ljavacard/security/MessageDigest;
+					putstatic_a 80;		// reference SCP11BApplet/SCP11BApplet.sha256
+					bspush 13;
+					sconst_0;
+					invokestatic 81;		// javacardx/crypto/Cipher.getInstance(BZ)Ljavacardx/crypto/Cipher;
+					putstatic_a 82;		// reference SCP11BApplet/SCP11BApplet.aesCBCNoPad
+					bspush 14;
+					sconst_0;
+					invokestatic 81;		// javacardx/crypto/Cipher.getInstance(BZ)Ljavacardx/crypto/Cipher;
+					putstatic_a 83;		// reference SCP11BApplet/SCP11BApplet.aesECB
+					new 84;		// SCP11BApplet/KeyProfile
+					dup;
+					invokespecial 85;		// SCP11BApplet/KeyProfile.<init>()V
+					putstatic_a 86;		// reference SCP11BApplet/SCP11BApplet.hwProfile
+					getstatic_a 86;		// reference SCP11BApplet/SCP11BApplet.hwProfile
+					sconst_1;
+					invokevirtual 87;		// genNewKeyPair(B)V
+					bspush 31;
+					sspush 256;
+					sconst_0;
+					invokestatic 43;		// javacard/security/KeyBuilder.buildKey(BSZ)Ljavacard/security/Key;
+					checkcast 0 41;		// T_CLASSORINTERFACE javacard/security/ECPrivateKey
+					putstatic_a 88;		// reference SCP11BApplet/SCP11BApplet.ecTmpPriv
+					bspush 11;
+					sspush 256;
+					sconst_0;
+					invokestatic 43;		// javacard/security/KeyBuilder.buildKey(BSZ)Ljavacard/security/Key;
+					checkcast 0 42;		// T_CLASSORINTERFACE javacard/security/ECPublicKey
+					putstatic_a 89;		// reference SCP11BApplet/SCP11BApplet.ecTmpPub
+					getstatic_a 88;		// reference SCP11BApplet/SCP11BApplet.ecTmpPriv
+					sconst_1;
+					invokestatic 44;		// SCP11BApplet/ECC.setCommonCurveParameters(Ljavacard/security/ECKey;B)Z
+					pop;
+					getstatic_a 89;		// reference SCP11BApplet/SCP11BApplet.ecTmpPub
+					sconst_1;
+					invokestatic 44;		// SCP11BApplet/ECC.setCommonCurveParameters(Ljavacard/security/ECKey;B)Z
+					pop;
+					new 45;		// javacard/security/KeyPair
+					dup;
+					getstatic_a 89;		// reference SCP11BApplet/SCP11BApplet.ecTmpPub
+					getstatic_a 88;		// reference SCP11BApplet/SCP11BApplet.ecTmpPriv
+					invokespecial 46;		// javacard/security/KeyPair.<init>(Ljavacard/security/PublicKey;Ljavacard/security/PrivateKey;)V
+					putstatic_a 90;		// reference SCP11BApplet/SCP11BApplet.tmpKP
+					bspush 13;
+					sspush 256;
+					sconst_0;
+					invokestatic 43;		// javacard/security/KeyBuilder.buildKey(BSZ)Ljavacard/security/Key;
+					checkcast 0 91;		// T_CLASSORINTERFACE javacard/security/AESKey
+					putstatic_a 92;		// reference SCP11BApplet/SCP11BApplet.SMACKey
+					bspush 13;
+					sspush 256;
+					sconst_0;
+					invokestatic 43;		// javacard/security/KeyBuilder.buildKey(BSZ)Ljavacard/security/Key;
+					checkcast 0 91;		// T_CLASSORINTERFACE javacard/security/AESKey
+					putstatic_a 93;		// reference SCP11BApplet/SCP11BApplet.SRMACKey
+					bspush 13;
+					sspush 256;
+					sconst_0;
+					invokestatic 43;		// javacard/security/KeyBuilder.buildKey(BSZ)Ljavacard/security/Key;
+					checkcast 0 91;		// T_CLASSORINTERFACE javacard/security/AESKey
+					putstatic_a 94;		// reference SCP11BApplet/SCP11BApplet.SENCKey
+					bspush 13;
+					sspush 256;
+					sconst_0;
+					invokestatic 43;		// javacard/security/KeyBuilder.buildKey(BSZ)Ljavacard/security/Key;
+					checkcast 0 91;		// T_CLASSORINTERFACE javacard/security/AESKey
+					putstatic_a 95;		// reference SCP11BApplet/SCP11BApplet.SDECKey
+					bspush 13;
+					sspush 256;
+					sconst_0;
+					invokestatic 43;		// javacard/security/KeyBuilder.buildKey(BSZ)Ljavacard/security/Key;
+					checkcast 0 91;		// T_CLASSORINTERFACE javacard/security/AESKey
+					putstatic_a 96;		// reference SCP11BApplet/SCP11BApplet.receiptKey
+					new 97;		// SCP11BApplet/SCP11BApplet
+					dup;
+					invokespecial 98;		// SCP11BApplet/SCP11BApplet.<init>()V
+					aload_0;
+					sload_1;
+					sconst_1;
+					sadd;
+					aload_0;
+					sload_1;
+					baload;
+					invokevirtual 99;		// register([BSB)V
+					return;
+		}
+
+		.method public process(Ljavacard/framework/APDU;)V 7 {
+			.stack 15;
+			.locals 4;
+
+			.descriptor	Ljavacard/framework/APDU;	3.10;
+
+				L0:	aload_0;
+					invokevirtual 100;		// selectingApplet()Z
+					ifeq L2;
+				L1:	return;
+				L2:	aload_1;
+					invokevirtual 101;		// getBuffer()[B
+					astore_2;
+				L3:	invokestatic 102;		// javacard/framework/JCSystem.requestObjectDeletion()V
+					sconst_0;
+					sstore_3;
+				L4:	sconst_0;
+					sstore 4;
+				L5:	sconst_0;
+					sstore 5;
+				L6:	aload_2;
+					sconst_1;
+					baload;
+					stableswitch L27 -1 -1 L7;
+				L7:	aload_2;
+					sconst_2;
+					baload;
+					sstore 4;
+					aload_2;
+					sconst_3;
+					baload;
+					sstore 5;
+					sload 4;
+					ifne L9;
+				L8:	getstatic_a 86;		// reference SCP11BApplet/SCP11BApplet.hwProfile
+					invokevirtual 103;		// getPublicKey()Ljavacard/security/ECPublicKey;
+					aload_2;
+					sconst_0;
+					invokeinterface 3 42 19;		// javacard/security/ECPublicKey
+					sstore_3;
+					aload_1;
+					sconst_0;
+					sload_3;
+					invokevirtual 104;		// setOutgoingAndSend(SS)V
+					goto_w L28;
+				L9:	sload 4;
+					sconst_1;
+					if_scmpne_w L13;
+				L10:	aload_1;
+					invokevirtual 105;		// setIncomingAndReceive()S
+					sstore_3;
+					getstatic_a 68;		// reference SCP11BApplet/SCP11BApplet.b0
+					sconst_0;
+					getstatic_a 68;		// reference SCP11BApplet/SCP11BApplet.b0
+					arraylength;
+					sconst_0;
+					invokestatic 38;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					getstatic_a 69;		// reference SCP11BApplet/SCP11BApplet.b1
+					sconst_0;
+					getstatic_a 69;		// reference SCP11BApplet/SCP11BApplet.b1
+					arraylength;
+					sconst_0;
+					invokestatic 38;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					getstatic_a 70;		// reference SCP11BApplet/SCP11BApplet.b2
+					sconst_0;
+					getstatic_a 70;		// reference SCP11BApplet/SCP11BApplet.b2
+					arraylength;
+					sconst_0;
+					invokestatic 38;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					getstatic_a 71;		// reference SCP11BApplet/SCP11BApplet.hmacSHA256KeyBuff
+					sconst_0;
+					getstatic_a 71;		// reference SCP11BApplet/SCP11BApplet.hmacSHA256KeyBuff
+					arraylength;
+					sconst_0;
+					invokestatic 38;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					getstatic_a 72;		// reference SCP11BApplet/SCP11BApplet.secSessMacChain
+					sconst_0;
+					getstatic_a 72;		// reference SCP11BApplet/SCP11BApplet.secSessMacChain
+					arraylength;
+					sconst_0;
+					invokestatic 38;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					getstatic_a 73;		// reference SCP11BApplet/SCP11BApplet.secSessIV
+					sconst_0;
+					getstatic_a 73;		// reference SCP11BApplet/SCP11BApplet.secSessIV
+					arraylength;
+					sconst_0;
+					invokestatic 38;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					aload_2;
+					aload_1;
+					invokevirtual 106;		// getOffsetCdata()S
+					sload_3;
+					getstatic_a 86;		// reference SCP11BApplet/SCP11BApplet.hwProfile
+					invokevirtual 107;		// getPrivateKey()Ljavacard/security/ECPrivateKey;
+					getstatic_a 68;		// reference SCP11BApplet/SCP11BApplet.b0
+					sconst_0;
+					getstatic_a 69;		// reference SCP11BApplet/SCP11BApplet.b1
+					sconst_0;
+					getstatic_a 70;		// reference SCP11BApplet/SCP11BApplet.b2
+					sconst_0;
+					getstatic_a 96;		// reference SCP11BApplet/SCP11BApplet.receiptKey
+					getstatic_a 94;		// reference SCP11BApplet/SCP11BApplet.SENCKey
+					getstatic_a 92;		// reference SCP11BApplet/SCP11BApplet.SMACKey
+					getstatic_a 93;		// reference SCP11BApplet/SCP11BApplet.SRMACKey
+					getstatic_a 95;		// reference SCP11BApplet/SCP11BApplet.SDECKey
+					invokestatic 108;		// SCP11BApplet/SecureChannel.initSecureChannelOpen([BSSLjavacard/security/ECPrivateKey;[BS[BS[BSLjavacard/security/AESKey;Ljavacard/security/AESKey;Ljavacard/security/AESKey;Ljavacard/security/AESKey;Ljavacard/security/AESKey;)S
+					sspush 160;
+					if_scmpeq L12;
+				L11:	bspush 111;
+					bspush 33;
+					invokestatic 62;		// javacard/framework/Util.makeShort(BB)S
+					invokestatic 34;		// javacard/framework/ISOException.throwIt(S)V
+				L12:	getstatic_a 74;		// reference SCP11BApplet/SCP11BApplet.debugBytes
+					sconst_0;
+					getstatic_a 74;		// reference SCP11BApplet/SCP11BApplet.debugBytes
+					arraylength;
+					sconst_0;
+					invokestatic 38;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					getstatic_a 68;		// reference SCP11BApplet/SCP11BApplet.b0
+					sconst_0;
+					getstatic_a 74;		// reference SCP11BApplet/SCP11BApplet.debugBytes
+					sconst_0;
+					sspush 160;
+					invokestatic 6;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					getstatic_a 96;		// reference SCP11BApplet/SCP11BApplet.receiptKey
+					aload_2;
+					aload_1;
+					invokevirtual 106;		// getOffsetCdata()S
+					sload_3;
+					aload_2;
+					sconst_0;
+					getstatic_a 68;		// reference SCP11BApplet/SCP11BApplet.b0
+					sconst_0;
+					getstatic_a 69;		// reference SCP11BApplet/SCP11BApplet.b1
+					sconst_0;
+					invokestatic 109;		// SCP11BApplet/SecureChannel.generateSCP11BReceipt(Ljavacard/security/AESKey;[BSS[BS[BS[BS)S
+					sstore_3;
+					aload_1;
+					sconst_0;
+					sload_3;
+					invokevirtual 104;		// setOutgoingAndSend(SS)V
+					goto_w L28;
+				L13:	sload 4;
+					sconst_2;
+					if_scmpne_w L20;
+				L14:	aload_1;
+					invokevirtual 105;		// setIncomingAndReceive()S
+					sstore_3;
+					getstatic_a 68;		// reference SCP11BApplet/SCP11BApplet.b0
+					sconst_0;
+					getstatic_a 68;		// reference SCP11BApplet/SCP11BApplet.b0
+					arraylength;
+					sconst_0;
+					invokestatic 38;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					getstatic_a 69;		// reference SCP11BApplet/SCP11BApplet.b1
+					sconst_0;
+					getstatic_a 69;		// reference SCP11BApplet/SCP11BApplet.b1
+					arraylength;
+					sconst_0;
+					invokestatic 38;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					getstatic_a 70;		// reference SCP11BApplet/SCP11BApplet.b2
+					sconst_0;
+					getstatic_a 70;		// reference SCP11BApplet/SCP11BApplet.b2
+					arraylength;
+					sconst_0;
+					invokestatic 38;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					getstatic_a 71;		// reference SCP11BApplet/SCP11BApplet.hmacSHA256KeyBuff
+					sconst_0;
+					getstatic_a 71;		// reference SCP11BApplet/SCP11BApplet.hmacSHA256KeyBuff
+					arraylength;
+					sconst_0;
+					invokestatic 38;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					sconst_0;
+					getstatic_a 94;		// reference SCP11BApplet/SCP11BApplet.SENCKey
+					getstatic_a 92;		// reference SCP11BApplet/SCP11BApplet.SMACKey
+					aload_2;
+					sconst_0;
+					sload_3;
+					sconst_5;
+					sadd;
+					getstatic_a 68;		// reference SCP11BApplet/SCP11BApplet.b0
+					sconst_0;
+					getstatic_a 69;		// reference SCP11BApplet/SCP11BApplet.b1
+					sconst_0;
+					getstatic_a 71;		// reference SCP11BApplet/SCP11BApplet.hmacSHA256KeyBuff
+					sconst_0;
+					getstatic_a 70;		// reference SCP11BApplet/SCP11BApplet.b2
+					sconst_0;
+					invokestatic 110;		// SCP11BApplet/SecureChannel.handleMessage(ZLjavacard/security/AESKey;Ljavacard/security/AESKey;[BSS[BS[BS[BS[BS)S
+					sstore_3;
+					sload_3;
+					ifeq L16;
+				L15:	getstatic_a 70;		// reference SCP11BApplet/SCP11BApplet.b2
+					sconst_0;
+					aload_2;
+					sconst_0;
+					sload_3;
+					invokestatic 6;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					aload_2;
+					sconst_4;
+					baload;
+					sspush 255;
+					sand;
+					sstore_3;
+				L16:	sload 5;
+					sconst_1;
+					if_scmpne L18;
+				L17:	sconst_1;
+					getstatic_a 94;		// reference SCP11BApplet/SCP11BApplet.SENCKey
+					getstatic_a 93;		// reference SCP11BApplet/SCP11BApplet.SRMACKey
+					aload_2;
+					aload_1;
+					invokevirtual 106;		// getOffsetCdata()S
+					sload_3;
+					getstatic_a 68;		// reference SCP11BApplet/SCP11BApplet.b0
+					sconst_0;
+					getstatic_a 69;		// reference SCP11BApplet/SCP11BApplet.b1
+					sconst_0;
+					getstatic_a 71;		// reference SCP11BApplet/SCP11BApplet.hmacSHA256KeyBuff
+					sconst_0;
+					getstatic_a 70;		// reference SCP11BApplet/SCP11BApplet.b2
+					sconst_0;
+					invokestatic 110;		// SCP11BApplet/SecureChannel.handleMessage(ZLjavacard/security/AESKey;Ljavacard/security/AESKey;[BSS[BS[BS[BS[BS)S
+					sstore_3;
+					goto L19;
+				L18:	sconst_1;
+					getstatic_a 94;		// reference SCP11BApplet/SCP11BApplet.SENCKey
+					getstatic_a 93;		// reference SCP11BApplet/SCP11BApplet.SRMACKey
+					aload_2;
+					sconst_0;
+					sconst_0;
+					getstatic_a 68;		// reference SCP11BApplet/SCP11BApplet.b0
+					sconst_0;
+					getstatic_a 69;		// reference SCP11BApplet/SCP11BApplet.b1
+					sconst_0;
+					getstatic_a 71;		// reference SCP11BApplet/SCP11BApplet.hmacSHA256KeyBuff
+					sconst_0;
+					getstatic_a 70;		// reference SCP11BApplet/SCP11BApplet.b2
+					sconst_0;
+					invokestatic 110;		// SCP11BApplet/SecureChannel.handleMessage(ZLjavacard/security/AESKey;Ljavacard/security/AESKey;[BSS[BS[BS[BS[BS)S
+					sstore_3;
+				L19:	getstatic_a 70;		// reference SCP11BApplet/SCP11BApplet.b2
+					sconst_0;
+					aload_2;
+					sconst_0;
+					sload_3;
+					invokestatic 6;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					aload_1;
+					sconst_0;
+					sload_3;
+					invokevirtual 104;		// setOutgoingAndSend(SS)V
+					goto_w L28;
+				L20:	sload 4;
+					sconst_3;
+					if_scmpne L22;
+				L21:	sconst_1;
+					getstatic_a 94;		// reference SCP11BApplet/SCP11BApplet.SENCKey
+					getstatic_a 93;		// reference SCP11BApplet/SCP11BApplet.SRMACKey
+					aload_2;
+					aload_1;
+					invokevirtual 106;		// getOffsetCdata()S
+					sload_3;
+					getstatic_a 68;		// reference SCP11BApplet/SCP11BApplet.b0
+					sconst_0;
+					getstatic_a 69;		// reference SCP11BApplet/SCP11BApplet.b1
+					sconst_0;
+					getstatic_a 71;		// reference SCP11BApplet/SCP11BApplet.hmacSHA256KeyBuff
+					sconst_0;
+					getstatic_a 70;		// reference SCP11BApplet/SCP11BApplet.b2
+					sconst_0;
+					invokestatic 110;		// SCP11BApplet/SecureChannel.handleMessage(ZLjavacard/security/AESKey;Ljavacard/security/AESKey;[BSS[BS[BS[BS[BS)S
+					sstore_3;
+					getstatic_a 70;		// reference SCP11BApplet/SCP11BApplet.b2
+					sconst_0;
+					aload_2;
+					sconst_0;
+					sload_3;
+					invokestatic 6;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					aload_1;
+					sconst_0;
+					sload_3;
+					invokevirtual 104;		// setOutgoingAndSend(SS)V
+					goto L28;
+				L22:	sload 4;
+					sconst_4;
+					if_scmpne L24;
+				L23:	getstatic_a 74;		// reference SCP11BApplet/SCP11BApplet.debugBytes
+					sconst_0;
+					aload_2;
+					sconst_0;
+					getstatic_a 74;		// reference SCP11BApplet/SCP11BApplet.debugBytes
+					arraylength;
+					invokestatic 6;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					aload_1;
+					sconst_0;
+					getstatic_a 74;		// reference SCP11BApplet/SCP11BApplet.debugBytes
+					arraylength;
+					invokevirtual 104;		// setOutgoingAndSend(SS)V
+					goto L28;
+				L24:	sload 4;
+					sconst_5;
+					if_scmpne L26;
+				L25:	getstatic_a 75;		// reference SCP11BApplet/SCP11BApplet.debugBytes1
+					sconst_0;
+					aload_2;
+					sconst_0;
+					getstatic_a 75;		// reference SCP11BApplet/SCP11BApplet.debugBytes1
+					arraylength;
+					invokestatic 6;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					aload_1;
+					sconst_0;
+					getstatic_a 75;		// reference SCP11BApplet/SCP11BApplet.debugBytes1
+					arraylength;
+					invokevirtual 104;		// setOutgoingAndSend(SS)V
+					goto L28;
+				L26:	sspush 27270;
+					invokestatic 34;		// javacard/framework/ISOException.throwIt(S)V
+					goto L28;
+				L27:	sspush 27904;
+					invokestatic 34;		// javacard/framework/ISOException.throwIt(S)V
+				L28:	return;
+		}
+
+	}
+
+	.class public SecureChannel 6 extends 0.0 {		// extends java/lang/Object
+
+		.fields {
+			public static final short SCP11BIDParams = 4352;		// S
+			public static final short receiptMacLen = 16;		// S
+			public static final byte[] CRTTLCA6 0 = {-90,13,-112,2,17,0,-107,1,60,-128,1,-120,-127,1,-96};		// [B
+			public static final byte[] ePKOCEECKATAG 1 = {95,73};		// [B
+		}
+
+		.publicMethodTable 1 {
+			equals(Ljava/lang/Object;)Z;
+		}
+
+		.packageMethodTable 0 {
+		}
+
+		.method public <init>()V 0 {
+			.stack 1;
+			.locals 0;
+
+				L0:	aload_0;
+					invokespecial 35;		// java/lang/Object.<init>()V
+					return;
+		}
+
+		.method public static initSecureChannelOpen([BSSLjavacard/security/ECPrivateKey;[BS[BS[BSLjavacard/security/AESKey;Ljavacard/security/AESKey;Ljavacard/security/AESKey;Ljavacard/security/AESKey;Ljavacard/security/AESKey;)S 1 {
+			.stack 7;
+			.locals 4;
+
+			.descriptor	Ljavacard/security/ECPrivateKey;	2.18;
+			.descriptor	Ljavacard/security/AESKey;	2.20;
+			.descriptor	Ljavacard/security/AESKey;	2.20;
+			.descriptor	Ljavacard/security/AESKey;	2.20;
+			.descriptor	Ljavacard/security/AESKey;	2.20;
+			.descriptor	Ljavacard/security/AESKey;	2.20;
+
+				L0:	getstatic_a 90;		// reference SCP11BApplet/SCP11BApplet.tmpKP
+					invokevirtual 47;		// genKeyPair()V
+					sload 7;
+					sstore 15;
+				L1:	sconst_0;
+					sstore 16;
+				L2:	sconst_0;
+					sstore 17;
+				L3:	sconst_0;
+					sstore 18;
+				L4:	getstatic_a 86;		// reference SCP11BApplet/SCP11BApplet.hwProfile
+					aload_0;
+					sload_1;
+					sload_2;
+					aload 6;
+					sload 15;
+					invokevirtual 111;		// computeECDHSharedSecretASN1([BSS[BS)S
+					sstore 18;
+					sload 15;
+					sload 18;
+					sadd;
+					sstore 15;
+					sload 16;
+					sload 18;
+					sadd;
+					sstore 16;
+					getstatic_a 86;		// reference SCP11BApplet/SCP11BApplet.hwProfile
+					getstatic_a 88;		// reference SCP11BApplet/SCP11BApplet.ecTmpPriv
+					aload_0;
+					sload_1;
+					sload_2;
+					aload 6;
+					sload 15;
+					invokevirtual 112;		// computeECDHSharedSecretASN1(Ljavacard/security/ECPrivateKey;[BSS[BS)S
+					sstore 18;
+					sload 15;
+					sload 18;
+					sadd;
+					sstore 15;
+					sload 16;
+					sload 18;
+					sadd;
+					sstore 16;
+					aload 6;
+					sload 15;
+					sconst_4;
+					sconst_0;
+					invokestatic 38;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					sinc 15 4;
+					sinc 16 4;
+					sload 15;
+					sconst_1;
+					ssub;
+					sstore 17;
+					aload 6;
+					sload 17;
+					sconst_1;
+					bastore;
+					aload 6;
+					sload 15;
+					bspush 60;
+					bastore;
+					sinc 15 1;
+					aload 6;
+					sload 15;
+					bspush -120;
+					bastore;
+					sinc 15 1;
+					aload 6;
+					sload 15;
+					bspush -96;
+					bastore;
+					sinc 15 1;
+					sinc 16 3;
+					getstatic_a 75;		// reference SCP11BApplet/SCP11BApplet.debugBytes1
+					sconst_0;
+					getstatic_a 75;		// reference SCP11BApplet/SCP11BApplet.debugBytes1
+					arraylength;
+					sconst_0;
+					invokestatic 38;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					aload 6;
+					sload 7;
+					getstatic_a 75;		// reference SCP11BApplet/SCP11BApplet.debugBytes1
+					sconst_0;
+					sload 16;
+					invokestatic 6;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					getstatic_a 80;		// reference SCP11BApplet/SCP11BApplet.sha256
+					invokevirtual 113;		// reset()V
+					getstatic_a 80;		// reference SCP11BApplet/SCP11BApplet.sha256
+					aload 6;
+					sload 7;
+					sload 16;
+					aload 4;
+					sload 5;
+					invokevirtual 114;		// doFinal([BSS[BS)S
+					pop;
+					aload 10;
+					aload 4;
+					sload 5;
+					invokeinterface 3 91 4;		// javacard/security/AESKey
+					aload 6;
+					sload 17;
+					sconst_2;
+					bastore;
+					getstatic_a 80;		// reference SCP11BApplet/SCP11BApplet.sha256
+					invokevirtual 113;		// reset()V
+					getstatic_a 80;		// reference SCP11BApplet/SCP11BApplet.sha256
+					aload 6;
+					sload 7;
+					sload 16;
+					aload 4;
+					sload 5;
+					bspush 32;
+					sadd;
+					invokevirtual 114;		// doFinal([BSS[BS)S
+					pop;
+					aload 11;
+					aload 4;
+					sload 5;
+					bspush 32;
+					sadd;
+					invokeinterface 3 91 4;		// javacard/security/AESKey
+					aload 6;
+					sload 17;
+					sconst_3;
+					bastore;
+					getstatic_a 80;		// reference SCP11BApplet/SCP11BApplet.sha256
+					invokevirtual 113;		// reset()V
+					getstatic_a 80;		// reference SCP11BApplet/SCP11BApplet.sha256
+					aload 6;
+					sload 7;
+					sload 16;
+					aload 4;
+					sload 5;
+					bspush 64;
+					sadd;
+					invokevirtual 114;		// doFinal([BSS[BS)S
+					pop;
+					aload 12;
+					aload 4;
+					sload 5;
+					bspush 64;
+					sadd;
+					invokeinterface 3 91 4;		// javacard/security/AESKey
+					aload 6;
+					sload 17;
+					sconst_4;
+					bastore;
+					getstatic_a 80;		// reference SCP11BApplet/SCP11BApplet.sha256
+					invokevirtual 113;		// reset()V
+					getstatic_a 80;		// reference SCP11BApplet/SCP11BApplet.sha256
+					aload 6;
+					sload 7;
+					sload 16;
+					aload 4;
+					sload 5;
+					bspush 96;
+					sadd;
+					invokevirtual 114;		// doFinal([BSS[BS)S
+					pop;
+					aload 13;
+					aload 4;
+					sload 5;
+					bspush 96;
+					sadd;
+					invokeinterface 3 91 4;		// javacard/security/AESKey
+					aload 6;
+					sload 17;
+					sconst_5;
+					bastore;
+					getstatic_a 80;		// reference SCP11BApplet/SCP11BApplet.sha256
+					invokevirtual 113;		// reset()V
+					getstatic_a 80;		// reference SCP11BApplet/SCP11BApplet.sha256
+					aload 6;
+					sload 7;
+					sload 16;
+					aload 4;
+					sload 5;
+					sspush 128;
+					sadd;
+					invokevirtual 114;		// doFinal([BSS[BS)S
+					pop;
+					aload 14;
+					aload 4;
+					sload 5;
+					sspush 128;
+					sadd;
+					invokeinterface 3 91 4;		// javacard/security/AESKey
+					getstatic_a 72;		// reference SCP11BApplet/SCP11BApplet.secSessMacChain
+					sconst_0;
+					getstatic_a 72;		// reference SCP11BApplet/SCP11BApplet.secSessMacChain
+					arraylength;
+					sconst_0;
+					invokestatic 38;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					getstatic_a 73;		// reference SCP11BApplet/SCP11BApplet.secSessIV
+					sconst_0;
+					getstatic_a 73;		// reference SCP11BApplet/SCP11BApplet.secSessIV
+					arraylength;
+					sconst_0;
+					invokestatic 38;		// javacard/framework/Util.arrayFillNonAtomic([BSSB)S
+					pop;
+					getstatic_a 73;		// reference SCP11BApplet/SCP11BApplet.secSessIV
+					bspush 15;
+					sconst_1;
+					bastore;
+					sspush 160;
+					sreturn;
+		}
+
+		.method public static generateSCP11BReceipt(Ljavacard/security/AESKey;[BSS[BS[BS[BS)S 2 {
+			.stack 10;
+			.locals 3;
+
+			.descriptor	Ljavacard/security/AESKey;	2.20;
+
+				L0:	getstatic_a 115;		// reference SCP11BApplet/SecureChannel.CRTTLCA6
+					sconst_0;
+					aload 6;
+					sload 7;
+					getstatic_a 115;		// reference SCP11BApplet/SecureChannel.CRTTLCA6
+					arraylength;
+					invokestatic 6;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					getstatic_a 116;		// reference SCP11BApplet/SecureChannel.ePKOCEECKATAG
+					sconst_0;
+					aload 6;
+					sload 7;
+					getstatic_a 115;		// reference SCP11BApplet/SecureChannel.CRTTLCA6
+					arraylength;
+					sadd;
+					getstatic_a 116;		// reference SCP11BApplet/SecureChannel.ePKOCEECKATAG
+					arraylength;
+					invokestatic 6;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					sconst_0;
+					sstore 10;
+				L1:	sload_3;
+					sspush 128;
+					if_scmplt L3;
+				L2:	aload_1;
+					sload_2;
+					aload 6;
+					sload 7;
+					getstatic_a 115;		// reference SCP11BApplet/SecureChannel.CRTTLCA6
+					arraylength;
+					sadd;
+					getstatic_a 116;		// reference SCP11BApplet/SecureChannel.ePKOCEECKATAG
+					arraylength;
+					sadd;
+					sconst_2;
+					sadd;
+					sload_3;
+					invokestatic 6;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					aload 6;
+					sload 7;
+					getstatic_a 115;		// reference SCP11BApplet/SecureChannel.CRTTLCA6
+					arraylength;
+					sadd;
+					getstatic_a 116;		// reference SCP11BApplet/SecureChannel.ePKOCEECKATAG
+					arraylength;
+					sadd;
+					bspush -127;
+					bastore;
+					aload 6;
+					sload 7;
+					getstatic_a 115;		// reference SCP11BApplet/SecureChannel.CRTTLCA6
+					arraylength;
+					sadd;
+					getstatic_a 116;		// reference SCP11BApplet/SecureChannel.ePKOCEECKATAG
+					arraylength;
+					sadd;
+					sconst_1;
+					sadd;
+					sload_3;
+					sspush 255;
+					sand;
+					s2b;
+					bastore;
+					getstatic_a 115;		// reference SCP11BApplet/SecureChannel.CRTTLCA6
+					arraylength;
+					getstatic_a 116;		// reference SCP11BApplet/SecureChannel.ePKOCEECKATAG
+					arraylength;
+					sadd;
+					sload_3;
+					sadd;
+					sconst_2;
+					sadd;
+					sstore 10;
+					goto L4;
+				L3:	aload_1;
+					sload_2;
+					aload 6;
+					sload 7;
+					getstatic_a 115;		// reference SCP11BApplet/SecureChannel.CRTTLCA6
+					arraylength;
+					sadd;
+					getstatic_a 116;		// reference SCP11BApplet/SecureChannel.ePKOCEECKATAG
+					arraylength;
+					sadd;
+					sconst_1;
+					sadd;
+					sload_3;
+					invokestatic 6;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					aload 6;
+					sload 7;
+					getstatic_a 115;		// reference SCP11BApplet/SecureChannel.CRTTLCA6
+					arraylength;
+					sadd;
+					getstatic_a 116;		// reference SCP11BApplet/SecureChannel.ePKOCEECKATAG
+					arraylength;
+					sadd;
+					sload_3;
+					sspush 255;
+					sand;
+					s2b;
+					bastore;
+					getstatic_a 115;		// reference SCP11BApplet/SecureChannel.CRTTLCA6
+					arraylength;
+					getstatic_a 116;		// reference SCP11BApplet/SecureChannel.ePKOCEECKATAG
+					arraylength;
+					sadd;
+					sload_3;
+					sadd;
+					sconst_1;
+					sadd;
+					sstore 10;
+				L4:	sload 5;
+					sstore 11;
+				L5:	sconst_0;
+					sstore 12;
+				L6:	getstatic_a 116;		// reference SCP11BApplet/SecureChannel.ePKOCEECKATAG
+					sconst_0;
+					aload 4;
+					sload 11;
+					getstatic_a 116;		// reference SCP11BApplet/SecureChannel.ePKOCEECKATAG
+					arraylength;
+					invokestatic 6;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					sload 11;
+					getstatic_a 116;		// reference SCP11BApplet/SecureChannel.ePKOCEECKATAG
+					arraylength;
+					sadd;
+					sstore 11;
+					getstatic_a 89;		// reference SCP11BApplet/SCP11BApplet.ecTmpPub
+					aload 8;
+					sload 9;
+					invokeinterface 3 42 19;		// javacard/security/ECPublicKey
+					sspush 128;
+					if_scmplt L8;
+				L7:	getstatic_a 89;		// reference SCP11BApplet/SCP11BApplet.ecTmpPub
+					aload 4;
+					sload 11;
+					sconst_2;
+					sadd;
+					invokeinterface 3 42 19;		// javacard/security/ECPublicKey
+					sstore 12;
+					aload 4;
+					sload 11;
+					bspush -127;
+					bastore;
+					aload 4;
+					sload 11;
+					sconst_1;
+					sadd;
+					sload 12;
+					sspush 255;
+					sand;
+					s2b;
+					bastore;
+					sload 11;
+					sload 12;
+					sconst_2;
+					sadd;
+					sadd;
+					sstore 11;
+					goto L9;
+				L8:	getstatic_a 89;		// reference SCP11BApplet/SCP11BApplet.ecTmpPub
+					aload 4;
+					sload 11;
+					sconst_1;
+					sadd;
+					invokeinterface 3 42 19;		// javacard/security/ECPublicKey
+					sstore 12;
+					aload 4;
+					sload 11;
+					sload 12;
+					sspush 255;
+					sand;
+					s2b;
+					bastore;
+					sload 11;
+					sload 12;
+					sconst_1;
+					sadd;
+					sadd;
+					sstore 11;
+				L9:	aload 4;
+					sload 11;
+					bspush -122;
+					bastore;
+					aload 4;
+					sload 11;
+					sconst_1;
+					sadd;
+					bspush 16;
+					bastore;
+					sinc 11 2;
+					getstatic_a 83;		// reference SCP11BApplet/SCP11BApplet.aesECB
+					aload_0;
+					aload 6;
+					sload 7;
+					sload 10;
+					aload 8;
+					sload 9;
+					aload 4;
+					sload 11;
+					bspush 16;
+					invokestatic 117;		// SCP11BApplet/CMAC.process(Ljavacardx/crypto/Cipher;Ljavacard/security/AESKey;[BSS[BS[BSS)S
+					sstore 10;
+					sload 10;
+					bspush 16;
+					if_scmpne L11;
+				L10:	sload 11;
+					sload 10;
+					sadd;
+					sload 5;
+					ssub;
+					sreturn;
+				L11:	sconst_0;
+					sreturn;
+		}
+
+		.method public static handleMessage(ZLjavacard/security/AESKey;Ljavacard/security/AESKey;[BSS[BS[BS[BS[BS)S 3 {
+			.stack 11;
+			.locals 2;
+
+			.descriptor	Ljavacard/security/AESKey;	2.20;
+			.descriptor	Ljavacard/security/AESKey;	2.20;
+
+				L0:	sconst_0;
+					sstore 14;
+				L1:	sconst_0;
+					sstore 15;
+				L2:	sload_0;
+					ifeq L9;
+				L3:	sload 5;
+					ifle L6;
+				L4:	sconst_1;
+					aload_1;
+					aload_3;
+					sload 4;
+					sload 5;
+					aload 6;
+					sload 7;
+					aload 8;
+					sload 9;
+					aload 12;
+					sload 13;
+					invokestatic 118;		// SCP11BApplet/SecureChannel.calcAPDUCrypto(ZLjavacard/security/AESKey;[BSS[BS[BS[BS)S
+					sstore 15;
+					sload 15;
+					sconst_m1;
+					if_scmpne L6;
+				L5:	sload 15;
+					sreturn;
+				L6:	aload_2;
+					aload 12;
+					sload 13;
+					sload 15;
+					aload 6;
+					sload 7;
+					aload 8;
+					sload 9;
+					aload 12;
+					sload 13;
+					invokestatic 119;		// SCP11BApplet/SecureChannel.calcAPDURMAC(Ljavacard/security/AESKey;[BSS[BS[BS[BS)S
+					sstore 14;
+					sload 14;
+					ifeq L8;
+				L7:	sload 15;
+					sload 14;
+					sadd;
+					sreturn;
+				L8:	sconst_m1;
+					sreturn;
+				L9:	aload_2;
+					aload_3;
+					sload 4;
+					sload 5;
+					bspush 8;
+					ssub;
+					aload 6;
+					sload 7;
+					aload 8;
+					sload 9;
+					aload 10;
+					sload 11;
+					invokestatic 120;		// SCP11BApplet/SecureChannel.calcAPDUCMAC(Ljavacard/security/AESKey;[BSS[BS[BS[BS)S
+					sstore 14;
+					sload 14;
+					ifeq L16;
+				L10:	aload_3;
+					sload 4;
+					sload 5;
+					sadd;
+					bspush 8;
+					ssub;
+					aload 10;
+					sload 11;
+					bspush 8;
+					invokestatic 121;		// javacard/framework/Util.arrayCompare([BS[BSS)B
+					ifne L14;
+				L11:	sconst_0;
+					aload_1;
+					aload_3;
+					sload 4;
+					sload 5;
+					aload 6;
+					sload 7;
+					aload 8;
+					sload 9;
+					aload 12;
+					sload 13;
+					invokestatic 118;		// SCP11BApplet/SecureChannel.calcAPDUCrypto(ZLjavacard/security/AESKey;[BSS[BS[BS[BS)S
+				L12:	sreturn;
+				L13:	pop;
+					bspush 111;
+					bspush 34;
+					invokestatic 62;		// javacard/framework/Util.makeShort(BB)S
+					invokestatic 34;		// javacard/framework/ISOException.throwIt(S)V
+					goto L15;
+				L14:	bspush 111;
+					bspush -15;
+					invokestatic 62;		// javacard/framework/Util.makeShort(BB)S
+					invokestatic 34;		// javacard/framework/ISOException.throwIt(S)V
+					sconst_m1;
+					sreturn;
+				L15:	sconst_m1;
+					sreturn;
+				L16:	bspush 111;
+					bspush -14;
+					invokestatic 62;		// javacard/framework/Util.makeShort(BB)S
+					invokestatic 34;		// javacard/framework/ISOException.throwIt(S)V
+					sconst_m1;
+					sreturn;
+			.exceptionTable {
+				// start_block end_block handler_block catch_type_index
+				L11 L12 L13 11;
+			}
+		}
+
+		.method private static calcAPDUCMAC(Ljavacard/security/AESKey;[BSS[BS[BS[BS)S {
+			.stack 10;
+			.locals 0;
+
+			.descriptor	Ljavacard/security/AESKey;	2.20;
+
+				L0:	getstatic_a 72;		// reference SCP11BApplet/SCP11BApplet.secSessMacChain
+					sconst_0;
+					aload 4;
+					sload 5;
+					getstatic_a 72;		// reference SCP11BApplet/SCP11BApplet.secSessMacChain
+					arraylength;
+					invokestatic 6;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					aload_1;
+					sload_2;
+					aload 4;
+					sload 5;
+					getstatic_a 72;		// reference SCP11BApplet/SCP11BApplet.secSessMacChain
+					arraylength;
+					sadd;
+					sload_3;
+					invokestatic 6;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					getstatic_a 83;		// reference SCP11BApplet/SCP11BApplet.aesECB
+					aload_0;
+					aload 4;
+					sload 5;
+					getstatic_a 72;		// reference SCP11BApplet/SCP11BApplet.secSessMacChain
+					arraylength;
+					sload_3;
+					sadd;
+					aload 6;
+					sload 7;
+					aload 8;
+					sload 9;
+					bspush 16;
+					invokestatic 117;		// SCP11BApplet/CMAC.process(Ljavacardx/crypto/Cipher;Ljavacard/security/AESKey;[BSS[BS[BSS)S
+					ifeq L2;
+				L1:	aload 8;
+					sload 9;
+					getstatic_a 72;		// reference SCP11BApplet/SCP11BApplet.secSessMacChain
+					sconst_0;
+					bspush 16;
+					invokestatic 6;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					bspush 8;
+					sreturn;
+				L2:	sconst_0;
+					sreturn;
+		}
+
+		.method private static calcAPDURMAC(Ljavacard/security/AESKey;[BSS[BS[BS[BS)S {
+			.stack 10;
+			.locals 0;
+
+			.descriptor	Ljavacard/security/AESKey;	2.20;
+
+				L0:	getstatic_a 72;		// reference SCP11BApplet/SCP11BApplet.secSessMacChain
+					sconst_0;
+					aload 4;
+					sload 5;
+					getstatic_a 72;		// reference SCP11BApplet/SCP11BApplet.secSessMacChain
+					arraylength;
+					invokestatic 6;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					aload_1;
+					sload_2;
+					aload 4;
+					sload 5;
+					getstatic_a 72;		// reference SCP11BApplet/SCP11BApplet.secSessMacChain
+					arraylength;
+					sadd;
+					sload_3;
+					invokestatic 6;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					getstatic_a 83;		// reference SCP11BApplet/SCP11BApplet.aesECB
+					aload_0;
+					aload 4;
+					sload 5;
+					getstatic_a 72;		// reference SCP11BApplet/SCP11BApplet.secSessMacChain
+					arraylength;
+					sload_3;
+					sadd;
+					aload 6;
+					sload 7;
+					aload 8;
+					sload 9;
+					sload_3;
+					sadd;
+					bspush 16;
+					invokestatic 117;		// SCP11BApplet/CMAC.process(Ljavacardx/crypto/Cipher;Ljavacard/security/AESKey;[BSS[BS[BSS)S
+					ifeq L2;
+				L1:	aload_1;
+					sload_2;
+					aload 8;
+					sload 9;
+					sload_3;
+					invokestatic 6;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					bspush 8;
+					sreturn;
+				L2:	sconst_0;
+					sreturn;
+		}
+
+		.method private static calcAPDUCrypto(ZLjavacard/security/AESKey;[BSS[BS[BS[BS)S {
+			.stack 7;
+			.locals 3;
+
+			.descriptor	Ljavacard/security/AESKey;	2.20;
+
+				L0:	sconst_0;
+					sstore 11;
+				L1:	sload_0;
+					ifeq_w L7;
+				L2:	getstatic_a 73;		// reference SCP11BApplet/SCP11BApplet.secSessIV
+					sconst_0;
+					aload 5;
+					sload 6;
+					getstatic_a 73;		// reference SCP11BApplet/SCP11BApplet.secSessIV
+					arraylength;
+					invokestatic 6;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					aload 5;
+					sload 6;
+					bspush -128;
+					bastore;
+					getstatic_a 83;		// reference SCP11BApplet/SCP11BApplet.aesECB
+					aload_1;
+					sconst_2;
+					invokevirtual 4;		// init(Ljavacard/security/Key;B)V
+					getstatic_a 83;		// reference SCP11BApplet/SCP11BApplet.aesECB
+					aload 5;
+					sload 6;
+					getstatic_a 73;		// reference SCP11BApplet/SCP11BApplet.secSessIV
+					arraylength;
+					aload 5;
+					sload 6;
+					invokevirtual 5;		// doFinal([BSS[BS)S
+					sstore 12;
+				L3:	sload 12;
+					bspush 16;
+					if_scmpeq L5;
+				L4:	sconst_m1;
+					sreturn;
+				L5:	getstatic_a 82;		// reference SCP11BApplet/SCP11BApplet.aesCBCNoPad
+					aload_1;
+					sconst_2;
+					aload 5;
+					sload 6;
+					sload 12;
+					invokevirtual 122;		// init(Ljavacard/security/Key;B[BSS)V
+					aload_2;
+					sload_3;
+					aload 5;
+					sload 6;
+					sload 4;
+					invokestatic 6;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					sconst_1;
+					aload 5;
+					sload 6;
+					sload 4;
+					aload 9;
+					sload 10;
+					invokestatic 123;		// SCP11BApplet/ISO9797Pad.process(Z[BSS[BS)S
+					sstore 13;
+				L6:	aload 9;
+					sload 10;
+					aload 5;
+					sload 6;
+					sload 13;
+					invokestatic 6;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					getstatic_a 82;		// reference SCP11BApplet/SCP11BApplet.aesCBCNoPad
+					aload 5;
+					sload 6;
+					sload 13;
+					aload 9;
+					sload 10;
+					invokevirtual 5;		// doFinal([BSS[BS)S
+					sreturn;
+				L7:	aload_2;
+					sload_3;
+					sconst_4;
+					sadd;
+					baload;
+					sspush 255;
+					sand;
+					sstore 12;
+				L8:	sload 12;
+					bspush 8;
+					if_scmpge L10;
+				L9:	sconst_m1;
+					sstore 11;
+					goto L16;
+				L10:	sload 12;
+					bspush 8;
+					if_scmpne L12;
+				L11:	sconst_0;
+					sstore 11;
+					goto L16;
+				L12:	getstatic_a 82;		// reference SCP11BApplet/SCP11BApplet.aesCBCNoPad
+					aload_1;
+					sconst_1;
+					getstatic_a 73;		// reference SCP11BApplet/SCP11BApplet.secSessIV
+					sconst_0;
+					getstatic_a 73;		// reference SCP11BApplet/SCP11BApplet.secSessIV
+					arraylength;
+					invokevirtual 122;		// init(Ljavacard/security/Key;B[BSS)V
+					getstatic_a 82;		// reference SCP11BApplet/SCP11BApplet.aesCBCNoPad
+					aload_2;
+					sload_3;
+					sconst_5;
+					sadd;
+					sload 12;
+					bspush 8;
+					ssub;
+					aload 5;
+					sload 6;
+					invokevirtual 5;		// doFinal([BSS[BS)S
+					sstore 13;
+				L13:	sload 13;
+					ifle L15;
+				L14:	sconst_0;
+					aload 5;
+					sload 6;
+					sload 13;
+					aload 9;
+					sload 10;
+					sconst_5;
+					sadd;
+					invokestatic 123;		// SCP11BApplet/ISO9797Pad.process(Z[BSS[BS)S
+					sstore 13;
+					aload 9;
+					sload 10;
+					sconst_4;
+					sadd;
+					sload 13;
+					sspush 255;
+					sand;
+					s2b;
+					bastore;
+					aload_2;
+					sload_3;
+					aload 9;
+					sload 10;
+					sconst_4;
+					invokestatic 6;		// javacard/framework/Util.arrayCopyNonAtomic([BS[BSS)S
+					pop;
+					sload 13;
+					sconst_5;
+					sadd;
+					sstore 11;
+					goto L16;
+				L15:	sconst_m1;
+					sstore 11;
+				L16:	getstatic_a 73;		// reference SCP11BApplet/SCP11BApplet.secSessIV
+					sconst_0;
+					aload 5;
+					sload 6;
+					getstatic_a 73;		// reference SCP11BApplet/SCP11BApplet.secSessIV
+					sconst_0;
+					invokestatic 124;		// SCP11BApplet/MathUtil.increment128([BS[BS[BS)V
+					sload 11;
+					sreturn;
+		}
+
+	}
+
+}
