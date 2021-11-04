@@ -201,6 +201,9 @@ Mobile banking solution using SIM Toolkit
 - [OpenEMV](https://github.com/JavaCardOS/OpenEMV)  ![stars](https://img.shields.io/github/stars/JavaCardOS/OpenEMV.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/JavaCardOS/OpenEMV.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/JavaCardOS/OpenEMV.svg)  <br>
 The OpenEMV is a Java Card implementation of the EMV standard. This applet is a very basic EMV applet supporting only SDA and plaintext offline PIN.It does not offer personalisation support - everything is hard-coded.
 
+- [EMV Applet for Javacard 2.2.1](https://github.com/tiosolid/emv_applet)  ![stars](https://img.shields.io/github/stars/tiosolid/emv_applet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/tiosolid/emv_applet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/tiosolid/emv_applet.svg)  <br>
+This is a fully working EMV applet for javacard 2.2.1. It does not offer personalisation support - everything is hard-coded. Contains some custom feature commands. Unfortunately, no personalization commands are implemented (use [ArrayEdit](https://github.com/tiosolid/array_edit) or modify code manually). **This applet was stitched using source code from all over the internet and a lot of dev's code. The Crypto.java file is of unknown origin, was entirely made by another person.**
+
 - [PayPass applet](https://github.com/jiankeliu5/CardApplet-PayPass)    ![stars](https://img.shields.io/github/stars/jiankeliu5/CardApplet-PayPass.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/jiankeliu5/CardApplet-PayPass.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/jiankeliu5/CardApplet-PayPass.svg) 
   <br>
 Javacard Applet for functioning paypass credential. The javacard code included will answer to any reader that requests MasterCard PayPass contactless cards.
