@@ -454,6 +454,14 @@ An implementation of the elliptic curve variant of the Secure Remote Password (S
   <br>
 TTP SmartCard-Based ElGamal Cryptosystem Using Threshold Scheme for Electronic Elections. EU Project CRISES group has studied the feasibility of developing ElGamal cryptosystem and Shamir’s secret sharing scheme into JavaCards, whose API gives no support for it. (probably significant applet).
 
+- [Export files for ETSI/3GPP APIs](https://github.com/OpenJavaCard/etsi-exports)    ![stars](https://img.shields.io/github/stars/OpenJavaCard/etsi-exports.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/OpenJavaCard/etsi-exports.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/OpenJavaCard/etsi-exports.svg) 
+  <br>
+ETSI/3GPP standards specify various JavaCard APIs related to SIM cards. This repository contains the export files for many of these APIs. It has been created as a dependency submodule for packages using these APIs.
+
+- [Hashchain applet](https://github.com/raminarmanfar/Java-smart-card-cryptographic-protocols)    ![stars](https://img.shields.io/github/stars/raminarmanfar/Java-smart-card-cryptographic-protocols.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/raminarmanfar/Java-smart-card-cryptographic-protocols.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/raminarmanfar/Java-smart-card-cryptographic-protocols.svg) 
+  <br>
+Implementation of some hash chain
+
 - [HMAC and CMAC computation](https://github.com/mll11/jcard/tree/master/TestMAC) (**GitHub**) _[last commit 2014]_ 
   <br>
 This Java Card applet support APDUs to test HMAC (SHA-1, SHA-256) and CMAC (AES-128). It uses Java Card 2.2.2.
@@ -468,9 +476,6 @@ The main goal of this framework is to synchronize Java Card 2 applets through th
 - [JCMathLib - ECPoint library](https://github.com/OpenCryptoProject/JCMathLib)    ![stars](https://img.shields.io/github/stars/OpenCryptoProject/JCMathLib.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/OpenCryptoProject/JCMathLib.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/OpenCryptoProject/JCMathLib.svg)   <br>
 Provides software re-implementation of low-level operations like ECPoint or BigInteger without any use of proprietary API.
 
-- [Hashchain applet](https://github.com/raminarmanfar/Java-smart-card-cryptographic-protocols)    ![stars](https://img.shields.io/github/stars/raminarmanfar/Java-smart-card-cryptographic-protocols.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/raminarmanfar/Java-smart-card-cryptographic-protocols.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/raminarmanfar/Java-smart-card-cryptographic-protocols.svg) 
-  <br>
-Implementation of some hash chain
 
 - [LibESE Android verified boot](https://github.com/TinkerBoard2-Android/external-libese)    ![stars](https://img.shields.io/github/stars/TinkerBoard2-Android/external-libese.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/TinkerBoard2-Android/external-libese.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/TinkerBoard2-Android/external-libese.svg)   <br>
 Minimal transport wrapper for communicating with embedded secure elements on Android
