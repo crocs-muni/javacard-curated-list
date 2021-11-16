@@ -83,6 +83,10 @@ CoolKey Applet with the idea of making it a fresh JavaCard 2.2.2 applet meant to
   <br> 
 This CCU2F JavaCard Applet is based on the Ledger U2F Applet. I imported this applet to Eclipse with installed JCOP Tools and modified the AID of this applet to the standardized AID for FIDO NFC token ( 0xA0000006472F0001). I also provided some example data ([Attestation Certificate and Key](u2f-javacard/U2F Example Attestation Certificate and Key Bytes.txt)) to bring this applet to run. This Applet was succesfully tested on JCOP v2.4.2 R3 cards with KeyAgreementX.ALG_EC_SVDP_DH_PLAIN_XY from NXPs JCOP library for EC Point Multiplication. 
 
+- [FIDO de.fac2 Applet](https://github.com/tsenger/de.fac2)    ![stars](https://img.shields.io/github/stars/tsenger/de.fac2.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/tsenger/de.fac2.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/tsenger/de.fac2.svg) 
+  <br>
+de.fac2 is a Javacard applet which implements a Fido U2F token. It was designed and implemented based on the Common Criteria Protection Profile BSI-CC-PP-0096-V3-2018 "FIDO Universal Second Factor (U2F) Authenticator Version 3".
+
 - [Generic Identity Device Specification Applet](https://github.com/vletoux/GidsApplet)  ![stars](https://img.shields.io/github/stars/vletoux/GidsApplet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/vletoux/GidsApplet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/vletoux/GidsApplet.svg)  <br>
 Generic Identity Device Specification (GIDS) smart card is the only PKI smart card whose driver is integrated on each Windows since Windows 7 SP1 and which can be used read and write. No Windows driver installation is required. Based on ISOApplet PKI
 
