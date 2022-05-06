@@ -229,6 +229,9 @@ This is a simple wallet simply maintains a running account balance allowing you 
   <br>
 A JavaCard key manager for Cryptsetup. School project, but well documented and extensive 
 
+- [HydraMultiKeySystem applet](https://github.com/thotheolh/HydraMultiKeySystem)    ![stars](https://img.shields.io/github/stars/thotheolh/HydraMultiKeySystem.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/thotheolh/HydraMultiKeySystem.svg)  ![numcontributors](https://img.shields.io/github/contributors-anon/thotheolh/HydraMultiKeySystem.svg)<br>
+A more efficient version of Microsoft's Double Key Encryption System. 
+
 - [Java Card OpenPGP Card](https://github.com/jderuiter/javacard-openpgpcard)    ![stars](https://img.shields.io/github/stars/jderuiter/javacard-openpgpcard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/jderuiter/javacard-openpgpcard.svg)  ![numcontributors](https://img.shields.io/github/contributors-anon/jderuiter/javacard-openpgpcard.svg) 
   <br>
 This is a Java Card implementation of the OpenPGP smart card specifications.
