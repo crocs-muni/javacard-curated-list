@@ -566,8 +566,9 @@ Parser for JavaCard export files (\*.exp) - display content in human-readable fo
   <br>
 All export files for GlobalPlatform APIs
 
-- [GlobalPlatform tools (GPShell)](https://sourceforge.net/p/globalplatform/) (**SourceForge**) _[last commit 2014]_ <br>
-The GlobalPlatform card specification provides a standard for the management of the contents on a smart card. Mainly this comprises the installation and the removal of applications. 
+- [GlobalPlatform / GPShell](https://github.com/kaoh/globalplatform) ![stars](https://img.shields.io/github/stars/kaoh/globalplatform.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/kaoh/globalplatform.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/kaoh/globalplatform.svg) 
+  <br>
+Command line tool and C library for managing smart cards following the GlobalPlatform card specification. 
 
 - [GlobalPlatformPro tool](https://github.com/martinpaljak/GlobalPlatformPro)    ![stars](https://img.shields.io/github/stars/martinpaljak/GlobalPlatformPro.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/martinpaljak/GlobalPlatformPro.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/martinpaljak/GlobalPlatformPro.svg) 
   <br>
