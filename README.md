@@ -683,6 +683,10 @@ A open source java card virtual machine implementation. And also some part of th
 - [PythonCard:](https://bitbucket.org/benallard/pythoncard/) (**BitBucket**) _[last commit 2013] <br>
 JavaCard API simulated in Python environment. The goal is to provide a classic 3.0.1 version, while maintaining compatiblity with earlier version like 2.1.2.
 
+- [remote-card](https://github.com/ph4r05/remote-card)    ![stars](https://img.shields.io/github/stars/ph4r05/remote-card.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/ph4r05/remote-card.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/ph4r05/remote-card.svg) 
+  <br>
+JavaCard remote access. Wraps physically connected JavaCards and virtual JCardSim cards behind REST and WebSocket interface. Enables to connect multiple JavaCards on one host and access them remotely on a different host. Project also integrates with VSmartCard so Android NFC phone can be used as a card reader.
+
 - [Secure Element Emulator](https://github.com/mobilesec/secure-element-emulator)    ![stars](https://img.shields.io/github/stars/mobilesec/secure-element-emulator.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/mobilesec/secure-element-emulator.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/mobilesec/secure-element-emulator.svg) 
   <br>
 This project aims at emulating a secure element environment for debugging and rapid-prototyping of secure element applets. It is a fork of the open-source Java Card simulator jCardSim (original source code available here). Within our research we added extensions to emulate an application life-cycle that matches the life-cycle of applications on real smartcard chips.
