@@ -59,6 +59,9 @@ EidCard project
   <br> 
 Vrije University Brussels applet (be.msec.smartcard.IdentityCard.java) with authentication, identity metadata storage and retrieval and time update functionality.
 
+- [InfinitEID](https://github.com/Muzosh/InfinitEID)    ![stars](https://img.shields.io/github/stars/Muzosh/InfinitEID.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/Muzosh/InfinitEID.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/Muzosh/InfinitEID.svg)   <br> 
+JavaCard applet designed to work with Web-eID project which enables usage of European Union electronic identity (eID) smart cards for secure authentication and digital signing of documents on the web using public-key cryptography. 
+
 - [JMRTD: Machine Readable Travel Documents](https://sourceforge.net/projects/jmrtd/) (**SourceForge**) _[last commit 2017]_ <br>
 Free implementation of the MRTD (Machine Readable Travel Documents) standards as set by ICAO used in the ePassport. Consists of an API for card terminal software and a Java Card applet.
 
