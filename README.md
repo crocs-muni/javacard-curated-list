@@ -220,9 +220,9 @@ This is a fully working EMV applet for javacard 2.2.1. It does not offer persona
   <br>
 Javacard Applet for functioning paypass credential. The javacard code included will answer to any reader that requests MasterCard PayPass contactless cards.
 
-- [PayPass, VisaMSD, MMPP applets](https://github.com/SimplyTapp/CardExamples)    ![stars](https://img.shields.io/github/stars/SimplyTapp/CardExamples.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/SimplyTapp/CardExamples.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/SimplyTapp/CardExamples.svg) 
+- [PayPass, VisaMSD, MMPP applets](https://github.com/javacard-FOSS-applets/CardExamples)    ![stars](https://img.shields.io/github/stars/javacard-FOSS-applets/CardExamples.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/javacard-FOSS-applets/CardExamples.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/javacard-FOSS-applets/CardExamples.svg) 
   <br>
-This repository contains multiple card applet/card agent examples for using on simplytapp, GPL to v1.2.1.
+This repository contains multiple card applet/card agent examples for using on simplytapp, GPL to v1.2.1. Originally from https://github.com/SimplyTapp/CardExamples, but repository was removed.
 
 - [PBOC3Applet](https://github.com/jiankeliu5/PBOC3Applet)    ![stars](https://img.shields.io/github/stars/jiankeliu5/PBOC3Applet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/jiankeliu5/PBOC3Applet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/jiankeliu5/PBOC3Applet.svg) 
   <br>
