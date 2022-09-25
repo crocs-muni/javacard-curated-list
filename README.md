@@ -144,6 +144,11 @@ Implementation of card according to RSA PKCS#15 specification. (seems like exten
 - [PKI applet](https://github.com/rakeb/PKIApplet) _[REMOVED, last commit 2016]_ <br>
 (extensive PKI applet, requires JavaCard 3.0.5) 
 
+
+- [SMPC RSA (Smart-ID)](https://github.com/lzaoral/javacard-smpc-rsa)    ![stars](https://img.shields.io/github/stars/lzaoral/javacard-smpc-rsa.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/lzaoral/javacard-smpc-rsa.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/lzaoral/javacard-smpc-rsa.svg) 
+  <br>
+The implementation of the adapted Smart-ID scheme for smart cards. Performs 2-of-2 RSA signature using secure multiparty computation. 
+
 - [SSH support applet](https://github.com/scs/uclinux/blob/eb0cf9617bd22b69ad625575a95cf4fa2c140d55/user/ssh/scard/Ssh.java) (**GitHub**) _[last commit 2007]_  <br>
 Old, but widely copied applet performing RSA decrypt on card and used by SSH client 
 
