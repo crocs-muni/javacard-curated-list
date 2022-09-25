@@ -347,9 +347,9 @@ This applet is an implementation of the Ledger Wallet Hardware Wallet specificat
   <br>
 <b>This project is DISCONTINUED according to issues section.</b>. Derived project can be found [here](https://github.com/JavaCardOS/BitcoinWallet).
 
-- [Lamassu card](https://github.com/lamassu/ssu-card/)    ![stars](https://img.shields.io/github/stars/lamassu/ssu-card/.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/lamassu/ssu-card/.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/lamassu/ssu-card/.svg) 
+- [Lamassu card](https://github.com/zu-ctrl/ssu-card/)   ![stars](https://img.shields.io/github/stars/lamassu/ssu-card/.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/lamassu/ssu-card/.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/lamassu/ssu-card/.svg) 
   <br>
-Very simple applet used by Lamassu Bitcoin machines to sign transaction with ECDSA. 
+Very simple applet used by Lamassu Bitcoin machines to sign transaction with ECDSA. Originally from https://github.com/lamassu/ssu-card/, but removed.
 
 - [SatoChip Bitcoin applet](https://github.com/Toporin/SatoChipApplet)    ![stars](https://img.shields.io/github/stars/Toporin/SatoChipApplet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/Toporin/SatoChipApplet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/Toporin/SatoChipApplet.svg) 
   <br>
