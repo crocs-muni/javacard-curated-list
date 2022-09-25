@@ -325,8 +325,9 @@ This project contains a JavaCard applet acting as an NFC NDEF Tag. It is intende
   <br>
 JavaCard applet for speaking NDEF. Implementation of the NDEF Nfc-Forum specification for JavaCard 2.2.1. The aim is to support sending of urls to smartphones, and provoiding only compile time writeability.
 
-- [Pico NDEF Applet](https://github.com/MpicoSys/PicoLabel/tree/master/scc_applet/Pico_NDEF/src/org/aispring/javacard/ndef) (**GitHub**) _[last commit 2017]_ 
+- [Pico NDEF Applet](https://github.com/MpicoSys/PicoLabel/tree/master/java/scc_applet/Pico_NDEF/src/org/aispring/javacard/ndef) (**GitHub**) _[last commit 2017]_ 
   <br>
+
 
 
 ### CryptoCurrency wallets
