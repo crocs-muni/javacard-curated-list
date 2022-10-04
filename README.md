@@ -721,6 +721,10 @@ The applet with implementation of basic cryptographic functions offered by JavaC
   <br>
 The school project with goal to develop a secure banking card.
 
+- [HelloSTK2](https://github.com/mrlnc/HelloSTK2)    ![stars](https://img.shields.io/github/stars/mrlnc/HelloSTK2.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/mrlnc/HelloSTK2.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/mrlnc/HelloSTK2.svg) 
+  <br>
+Example Java SIM Toolkit applet updated for ant-javacard.
+
 - [Hotel Buddy](https://github.com/prayzzz/smartcard)    ![stars](https://img.shields.io/github/stars/prayzzz/smartcard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/prayzzz/smartcard.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/prayzzz/smartcard.svg) 
   <br>
 Various JavaCard projects created for a lecture-series. Some PKI.    
