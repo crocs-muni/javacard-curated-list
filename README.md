@@ -152,6 +152,10 @@ The implementation of the adapted Smart-ID scheme for smart cards. Performs 2-of
 - [SSH support applet](https://github.com/scs/uclinux/blob/eb0cf9617bd22b69ad625575a95cf4fa2c140d55/user/ssh/scard/Ssh.java) (**GitHub**) _[last commit 2007]_  <br>
 Old, but widely copied applet performing RSA decrypt on card and used by SSH client 
 
+- [SIMple ID](https://github.com/alan-turing-institute/simple-id)    ![stars](https://img.shields.io/github/stars/alan-turing-institute/simple-id.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/alan-turing-institute/simple-id.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/alan-turing-institute/simple-id.svg) 
+  <br>
+SIMple ID: QR codes for authentication on basic and feature phones. Using Java Card 3.0.4+ applet which generates and displays QR codes for authentication using (almost*) the standard SIM ToolKit (STK) API. The itention is to permit low-cost, basic and feature phones (e.g., Jio) to offer SIM-secured authentication modes based on QR codes. 
+
 - [Trusted Identity Module](https://github.com/Orange-OpenSource/TIM)    ![stars](https://img.shields.io/github/stars/Orange-OpenSource/TIM.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/Orange-OpenSource/TIM.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/Orange-OpenSource/TIM.svg) 
   <br>
 A local smartphone module acting as an OpenID Connect Server proxy and delivers trusted tokens to installed native applications. The TIM improves the user experience with single sign on, security and privacy enhancement. The Trusted Identity Module project is a set of four projects: an Android service (tim_service), a JAVA Card Service (TimCardlet), a modified OpenID Connect Server (phpOpTim) and a basic Android TIM-Client app enabling to test the TIM services (HelloTim). The OIDC-TIM server is based on an open source implementation of OpenID Connect in PHP by Nomura Research Institute, Ltd. Seems to be extensive and well documented. 
