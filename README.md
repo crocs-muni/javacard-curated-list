@@ -678,9 +678,13 @@ developement on BitBucket
 - [FreeJCVM](https://sourceforge.net/projects/freejcvm) (**SourceForge**) _[last commit 2015]_ <br>
 Free javacard vm implementation for AVR MCU.
 
-- [Java Card Simulator via Node.js](https://github.com/adamnoakes/javacard-simulator)    ![stars](https://img.shields.io/github/stars/adamnoakes/javacard-simulator.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/adamnoakes/javacard-simulator.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/adamnoakes/javacard-simulator.svg) 
+- [Java Card Simulator via Node.js](https://github.com//abdelhak-mes/javacard-api)    ![stars](https://img.shields.io/github/stars//abdelhak-mes/javacard-api.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit//abdelhak-mes/javacard-api.svg) ![numcontributors](https://img.shields.io/github/contributors-anon//abdelhak-mes/javacard-api.svg) 
   <br>
 This project provides an implementation of a Java Card Runtime Enviornment (JCRE) produced using Node.js which is capable of creating virtual smart card devices and sending APDU commands to the smart card devices for execution via a RESTful API. The project also provides a web-based interface for interacting with the JCRE. 
+
+- [Java Card API](https://github.com/adamnoakes/javacard-simulator)    ![stars](https://img.shields.io/github/stars/adamnoakes/javacard-simulator.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/adamnoakes/javacard-simulator.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/adamnoakes/javacard-simulator.svg) 
+  <br>
+This repository contains an implementation of the Java Card API v.3.0.5 and Global Platform specification v2.3 for education and research purposes.
 
 - [JCardMock](https://github.com/christianhujer/jcardmock)    ![stars](https://img.shields.io/github/stars/christianhujer/jcardmock.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/christianhujer/jcardmock.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/christianhujer/jcardmock.svg) 
   <br>
