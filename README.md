@@ -402,9 +402,13 @@ A Sim Application client for LiteID
 The Remarc Mobile-ID USAT applet this is a JavaCard applet with USIM Application Toolkit menu support. 
 Basic functions of the Remarc Mobile-ID SAT applet: Authentication function; Signing function; Changing PIN1/PIN2;  Changing PUK; Unblock PIN1/PIN2; View information - in a USAT menu is present a menu item with information of PIN usage
 
-- [sim-applet-sms-im-alive](PodgroupConnectivity/sim-applet-sms-im-alive)    ![stars](https://img.shields.io/github/stars/PodgroupConnectivity/sim-applet-sms-im-alive.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/PodgroupConnectivity/sim-applet-sms-im-alive.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/PodgroupConnectivity/sim-applet-sms-im-alive.svg) 
+- [sim-applet-sms-im-alive](https://github.com/PodgroupConnectivity/sim-applet-sms-im-alive)    ![stars](https://img.shields.io/github/stars/PodgroupConnectivity/sim-applet-sms-im-alive.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/PodgroupConnectivity/sim-applet-sms-im-alive.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/PodgroupConnectivity/sim-applet-sms-im-alive.svg) 
   <br>
 JavaCard SIM card applet to deliver an SMS very the first time the SIM registers in the GSM/GPRS network 
+
+- [sim-applet-apn-autoconf](https://github.com/PodgroupConnectivity/sim-applet-apn-autoconf)    ![stars](https://img.shields.io/github/stars/PodgroupConnectivity/sim-applet-apn-autoconf.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/PodgroupConnectivity/sim-applet-apn-autoconf.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/PodgroupConnectivity/sim-applet-apn-autoconf.svg) 
+  <br>
+JavaCard SIM card applet to configure a PDP Context with a correct APN via RUN AT proactive command. Modems are configured by AT commands. The card application toolkit standard has a mechanism to send AT COMMANDS from the SIM card. The purpose of this applet is to configure an APN by sending AT commands from the SIM card.
 
 - [STKApplet](https://github.com/aliasnash/z-first-applet)    ![stars](https://img.shields.io/github/stars/aliasnash/z-first-applet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/aliasnash/z-first-applet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/aliasnash/z-first-applet.svg) 
   <br>
