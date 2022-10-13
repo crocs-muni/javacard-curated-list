@@ -410,6 +410,10 @@ JavaCard SIM card applet to deliver an SMS very the first time the SIM registers
   <br>
 JavaCard SIM card applet to configure a PDP Context with a correct APN via RUN AT proactive command. Modems are configured by AT commands. The card application toolkit standard has a mechanism to send AT COMMANDS from the SIM card. The purpose of this applet is to configure an APN by sending AT commands from the SIM card.
 
+- [sim-applet-data-heartbeat](https://github.com/PodgroupConnectivity/sim-applet-data-heartbeat)    ![stars](https://img.shields.io/github/stars/PodgroupConnectivity/sim-applet-data-heartbeat.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/PodgroupConnectivity/sim-applet-data-heartbeat.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/PodgroupConnectivity/sim-applet-data-heartbeat.svg) 
+  <br>
+JavaCard SIM card applet to monitor the status of data connectivity over-the-air. GSM SIM cards can realize about the status of network regitration (see "Location Status" ETSII TS 102.223. What a SIM cannot realize is whether the data connection has been correctly acquired or not). This projects aim to deliver a "hello-im-alive" heart-beat-kind message to a remote server with the content of a Location Status message.
+
 - [STKApplet](https://github.com/aliasnash/z-first-applet)    ![stars](https://img.shields.io/github/stars/aliasnash/z-first-applet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/aliasnash/z-first-applet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/aliasnash/z-first-applet.svg) 
   <br>
 SIM Toolkit Applet
