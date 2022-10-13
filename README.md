@@ -24,6 +24,7 @@ If is the project located on GitHub as primary project (not only source code in 
     - [NDEF tags](#ndef-tags)
     - [CryptoCurrency wallets](#cryptocurrency-wallets)
     - [Emulation of some proprietary cards](#emulation-of-some-proprietary-cards)
+    - [Mobile telephone, SIM toolkits](#mobile-telephony-sim)
     - [Unsorted applications](#unsorted-applications)
 2. [Library code (code which is expected to be used as part of other code)](#library-code-code-which-is-expected-to-be-used-as-part-of-other-code)
 3. [Developer tools](#developer-tools)
@@ -391,6 +392,28 @@ JC emulation of some Chinese card?
 - [TAG 4 emulation](https://github.com/Tordensky/Tag4)    ![stars](https://img.shields.io/github/stars/Tordensky/Tag4.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/Tordensky/Tag4.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/Tordensky/Tag4.svg)  <br>
 This is an implementation of a TAG 4 for emulation
 
+### Mobile telephony (SIM)
+
+- [LiteID-SimApp](https://github.com/LiteID/LiteID-SimApp)    ![stars](https://img.shields.io/github/stars/LiteID/LiteID-SimApp.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/LiteID/LiteID-SimApp.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/LiteID/LiteID-SimApp.svg) 
+  <br>
+A Sim Application client for LiteID
+
+- [Mobile-ID USAT applet](https://sourceforge.net/projects/mobile-id-usat-applethealt) _[REMOVED, last commit 2017]_ <br>
+The Remarc Mobile-ID USAT applet this is a JavaCard applet with USIM Application Toolkit menu support. 
+Basic functions of the Remarc Mobile-ID SAT applet: Authentication function; Signing function; Changing PIN1/PIN2;  Changing PUK; Unblock PIN1/PIN2; View information - in a USAT menu is present a menu item with information of PIN usage
+
+- [sim-applet-sms-im-alive](PodgroupConnectivity/sim-applet-sms-im-alive)    ![stars](https://img.shields.io/github/stars/PodgroupConnectivity/sim-applet-sms-im-alive.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/PodgroupConnectivity/sim-applet-sms-im-alive.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/PodgroupConnectivity/sim-applet-sms-im-alive.svg) 
+  <br>
+JavaCard SIM card applet to deliver an SMS very the first time the SIM registers in the GSM/GPRS network 
+
+- [STKApplet](https://github.com/aliasnash/z-first-applet)    ![stars](https://img.shields.io/github/stars/aliasnash/z-first-applet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/aliasnash/z-first-applet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/aliasnash/z-first-applet.svg) 
+  <br>
+SIM Toolkit Applet
+
+- [UPSC framework](https://github.com/paromix/upsc)    ![stars](https://img.shields.io/github/stars/paromix/upsc.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/paromix/upsc.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/paromix/upsc.svg) 
+  <br>
+Identity and the security of data transmission is very critical for the success of these e-services. SIM cards might take an important role as a security service provider. They have been used for so many years to preserve the security keys(Ki) and algorithms (A3A8) for authenticating and encrypting the data. Within this project, the international consortium will try to implement a software framework on both the mobile terminal and SIM card that expose the required security functions to popular e-services like Mobile commerce, Financial transactions, Data Encryption, Secure Cloud Storage and Mobile Identity.
+
 ### Unsorted applications
 
 - [E-Voting applet](https://github.com/EVIVoting/EVIV)    ![stars](https://img.shields.io/github/stars/EVIVoting/EVIV.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/EVIVoting/EVIV.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/EVIVoting/EVIV.svg) 
@@ -403,14 +426,6 @@ Applet for security of Petrol rationing, including design documents, Radboud Uni
 - [LicenseCardApp](https://github.com/FourTree/LicenseCardApp)    ![stars](https://img.shields.io/github/stars/FourTree/LicenseCardApp.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/FourTree/LicenseCardApp.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/FourTree/LicenseCardApp.svg) 
   <br>
 applet handling license usage counters and relevant stuff (no documentation)
-
-- [LiteID-SimApp](https://github.com/LiteID/LiteID-SimApp)    ![stars](https://img.shields.io/github/stars/LiteID/LiteID-SimApp.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/LiteID/LiteID-SimApp.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/LiteID/LiteID-SimApp.svg) 
-  <br>
-A Sim Application client for LiteID
-
-- [Mobile-ID USAT applet](https://sourceforge.net/projects/mobile-id-usat-applethealt) _[REMOVED, last commit 2017]_ <br>
-The Remarc Mobile-ID USAT applet this is a JavaCard applet with USIM Application Toolkit menu support. 
-Basic functions of the Remarc Mobile-ID SAT applet: Authentication function; Signing function; Changing PIN1/PIN2;  Changing PUK; Unblock PIN1/PIN2; View information - in a USAT menu is present a menu item with information of PIN usage
 
 - [MQTT-SCACAuth: Message Queuing Telemetry Transport (MQTT) protocol for SC](https://github.com/EBuetas78/MQTT-SCACAuth)    ![stars](https://img.shields.io/github/stars/EBuetas78/MQTT-SCACAuth.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/EBuetas78/MQTT-SCACAuth.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/EBuetas78/MQTT-SCACAuth.svg) 
   <br>
@@ -425,17 +440,9 @@ Prototype firmware for the Trusted Execution Module (TEM). The firmware is a Jav
   <br>
 This is an open source prototype of Secure Storage and Erasure (SSE) System, including both the JavaCard and host programs. 
 
-- [sim-applet-sms-im-alive](PodgroupConnectivity/sim-applet-sms-im-alive)    ![stars](https://img.shields.io/github/stars/PodgroupConnectivity/sim-applet-sms-im-alive.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/PodgroupConnectivity/sim-applet-sms-im-alive.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/PodgroupConnectivity/sim-applet-sms-im-alive.svg) 
-  <br>
-JavaCard SIM card applet to deliver an SMS very the first time the SIM registers in the GSM/GPRS network 
-
 - [SmartMeterIQ](https://github.com/adityasawhney/SmartMeterIQ)    ![stars](https://img.shields.io/github/stars/adityasawhney/SmartMeterIQ.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/adityasawhney/SmartMeterIQ.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/adityasawhney/SmartMeterIQ.svg) 
   <br>
 The main concern with Smart Meters is the granularity of the data which enables physical and behavioral analysis of the consumer in terms of the brand and make of devices installed and their house hold activities (like when do they wake up, when they are not at home). We propose using Java Card platform as it is a natural fit and is designed to be tamper-proof and secure. In addition, we explore using advanced cryptography techniques such as Zero Knowledge Proof of Knowledge (using Pedersen Commitments) to enable the Utility Supplier to trust the data it is getting from the central device.
-
-- [STKApplet](https://github.com/aliasnash/z-first-applet)    ![stars](https://img.shields.io/github/stars/aliasnash/z-first-applet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/aliasnash/z-first-applet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/aliasnash/z-first-applet.svg) 
-  <br>
-SIM Toolkit Applet
 
 - [T101-Devhub](https://github.com/ThothTrustCom/T101-Devhub)    ![stars](https://img.shields.io/github/stars/ThothTrustCom/T101-Devhub.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/ThothTrustCom/T101-Devhub.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/ThothTrustCom/T101-Devhub.svg) 
   <br>
@@ -445,10 +452,6 @@ Set of javacard applets like PGP, OTP, password manager, Satochip (T101-Devhub/S
   <br>
 The project aims to implement basic TPM2 functionalities for smart cards that run Java Card. Currently, this implementation supports :
 TPM_Startup, TPM_StartAuthSession, TPM_PCR_Extend, TPM_PCR_Read, TPM_PCR_Reset, TPM_ReadPublic, TPM_GetRandom
-
-- [UPSC framework](https://github.com/paromix/upsc)    ![stars](https://img.shields.io/github/stars/paromix/upsc.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/paromix/upsc.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/paromix/upsc.svg) 
-  <br>
-Identity and the security of data transmission is very critical for the success of these e-services. SIM cards might take an important role as a security service provider. They have been used for so many years to preserve the security keys(Ki) and algorithms (A3A8) for authenticating and encrypting the data. Within this project, the international consortium will try to implement a software framework on both the mobile terminal and SIM card that expose the required security functions to popular e-services like Mobile commerce, Financial transactions, Data Encryption, Secure Cloud Storage and Mobile Identity.
 
 - [Wookey Javacard applets](https://github.com/wookey-project/javacard-applet)    ![stars](https://img.shields.io/github/stars/wookey-project/javacard-applet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/wookey-project/javacard-applet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/wookey-project/javacard-applet.svg)
   <br>
