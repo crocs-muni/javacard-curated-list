@@ -425,6 +425,10 @@ Prototype firmware for the Trusted Execution Module (TEM). The firmware is a Jav
   <br>
 This is an open source prototype of Secure Storage and Erasure (SSE) System, including both the JavaCard and host programs. 
 
+- [sim-applet-sms-im-alive](PodgroupConnectivity/sim-applet-sms-im-alive)    ![stars](https://img.shields.io/github/stars/PodgroupConnectivity/sim-applet-sms-im-alive.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/PodgroupConnectivity/sim-applet-sms-im-alive.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/PodgroupConnectivity/sim-applet-sms-im-alive.svg) 
+  <br>
+JavaCard SIM card applet to deliver an SMS very the first time the SIM registers in the GSM/GPRS network 
+
 - [SmartMeterIQ](https://github.com/adityasawhney/SmartMeterIQ)    ![stars](https://img.shields.io/github/stars/adityasawhney/SmartMeterIQ.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/adityasawhney/SmartMeterIQ.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/adityasawhney/SmartMeterIQ.svg) 
   <br>
 The main concern with Smart Meters is the granularity of the data which enables physical and behavioral analysis of the consumer in terms of the brand and make of devices installed and their house hold activities (like when do they wake up, when they are not at home). We propose using Java Card platform as it is a natural fit and is designed to be tamper-proof and secure. In addition, we explore using advanced cryptography techniques such as Zero Knowledge Proof of Knowledge (using Pedersen Commitments) to enable the Utility Supplier to trust the data it is getting from the central device.
