@@ -117,9 +117,9 @@ This applet is a Fork of Ledger U2F repository with some changes. At first, in t
 - [MuscleApplet](https://github.com/martinpaljak/MuscleApplet)    ![stars](https://img.shields.io/github/stars/martinpaljak/MuscleApplet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/martinpaljak/MuscleApplet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/martinpaljak/MuscleApplet.svg)  <br>
 Significant, but outdated applet used for OpenSC. Superseeded by PKCS#15 and PIV standards.
 
-- [OneCard](https://github.com/SharkyHarky/OneCard)    ![stars](https://img.shields.io/github/stars/SharkyHarky/OneCard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/SharkyHarky/OneCard.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/SharkyHarky/OneCard.svg) 
+- [OneCard](https://github.com/ash2005/OneCard)    ![stars](https://img.shields.io/github/stars/ash2005/OneCard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/ash2005/OneCard.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/ash2005/OneCard.svg)
   <br>
-radiius.com Radiius applet, applet seems to be just starting to implement required functionality as per specification 
+radiius.com Radiius applet, applet seems to be just starting to implement required functionality as per specification.  Originally from https://github.com/SharkyHarky/OneCard, but repository was moved.
 
 - [OpenFIPS201 PIV applet](https://github.com/makinako/OpenFIPS201)    ![stars](https://img.shields.io/github/stars/makinako/OpenFIPS201.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/makinako/OpenFIPS201.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/makinako/OpenFIPS201.svg)  <br>
 Personal Identity Verification (PIV) applet. Commissioned and funded by the Australian Department of Defence
@@ -301,7 +301,7 @@ Aim of this project is to create JavaCard applet implementing Functional Specifi
 Secure multiparty Schnorr-based EC signatures implemented without proprietary ECPoint API. 
 
 - [SigAnima](https://github.com/tsenger/SigAnima)    ![stars](https://img.shields.io/github/stars/tsenger/SigAnima.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/tsenger/SigAnima.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/tsenger/SigAnima.svg)   <br>
-SigAnima is an JavaCard ECDSA signing applet. This applet is based on the [javacardsign applet]((http://sourceforge.net/projects/javacardsign/)) from Wojciech Mostowski . The applet supports the following standardized EC domain parameters: secp224r1, BrainpoolP224r1, secp256r1, BrainpoolP256r1, BrainpoolP320r1. 
+SigAnima is an JavaCard ECDSA signing applet. This applet is based on the [javacardsign applet](https://sourceforge.net/projects/javacardsign/) from Wojciech Mostowski . The applet supports the following standardized EC domain parameters: secp224r1, BrainpoolP224r1, secp256r1, BrainpoolP256r1, BrainpoolP320r1.
 
 - [Virtual KeyCard applet](https://github.com/eriknellessen/Virtual-Keycard)    ![stars](https://img.shields.io/github/stars/eriknellessen/Virtual-Keycard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/eriknellessen/Virtual-Keycard.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/eriknellessen/Virtual-Keycard.svg)   <br>
 This software system allows you to decrypt and sign your e-mails with your smartphone instead of using a contactless smartcard. The smartphone communicates with your PC via NFC (as a contactless smartcard would). bachelor's thesis. Warning: This is just proof-of-concept code and should NOT be used in production environments.
@@ -677,7 +677,7 @@ Joana is a static analysis tool that can be used for information flow control (I
 
 - [KeYmaera 3](https://github.com/LS-Lab/KeYmaera-release)    ![stars](https://img.shields.io/github/stars/LS-Lab/KeYmaera-release.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/LS-Lab/KeYmaera-release.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/LS-Lab/KeYmaera-release.svg) 
   <br>
-KeYmaera 3: A Hybrid Theorem Prover for Hybrid Systems with examples on JavaCard applets (among others). http://symbolaris.com/info/KeYmaera.html
+KeYmaera 3: A Hybrid Theorem Prover for Hybrid Systems with examples on JavaCard applets (among others). https://symbolaris.com/info/KeYmaera.html
 
 - [The KeY project](https://github.com/cirosantilli/key-java-formal-verification-fork)    ![stars](https://img.shields.io/github/stars/cirosantilli/key-java-formal-verification-fork.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/cirosantilli/key-java-formal-verification-fork.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/cirosantilli/key-java-formal-verification-fork.svg) 
   <br>
