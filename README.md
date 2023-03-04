@@ -620,6 +620,9 @@ JCDebug is a JavaCard debugging toolkit. A simple command line tools that instru
 - [JCProfiler: JavaCard performance profiler](https://github.com/OpenCryptoProject/JCProfiler)    ![stars](https://img.shields.io/github/stars/OpenCryptoProject/JCProfiler.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/OpenCryptoProject/JCProfiler.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/OpenCryptoProject/JCProfiler.svg)  <br>
 Performance profiler for Java Card code. Automatically inserts special execution interruption "traps" into applet code, repeatedly execute target operation and measures time differences between traps. Annotates code with measured time. 
 
+- [JCUnit - JavaCard unit testing](https://github.com/christianhujer/jcunit/)    ![stars](https://img.shields.io/github/stars/christianhujer/jcunit/.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/christianhujer/jcunit/.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/christianhujer/jcunit/.svg)  <br>
+Unit testing framework for JavaCard. JCUnit provides an Assertion facility, similar to that of JUnit. The main difference is how JCUnit reports the line number of the error.
+
 - [OPAL - GlobalPlatform lib](https://bitbucket.org/ssd/opal) (**BitBucket**) _[last commit 2015]_ <br>
 A GlobalPlatform Java Library. OPAL implements several authentication, encryption and transfer protocols for
 smart card. This tool has been developped by the SSD Research Team (XLIM Labs, University of Limoges, France).
