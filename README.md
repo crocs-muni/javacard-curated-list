@@ -529,6 +529,9 @@ Provides software re-implementation of low-level operations like ECPoint or BigI
 - [JC-SSRK: Sharded Secret Key Reconstruction (SSKR)](https://github.com/proxyco/jc-sskr)  ![stars](https://img.shields.io/github/stars/proxyco/jc-sskr.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/proxyco/jc-sskr.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/proxyco/jc-sskr.svg)   <br>
 An implementation of Sharded Secret Key Reconstruction (SSKR) for JavaCard environments.
 
+- [JavaCardLightweightCiphers](https://github.com/CarpAlberto/JavaCardLightweightCiphers)  ![stars](https://img.shields.io/github/stars/CarpAlberto/JavaCardLightweightCiphers.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/CarpAlberto/JavaCardLightweightCiphers.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/CarpAlberto/JavaCardLightweightCiphers.svg)   <br>
+Implementations JavaCard lightweight ciphers implementations (SHA3, UProve, Twine, ZorroCipher)
+
 - [LibESE Android verified boot](https://github.com/TinkerBoard2-Android/external-libese)    ![stars](https://img.shields.io/github/stars/TinkerBoard2-Android/external-libese.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/TinkerBoard2-Android/external-libese.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/TinkerBoard2-Android/external-libese.svg)   <br>
 Minimal transport wrapper for communicating with embedded secure elements on Android
 
