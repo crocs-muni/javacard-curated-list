@@ -132,6 +132,10 @@ Contains applets for KeyFOB NFC Secure Element for performing association, authe
   <br>
 This is proof-of-concept implementation of One Time password JavaCard STK applet and authentication server. Load JavaCard applet to SIM card and use STK menu.
 
+- [PinSentry-OTP for Barclays PinSentry device](https://github.com/Celliwig/PinSentry-OTP)    ![stars](https://img.shields.io/github/stars/Celliwig/PinSentry-OTP.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/Celliwig/PinSentry-OTP.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/Celliwig/PinSentry-OTP.svg) 
+  <br>
+A Javacard applet to provide an OTP (One Time Password) implementation which can be used in conjunction with a Barclays PinSentry device.
+
 - [PIV applet](https://github.com/arekinath/PivApplet)    ![stars](https://img.shields.io/github/stars/arekinath/PivApplet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/arekinath/PivApplet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/arekinath/PivApplet.svg) <br>
 Personal Identity Verification (PIV) applet (NIST SP 800-73-4). Target is JavaCard 2.2.2, with 2-3k of transient memory.
 
