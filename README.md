@@ -720,8 +720,9 @@ Capable JavaCard simulator implemented atop of BouncyCastle. Very good for unit 
 - [openjcvm](https://sourceforge.net/projects/openjcvm/) (**SourceForge**) _[last commit 2015]_ <br>
 A open source java card virtual machine implementation. And also some part of the VM code can be used as part of kinds of tools such as javacard bytecode disassembler.
 
-- [PythonCard:](https://bitbucket.org/benallard/pythoncard/) (**BitBucket**) _[last commit 2013] <br>
-JavaCard API simulated in Python environment. The goal is to provide a classic 3.0.1 version, while maintaining compatiblity with earlier version like 2.1.2.
+- [PythonCard - JavaCard under PyPi](https://github.com/benallard/pythoncard)  ![stars](https://img.shields.io/github/stars/benallard/pythoncard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/benallard/pythoncard.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/benallard/pythoncard.svg) 
+  <br>
+JavaCard API simulated in Python environment. The goal is to provide a classic 3.0.1 version, while maintaining compatiblity with earlier version like 2.1.2. This is a pure python version of the javacard operating system as found on javacard smartcards.
 
 - [remote-card](https://github.com/ph4r05/remote-card)    ![stars](https://img.shields.io/github/stars/ph4r05/remote-card.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/ph4r05/remote-card.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/ph4r05/remote-card.svg) 
   <br>
