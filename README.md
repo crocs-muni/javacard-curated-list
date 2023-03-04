@@ -519,9 +519,11 @@ JavaCard Connect is a framework which provides an implementation of a secure com
   <br>
 JCEd25519 is a JavaCard implementation of Ed25519 signing using public JavaCard API. The implementation uses (modified) JCMathLib library to perform necessary operations like EC and BigInt arithmetic. And in case SHA512 is not supported by given JavaCard, its software re-implementation is used.
 
-
 - [JCMathLib - ECPoint library](https://github.com/OpenCryptoProject/JCMathLib)    ![stars](https://img.shields.io/github/stars/OpenCryptoProject/JCMathLib.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/OpenCryptoProject/JCMathLib.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/OpenCryptoProject/JCMathLib.svg)   <br>
 Provides software re-implementation of low-level operations like ECPoint or BigInteger without any use of proprietary API.
+
+- [JC-SSRK: Sharded Secret Key Reconstruction (SSKR)](https://github.com/proxyco/jc-sskr)  ![stars](https://img.shields.io/github/stars/proxyco/jc-sskr.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/proxyco/jc-sskr.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/proxyco/jc-sskr.svg)   <br>
+An implementation of Sharded Secret Key Reconstruction (SSKR) for JavaCard environments.
 
 - [LibESE Android verified boot](https://github.com/TinkerBoard2-Android/external-libese)    ![stars](https://img.shields.io/github/stars/TinkerBoard2-Android/external-libese.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/TinkerBoard2-Android/external-libese.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/TinkerBoard2-Android/external-libese.svg)   <br>
 Minimal transport wrapper for communicating with embedded secure elements on Android
