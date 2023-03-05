@@ -1,7 +1,10 @@
 # Curated list of JavaCard applications
 The goal is to provide curated catalog of all open-source JavaCard applets and applications relevant for JavaCard development. The list is compiled by complete search for all GitHub, SourceForge and GitLab repositories with *'javacard.framework'* keyword.
 
-You are encouraged to contribute - please create a pull request and insert entry into suitable section lexicographically. Thank you!
+
+| :point_up:    | You are encouraged to contribute - please create a pull request and insert entry into suitable section **lexicographically**. Thank you! |
+|---------------|:------------------------|
+
 
 The projects collected in this list were analyzed and published (June 2017) in [Analysis of JavaCard open-source ecosystem](https://medium.com/enigma-shards/analysis-of-javacard-open-source-ecosystem-9be0bfd66398)
 
