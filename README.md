@@ -86,6 +86,10 @@ Fuzzy extractor to authenticate with biometric data
 - [CoolKey Applet](https://github.com/NabilNoaman/CoolkeyApplet)    ![stars](https://img.shields.io/github/stars/NabilNoaman/CoolkeyApplet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/NabilNoaman/CoolkeyApplet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/NabilNoaman/CoolkeyApplet.svg)  <br>
 CoolKey Applet with the idea of making it a fresh JavaCard 2.2.2 applet meant to be revival of CardEdge Muscle card applet.
 
+- [FIDO2 Applet](https://github.com/BryanJacobs/FIDO2Applet/) ![stars](https://img.shields.io/github/stars/BryanJacobs/FIDO2Applet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/BryanJacobs/FIDO2Applet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/BryanJacobs/FIDO2Applet.svg)
+  <br>
+A feature-complete MIT-licensed implementation of the FIDO2 CTAP2.1 authenticator standard. Passes the official FIDO compatibility test suite. As is required by CTAP, also implements U2F.
+
 - [FIDO CCU2F Applet](https://github.com/tsenger/CCU2F)    ![stars](https://img.shields.io/github/stars/tsenger/CCU2F.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/tsenger/CCU2F.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/tsenger/CCU2F.svg) 
   <br> 
 This CCU2F JavaCard Applet is based on the Ledger U2F Applet. I imported this applet to Eclipse with installed JCOP Tools and modified the AID of this applet to the standardized AID for FIDO NFC token ( 0xA0000006472F0001). I also provided some example data ([Attestation Certificate and Key](u2f-javacard/U2F Example Attestation Certificate and Key Bytes.txt)) to bring this applet to run. This Applet was succesfully tested on JCOP v2.4.2 R3 cards with KeyAgreementX.ALG_EC_SVDP_DH_PLAIN_XY from NXPs JCOP library for EC Point Multiplication. 
