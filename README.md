@@ -308,6 +308,10 @@ The FluffyPGP Applet implements the OpenGPG Card v 2.0.1 specification without u
 - [JCOpenPGP](https://sourceforge.net/projects/jcopenpgp) (**SourceForge**) _[last commit 2016]_ <br>
 Aim of this project is to create JavaCard applet implementing Functional Specification of the OpenPGP application on ISO Smart Card Operating Systems.
 
+- [NeoPGP applet](https://github.com/mwalle/neopgp)    ![stars](https://img.shields.io/github/stars/mwalle/NeoPGP.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/mwalle/NeoPGP.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/mwalle/NeoPGP.svg) 
+  <br>
+NeoPGP is a free and open souce Java card applet which implements the OpenPGP 3.4.1 specification. It aims to be robust, lightweight (in a sense of RAM consumption) and highly configurable. The applet supports ECC as well as RSA keys.
+
 - [Secure multi-party signatures Myst](https://github.com/OpenCryptoProject/Myst)    ![stars](https://img.shields.io/github/stars/OpenCryptoProject/Myst.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/OpenCryptoProject/Myst.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/OpenCryptoProject/Myst.svg)  <br>
 Secure multiparty Schnorr-based EC signatures implemented without proprietary ECPoint API. 
 
