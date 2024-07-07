@@ -700,7 +700,12 @@ Automated testing tool for algorithms from JavaCard API supported by particular 
 JCOS testing kit platform with modular plugin capability. Possibly alternative approach to JCAlgTest allowing for finer definition of the operations and their sequence as defined by host plugin.
 
 - [Memory profiling tool](https://github.com/maxashwin/JavaCard/tree/master/Wkg_MemoryMeasurementScript) (**GitHub**) _[last commit 2017]_  <br>
-Locates an applet constructor and places free memory measurements hooks before and after every allocation command. Summarizes required memory for every allocated object (RAM, EEPROM)   
+Locates an applet constructor and places free memory measurements hooks before and after every allocation command. Summarizes required memory for every allocated object (RAM, EEPROM)
+
+- [Mesure performance tool](https://github.com/wangganggithub/Mesure)
+ ![stars](https://img.shields.io/github/stars/wangganggithub/Mesure.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/wangganggithub/Mesure.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/wangganggithub/Mesure.svg) 
+  <br>
+This is Mesure, an open Java Card performance measurement tool.
 
 - [Performance Benchmark Applet for Javacard/smartcard](https://github.com/dmdclab/smartcard-benchmark)    ![stars](https://img.shields.io/github/stars/dmdclab/smartcard-benchmark.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/dmdclab/smartcard-benchmark.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/dmdclab/smartcard-benchmark.svg) 
   <br>
