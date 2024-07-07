@@ -188,6 +188,10 @@ An U2F Token implementation based on Ledger U2F Applet which cannot pass the NFC
   <br>
 Javacard applet emulating the Yubikey challenge-response interface
 
+- [YkOtpApplet - VivoKey fork](https://github.com/DangerousThings/flexsecure-ykhmac)    ![stars](https://img.shields.io/github/stars/DangerousThings/flexsecure-ykhmac.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/DangerousThings/flexsecure-ykhmac.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/DangerousThings/flexsecure-ykhmac.svg) 
+  <br>
+This is a JavaCard applet that emulates the HMAC challenge-response functionality of the Yubikey NEO/4/5. It presents the same interface that a real Yubikey presents over CCID (i.e. this applet does not have any HID features). The goal is to be able to write applications that use the HMAC-SHA1 Challenge-Response mode of the Yubikey, and have a JavaCard with this applet be a drop-in replacement.
+
 - [YubiKey NEO App: OATH](https://github.com/Yubico/ykneo-oath)    ![stars](https://img.shields.io/github/stars/Yubico/ykneo-oath.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/Yubico/ykneo-oath.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/Yubico/ykneo-oath.svg) 
   <br>
 This project implement the HOTP/TOTP card functionality used on the YubiKey NEO device that is sold by Yubico. Its primary use is to use the YubiKey NEO to generate OATH HOTP/TOTP one-time-passwords. GPLv3+
