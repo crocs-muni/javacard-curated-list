@@ -383,6 +383,10 @@ Very simple applet used by Lamassu Bitcoin machines to sign transaction with ECD
   <br>
 SatoChip stands for Secure Anonymous Trustless and Open Chip. It is a javacard applet that can be used as a secure hardware wallet running for example on a Yubikey Neo. The SatoChip has full BIP32 supports but due to technical limitations on current javacards, hardened keys (i.e. child keys using indices 2^31 through 2^32-1) are derived much faster than normal keys.
 
+- [SatoChip Seedkeeper-Applet](https://github.com/Toporin/Seedkeeper-Applet)    ![stars](https://img.shields.io/github/stars/Toporin/Seedkeeper-Applet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/Toporin/Seedkeeper-Applet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/Toporin/Seedkeeper-Applet.svg) 
+  <br>
+Open source javacard applet implementing a secure vault. Store your most precious secrets, including seeds, masterseed and others inside a secure chip, protected by a PIN code.
+
 - [SlimDuet wallet applet](https://github.com/TaisysTeam/slimduet_wallet_applet)    ![stars](https://img.shields.io/github/stars/TaisysTeam/slimduet_wallet_applet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/TaisysTeam/slimduet_wallet_applet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/TaisysTeam/slimduet_wallet_applet.svg) 
   <br>
 This is a sample Applet based on the Java Card standard platform that combines a cold wallet with a BIP. Usable for Taisys SIMoME card.   
