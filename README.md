@@ -6,7 +6,19 @@ The goal is to provide curated catalog of all open-source JavaCard applets and a
 |---------------|:------------------------|
 
 
-The projects collected in this list were analyzed and published (June 2017) in [Analysis of JavaCard open-source ecosystem](https://medium.com/enigma-shards/analysis-of-javacard-open-source-ecosystem-9be0bfd66398)
+The projects collected in this list were analyzed and published (June 2017) in [Analysis of JavaCard open-source ecosystem](https://medium.com/enigma-shards/analysis-of-javacard-open-source-ecosystem-9be0bfd66398) and again in June 2023 in [The adoption rate of JavaCard features by certified products and open-source projects](https://crocs.fi.muni.cz/public/papers/cardis2023). If you will find this list helpful, please consider citing our work as:
+```
+@inproceedings{2023-cardis-javacard,
+   title = {The adoption rate of JavaCard features by certified products and open-source projects },
+   author = {Zaoral, Lukas and Dufka, Antonin and Svenda, Petr},
+   booktitle = {Proceedings of the 22nd Smart Card Research and Advanced Application Conference, Lecture Notes in Computer Science, vol 14530},
+   doi = {10.1007/978-3-031-54409-5_9},
+   isbn = {978-3-031-54409-5},
+   pages = {169--189},
+   publisher = {Springer},
+   year = {2023}
+}
+```
 
 ### Backup of listed repositories
 As repositores are sometimes moved or removed, the fork of each repository under the virtual organization ['javacard-curated-list'](https://github.com/javacard-FOSS-applets) is created. Try to find a repository there if the link doesn't work.
