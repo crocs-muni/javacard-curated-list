@@ -699,6 +699,10 @@ Automated testing tool for algorithms from JavaCard API supported by particular 
   <br>
 JCOS testing kit platform with modular plugin capability. Possibly alternative approach to JCAlgTest allowing for finer definition of the operations and their sequence as defined by host plugin.
 
+- [Ledger Wallet Java Card Eligibility applet](https://github.com/LedgerHQ/ledger-javacard-eligibility)   ![stars](https://img.shields.io/github/stars/LedgerHQ/ledger-javacard-eligibility.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/LedgerHQ/ledger-javacard-eligibility.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/LedgerHQ/ledger-javacard-eligibility.svg) 
+  <br>
+This applet let you test the performance of your Java Card platform to run a Hierarchical Deterministic Bitcoin Hardware Wallet implementation.
+
 - [Memory profiling tool](https://github.com/maxashwin/JavaCard/tree/master/Wkg_MemoryMeasurementScript) (**GitHub**) _[last commit 2017]_  <br>
 Locates an applet constructor and places free memory measurements hooks before and after every allocation command. Summarizes required memory for every allocated object (RAM, EEPROM)
 
