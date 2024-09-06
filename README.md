@@ -488,6 +488,10 @@ This is an open source prototype of Secure Storage and Erasure (SSE) System, inc
   <br>
 The main concern with Smart Meters is the granularity of the data which enables physical and behavioral analysis of the consumer in terms of the brand and make of devices installed and their house hold activities (like when do they wake up, when they are not at home). We propose using Java Card platform as it is a natural fit and is designed to be tamper-proof and secure. In addition, we explore using advanced cryptography techniques such as Zero Knowledge Proof of Knowledge (using Pedersen Commitments) to enable the Utility Supplier to trust the data it is getting from the central device.
 
+- [smartleia-target-applet](https://github.com/cw-leia/smartleia-target-applet)    ![stars](https://img.shields.io/github/stars/cw-leia/smartleia-target-applet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/cw-leia/smartleia-target-applet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/cw-leia/smartleia-target-applet.svg) 
+  <br>
+Smartleia target applet for testing APDUs and cryptography. Likely to be used with LEIA Smart Reader and side channel testing device. 
+
 - [T101-Devhub](https://github.com/ThothTrustCom/T101-Devhub)    ![stars](https://img.shields.io/github/stars/ThothTrustCom/T101-Devhub.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/ThothTrustCom/T101-Devhub.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/ThothTrustCom/T101-Devhub.svg) 
   <br>
 Set of javacard applets like PGP, OTP, password manager, Satochip (T101-Devhub/Samples/) to run on [ThothTrust THETAKey T101 card](https://github.com/ThothTrustCom/T101-Devhub/blob/master/THETAKey%20T101.md)
