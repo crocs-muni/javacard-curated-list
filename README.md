@@ -695,6 +695,8 @@ pyResMan is a free open source smartcard tool for JavaCard and other smart card.
 Oracle JavaCard SDK-s for using as a Git submodule for ant-javacard projects.    
 
 ### Card capabilities testing (algorithms support, performance, security issues)
+- [CardPeek](https://github.com/L1L1/cardpeek)    ![stars](https://img.shields.io/github/stars/L1L1/cardpeek.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/L1L1/cardpeek.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/L1L1/cardpeek.svg)  <br>
+Cardpeek is a Linux/Windows/Mac OS X tool to read the contents of ISO7816 smart cards. It features a GTK GUI to represent card data in a tree view, and is extendable with a scripting language (LUA). The goal of this project is to allow smart card owners to be better informed about what type of personal information is stored in these devices.
 
 - [ECTester](https://github.com/petrs/ECTester)    ![stars](https://img.shields.io/github/stars/petrs/ECTester.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/petrs/ECTester.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/petrs/ECTester.svg)  <br>
 Tester of Eliptic curves support and behavior (TYPE_EC_FP and TYPE_EC_F2M) on smartcards with JavaCard platform. 
