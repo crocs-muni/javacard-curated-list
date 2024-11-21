@@ -705,6 +705,10 @@ Tester of Eliptic curves support and behavior (TYPE_EC_FP and TYPE_EC_F2M) on sm
   <br>
 L. Rousseau PCSCLite reader test : This program send commands to a card through the reader.           
 
+- [jcAIDScan](https://github.com/petrs/jcAIDScan)    ![stars](https://img.shields.io/github/stars/petrs/jcAIDScan.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/petrs/jcAIDScan.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/petrs/jcAIDScan.svg) 
+  <br>
+An automated scanner for JavaCard packages installed and supported by target card. Evaluates all packages from JavaCard API specification up to JC API 3.0.5.
+
 - [JCAlgTest](https://github.com/crocs-muni/JCAlgTest)    ![stars](https://img.shields.io/github/stars/crocs-muni/JCAlgTest.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/crocs-muni/JCAlgTest.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/crocs-muni/JCAlgTest.svg) 
   <br>
 Automated testing tool for algorithms from JavaCard API supported by particular smart card. Performance testing of almost all available methods. The results for more than 60+ cards available at https://jcalgtest.org. 
