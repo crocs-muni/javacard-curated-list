@@ -458,9 +458,9 @@ JavaCard SIM card applet to configure a PDP Context with a correct APN via RUN A
   <br>
 JavaCard SIM card applet to monitor the status of data connectivity over-the-air. GSM SIM cards can realize about the status of network regitration (see "Location Status" ETSII TS 102.223. What a SIM cannot realize is whether the data connection has been correctly acquired or not). This projects aim to deliver a "hello-im-alive" heart-beat-kind message to a remote server with the content of a Location Status message.
 
-- [STKApplet](https://github.com/aliasnash/z-first-applet)    ![stars](https://img.shields.io/github/stars/aliasnash/z-first-applet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/aliasnash/z-first-applet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/aliasnash/z-first-applet.svg) 
+- [STKApplet](https://github.com/javacard-FOSS-applets/z-first-applet)    ![stars](https://img.shields.io/github/stars/javacard-FOSS-applets/z-first-applet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/javacard-FOSS-applets/z-first-applet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/javacard-FOSS-applets/z-first-applet.svg) 
   <br>
-SIM Toolkit Applet
+SIM Toolkit Applet. Original repository from https://github.com/aliasnash/z-first-applet, but removed. 
 
 - [UPSC framework](https://github.com/paromix/upsc)    ![stars](https://img.shields.io/github/stars/paromix/upsc.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/paromix/upsc.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/paromix/upsc.svg) 
   <br>
