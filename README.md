@@ -287,7 +287,7 @@ JavaCard Password Manager is a java applet used to create and securely store a s
   <br>
 KeepassNFC is a applet in javacard platform that can protect the secret key of KeePass database.
 
-- [OMNI Key-Ring](https://github.com/G1gg1L3s/key-ring)    ![stars](https://img.shields.io/github/stars/G1gg1L3s/key-ring.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/G1gg1L3s/key-ring.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/JG1gg1L3s/key-ring.svg) 
+- [OMNI Key-Ring](https://github.com/G1gg1L3s/key-ring)    ![stars](https://img.shields.io/github/stars/G1gg1L3s/key-ring.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/G1gg1L3s/key-ring.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/G1gg1L3s/key-ring.svg) 
   <br>
 A hobby project for OMNI ring. It's a programmable javacard NFC ring, which I plan to program as a secure password storage.
 
