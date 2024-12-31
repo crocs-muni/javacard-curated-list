@@ -21,7 +21,7 @@ The projects collected in this list were analyzed and published (June 2017) in [
 ```
 
 ### Backup of listed repositories
-As repositores are sometimes moved or removed, the fork of each repository under the virtual organization ['javacard-curated-list'](https://github.com/javacard-FOSS-applets) is created. Try to find a repository there if the link doesn't work.
+As repositores are sometimes moved or completely removed, the fork of each repository under the virtual organization ['javacard-curated-list'](https://github.com/javacard-FOSS-applets) is created, preserving also repository metadata like forks and stars. Another archival option is [SoftwareHerritage archive](https://archive.softwareheritage.org/) which preserves history including automatic periodic updates (but not github metadata). Try to find a repository there if the original link no longer works (and please let us know via issue or PR). 
 
 ### Format and notation
 > **Project name _[activity]_** <br> Short description, often taken from a project readme.md
@@ -162,11 +162,12 @@ Personal Identity Verification (PIV) applet (NIST SP 800-73-4). Target is JavaCa
   <br>
 Personal Identity Verification (PIV) applet
 
-- [PKCS#15 applet](https://github.com/lupascualex/p15)   _[REMOVED, last commit 2015]_ <br>
+- [PKCS#15 applet](https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/lupascualex/p15)  [![SWH](https://archive.softwareheritage.org/badge/origin/https://github.com/lupascualex/p15/)](https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/lupascualex/p15) _[last commit 2015, original repository [removed](https://github.com/lupascualex/p15)]_  <br>
 Implementation of card according to RSA PKCS#15 specification. (seems like extensive implementation, but fails to convert under ant-javacard so far)  
 
-- [PKI applet](https://github.com/rakeb/PKIApplet) _[REMOVED, last commit 2016]_ <br>
-(extensive PKI applet, requires JavaCard 3.0.5) 
+- [PKI applet](
+https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/rakeb/PKIApplet) [![SWH](https://archive.softwareheritage.org/badge/origin/https://github.com/rakeb/PKIApplet/)](https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/rakeb/PKIApplet) _[last commit 2016, original repository [removed](https://github.com/rakeb/PKIApplet)]_<br>
+Extensive PKI applet, requires JavaCard 3.0.5
 
 
 - [SMPC RSA (Smart-ID)](https://github.com/lzaoral/javacard-smpc-rsa)    ![stars](https://img.shields.io/github/stars/lzaoral/javacard-smpc-rsa.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/lzaoral/javacard-smpc-rsa.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/lzaoral/javacard-smpc-rsa.svg) 
@@ -252,7 +253,7 @@ This is a fully working EMV applet for javacard 2.2.1. It does not offer persona
   <br>
 Javacard Applet for functioning paypass credential. The javacard code included will answer to any reader that requests MasterCard PayPass contactless cards.
 
-- [PayPass, VisaMSD, MMPP applets](https://github.com/javacard-FOSS-applets/CardExamples)    ![stars](https://img.shields.io/github/stars/javacard-FOSS-applets/CardExamples.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/javacard-FOSS-applets/CardExamples.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/javacard-FOSS-applets/CardExamples.svg) 
+- [PayPass, VisaMSD, MMPP applets](https://github.com/javacard-FOSS-applets/CardExamples)  [![SWH](https://archive.softwareheritage.org/badge/origin/https://github.com/SimplyTapp/CardExamples/)](https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/SimplyTapp/CardExamples)  ![stars](https://img.shields.io/github/stars/javacard-FOSS-applets/CardExamples.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/javacard-FOSS-applets/CardExamples.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/javacard-FOSS-applets/CardExamples.svg) 
   <br>
 This repository contains multiple card applet/card agent examples for using on simplytapp, GPL to v1.2.1. Originally from https://github.com/SimplyTapp/CardExamples, but repository was removed.
 
@@ -387,7 +388,7 @@ This applet is an implementation of the Ledger Wallet Hardware Wallet specificat
   <br>
 <b>This project is DISCONTINUED according to issues section.</b>. Derived project can be found [here](https://github.com/JavaCardOS/BitcoinWallet).
 
-- [Lamassu card](https://github.com/zu-ctrl/ssu-card/)   ![stars](https://img.shields.io/github/stars/zu-ctrl/ssu-card.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/zu-ctrl/ssu-card.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/zu-ctrl/ssu-card.svg) 
+- [Lamassu card](https://github.com/zu-ctrl/ssu-card/) [![SWH](https://archive.softwareheritage.org/badge/origin/https://github.com/lamassu/ssu-card/)](https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/lamassu/ssu-card)  ![stars](https://img.shields.io/github/stars/zu-ctrl/ssu-card.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/zu-ctrl/ssu-card.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/zu-ctrl/ssu-card.svg) 
   <br>
 Very simple applet used by Lamassu Bitcoin machines to sign transaction with ECDSA. Originally from https://github.com/lamassu/ssu-card/ which was removed.
 
@@ -442,7 +443,7 @@ This is an implementation of a TAG 4 for emulation
   <br>
 A Sim Application client for LiteID
 
-- [Mobile-ID USAT applet](https://sourceforge.net/projects/mobile-id-usat-applethealt) _[REMOVED, last commit 2017]_ <br>
+- [Mobile-ID USAT applet](https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://git.code.sf.net/p/mobile-id-usat-applet/code) [![SWH](https://archive.softwareheritage.org/badge/origin/https://git.code.sf.net/p/mobile-id-usat-applet/code/)](https://archive.softwareheritage.org/browse/origin/?origin_url=https://git.code.sf.net/p/mobile-id-usat-applet/code) _[last commit 2017, original repository [removed](https://sourceforge.net/projects/mobile-id-usat-applet)]_ <br>
 The Remarc Mobile-ID USAT applet this is a JavaCard applet with USIM Application Toolkit menu support. 
 Basic functions of the Remarc Mobile-ID SAT applet: Authentication function; Signing function; Changing PIN1/PIN2;  Changing PUK; Unblock PIN1/PIN2; View information - in a USAT menu is present a menu item with information of PIN usage
 
@@ -458,7 +459,7 @@ JavaCard SIM card applet to configure a PDP Context with a correct APN via RUN A
   <br>
 JavaCard SIM card applet to monitor the status of data connectivity over-the-air. GSM SIM cards can realize about the status of network regitration (see "Location Status" ETSII TS 102.223. What a SIM cannot realize is whether the data connection has been correctly acquired or not). This projects aim to deliver a "hello-im-alive" heart-beat-kind message to a remote server with the content of a Location Status message.
 
-- [STKApplet](https://github.com/javacard-FOSS-applets/z-first-applet)    ![stars](https://img.shields.io/github/stars/javacard-FOSS-applets/z-first-applet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/javacard-FOSS-applets/z-first-applet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/javacard-FOSS-applets/z-first-applet.svg) 
+- [STKApplet](https://github.com/javacard-FOSS-applets/z-first-applet)  [![SWH](https://archive.softwareheritage.org/badge/origin/https://github.com/aliasnash/z-first-applet2/)](https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/aliasnash/z-first-applet2)  ![stars](https://img.shields.io/github/stars/javacard-FOSS-applets/z-first-applet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/javacard-FOSS-applets/z-first-applet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/javacard-FOSS-applets/z-first-applet.svg) 
   <br>
 SIM Toolkit Applet. Original repository from https://github.com/aliasnash/z-first-applet, but removed. 
 
@@ -472,7 +473,7 @@ Identity and the security of data transmission is very critical for the success 
   <br>
 EVIV is a highly sound End-to-end Verifiable Internet Voting system, which offers full voter’s mobility and preserves the voter’s privacy from the vote casting PC even if the voter votes from a public PC, such as a PC at a cybercafe ́ or at a public library.
 
-- [javacard-petrol-rationing](https://github.com/alegen/javacard-petrol-rationing) _[REMOVED, last commit 2014]_ <br>
+- [javacard-petrol-rationing](https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/alegen/javacard-petrol-rationing) [![SWH](https://archive.softwareheritage.org/badge/origin/https://github.com/alegen/javacard-petrol-rationing/)](https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/alegen/javacard-petrol-rationing) _[last commit 2014, original repository [removed](https://github.com/alegen/javacard-petrol-rationing)]_ <br>
 Applet for security of Petrol rationing, including design documents, Radboud University, Hardware Security course, JavaCard project
 
 - [LicenseCardApp](https://github.com/FourTree/LicenseCardApp)    ![stars](https://img.shields.io/github/stars/FourTree/LicenseCardApp.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/FourTree/LicenseCardApp.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/FourTree/LicenseCardApp.svg) 
