@@ -91,9 +91,13 @@ A privacy-friendly alternative for the Belgian eID card. The project aims to imp
 
 ### Authentication and access control
 
+- [apex-totp](https://github.com/VivoKey/apex-totp)    ![stars](https://img.shields.io/github/stars/VivoKey/apex-totp.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/VivoKey/apex-totp.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/VivoKey/apex-totp.svg) 
+  <br>
+OTP authentication applet for VivoKey javacard implants based on Yubico OTP applet.
+
 - [Biometric Authentication](https://github.com/albertocarp/BiometricAuthentification)    ![stars](https://img.shields.io/github/stars/albertocarp/BiometricAuthentification.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/albertocarp/BiometricAuthentification.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/albertocarp/BiometricAuthentification.svg) 
   <br>
-Fuzzy extractor to authenticate with biometric data
+Fuzzy extractor to authenticate with biometric data.
 
 - [CoolKey Applet](https://github.com/NabilNoaman/CoolkeyApplet)    ![stars](https://img.shields.io/github/stars/NabilNoaman/CoolkeyApplet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/NabilNoaman/CoolkeyApplet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/NabilNoaman/CoolkeyApplet.svg)  <br>
 CoolKey Applet with the idea of making it a fresh JavaCard 2.2.2 applet meant to be revival of CardEdge Muscle card applet.
@@ -609,7 +613,7 @@ SmartCard API for Android. The SmartCard API adds the necessary modules and APIâ
   <br>
 Java Card implementation of Self-Blindable credentials           
 
-- [SHA3, PBKDF2, TWINE, Zorro, ACORN, AEGIS, ASCON, CLOC, and MORUS AEAD ciphers implementation](https://github.com/MiragePV/OptimizedJCAlgs)    ![stars](https://img.shields.io/github/stars/MiragePV/OptimizedJCAlgs.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/MiragePV/OptimizedJCAlgs.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/MiragePV/OptimizedJCAlgs.svg)  <br>
+- [SHA3, PBKDF2, TWINE, Zorro, ACORN, AEGIS, ASCON, CLOC, and MORUS AEAD ciphers implementation](https://github.com/crocs-muni/OptimizedJCAlgs)    ![stars](https://img.shields.io/github/stars/crocs-muni/OptimizedJCAlgs.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/crocs-muni/OptimizedJCAlgs.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/crocs-muni/OptimizedJCAlgs.svg)  <br>
 Optimalized implementation of AEGIS, ACORN, ASCON, CLOC, MORUS (Authenticated Encryption), TWINE, Zorro (Block Ciphers), SHA-3 (Message Digest) and PBKDF2 (Key derivation) 
 
 - [SmartCardTLS](https://github.com/gilb/smart_card_TLS)    ![stars](https://img.shields.io/github/stars/gilb/smart_card_TLS.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/gilb/smart_card_TLS.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/gilb/smart_card_TLS.svg)   <br>
