@@ -386,6 +386,10 @@ JavaCard applet for speaking NDEF. Implementation of the NDEF Nfc-Forum specific
   <br>
 BitcoinWallet is a Bitcoin Hardware Wallet implementation. It is based on the project Ledger Wallet and can be run on JavaCard platform with JCRE version 3.0.x above.
 
+- [BitaWalletCard](https://github.com/hosseinpro/BitaWalletCard)    ![stars](https://img.shields.io/github/stars/hosseinpro/BitaWalletCard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/hosseinpro/BitaWalletCard.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/hosseinpro/BitaWalletCard.svg) 
+  <br>
+BitaWallet is a JavaCard-based crypto wallet designed with advanced security features, including cryptographic backup and a super-wallet/sub-wallet architecture. It uses ePaper technology for trusted display on the card and NXP proprietary packages found on older NXP cards jcop-2.3.x - jcopx-2.4.2.R3. 
+
 - [Ledger Bitcoin Hardware Wallet ](https://github.com/LedgerHQ/ledger-javacard)    ![stars](https://img.shields.io/github/stars/LedgerHQ/ledger-javacard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/LedgerHQ/ledger-javacard.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/LedgerHQ/ledger-javacard.svg) 
   <br>
 This applet is an implementation of the Ledger Wallet Hardware Wallet specification emulating an NFC Forum Type 4 tag to display the second factor, with specific extensions. 
