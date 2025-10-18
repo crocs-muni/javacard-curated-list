@@ -400,6 +400,10 @@ This applet is an implementation of the Ledger Wallet Hardware Wallet specificat
   <br>
 <b>This project is DISCONTINUED according to issues section.</b>. Derived project can be found [here](https://github.com/JavaCardOS/BitcoinWallet).
 
+- [Ledger Wallet Java Card Eligibility applet](https://github.com/LedgerHQ/ledger-javacard-eligibility)    ![stars](https://img.shields.io/github/stars/LedgerHQ/ledger-javacard-eligibility.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/LedgerHQ/ledger-javacard-eligibility.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/LedgerHQ/ledger-javacard-eligibility.svg) 
+  <br>
+This applet let you test the performance of your Java Card platform to run a Hierarchical Deterministic Bitcoin Hardware Wallet implementation. It tries to find out all available algorithms, provide a pure Java implementation for the missing ones and gives a detailed report on support and performance. If you have access to proprietary APIs, you can easily enable additional tests by providing an implementation of the ProprietaryAPI class
+
 - [Lamassu card](https://github.com/zu-ctrl/ssu-card/) [![SWH](https://archive.softwareheritage.org/badge/origin/https://github.com/lamassu/ssu-card/)](https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/lamassu/ssu-card)  ![stars](https://img.shields.io/github/stars/zu-ctrl/ssu-card.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/zu-ctrl/ssu-card.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/zu-ctrl/ssu-card.svg) 
   <br>
 Very simple applet used by Lamassu Bitcoin machines to sign transaction with ECDSA. Originally from https://github.com/lamassu/ssu-card/ which was removed.
