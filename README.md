@@ -390,6 +390,10 @@ BitcoinWallet is a Bitcoin Hardware Wallet implementation. It is based on the pr
   <br>
 BitaWallet is a JavaCard-based crypto wallet designed with advanced security features, including cryptographic backup and a super-wallet/sub-wallet architecture. It uses ePaper technology for trusted display on the card and NXP proprietary packages found on older NXP cards jcop-2.3.x - jcopx-2.4.2.R3. 
 
+- [CoolWallet Pro applet](https://github.com/CoolBitX-Technology/coolwallet-pro-se)    ![stars](https://img.shields.io/github/stars/CoolBitX-Technology/coolwallet-pro-se.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/CoolBitX-Technology/coolwallet-pro-se.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/CoolBitX-Technology/coolwallet-pro-se.svg) 
+  <br>
+CoolWallet Pro Firmware is a Javacard firmware designed specifically for the CoolWallet Pro. It offers advanced features for private key management, signing, and transaction data composition. Private key management: Safely store and manage private keys within the secure element of the CoolWallet Pro. Signing: Perform secure and verifiable digital signatures for transactions and authentication purposes. Transaction data composition: Generate and compose transaction data in a secure manner, ensuring data integrity and confidentiality.
+
 - [Ledger Bitcoin Hardware Wallet ](https://github.com/LedgerHQ/ledger-javacard)    ![stars](https://img.shields.io/github/stars/LedgerHQ/ledger-javacard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/LedgerHQ/ledger-javacard.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/LedgerHQ/ledger-javacard.svg) 
   <br>
 This applet is an implementation of the Ledger Wallet Hardware Wallet specification emulating an NFC Forum Type 4 tag to display the second factor, with specific extensions. 
