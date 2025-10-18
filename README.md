@@ -700,6 +700,10 @@ Performance profiler for Java Card code. JCProfilerNext is a complete rewrite of
 - [JCUnit - JavaCard unit testing](https://github.com/christianhujer/jcunit/)    ![stars](https://img.shields.io/github/stars/christianhujer/jcunit/.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/christianhujer/jcunit/.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/christianhujer/jcunit/.svg)  <br>
 Unit testing framework for JavaCard. JCUnit provides an Assertion facility, similar to that of JUnit. The main difference is how JCUnit reports the line number of the error.
 
+- [ProGuard Java Optimizer and Obfuscator](https://github.com/Guardsquare/proguard)    ![stars](https://img.shields.io/github/stars/Guardsquare/proguard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/Guardsquare/proguard.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/Guardsquare/proguard.svg)
+  <br>
+ProGuard is a free shrinker, optimizer, obfuscator, and preverifier for Java bytecode: It detects and removes unused classes, fields, methods, and attributes. It optimizes bytecode and removes unused instructions. It renames the remaining classes, fields, and methods using short meaningless names. The resulting applications and libraries are smaller and faster.
+
 - [OPAL - GlobalPlatform lib](https://bitbucket.org/ssd/opal) (**BitBucket**) _[last commit 2015]_ <br>
 A GlobalPlatform Java Library. OPAL implements several authentication, encryption and transfer protocols for
 smart card. This tool has been developped by the SSD Research Team (XLIM Labs, University of Limoges, France).
