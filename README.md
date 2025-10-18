@@ -400,6 +400,10 @@ This applet is an implementation of the Ledger Wallet Hardware Wallet specificat
   <br>
 Very simple applet used by Lamassu Bitcoin machines to sign transaction with ECDSA. Originally from https://github.com/lamassu/ssu-card/ which was removed.
 
+- [Monoid applet](https://github.com/vilicvane/monoid-javacard)  ![stars](https://img.shields.io/github/stars/vilicvane/monoid-javacard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/vilicvane/monoid-javacard.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/vilicvane/monoid-javacard.svg) 
+  <br>
+The goal is to allow third-party Monoid applets to interact with Monoid Applet Shareable interface for signing/verifying and data access, so that Monoid can manage those keys and data and make it easy for users to backup, restore or even synchronize securely with unified UX. It can be used to create a hardware crypto wallet, a FIDO2 authenticator, a One-Time Password (OTP) generator and a Tesla key.
+
 - [SatoChip Bitcoin applet](https://github.com/Toporin/SatoChipApplet)    ![stars](https://img.shields.io/github/stars/Toporin/SatoChipApplet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/Toporin/SatoChipApplet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/Toporin/SatoChipApplet.svg) 
   <br>
 SatoChip stands for Secure Anonymous Trustless and Open Chip. It is a javacard applet that can be used as a secure hardware wallet running for example on a Yubikey Neo. The SatoChip has full BIP32 supports but due to technical limitations on current javacards, hardened keys (i.e. child keys using indices 2^31 through 2^32-1) are derived much faster than normal keys.
