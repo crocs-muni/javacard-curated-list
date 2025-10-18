@@ -367,6 +367,10 @@ Prototype of a Java Card application for smart cards and its client application.
 
 ### NDEF tags
 
+- [Cool NDEF Thing](https://github.com/non-bin/coolNDEFthing)    ![stars](https://img.shields.io/github/stars/non-bin/coolNDEFthing.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/non-bin/coolNDEFthing.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/non-bin/coolNDEFthing.svg) 
+  <br>
+A (hopfully) highly feature-packed NDEF applet, available through Fidesmo A constant work in progress, but I use it personally.
+
 - [JavaCard NDEF Applet](https://github.com/OpenJavaCard/openjavacard-ndef)    ![stars](https://img.shields.io/github/stars/OpenJavaCard/openjavacard-ndef.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/OpenJavaCard/openjavacard-ndef.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/OpenJavaCard/openjavacard-ndef.svg) 
   <br>
 This project contains a JavaCard applet acting as an NFC NDEF Tag. It is intended as a convenience applet, allowing storage of an NDEF record on a smartcard to direct the user to a relevant host-device application, such as a smartphone app related to the card or a web page for which the card serves as an authorization token. Data can be preloaded at install time using standards-compliant methods so that this generic applet can be used in different use cases without modification.
