@@ -259,7 +259,7 @@ Javacard Applet for functioning paypass credential. The javacard code included w
 
 - [PayPass, VisaMSD, MMPP applets](https://github.com/javacard-FOSS-applets/CardExamples)  [![SWH](https://archive.softwareheritage.org/badge/origin/https://github.com/SimplyTapp/CardExamples/)](https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/SimplyTapp/CardExamples)  ![stars](https://img.shields.io/github/stars/javacard-FOSS-applets/CardExamples.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/javacard-FOSS-applets/CardExamples.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/javacard-FOSS-applets/CardExamples.svg) 
   <br>
-This repository contains multiple card applet/card agent examples for using on simplytapp, GPL to v1.2.1. Originally from https://github.com/SimplyTapp/CardExamples, but repository was removed.
+This repository contains multiple card applet/card agent examples for using on simplytapp, GPL to v1.2.1. Originally from https://github.com/SimplyTapp/CardExamples, but repository was removed. Possible reupload available at [https://github.com/julianosalvi/CardExamples---SwipeYours](https://github.com/julianosalvi/CardExamples---SwipeYours).
 
 - [PBOC3Applet](https://github.com/jiankeliu5/PBOC3Applet)    ![stars](https://img.shields.io/github/stars/jiankeliu5/PBOC3Applet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/jiankeliu5/PBOC3Applet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/jiankeliu5/PBOC3Applet.svg) 
   <br>
