@@ -816,6 +816,9 @@ This project provides an implementation of a Java Card Runtime Enviornment (JCRE
   <br>
 This repository contains an implementation of the Java Card API v.3.0.5 and Global Platform specification v2.3 for education and research purposes.
 
+- [JCardEngine](https://github.com/martinpaljak/jcardengine) ![stars](https://img.shields.io/github/stars/martinpaljak/jcardengine.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/martinpaljak/jcardengine.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/martinpaljak/jcardengine.svg) 
+  <br>Java Card API and runtime simulator with Global Platform secure channel, simple command line tool, virtual PC/SC driver support and other developer utilities. A fork/rewrite of jCardSim.
+
 - [JCardMock](https://github.com/christianhujer/jcardmock)    ![stars](https://img.shields.io/github/stars/christianhujer/jcardmock.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/christianhujer/jcardmock.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/christianhujer/jcardmock.svg) 
   <br>
 Mock implementation of the Java Card API 3.0.4 in order to test Java Card applet code without a card or simulator. It runs the Java Card API 3.0.4 in a normal Java Virtual Machine. The purpose is to allow for unit tests for Java Card applets with normal test frameworks like JUnit or TestNG in a normal Java Virtual Machine (unfinished)
@@ -841,7 +844,7 @@ This project aims at emulating a secure element environment for debugging and ra
 
 - [vJCRE ](https://github.com/martinpaljak/vJCRE)    ![stars](https://img.shields.io/github/stars/martinpaljak/vJCRE.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/martinpaljak/vJCRE.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/martinpaljak/vJCRE.svg) 
   <br>
-vJCRE is a virtual Java Card Runtime Environment
+vJCRE is a virtual Java Card Runtime Environment (Archived. Superseded by JCardEngine mentioned above)
 
 ## Learning (various school projects, simple hello world applets, etc)
 
