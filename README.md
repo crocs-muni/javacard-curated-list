@@ -337,6 +337,9 @@ The FluffyPGP Applet implements the OpenGPG Card v 2.0.1 specification without u
 - [JCOpenPGP](https://sourceforge.net/projects/jcopenpgp) (**SourceForge**) _[last commit 2016]_ <br>
 Aim of this project is to create JavaCard applet implementing Functional Specification of the OpenPGP application on ISO Smart Card Operating Systems.
 
+- [Musig2JC](https://github.com/SPXcz/musig2-applet) ![stars](https://img.shields.io/github/stars/SPXcz/musig2-applet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/SPXcz/musig2-applet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/SPXcz/musig2-applet.svg) <br>
+Musig2JC is a BIP-327 compliant Java Card implementation of a multi-signature scheme called MuSig2. It is natively supported by MeeSign message signing app but can be implemented into other systems which benefit from the properties of multi-signatures.
+
 - [NeoPGP applet](https://github.com/mwalle/neopgp)    ![stars](https://img.shields.io/github/stars/mwalle/NeoPGP.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/mwalle/NeoPGP.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/mwalle/NeoPGP.svg) 
   <br>
 NeoPGP is a free and open souce Java card applet which implements the OpenPGP 3.4.1 specification. It aims to be robust, lightweight (in a sense of RAM consumption) and highly configurable. The applet supports ECC as well as RSA keys.
