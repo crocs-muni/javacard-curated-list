@@ -281,10 +281,6 @@ A JavaCard key manager for Cryptsetup. School project, but well documented and e
 - [HydraMultiKeySystem applet](https://github.com/thotheolh/HydraMultiKeySystem)    ![stars](https://img.shields.io/github/stars/thotheolh/HydraMultiKeySystem.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/thotheolh/HydraMultiKeySystem.svg)  ![numcontributors](https://img.shields.io/github/contributors-anon/thotheolh/HydraMultiKeySystem.svg)<br>
 A more efficient version of Microsoft's Double Key Encryption System. 
 
-- [Java Card OpenPGP Card](https://github.com/jderuiter/javacard-openpgpcard)    ![stars](https://img.shields.io/github/stars/jderuiter/javacard-openpgpcard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/jderuiter/javacard-openpgpcard.svg)  ![numcontributors](https://img.shields.io/github/contributors-anon/jderuiter/javacard-openpgpcard.svg) 
-  <br>
-This is a Java Card implementation of the OpenPGP smart card specifications.
-
 - [JavaCardKeymaster](https://github.com/divegeek/JavaCardKeymaster)    ![stars](https://img.shields.io/github/stars/divegeek/JavaCardKeymaster.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/divegeek/JavaCardKeymaster.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/divegeek/JavaCardKeymaster.svg) 
   <br>
 JavaCard implementation of the Android Keymaster 4.1 HAL (most of the specification is in the Android Keymaster 4.0 HAL), intended for creation of StrongBox Keymaster instances to support the Android Hardware-backed Keystore.
@@ -330,6 +326,10 @@ Using TrueCrypt with a JavaCard. The app stores the user container passwords on 
 - [ANSSI-FR SmartPGP applet](https://github.com/ANSSI-FR/SmartPGP)    ![stars](https://img.shields.io/github/stars/ANSSI-FR/SmartPGP.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/ANSSI-FR/SmartPGP.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/ANSSI-FR/SmartPGP.svg) 
   <br>
 SmartPGP is a free and open source implementation of the OpenPGP card 3.x specification in JavaCard. The main improvement introduced in OpenPGP card 3.x specification from previous version is the support of elliptic curve cryptography with several existing curves (NIST P-256, NIST P-384, NIST P-521, brainpool p256r1, brainpool p384r1 and brainpool p512r1). The SmartPGP Card applet is typically used through GnuPG.
+
+- [Java Card OpenPGP Card](https://github.com/jderuiter/javacard-openpgpcard)    ![stars](https://img.shields.io/github/stars/jderuiter/javacard-openpgpcard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/jderuiter/javacard-openpgpcard.svg)  ![numcontributors](https://img.shields.io/github/contributors-anon/jderuiter/javacard-openpgpcard.svg) 
+  <br>
+This is a Java Card implementation of the OpenPGP smart card specifications.
 
 - [FluffyPGP applet](https://github.com/JavaCardOS/FluffyPGP-Applet)    ![stars](https://img.shields.io/github/stars/JavaCardOS/FluffyPGP-Applet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/JavaCardOS/FluffyPGP-Applet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/JavaCardOS/FluffyPGP-Applet.svg)   <br>
 The FluffyPGP Applet implements the OpenGPG Card v 2.0.1 specification without using secure channels or Global Platform for portability. GPL3
