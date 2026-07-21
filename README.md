@@ -272,9 +272,9 @@ payment applet
   <br>
 Some old PBOC3_JC2_1_1_ICFC_SIO applet and documentation, likely payments.
 
-- [Simple Wallet](https://github.com/fitpay/javacard-simple-wallet)    ![stars](https://img.shields.io/github/stars/fitpay/javacard-simple-wallet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/fitpay/javacard-simple-wallet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/fitpay/javacard-simple-wallet.svg) 
+- [Simple Wallet](https://github.com/fitpay/javacard-simple-wallet)  ![SWH](https://archive.softwareheritage.org/badge/origin/https://github.com/fitpay/javacard-simple-wallet) ![stars](https://img.shields.io/github/stars/javacard-FOSS-applets/javacard-simple-wallet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/javacard-FOSS-applets/javacard-simple-wallet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/javacard-FOSS-applets/javacard-simple-wallet.svg) 
   <br>
-This is a simple wallet simply maintains a running account balance allowing you to credit, debit, or review the current balance of the wallet. This is simply for pure demonstration on various wearable technologies where a javacard secure element is available.
+This is a simple wallet simply maintains a running account balance allowing you to credit, debit, or review the current balance of the wallet. This is simply for pure
 
 ### Key and password managers
 - [CryptSetup JavaCard Key Manager](https://github.com/WOnder93/cryptsetup-javacard)    ![stars](https://img.shields.io/github/stars/WOnder93/cryptsetup-javacard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/WOnder93/cryptsetup-javacard.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/WOnder93/cryptsetup-javacard.svg) 
