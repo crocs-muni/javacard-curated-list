@@ -88,7 +88,7 @@ Fork of JMRTD electronic passport applet without EAC support. The target device 
   <br> 
 A privacy-friendly alternative for the Belgian eID card. The project aims to improve security of Belgian ID holders by limiting the current extensive exposure of their profiles. To do so, we build an alternative ID card which limits service providers to strickly necessary ID holder profile information. 
 
-- [Swedish public transport card applet](https://github.com/kirei/mts7-javacard)  ![stars](https://img.shields.io/github/stars/kirei/mts7-javacard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/kirei/mts7-javacard.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/akirei/mts7-javacard.svg) 
+- [Swedish public transport card applet](https://github.com/kirei/mts7-javacard)  ![stars](https://img.shields.io/github/stars/kirei/mts7-javacard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/kirei/mts7-javacard.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/kirei/mts7-javacard.svg) 
   <br> 
  BoB MTS7 Travelcard Implementation, Swedish public transport card applet. 
 
