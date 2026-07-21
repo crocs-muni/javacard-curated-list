@@ -702,6 +702,9 @@ Large set of test applets for GlobalPlatform Open Mobile API (OMAPI).
 - [JavaCard debugging toolkit](https://github.com/omarbenhamid/jcdebug)    ![stars](https://img.shields.io/github/stars/omarbenhamid/jcdebug.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/omarbenhamid/jcdebug.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/omarbenhamid/jcdebug.svg)  <br>
 JCDebug is a JavaCard debugging toolkit. A simple command line tools that instruments JavaCard applets to offer debugging and inspection services directly on the target plateform. Potentially significant project, needs closer look
 
+- [jcc: LLVM to JavaCard compiler](https://github.com/CrystalPeakSecurity/jcc)    ![stars](https://img.shields.io/github/stars/CrystalPeakSecurity/jcc.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/CrystalPeakSecurity/jcc.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/CrystalPeakSecurity/jcc.svg)  <br>
+An LLVM IR to JavaCard CAP file compiler. Write JavaCard applets in C, Rust, or any language with an LLVM frontend.
+
 - [JCProfiler: JavaCard performance profiler](https://github.com/OpenCryptoProject/JCProfiler)    ![stars](https://img.shields.io/github/stars/OpenCryptoProject/JCProfiler.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/OpenCryptoProject/JCProfiler.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/OpenCryptoProject/JCProfiler.svg)  <br>
 Performance profiler for Java Card code. Automatically inserts special execution interruption "traps" into applet code, repeatedly execute target operation and measures time differences between traps. Annotates code with measured time. 
 
