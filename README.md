@@ -238,9 +238,9 @@ This tool emulates an EMV-CAP device, to illustrate the article "Banque en ligne
   <br>
 Static analysis of java code applied to example of very old Gemplus Purse applet 
 
-- [JavaCard Wallet](https://github.com/RimGazzeh/JavaCard_Wallet)    ![stars](https://img.shields.io/github/stars/RimGazzeh/JavaCard_Wallet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/RimGazzeh/JavaCard_Wallet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/RimGazzeh/JavaCard_Wallet.svg) 
+- [JavaCard Wallet](https://github.com/RimGazzeh/JavaCard_Wallet)  ![SWH](https://archive.softwareheritage.org/badge/origin/https://github.com/RimGazzeh/JavaCard_Wallet) ![stars](https://img.shields.io/github/stars/javacard-FOSS-applets/JavaCard_Wallet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/javacard-FOSS-applets/JavaCard_Wallet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/javacard-FOSS-applets/JavaCard_Wallet.svg) 
   <br>
-Client/Server application of an electronic wallet (Pin, Storage, control, payment..) 
+Client/Server application of an electronic wallet (Pin, Storage, control, payment..)
 
 - [Loyalty Card Applet](https://github.com/Anthirian/Loyalty-Card)    ![stars](https://img.shields.io/github/stars/Anthirian/Loyalty-Card.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/Anthirian/Loyalty-Card.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/Anthirian/Loyalty-Card.svg) 
   <br>
