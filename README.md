@@ -67,8 +67,8 @@ A reference implementation of the ISO18013 standards. Based on the passport appl
 - [EstEID compatible JavaCard applets](https://github.com/martinpaljak/esteid-applets)    ![stars](https://img.shields.io/github/stars/martinpaljak/esteid-applets.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/martinpaljak/esteid-applets.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/martinpaljak/esteid-applets.svg)   <br> 
 Various JavaCard applets compatible to EstEID chip protocol: FakeEstEID, MyEstEID
 
-- [FedICT Quick-Key Toolset](https://github.com/Twuk/eid-quick-key-toolset/tree/master/eid-quick-key-toolset) (**GitHub**) _[last commit 2011]_
-  <br> 
+- [FedICT Quick-Key Toolset](https://github.com/Twuk/eid-quick-key-toolset/)    ![stars](https://img.shields.io/github/stars/Twuk/eid-quick-key-toolset.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/Twuk/eid-quick-key-toolset.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/Twuk/eid-quick-key-toolset.svg)
+<br> 
 EidCard project
 
 - [IdentityCard applet](https://github.com/JavaCardSpot-dev/IdentityCard-applet/tree/master/workspace/JavaCard) (**GitHub**) _[last commit 2017]_
