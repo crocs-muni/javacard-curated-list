@@ -756,7 +756,7 @@ An automated scanner for JavaCard packages installed and supported by target car
   <br>
 Automated testing tool for algorithms from JavaCard API supported by particular smart card. Performance testing of almost all available methods. The results for more than 60+ cards available at https://jcalgtest.org. 
 
-- [JCOSTestKit](https://github.com/ThothTrustCom/JCOSTestKit) [stars](https://img.shields.io/github/stars/ThothTrustCom/JCOSTestKit.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/ThothTrustCom/JCOSTestKit.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/ThothTrustCom/JCOSTestKit.svg) 
+- [JCOSTestKit](https://github.com/ThothTrustCom/JCOSTestKit) ![stars](https://img.shields.io/github/stars/ThothTrustCom/JCOSTestKit.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/ThothTrustCom/JCOSTestKit.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/ThothTrustCom/JCOSTestKit.svg) 
   <br>
 JCOS testing kit platform with modular plugin capability. Possibly alternative approach to JCAlgTest allowing for finer definition of the operations and their sequence as defined by host plugin.
 
