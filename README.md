@@ -67,8 +67,7 @@ A reference implementation of the ISO18013 standards. Based on the passport appl
 - [EstEID compatible JavaCard applets](https://github.com/martinpaljak/esteid-applets)    ![stars](https://img.shields.io/github/stars/martinpaljak/esteid-applets.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/martinpaljak/esteid-applets.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/martinpaljak/esteid-applets.svg)   <br> 
 Various JavaCard applets compatible to EstEID chip protocol: FakeEstEID, MyEstEID
 
-- [FedICT Quick-Key Toolset](https://github.com/Twuk/eid-quick-key-toolset/)    ![stars](https://img.shields.io/github/stars/Twuk/eid-quick-key-toolset.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/Twuk/eid-quick-key-toolset.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/Twuk/eid-quick-key-toolset.svg)
-<br> 
+- [FedICT Quick-Key Toolset](https://github.com/Twuk/eid-quick-key-toolset/)    ![stars](https://img.shields.io/github/stars/Twuk/eid-quick-key-toolset.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/Twuk/eid-quick-key-toolset.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/Twuk/eid-quick-key-toolset.svg) <br>
 EidCard project
 
 - [IdentityCard applet](https://github.com/JavaCardSpot-dev/IdentityCard-applet/tree/master/workspace/JavaCard) (**GitHub**) _[last commit 2017]_
@@ -136,7 +135,7 @@ Javacard Implementation for the Android Identity Credential HAL
   <br> 
 This applet is a Java Card implementation of the FIDO Alliance U2F standard. It uses no proprietary vendor API and is freely available on Ledger Unplugged and for a small fee on other Fidesmo devices through Fidesmo store.
 
-- [Ledger U2F Applet Fork](https://github.com/darconeous/u2f-javacard/)    ![stars](https://img.shields.io/github/stars/darconeous/ledger-u2f-javacard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/darconeous/ledger-u2f-javacard.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/darconeous/ledger-u2f-javacard.svg) 
+- [Ledger U2F Applet Fork](https://github.com/darconeous/u2f-javacard/)    ![stars](https://img.shields.io/github/stars/darconeous/u2f-javacard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/darconeous/u2f-javacard.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/darconeous/u2f-javacard.svg) 
   <br> 
 This applet is a Fork of Ledger U2F repository with some changes. At first, in the releases a compiled source is available along with a script for GpPro tool to both instal and personalise the applet. Secondly, a proprietary APDU was changed from `F0` CLA to `80`. All personalisation APDU on other ledger forks threw `6881`, but the `80` CLA personalisation succeeded. The repository also claims to support iOS.
 
@@ -169,11 +168,11 @@ Personal Identity Verification (PIV) applet (NIST SP 800-73-4). Target is JavaCa
   <br>
 Personal Identity Verification (PIV) applet
 
-- [PKCS#15 applet](https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/lupascualex/p15)  [![SWH](https://archive.softwareheritage.org/badge/origin/https://github.com/lupascualex/p15/)](https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/lupascualex/p15) _[last commit 2015, original repository [removed](https://github.com/lupascualex/p15)]_  <br>
+- [PKCS#15 applet](https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/lupascualex/p15)  ![SWH](https://archive.softwareheritage.org/badge/origin/https://github.com/lupascualex/p15/) _[last commit 2015, original repository [removed](https://github.com/lupascualex/p15)]_  <br>
 Implementation of card according to RSA PKCS#15 specification. (seems like extensive implementation, but fails to convert under ant-javacard so far)  
 
 - [PKI applet](
-https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/rakeb/PKIApplet) [![SWH](https://archive.softwareheritage.org/badge/origin/https://github.com/rakeb/PKIApplet/)](https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/rakeb/PKIApplet) _[last commit 2016, original repository [removed](https://github.com/rakeb/PKIApplet)]_<br>
+https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/rakeb/PKIApplet) ![SWH](https://archive.softwareheritage.org/badge/origin/https://github.com/rakeb/PKIApplet/) _[last commit 2016, original repository [removed](https://github.com/rakeb/PKIApplet)]_<br>
 Extensive PKI applet, requires JavaCard 3.0.5
 
 
@@ -238,7 +237,7 @@ This tool emulates an EMV-CAP device, to illustrate the article "Banque en ligne
   <br>
 Static analysis of java code applied to example of very old Gemplus Purse applet 
 
-- [JavaCard Wallet](https://github.com/RimGazzeh/JavaCard_Wallet)  ![SWH](https://archive.softwareheritage.org/badge/origin/https://github.com/RimGazzeh/JavaCard_Wallet) ![stars](https://img.shields.io/github/stars/javacard-FOSS-applets/JavaCard_Wallet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/javacard-FOSS-applets/JavaCard_Wallet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/javacard-FOSS-applets/JavaCard_Wallet.svg) 
+- [JavaCard Wallet](https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/RimGazzeh/JavaCard_Wallet)  ![SWH](https://archive.softwareheritage.org/badge/origin/https://github.com/RimGazzeh/JavaCard_Wallet) ![stars](https://img.shields.io/github/stars/javacard-FOSS-applets/JavaCard_Wallet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/javacard-FOSS-applets/JavaCard_Wallet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/javacard-FOSS-applets/JavaCard_Wallet.svg) _[last commit 2020, original repository [removed](https://github.com/RimGazzeh/JavaCard_Wallet)]_ 
   <br>
 Client/Server application of an electronic wallet (Pin, Storage, control, payment..)
 
@@ -391,7 +390,7 @@ JavaCard applet for speaking NDEF. Implementation of the NDEF Nfc-Forum specific
 
 - [Pico NDEF Applet](https://github.com/MpicoSys/PicoLabel/tree/master/java/scc_applet/Pico_NDEF/src/org/aispring/javacard/ndef) (**GitHub**) _[last commit 2017]_ 
   <br>
-
+JavaCard applet implementing an NDEF tag
 
 
 ### CryptoCurrency wallets
@@ -466,7 +465,7 @@ An APDU layer emulator for the secure element found in PS4 officially licensed p
   Emulation of DESFire card
 
 - [MobileEDEPV3](https://github.com/FourTree/EDEPApplet-hengbao/tree/master/MobileEDEPV3) (**GitHub**) _[last commit 2016]_ <br>
-JC emulation of some Chinese card?
+Java Card implementation of Hengbao’s People's Bank of China electronic purse/deposit application
 
 - [TAG 4 emulation](https://github.com/Tordensky/Tag4)    ![stars](https://img.shields.io/github/stars/Tordensky/Tag4.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/Tordensky/Tag4.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/Tordensky/Tag4.svg)  <br>
 This is an implementation of a TAG 4 for emulation
@@ -507,7 +506,7 @@ Identity and the security of data transmission is very critical for the success 
   <br>
 EVIV is a highly sound End-to-end Verifiable Internet Voting system, which offers full voter’s mobility and preserves the voter’s privacy from the vote casting PC even if the voter votes from a public PC, such as a PC at a cybercafe ́ or at a public library.
 
-- [javacard-petrol-rationing](https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/alegen/javacard-petrol-rationing) [![SWH](https://archive.softwareheritage.org/badge/origin/https://github.com/alegen/javacard-petrol-rationing/)](https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/alegen/javacard-petrol-rationing) _[last commit 2014, original repository [removed](https://github.com/alegen/javacard-petrol-rationing)]_ <br>
+- [javacard-petrol-rationing](https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/alegen/javacard-petrol-rationing) ![SWH](https://archive.softwareheritage.org/badge/origin/https://github.com/alegen/javacard-petrol-rationing/) _[last commit 2014, original repository [removed](https://github.com/alegen/javacard-petrol-rationing)]_ <br>
 Applet for security of Petrol rationing, including design documents, Radboud University, Hardware Security course, JavaCard project
 
 - [LicenseCardApp](https://github.com/FourTree/LicenseCardApp)    ![stars](https://img.shields.io/github/stars/FourTree/LicenseCardApp.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/FourTree/LicenseCardApp.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/FourTree/LicenseCardApp.svg) 
@@ -584,7 +583,7 @@ Implementation of GlobalPlatform SCP11B Secure Channel protocol and Java Test Cl
   <br>
 Implementation of some hash chain
 
-- [HMAC and CMAC computation](https://github.com/mll11/jcard/tree/master/TestMAC) (**GitHub**) _[last commit 2014]_ 
+- [HMAC and CMAC computation](https://github.com/mll11/jcard) ![stars](https://img.shields.io/github/stars/mll11/jcard.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/mll11/jcard.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/mll11/jcard.svg) 
   <br>
 This Java Card applet support APDUs to test HMAC (SHA-1, SHA-256) and CMAC (AES-128). It uses Java Card 2.2.2.
 
@@ -714,7 +713,7 @@ Performance profiler for Java Card code. Automatically inserts special execution
 - [JCProfilerNext: JavaCard performance profiler](https://github.com/lzaoral/JCProfilerNext)    ![stars](https://img.shields.io/github/stars/lzaoral/JCProfilerNext.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/lzaoral/JCProfilerNext.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/lzaoral/JCProfilerNext.svg)  <br>
 Performance profiler for Java Card code. JCProfilerNext is a complete rewrite of OpenCryptoProject/JCProfiler that provides a completely automated preprocessing, compilation, installation and profiling of JavaCard code on JavaCard smart cards or in the jCardSim simulator. Automatically inserts special execution interruption "traps" into applet code, repeatedly execute target operation and measures time differences between traps. Annotates code with measured time. Produces interactive performance graphs.
 
-- [JCUnit - JavaCard unit testing](https://github.com/christianhujer/jcunit/)  ![SWH](https://archive.softwareheritage.org/badge/origin/https://github.com/christianhujer/jcunit/) ![stars](https://img.shields.io/github/stars/javacard-FOSS-applets/jcunit.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/javacard-FOSS-applets/jcunit.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/javacard-FOSS-applets/jcunit.svg) 
+- [JCUnit - JavaCard unit testing](https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/christianhujer/jcunit)  ![stars](https://img.shields.io/github/stars/javacard-FOSS-applets/jcunit.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/javacard-FOSS-applets/jcunit.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/javacard-FOSS-applets/jcunit.svg)  _[last commit 2015, original repository [removed](https://github.com/christianhujer/jcunit/)]_
   <br>
 Unit testing framework for JavaCard. JCUnit provides an Assertion facility, similar to that of JUnit. The main difference is how JCUnit reports the line number of the error.
 
