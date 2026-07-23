@@ -6,7 +6,8 @@ The goal is to provide curated catalog of all open-source JavaCard applets and a
 |---------------|:------------------------|
 
 
-The projects collected in this list were analyzed and published (June 2017) in [Analysis of JavaCard open-source ecosystem](https://medium.com/enigma-shards/analysis-of-javacard-open-source-ecosystem-9be0bfd66398) and again in June 2023 in [The adoption rate of JavaCard features by certified products and open-source projects](https://crocs.fi.muni.cz/_media/publications/pdf/2023-cardis-javacard.pdf). If you will find this list helpful, please consider citing our work as:
+The projects collected in this list were analyzed and published (June 2017) in [Analysis of JavaCard open-source ecosystem](https://medium.com/enigma-shards/analysis-of-javacard-open-source-ecosystem-9be0bfd66398) and again in June 2023 in [The adoption rate of JavaCard features by certified products and open-source projects](https://crocs.fi.muni.cz/_media/publications/pdf/2023-cardis-javacard.pdf). An occasionally updated statistics about the whole dataset can be found in [STATS.MD](https://github.com/crocs-muni/javacard-curated-list/blob/master/STATS.MD).
+If you will find this list helpful, please consider citing our work as:
 ```
 @inproceedings{2023-cardis-javacard,
    title = {The adoption rate of JavaCard features by certified products and open-source projects },
