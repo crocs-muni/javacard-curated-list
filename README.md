@@ -779,7 +779,7 @@ Performance testing for various algorithms, similar as JCAlgTest (needs investig
   <br>
 Performance testing for DES/AES/RSA 
 
-- [SPA-JavaCard-Applet](https://github.com/crocs-muni/SPA-JavaCard-Applet) [stars](https://img.shields.io/github/stars/crocs-muni/SPA-JavaCard-Applet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/crocs-muni/SPA-JavaCard-Applet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/crocs-muni/SPA-JavaCard-Applet.svg) 
+- [SPA-JavaCard-Applet](https://github.com/crocs-muni/SPA-JavaCard-Applet) ![stars](https://img.shields.io/github/stars/crocs-muni/SPA-JavaCard-Applet.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/crocs-muni/SPA-JavaCard-Applet.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/crocs-muni/SPA-JavaCard-Applet.svg) 
   <br>
 JavaCard applet implementating basic cryptographic operations triggered during power analysis measurements using [SPA-Cryptographic-Operations-Extractor](https://github.com/crocs-muni/SPA-Cryptographic-Operations-Extractor) tool
 
