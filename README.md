@@ -602,6 +602,10 @@ The main goal of this framework is to synchronize Java Card 2 applets through th
 - [JavaCard Connect](https://github.com/nightcode/jcconnect)    ![stars](https://img.shields.io/github/stars/nightcode/jcconnect.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/nightcode/jcconnect.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/nightcode/jcconnect.svg) [![License](https://img.shields.io/github/license/nightcode/jcconnect)](https://github.com/nightcode/jcconnect/blob/HEAD/LICENSE)  <br>
 JavaCard Connect is a framework which provides an implementation of a secure communication protocol in conformance with the Global Platform Card Specification. It allows to establish a secure channel between an off-card entity and a card.
 
+- [JC2pECDSA](https://github.com/crocs-muni/JC2pECDSA/)    ![stars](https://img.shields.io/github/stars/crocs-muni/JC2pECDSA.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/crocs-muni/JC2pECDSA.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/crocs-muni/JC2pECDSA.svg) [![License](https://img.shields.io/github/license/crocs-muni/JC2pECDSA)](https://github.com/crocs-muni/JC2pECDSA/blob/HEAD/LICENSE) 
+  <br>
+A JavaCard implementation of two-party ECDSA.
+
 - [JCEd25519](https://github.com/dufkan/JCEd25519)    ![stars](https://img.shields.io/github/stars/dufkan/JCEd25519.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/dufkan/JCEd25519.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/dufkan/JCEd25519.svg) [![License](https://img.shields.io/github/license/dufkan/JCEd25519)](https://github.com/dufkan/JCEd25519/blob/HEAD/LICENSE) 
   <br>
 JCEd25519 is a JavaCard implementation of Ed25519 signing using public JavaCard API. The implementation uses (modified) JCMathLib library to perform necessary operations like EC and BigInt arithmetic. And in case SHA512 is not supported by given JavaCard, its software re-implementation is used.
