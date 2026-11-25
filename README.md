@@ -565,6 +565,11 @@ The Suite of software reimplementations of selected cryptographic algorithms pot
   <br>
 TTP SmartCard-Based ElGamal Cryptosystem Using Threshold Scheme for Electronic Elections. EU Project.
 
+
+- [CRYSPI-API (BSI)](https://github.com/BSI-Bund/CRYSPI-API)    ![stars](https://img.shields.io/github/stars/BSI-Bund/CRYSPI-API.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/BSI-Bund/CRYSPI-API.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/BSI-Bund/CRYSPI-API.svg) [![License](https://img.shields.io/github/license/BSI-Bund/CRYSPI-API)](https://github.com/BSI-Bund/CRYSPI-API/blob/HEAD/LICENSE) 
+  <br>
+ Cryptographic Service Provider Interface (CRYSPI). Proof of concept implementation of an API for a Java Card based Cryptographic Service Provider (CSP).
+
 - [Curve25519 jc implementation](https://github.com/david-oswald/jc_curve25519)    ![stars](https://img.shields.io/github/stars/david-oswald/jc_curve25519.svg?style=social) ![lastcommit](https://img.shields.io/github/last-commit/david-oswald/jc_curve25519.svg) ![numcontributors](https://img.shields.io/github/contributors-anon/david-oswald/jc_curve25519.svg) [![License](https://img.shields.io/github/license/david-oswald/jc_curve25519)](https://github.com/david-oswald/jc_curve25519/blob/HEAD/LICENSE) 
   <br>
 Javacard implementation of Curve25519, JavaCard 3.0.1 or higher (currently developed on J2D081)
